@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "characterModel.h"
 
 @interface ViewController ()
+@property (nonatomic) characterModel * model;
 
 @end
 
@@ -16,6 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.model = [[characterModel alloc]init];
+    [self.model initializeCharacters];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
