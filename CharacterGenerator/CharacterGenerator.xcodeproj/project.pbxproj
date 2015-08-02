@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		693962171B6E987D00599A5E /* COD4database.m in Sources */ = {isa = PBXBuildFile; fileRef = 693962161B6E987D00599A5E /* COD4database.m */; };
+		6939621A1B6EAB6000599A5E /* Soldier.m in Sources */ = {isa = PBXBuildFile; fileRef = 693962191B6EAB6000599A5E /* Soldier.m */; };
 		8D7B0FFB1B6E6FC6003F4FB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B0FFA1B6E6FC6003F4FB8 /* main.m */; };
 		8D7B0FFE1B6E6FC6003F4FB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B0FFD1B6E6FC6003F4FB8 /* AppDelegate.m */; };
 		8D7B10011B6E6FC6003F4FB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B10001B6E6FC6003F4FB8 /* ViewController.m */; };
@@ -30,6 +31,8 @@
 /* Begin PBXFileReference section */
 		693962151B6E987D00599A5E /* COD4database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COD4database.h; sourceTree = "<group>"; };
 		693962161B6E987D00599A5E /* COD4database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COD4database.m; sourceTree = "<group>"; };
+		693962181B6EAB6000599A5E /* Soldier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Soldier.h; sourceTree = "<group>"; };
+		693962191B6EAB6000599A5E /* Soldier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Soldier.m; sourceTree = "<group>"; };
 		8D7B0FF51B6E6FC6003F4FB8 /* CharacterGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CharacterGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7B0FF91B6E6FC6003F4FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D7B0FFA1B6E6FC6003F4FB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 			children = (
 				8D7B0FFC1B6E6FC6003F4FB8 /* AppDelegate.h */,
 				8D7B0FFD1B6E6FC6003F4FB8 /* AppDelegate.m */,
+				693962181B6EAB6000599A5E /* Soldier.h */,
+				693962191B6EAB6000599A5E /* Soldier.m */,
 				693962151B6E987D00599A5E /* COD4database.h */,
 				693962161B6E987D00599A5E /* COD4database.m */,
 				8D7B0FFF1B6E6FC6003F4FB8 /* ViewController.h */,
@@ -228,6 +233,7 @@
 				8D7B10011B6E6FC6003F4FB8 /* ViewController.m in Sources */,
 				8D7B0FFE1B6E6FC6003F4FB8 /* AppDelegate.m in Sources */,
 				8D7B0FFB1B6E6FC6003F4FB8 /* main.m in Sources */,
+				6939621A1B6EAB6000599A5E /* Soldier.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
