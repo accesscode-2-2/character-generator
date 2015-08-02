@@ -15,6 +15,7 @@
     [self setupSecondaryWeapons];
     [self setupSpecialGrenades];
     [self setupPerks];
+    [self setupTeam];
 }
 
 -(void)setupPrimaryWeapons{
@@ -90,6 +91,19 @@
                             @"TIER3" : @[@"Deep Impact", @"Extreme Conditioning", @"Steady Aim", @"Last Stand", @"Martyrdom", @"Iron Lungs", @"Eavesdrop", @"Dead Silence"]
                             };
     self.perks = perks;
+}
+
+-(void)setupTeam{
+    
+    NSDictionary *team = @{
+                           @"United States Marine Corps" : @"United States",
+                           @"Opposing Forces" : @"Kuwait, Saudi Arabia, Iraq, Iran",
+                           @"Special Air Service" : @"United Kingdom",
+                           @"Special Purpose Forces" : @"Russia"
+                           };
+    
+    self.team = team;
+    
 }
 
 

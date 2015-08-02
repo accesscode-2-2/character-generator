@@ -14,6 +14,7 @@
 @property (nonatomic) NSArray *secondaryWeapons;
 @property (nonatomic) NSArray *specialGrenades;
 @property (nonatomic) NSDictionary *perks;
+@property (nonatomic) NSDictionary *team;
 
 
 @end
