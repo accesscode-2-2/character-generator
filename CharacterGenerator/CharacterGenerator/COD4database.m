@@ -14,6 +14,7 @@
     [self setupPrimaryWeapons];
     [self setupSecondaryWeapons];
     [self setupSpecialGrenades];
+    [self setupPerks];
 }
 
 -(void)setupPrimaryWeapons{
@@ -78,6 +79,10 @@
                                 ];
     
     self.specialGrenades = specialGrenades;
+}
+
+-(void)setupPerks{
+    
 }
 
 
