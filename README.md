@@ -28,3 +28,9 @@ Derek Netto | Xiulan Shi
 * What information is necessary to make each screen work  
 * What is the flow of data? (communication between view controllers / model)  
 
+
+
+
+
+### Destination Blurbs
+* https://gist.github.com/charleshkang/fa3994c962d185c636a6
