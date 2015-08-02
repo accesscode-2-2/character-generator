@@ -8,6 +8,7 @@
 
 #import "AllCharactersTableViewController.h"
 #import "characterModel.h"
+#import "Character.h"
 
 @interface AllCharactersTableViewController ()
 @property (nonatomic) characterModel * model;
@@ -18,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.title = @"AC 2.2 Hunger Games";
     
     self.model = [[characterModel alloc]init];
     [self.model initializeCharacters];
@@ -32,26 +35,26 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+
+    return [self.model.allCharacters count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"characterCellIdentifier" forIndexPath:indexPath];
+    Character *person = [self.model.allCharacters objectAtIndex:indexPath.row];
     
-    // Configure the cell...
+    NSString * name = [person name];
+    
+    cell.textLabel.text = name;
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

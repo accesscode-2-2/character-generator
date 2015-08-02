@@ -1,18 +1,18 @@
 //
-//  CharacterTabBarViewController.m
+//  newCharacterViewController.m
 //  CharacterGenerator
 //
-//  Created by Artur Lan on 8/2/15.
+//  Created by Henna on 8/2/15.
 //  Copyright (c) 2015 Mike Kavouras. All rights reserved.
 //
 
-#import "CharacterTabBarViewController.h"
+#import "newCharacterViewController.h"
 
-@interface CharacterTabBarViewController ()
+@interface newCharacterViewController ()
 
 @end
 
-@implementation CharacterTabBarViewController
+@implementation newCharacterViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,6 +22,9 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)hideView:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*
