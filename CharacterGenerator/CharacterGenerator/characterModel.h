@@ -11,7 +11,7 @@
 
 @interface characterModel : NSObject
 
-@property (nonatomic) NSArray *allCharacters;
+@property (nonatomic) NSMutableArray *allCharacters;
 -(void) initializeCharacters;
 
 @end

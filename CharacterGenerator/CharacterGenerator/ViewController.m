@@ -21,6 +21,7 @@
     
     self.model = [[characterModel alloc]init];
     [self.model initializeCharacters];
+    
 
     
     // Do any additional setup after loading the view, typically from a nib.
