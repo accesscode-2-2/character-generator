@@ -1,5 +1,5 @@
 //
-//  newCharacterViewController.h
+//  newCharacterTableViewController.h
 //  CharacterGenerator
 //
 //  Created by Henna on 8/2/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface newCharacterViewController : UIViewController
+@interface newCharacterTableViewController : UITableViewController
 
 @end
