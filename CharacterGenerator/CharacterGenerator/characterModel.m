@@ -23,7 +23,11 @@
     Character *Artur = [[Character alloc] init];
     
     
-//    Character *Brian = [[Character alloc] init];
+    Character *Brian = [[Character alloc] init];
+    pushup = 20;
+    beer = 0;
+    [Brian initializeName:@"Brian" pushups:pushup fighter:YES andBeer:beer];
+    NSLog(@"%@", Brian);
 
 }
 
