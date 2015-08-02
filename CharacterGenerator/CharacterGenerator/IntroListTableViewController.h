@@ -1,5 +1,5 @@
 //
-//  VacayListTableViewController.h
+//  IntroListTableViewController.h
 //  CharacterGenerator
 //
 //  Created by Justine Gartner on 8/2/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VacayListTableViewController : UITableViewController
+@interface IntroListTableViewController : UITableViewController
 
 @end

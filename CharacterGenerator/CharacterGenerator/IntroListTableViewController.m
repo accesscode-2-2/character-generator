@@ -1,18 +1,18 @@
 //
-//  VacayListTableViewController.m
+//  IntroListTableViewController.m
 //  CharacterGenerator
 //
 //  Created by Justine Gartner on 8/2/15.
 //  Copyright (c) 2015 Mike Kavouras. All rights reserved.
 //
 
-#import "VacayListTableViewController.h"
+#import "IntroListTableViewController.h"
 
-@interface VacayListTableViewController ()
+@interface IntroListTableViewController ()
 
 @end
 
-@implementation VacayListTableViewController
+@implementation IntroListTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
