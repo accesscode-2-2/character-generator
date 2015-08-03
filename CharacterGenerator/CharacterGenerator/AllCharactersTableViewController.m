@@ -9,6 +9,7 @@
 #import "AllCharactersTableViewController.h"
 #import "characterModel.h"
 #import "Character.h"
+#import "characterDeetsViewController.h"
 
 @interface AllCharactersTableViewController ()
 @property (nonatomic) characterModel * model;
@@ -30,6 +31,20 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+
+    if ([segue.destinationViewController isKindOfClass:[characterDeetsViewController class]]) {
+        NSIndexPath * indexPath = [self.tableView indexPathForSelectedRow];
+        Character * person = [self.model.allCharacters objectAtIndex:indexPath.row];
+        NSString * name = person.name;
+        characterDeetsViewController *destination = segue.destinationViewController;
+        destination.characterName = name;
+    
+    }
+   
+    
 }
 
 #pragma mark - Table view data source

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0BB1F7EC1B6EB5D800E1F9F0 /* AllCharactersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB1F7EB1B6EB5D800E1F9F0 /* AllCharactersTableViewController.m */; };
 		38259D191B6EC3760004319B /* newCharacterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38259D181B6EC3760004319B /* newCharacterTableViewController.m */; };
+		38259D2B1B6EF9DD0004319B /* characterDeetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38259D2A1B6EF9DD0004319B /* characterDeetsViewController.m */; };
 		3859D50B1B6E9F220054B055 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 3859D50A1B6E9F220054B055 /* Character.m */; };
 		3859D50E1B6EA1120054B055 /* characterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3859D50D1B6EA1120054B055 /* characterModel.m */; };
 		8D7B0FFB1B6E6FC6003F4FB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B0FFA1B6E6FC6003F4FB8 /* main.m */; };
@@ -34,6 +35,8 @@
 		0BB1F7EB1B6EB5D800E1F9F0 /* AllCharactersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllCharactersTableViewController.m; sourceTree = "<group>"; };
 		38259D171B6EC3760004319B /* newCharacterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newCharacterTableViewController.h; sourceTree = "<group>"; };
 		38259D181B6EC3760004319B /* newCharacterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newCharacterTableViewController.m; sourceTree = "<group>"; };
+		38259D291B6EF9DD0004319B /* characterDeetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = characterDeetsViewController.h; sourceTree = "<group>"; };
+		38259D2A1B6EF9DD0004319B /* characterDeetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = characterDeetsViewController.m; sourceTree = "<group>"; };
 		3859D5091B6E9F220054B055 /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Character.h; path = ../Character.h; sourceTree = "<group>"; };
 		3859D50A1B6E9F220054B055 /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Character.m; path = ../Character.m; sourceTree = "<group>"; };
 		3859D50C1B6EA1120054B055 /* characterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = characterModel.h; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				0BB1F7EB1B6EB5D800E1F9F0 /* AllCharactersTableViewController.m */,
 				38259D171B6EC3760004319B /* newCharacterTableViewController.h */,
 				38259D181B6EC3760004319B /* newCharacterTableViewController.m */,
+				38259D291B6EF9DD0004319B /* characterDeetsViewController.h */,
+				38259D2A1B6EF9DD0004319B /* characterDeetsViewController.m */,
 				8D7B10021B6E6FC6003F4FB8 /* Main.storyboard */,
 				8D7B10051B6E6FC6003F4FB8 /* Images.xcassets */,
 				8D7B10071B6E6FC6003F4FB8 /* LaunchScreen.xib */,
@@ -237,6 +242,7 @@
 				0BB1F7EC1B6EB5D800E1F9F0 /* AllCharactersTableViewController.m in Sources */,
 				8D7B0FFE1B6E6FC6003F4FB8 /* AppDelegate.m in Sources */,
 				38259D191B6EC3760004319B /* newCharacterTableViewController.m in Sources */,
+				38259D2B1B6EF9DD0004319B /* characterDeetsViewController.m in Sources */,
 				8D7B0FFB1B6E6FC6003F4FB8 /* main.m in Sources */,
 				3859D50E1B6EA1120054B055 /* characterModel.m in Sources */,
 				3859D50B1B6E9F220054B055 /* Character.m in Sources */,
