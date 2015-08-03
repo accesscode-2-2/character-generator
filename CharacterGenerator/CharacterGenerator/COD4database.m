@@ -32,7 +32,7 @@
     NSArray *submachineGuns = @[@"MP5",
                                 @"Skorpion",
                                 @"Mini-Uzi",
-                                @"AK-74U",
+                                @"AK-74u",
                                 @"P90",
                                 @"MP44"
                                 ];
@@ -64,11 +64,22 @@
 
 -(void)setupSecondaryWeapons{
     
-    NSArray *secondaryWeapons = @[@"M9",
-                                  @"USP .45",
-                                  @"M1911 .45",
-                                  @"Desert Eagle"
-                                  ];
+    NSArray *handguns = @[@"M9",
+                          @"USP .45",
+                          @"M1911 .45",
+                          @"Desert Eagle"
+                          ];
+    
+    NSArray *rocketLaunchers = @[@"RPG-7",
+                                 @"FIM-92 Stinger",
+                                 @"FGM-148 Javelin",
+                                 @"AT4"
+                                 ];
+    
+    NSDictionary *secondaryWeapons = @{
+                                       @"Handguns" : handguns,
+                                       @"Rocket Launchers" : rocketLaunchers
+                                       };
     
     self.secondaryWeapons = secondaryWeapons;
 }

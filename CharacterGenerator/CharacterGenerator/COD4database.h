@@ -11,7 +11,7 @@
 @interface COD4database : NSObject
 
 @property (nonatomic) NSDictionary *primaryWeapons;
-@property (nonatomic) NSArray *secondaryWeapons;
+@property (nonatomic) NSDictionary *secondaryWeapons;
 @property (nonatomic) NSArray *specialGrenades;
 @property (nonatomic) NSDictionary *perks;
 @property (nonatomic) NSDictionary *team;
