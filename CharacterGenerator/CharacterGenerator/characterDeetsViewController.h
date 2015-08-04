@@ -11,5 +11,8 @@
 @interface characterDeetsViewController : UIViewController
 
 @property (nonatomic) NSString * characterName;
+@property (nonatomic) int pushupLimit;
+@property (nonatomic) BOOL canFight;
+@property (nonatomic) int beerLimit;
 
 @end

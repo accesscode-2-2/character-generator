@@ -39,8 +39,16 @@
         NSIndexPath * indexPath = [self.tableView indexPathForSelectedRow];
         Character * person = [self.model.allCharacters objectAtIndex:indexPath.row];
         NSString * name = person.name;
+
+        BOOL canFight = person.canFight;
+        int pushUpLimit = person.pushupLimit;
+        int beerLimit = person.beerLimit;
+        
         characterDeetsViewController *destination = segue.destinationViewController;
         destination.characterName = name;
+        destination.canFight = canFight;
+        destination.pushupLimit = pushUpLimit;
+        destination.beerLimit = beerLimit;
     
     }
    

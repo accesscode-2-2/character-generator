@@ -10,6 +10,9 @@
 
 @interface characterDeetsViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *pushupsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *fightLabel;
+@property (weak, nonatomic) IBOutlet UILabel *beerLabel;
 
 @end
 
@@ -19,6 +22,22 @@
     [super viewDidLoad];
     
     self.nameLabel.text = self.characterName;
+    self.pushupsLabel.text = [NSString stringWithFormat:@"%d",self.pushupLimit];
+    if(self.canFight){
+        
+        self.fightLabel.text = @"Yes";
+    
+    }
+    else {
+        self.fightLabel.text = @"No";
+    }
+    self.beerLabel.text = [NSString stringWithFormat:@"%d",self.beerLimit];
+    
+//    @property (nonatomic) int pushupLimit;
+//    @property (nonatomic) BOOL canFight;
+//    @property (nonatomic) int beerLimit;
+    
+    
     // Do any additional setup after loading the view.
 }
 
