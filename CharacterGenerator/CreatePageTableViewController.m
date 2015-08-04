@@ -13,6 +13,80 @@
 @end
 
 @implementation CreatePageTableViewController
+- (IBAction)buttonTapped:(UIButton *)sender {
+    
+    if (self.angryEmojiButton.isTouchInside == YES){
+        NSLog(@"Angry");
+    }
+    if (self.crazyEmojiButton.isTouchInside == YES){
+        NSLog(@"Crazy");
+    }
+    if (self.kissEmojiButton.isTouchInside == YES){
+        NSLog(@"Kiss");
+    }
+    if (self.poopEmojiButton.isTouchInside == YES){
+        NSLog(@"Poop");
+    }
+    if (self.tearsEmojiButton.isTouchInside == YES){
+        NSLog(@"Tears");
+    }
+    if (self.fireEmojiButton.isTouchInside == YES){
+        NSLog(@"Fire!");
+    }
+    
+}
+- (IBAction)foodButtonTapped:(UIButton *)sender {
+    
+    if (self.chocolateFoodButton.isTouchInside == YES){
+        NSLog(@"Chocolate");
+    }
+    if (self.macFoodButton.isTouchInside == YES){
+        NSLog(@"MackyCheese");
+    }
+    if (self.sandwichFoodButton.isTouchInside == YES){
+        NSLog(@"Sandwich");
+    }
+    if (self.pizzaFoodButton.isTouchInside == YES){
+        NSLog(@"Pizza");
+    }
+    if (self.kaleFoodButton.isTouchInside == YES){
+        NSLog(@"Kale");
+    }
+    if (self.burritoFoodButton.isTouchInside == YES){
+        NSLog(@"CHIPOTLE!");
+    }
+}
+- (IBAction)celebButtonTapped:(UIButton *)sender {
+    
+    if (self.shiaCelebButton.isTouchInside == YES){
+        NSLog(@"Shia");
+    }
+    if (self.jLawCelebButton.isTouchInside == YES){
+        NSLog(@"J-Law");
+    }
+    if (self.steveYeunCelebButton.isTouchInside == YES){
+        NSLog(@"Glenn from Walking Dead!");
+    }
+    if (self.lupitaCelebButton.isTouchInside == YES){
+        NSLog(@"Lupita");
+    }
+    if (self.theRockCelebButton.isTouchInside == YES){
+        NSLog(@"THE ROCK!");
+    }
+    if (self.sofiaVergaraCelebButton.isTouchInside == YES){
+        NSLog(@"Sofia");
+    }
+}
+
+- (IBAction)switchedON:(UISwitch *)sender {
+    
+    if (self.alcoholSwitch.isOn == YES){
+        NSLog(@"Beer Me!");
+    } else {
+        NSLog(@"Lame...");
+    }
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

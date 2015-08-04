@@ -88,6 +88,9 @@
                                                     <state key="normal" title="Button" image="crazyemoji">
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="buttonTapped:" destination="BOx-XR-w7v" eventType="touchUpInside" id="VE7-Al-922"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Wp-bR-Mda">
                                                     <rect key="frame" x="361" y="105" width="90" height="90"/>
@@ -98,6 +101,9 @@
                                                     <state key="normal" title="Button" image="kissemoji">
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="buttonTapped:" destination="BOx-XR-w7v" eventType="touchUpInside" id="bsf-nA-TF5"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybq-Lr-WoK">
                                                     <rect key="frame" x="149" y="105" width="90" height="90"/>
@@ -109,6 +115,9 @@
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="buttonTapped:" destination="BOx-XR-w7v" eventType="touchUpInside" id="x9V-Cy-B7p"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31H-ki-xq7">
                                                     <rect key="frame" x="361" y="211" width="90" height="90"/>
@@ -119,6 +128,9 @@
                                                     <state key="normal" title="Button" image="fireemoji">
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="buttonTapped:" destination="BOx-XR-w7v" eventType="touchUpInside" id="BXe-yC-Hx2"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5p2-Y9-Eod">
                                                     <rect key="frame" x="255" y="211" width="90" height="90"/>
@@ -129,6 +141,9 @@
                                                     <state key="normal" title="Button" image="tearemoji">
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="buttonTapped:" destination="BOx-XR-w7v" eventType="touchUpInside" id="oC9-Kw-vgb"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQa-q2-Wpn">
                                                     <rect key="frame" x="150" y="211" width="90" height="90"/>
@@ -139,6 +154,9 @@
                                                     <state key="normal" title="Button" image="poop emoji">
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="buttonTapped:" destination="BOx-XR-w7v" eventType="touchUpInside" id="Ez0-D1-0ZC"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -185,6 +203,9 @@
                                                     <state key="normal" title="Button" image="macNcheese">
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="foodButtonTapped:" destination="BOx-XR-w7v" eventType="touchUpInside" id="0v2-yC-Ag2"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPm-MI-48J">
                                                     <rect key="frame" x="133" y="105" width="90" height="90"/>
@@ -195,6 +216,9 @@
                                                     <state key="normal" title="Button" image="chocolate">
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="foodButtonTapped:" destination="BOx-XR-w7v" eventType="touchUpInside" id="z8o-Y5-I0f"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGE-YU-7aL">
                                                     <rect key="frame" x="377" y="105" width="90" height="90"/>
@@ -205,6 +229,9 @@
                                                     <state key="normal" title="Button" image="sandwich">
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="foodButtonTapped:" destination="BOx-XR-w7v" eventType="touchUpInside" id="1vd-sX-j1a"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cw-DK-3kV">
                                                     <rect key="frame" x="255" y="227" width="90" height="90"/>
@@ -215,6 +242,9 @@
                                                     <state key="normal" title="Button" image="kale">
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="foodButtonTapped:" destination="BOx-XR-w7v" eventType="touchUpInside" id="Oez-fc-zJ9"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrm-TB-m9R">
                                                     <rect key="frame" x="133" y="227" width="90" height="90"/>
@@ -225,6 +255,9 @@
                                                     <state key="normal" title="Button" image="pizza-1">
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="foodButtonTapped:" destination="BOx-XR-w7v" eventType="touchUpInside" id="bPR-aA-EEH"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Jm-LX-RHG">
                                                     <rect key="frame" x="382" y="227" width="90" height="90"/>
@@ -235,6 +268,9 @@
                                                     <state key="normal" title="Button" image="burrito">
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="foodButtonTapped:" destination="BOx-XR-w7v" eventType="touchUpInside" id="Hmo-QQ-Iln"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -269,6 +305,9 @@
                                                     <state key="normal" title="Button" image="jennifer-lawrence-300">
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="celebButtonTapped:" destination="BOx-XR-w7v" eventType="touchUpInside" id="4ZJ-Zc-KNy"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luU-oL-yea">
                                                     <rect key="frame" x="361" y="109" width="90" height="90"/>
@@ -279,6 +318,9 @@
                                                     <state key="normal" title="Button" image="Steve Yeun">
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="celebButtonTapped:" destination="BOx-XR-w7v" eventType="touchUpInside" id="exN-WM-XzT"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quX-1F-4Vg">
                                                     <rect key="frame" x="149" y="109" width="90" height="90"/>
@@ -290,6 +332,9 @@
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="celebButtonTapped:" destination="BOx-XR-w7v" eventType="touchUpInside" id="1q7-zf-Ide"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jennifer Lawrence" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vp0-uq-ElT">
                                                     <rect key="frame" x="245" y="201" width="110" height="16"/>
@@ -319,6 +364,9 @@
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="celebButtonTapped:" destination="BOx-XR-w7v" eventType="touchUpInside" id="KD3-4x-pmD"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvT-f1-kkt">
                                                     <rect key="frame" x="255" y="233" width="90" height="90"/>
@@ -330,6 +378,9 @@
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="celebButtonTapped:" destination="BOx-XR-w7v" eventType="touchUpInside" id="cBe-6b-1hM"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OT-3q-8qF">
                                                     <rect key="frame" x="361" y="233" width="90" height="90"/>
@@ -341,6 +392,9 @@
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="celebButtonTapped:" destination="BOx-XR-w7v" eventType="touchUpInside" id="Fna-MQ-mwK"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lupita Nyong'o" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCU-ex-vjo">
                                                     <rect key="frame" x="148" y="325" width="92" height="16"/>
@@ -421,6 +475,9 @@
                                                 </imageView>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3DG-i9-iXA">
                                                     <rect key="frame" x="276" y="253" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="switchedON:" destination="BOx-XR-w7v" eventType="valueChanged" id="CBq-oD-qD1"/>
+                                                    </connections>
                                                 </switch>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IA6-mv-2FD">
                                                     <rect key="frame" x="0.0" y="358" width="600" height="41"/>
@@ -461,10 +518,31 @@
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="x8E-2G-OZt">
                         <autoresizingMask key="autoresizingMask"/>
                     </refreshControl>
+                    <connections>
+                        <outlet property="alcoholSwitch" destination="3DG-i9-iXA" id="tEg-m2-kD7"/>
+                        <outlet property="angryEmojiButton" destination="ybq-Lr-WoK" id="tZ6-58-G2n"/>
+                        <outlet property="burritoFoodButton" destination="1Jm-LX-RHG" id="CLi-fF-aZZ"/>
+                        <outlet property="chocolateFoodButton" destination="IPm-MI-48J" id="3pa-Vk-u0V"/>
+                        <outlet property="crazyEmojiButton" destination="D3h-iT-WUS" id="XHc-xa-qVh"/>
+                        <outlet property="fireEmojiButton" destination="31H-ki-xq7" id="3i5-o3-m7u"/>
+                        <outlet property="jLawCelebButton" destination="9zA-0u-i0h" id="30m-9J-y5M"/>
+                        <outlet property="kaleFoodButton" destination="3cw-DK-3kV" id="RcB-Pw-7NU"/>
+                        <outlet property="kissEmojiButton" destination="5Wp-bR-Mda" id="fm1-Rp-yfe"/>
+                        <outlet property="lupitaCelebButton" destination="KDS-Bf-aJ5" id="jkR-JZ-p2k"/>
+                        <outlet property="macFoodButton" destination="KN1-X3-CW9" id="cdt-pY-C84"/>
+                        <outlet property="pizzaFoodButton" destination="yrm-TB-m9R" id="AO8-OS-rJX"/>
+                        <outlet property="poopEmojiButton" destination="KQa-q2-Wpn" id="GEl-bB-kCf"/>
+                        <outlet property="sandwichFoodButton" destination="tGE-YU-7aL" id="bF1-Ib-7Mr"/>
+                        <outlet property="shiaCelebButton" destination="quX-1F-4Vg" id="MYv-Gz-CMn"/>
+                        <outlet property="sofiaVergaraCelebButton" destination="2OT-3q-8qF" id="Cxa-XR-NHS"/>
+                        <outlet property="steveYeunCelebButton" destination="luU-oL-yea" id="XCp-VT-2Fl"/>
+                        <outlet property="tearsEmojiButton" destination="5p2-Y9-Eod" id="FVo-fL-6Fp"/>
+                        <outlet property="theRockCelebButton" destination="MvT-f1-kkt" id="2Fx-WQ-fYl"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F6K-Ci-cf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1785" y="-1815"/>
+            <point key="canvasLocation" x="1829" y="-1601"/>
         </scene>
         <!--Results Page View Controller-->
         <scene sceneID="pe5-MH-oPp">
@@ -475,7 +553,7 @@
                         <viewControllerLayoutGuide type="bottom" id="teZ-z2-fAo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QTO-6Z-7DL">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Weekend Plans are..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RqN-uD-nZ6">
@@ -506,7 +584,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMI-62-FKZ">
-                                <rect key="frame" x="16" y="564" width="568" height="36"/>
+                                <rect key="frame" x="16" y="1564" width="568" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Home">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -549,7 +627,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTQ-p1-nv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2536" y="-983"/>
+            <point key="canvasLocation" x="2514" y="-789"/>
         </scene>
     </scenes>
     <resources>
@@ -575,6 +653,6 @@
         <image name="tearemoji" width="180" height="180"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Yli-Im-W4c"/>
+        <segue reference="HzI-br-YvL"/>
     </inferredMetricsTieBreakers>
 </document>
