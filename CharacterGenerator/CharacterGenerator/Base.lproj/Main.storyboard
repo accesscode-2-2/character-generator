@@ -20,10 +20,10 @@
             </objects>
             <point key="canvasLocation" x="-151" y="361"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Bender Table View Controller-->
         <scene sceneID="Gbe-eE-8Ol">
             <objects>
-                <tableViewController id="Qmz-T1-t1o" sceneMemberID="viewController">
+                <tableViewController id="Qmz-T1-t1o" customClass="BenderTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dme-A9-EzS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="574" y="361"/>
         </scene>
-        <!--View Controller-->
+        <!--Bender Detail View Controller-->
         <scene sceneID="rTZ-2G-U1h">
             <objects>
-                <viewController id="LeI-B4-laV" sceneMemberID="viewController">
+                <viewController id="LeI-B4-laV" customClass="BenderDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VpE-WK-Qxj"/>
                         <viewControllerLayoutGuide type="bottom" id="Fk7-3g-YMO"/>
