@@ -35,6 +35,9 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vka-B2-GpG" id="D4k-Tq-pbV">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="zdv-NB-CzM" kind="show" id="Yli-Im-W4c"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -52,7 +55,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1aD-G0-Zdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1010" y="-823"/>
+            <point key="canvasLocation" x="1082" y="-789"/>
         </scene>
         <!--Create Page Table View Controller-->
         <scene sceneID="Y7z-v7-qxB">
@@ -73,7 +76,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What emoji best describes your mood?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m71-53-9WR">
                                                     <rect key="frame" x="150" y="64" width="301" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3h-iT-WUS">
@@ -170,7 +173,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What food are you craving?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMN-AO-Q18">
                                                     <rect key="frame" x="194" y="64" width="212" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KN1-X3-CW9">
@@ -291,19 +294,19 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jennifer Lawrence" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vp0-uq-ElT">
                                                     <rect key="frame" x="245" y="201" width="110" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shia Lebouf" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wct-6G-gKJ">
                                                     <rect key="frame" x="158" y="201" width="72" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steve Yeun" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aee-jg-v3y">
                                                     <rect key="frame" x="372" y="201" width="68" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDS-Bf-aJ5">
@@ -342,25 +345,25 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lupita Nyong'o" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCU-ex-vjo">
                                                     <rect key="frame" x="148" y="325" width="92" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dwayne Johnson" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ftj-xj-ZfG">
                                                     <rect key="frame" x="248" y="325" width="104" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sofia Vergara" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6S-BE-f1q">
                                                     <rect key="frame" x="366" y="325" width="80" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which celebrity would you want to hang out with the most?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htf-Ig-erf">
                                                     <rect key="frame" x="16" y="64" width="568" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -404,7 +407,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Will there be alcohol involved in your plans?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPf-fn-cM0">
                                                     <rect key="frame" x="20" y="64" width="560" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alcohol" translatesAutoresizingMaskIntoConstraints="NO" id="yNX-g0-48k">
@@ -424,7 +427,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                     <state key="normal" title="Create Plans"/>
                                                     <connections>
-                                                        <segue destination="zdv-NB-CzM" kind="show" id="HzI-br-YvL"/>
+                                                        <segue destination="zdv-NB-CzM" kind="push" id="HzI-br-YvL"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -461,7 +464,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F6K-Ci-cf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2219" y="-1197"/>
+            <point key="canvasLocation" x="1785" y="-1815"/>
         </scene>
         <!--Results Page View Controller-->
         <scene sceneID="pe5-MH-oPp">
@@ -472,38 +475,38 @@
                         <viewControllerLayoutGuide type="bottom" id="teZ-z2-fAo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QTO-6Z-7DL">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="1600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Weekend Plans are..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RqN-uD-nZ6">
-                                <rect key="frame" x="197" y="128" width="206" height="21"/>
+                                <rect key="frame" x="197" y="112" width="206" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza" translatesAutoresizingMaskIntoConstraints="NO" id="VSB-zi-cCZ">
-                                <rect key="frame" x="240" y="165" width="120" height="120"/>
+                                <rect key="frame" x="240" y="149" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="gNO-YI-gu4"/>
                                     <constraint firstAttribute="width" constant="120" id="v5o-uG-kjZ"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTS-ga-WdW">
-                                <rect key="frame" x="20" y="301" width="560" height="101"/>
+                                <rect key="frame" x="20" y="285" width="560" height="101"/>
                                 <string key="text">Wes Anderson umami twee, flannel put a bird on it XOXO YOLO semiotics letterpress vegan cred. Taxidermy typewriter Brooklyn keytar, organic pug chambray keffiyeh master cleanse sriracha post-ironic trust fund beard letterpress. Etsy chillwave Godard lomo, four loko Echo Park flexitarian whatever. Biodiesel mlkshk bitters, mixtape Marfa retro viral cornhole. Cornhole gluten-free authentic, Helvetica banjo cardigan deep v gentrify skateboard viral.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zzx-iX-dnL">
-                                <rect key="frame" x="20" y="410" width="560" height="101"/>
+                                <rect key="frame" x="20" y="394" width="560" height="101"/>
                                 <string key="text">Wes Anderson umami twee, flannel put a bird on it XOXO YOLO semiotics letterpress vegan cred. Taxidermy typewriter Brooklyn keytar, organic pug chambray keffiyeh master cleanse sriracha post-ironic trust fund beard letterpress. Etsy chillwave Godard lomo, four loko Echo Park flexitarian whatever. Biodiesel mlkshk bitters, mixtape Marfa retro viral cornhole. Cornhole gluten-free authentic, Helvetica banjo cardigan deep v gentrify skateboard viral.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMI-62-FKZ">
-                                <rect key="frame" x="16" y="1564" width="568" height="36"/>
+                                <rect key="frame" x="16" y="564" width="568" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Home">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -517,7 +520,7 @@
                         <constraints>
                             <constraint firstItem="VSB-zi-cCZ" firstAttribute="top" secondItem="RqN-uD-nZ6" secondAttribute="bottom" constant="16" id="2RP-ft-zgl"/>
                             <constraint firstItem="RqN-uD-nZ6" firstAttribute="leading" secondItem="QTO-6Z-7DL" secondAttribute="leadingMargin" constant="20" id="BhE-HL-aR6"/>
-                            <constraint firstItem="RqN-uD-nZ6" firstAttribute="top" secondItem="YjC-pP-GYL" secondAttribute="bottom" constant="64" id="Brh-xi-2YC"/>
+                            <constraint firstItem="RqN-uD-nZ6" firstAttribute="top" secondItem="YjC-pP-GYL" secondAttribute="bottom" constant="48" id="Brh-xi-2YC"/>
                             <constraint firstItem="VSB-zi-cCZ" firstAttribute="centerX" secondItem="xTS-ga-WdW" secondAttribute="centerX" id="DR6-hV-Vs3"/>
                             <constraint firstAttribute="trailing" secondItem="xTS-ga-WdW" secondAttribute="trailing" constant="20" id="F14-m5-1UU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RqN-uD-nZ6" secondAttribute="trailing" constant="20" id="Jzr-Eh-7yb"/>
@@ -546,7 +549,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTQ-p1-nv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2904" y="-1197"/>
+            <point key="canvasLocation" x="2536" y="-983"/>
         </scene>
     </scenes>
     <resources>
@@ -571,4 +574,7 @@
         <image name="sofia vergara" width="683" height="1024"/>
         <image name="tearemoji" width="180" height="180"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Yli-Im-W4c"/>
+    </inferredMetricsTieBreakers>
 </document>
