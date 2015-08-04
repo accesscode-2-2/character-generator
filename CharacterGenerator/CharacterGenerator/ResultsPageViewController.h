@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ResultsPageViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *HomeButton;
 
 @end

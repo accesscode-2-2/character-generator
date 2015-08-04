@@ -45,7 +45,7 @@
                     <navigationItem key="navigationItem" id="mvG-1W-zW5">
                         <barButtonItem key="rightBarButtonItem" title="Create" id="0ZJ-p9-hLm">
                             <connections>
-                                <segue destination="BOx-XR-w7v" kind="presentation" id="LWj-4p-Tjm"/>
+                                <segue destination="BOx-XR-w7v" kind="show" id="LWj-4p-Tjm"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -424,7 +424,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                     <state key="normal" title="Create Plans"/>
                                                     <connections>
-                                                        <segue destination="zdv-NB-CzM" kind="presentation" id="HzI-br-YvL"/>
+                                                        <segue destination="zdv-NB-CzM" kind="show" id="HzI-br-YvL"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -452,6 +452,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="8Rk-0v-qsd"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1600"/>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="x8E-2G-OZt">
@@ -460,7 +461,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F6K-Ci-cf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1837" y="-823"/>
+            <point key="canvasLocation" x="2219" y="-1197"/>
         </scene>
         <!--Results Page View Controller-->
         <scene sceneID="pe5-MH-oPp">
@@ -471,36 +472,46 @@
                         <viewControllerLayoutGuide type="bottom" id="teZ-z2-fAo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QTO-6Z-7DL">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Weekend Plans are..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RqN-uD-nZ6">
-                                <rect key="frame" x="197" y="84" width="206" height="21"/>
+                                <rect key="frame" x="197" y="128" width="206" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza" translatesAutoresizingMaskIntoConstraints="NO" id="VSB-zi-cCZ">
-                                <rect key="frame" x="240" y="121" width="120" height="120"/>
+                                <rect key="frame" x="240" y="165" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="gNO-YI-gu4"/>
                                     <constraint firstAttribute="width" constant="120" id="v5o-uG-kjZ"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTS-ga-WdW">
-                                <rect key="frame" x="20" y="257" width="560" height="101"/>
+                                <rect key="frame" x="20" y="301" width="560" height="101"/>
                                 <string key="text">Wes Anderson umami twee, flannel put a bird on it XOXO YOLO semiotics letterpress vegan cred. Taxidermy typewriter Brooklyn keytar, organic pug chambray keffiyeh master cleanse sriracha post-ironic trust fund beard letterpress. Etsy chillwave Godard lomo, four loko Echo Park flexitarian whatever. Biodiesel mlkshk bitters, mixtape Marfa retro viral cornhole. Cornhole gluten-free authentic, Helvetica banjo cardigan deep v gentrify skateboard viral.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zzx-iX-dnL">
-                                <rect key="frame" x="20" y="366" width="560" height="101"/>
+                                <rect key="frame" x="20" y="410" width="560" height="101"/>
                                 <string key="text">Wes Anderson umami twee, flannel put a bird on it XOXO YOLO semiotics letterpress vegan cred. Taxidermy typewriter Brooklyn keytar, organic pug chambray keffiyeh master cleanse sriracha post-ironic trust fund beard letterpress. Etsy chillwave Godard lomo, four loko Echo Park flexitarian whatever. Biodiesel mlkshk bitters, mixtape Marfa retro viral cornhole. Cornhole gluten-free authentic, Helvetica banjo cardigan deep v gentrify skateboard viral.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMI-62-FKZ">
+                                <rect key="frame" x="16" y="1564" width="568" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="zdv-NB-CzM" eventType="touchUpInside" id="YqK-Be-pFZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -512,9 +523,12 @@
                             <constraint firstAttribute="trailingMargin" secondItem="RqN-uD-nZ6" secondAttribute="trailing" constant="20" id="Jzr-Eh-7yb"/>
                             <constraint firstItem="Zzx-iX-dnL" firstAttribute="leading" secondItem="QTO-6Z-7DL" secondAttribute="leading" constant="20" id="LmY-sb-WCx"/>
                             <constraint firstAttribute="centerX" secondItem="RqN-uD-nZ6" secondAttribute="centerX" id="SLy-Zd-JGD"/>
+                            <constraint firstAttribute="trailing" secondItem="gMI-62-FKZ" secondAttribute="trailing" constant="16" id="Tmt-JC-RHc"/>
+                            <constraint firstItem="gMI-62-FKZ" firstAttribute="leading" secondItem="QTO-6Z-7DL" secondAttribute="leading" constant="16" id="Vks-D2-fgb"/>
                             <constraint firstItem="Zzx-iX-dnL" firstAttribute="top" secondItem="xTS-ga-WdW" secondAttribute="bottom" constant="8" id="kCQ-JK-WyZ"/>
                             <constraint firstItem="RqN-uD-nZ6" firstAttribute="centerX" secondItem="VSB-zi-cCZ" secondAttribute="centerX" id="kQp-9E-XCZ"/>
                             <constraint firstAttribute="trailing" secondItem="Zzx-iX-dnL" secondAttribute="trailing" constant="20" id="nBP-pc-wg9"/>
+                            <constraint firstItem="teZ-z2-fAo" firstAttribute="top" secondItem="gMI-62-FKZ" secondAttribute="bottom" id="r00-uw-YPQ"/>
                             <constraint firstItem="xTS-ga-WdW" firstAttribute="leading" secondItem="QTO-6Z-7DL" secondAttribute="leading" constant="20" id="vII-KG-hWN"/>
                             <constraint firstItem="xTS-ga-WdW" firstAttribute="top" secondItem="VSB-zi-cCZ" secondAttribute="bottom" constant="16" id="ytB-kj-Z8c"/>
                         </constraints>
@@ -525,10 +539,14 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="wal-aH-C88"/>
+                    <connections>
+                        <outlet property="HomeButton" destination="gMI-62-FKZ" id="VeK-VS-qvm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTQ-p1-nv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2704" y="-823"/>
+            <point key="canvasLocation" x="2904" y="-1197"/>
         </scene>
     </scenes>
     <resources>

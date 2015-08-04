@@ -8,15 +8,24 @@
 
 #import "ResultsPageViewController.h"
 
+
 @interface ResultsPageViewController ()
 
 @end
 
 @implementation ResultsPageViewController
+- (IBAction)buttonTapped:(UIButton *)sender {
+    
+  //  [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popToRootViewControllerAnimated:YES];
+
+    
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
 }
 
 - (void)didReceiveMemoryWarning {
