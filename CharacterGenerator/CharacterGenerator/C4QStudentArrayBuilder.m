@@ -50,6 +50,29 @@
     return tempArray;
 }
 
+- (NSMutableArray *)setMentorGenders:(NSMutableArray *)tempArray {
+    NSArray *names = @[
+                       @"male", @"female", @"male",
+                       @"male", @"male", @"male",
+                       @"female", @"male", @"male",
+                       @"male", @"female", @"male",
+                       @"male", @"male", @"female",
+                       @"female", @"female", @"male",
+                       @"male", @"male", @"female",
+                       @"female", @"male", @"female",
+                       @"male", @"female", @"female",
+                       @"male", @"female", @"male",
+                       @"female", @"female"
+                       ];
+    
+    for (int i = 0; i < 32; i++) {
+        [tempArray[i] setName:names[i]];
+        NSLog(@"%@", [tempArray[i] name]);
+    }
+    
+    return tempArray;
+}
+
 - (NSMutableArray *)setMentorResidences:(NSMutableArray *)tempArray {
     NSArray *places = @[
                         @"Queens", @"Queens", @"Bronx",

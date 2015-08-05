@@ -12,6 +12,9 @@
 
 @interface SignUpViewController ()
 
+@property (nonatomic) NSMutableArray *C4QStudentArray;
+@property (nonatomic) NSArray *C4QMentorArray;
+
 @end
 
 @implementation SignUpViewController
@@ -20,8 +23,10 @@
     [super viewDidLoad];
     C4QStudentArrayBuilder *SAB = [[C4QStudentArrayBuilder alloc] init];
     [SAB initializeMentorArray];
-    [SAB initializeStudentArray];
+    self.C4QMentorArray = SAB.C4QMentorArray;
     
+    [SAB initializeStudentArray];
+    self.C4QStudentArray = SAB.C4QStudentArray;
 }
 
 - (void)didReceiveMemoryWarning {
