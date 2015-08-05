@@ -108,7 +108,7 @@
                         @"You're the guy who lost the Desperado role to Antonio Banderas.",
                         @"You look like Malcolm X's dorky D&D-playing cousin.",
                         @"Your beard is perfectly symmetrical because it's trimmed by robots at your internship.",
-                        @"Diana Elezaj",
+                        @"You always have sunglasses on your head.",
                         @"You routinely correct your teacher about things you yourself don't know anything about.",
                         @"Eric Sanchez",
                         @"You are ashamed to admit you secretly love apples because it would negatively impact your personal brand.",
