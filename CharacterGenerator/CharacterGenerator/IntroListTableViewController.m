@@ -22,8 +22,10 @@
     
     self.navigationItem.title = @"Your Final Destination"; // change this if you want
     
-    self.destinationLocation = [[DestinationDetails alloc] init];
-    [self.destinationLocation initializeData];
+// lines 26 and 27 will give weird red flags if uncommented, not sure how to implement in code
+
+//    self.destinationLocation = [[DestinationDetails alloc] init];
+//    [self.destinationLocation initializeData];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
