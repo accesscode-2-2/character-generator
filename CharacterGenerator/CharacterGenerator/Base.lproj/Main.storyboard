@@ -401,7 +401,7 @@
         <!--Sign Up-->
         <scene sceneID="RD4-hO-XPe">
             <objects>
-                <viewController id="5Et-ib-bG6" userLabel="Sign Up" sceneMemberID="viewController">
+                <viewController id="5Et-ib-bG6" userLabel="Sign Up" customClass="SignUpViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="x9C-s2-qHY"/>
                         <viewControllerLayoutGuide type="bottom" id="uU3-x1-59E"/>
@@ -530,6 +530,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="aCc-4X-CNT" userLabel="Sign Up"/>
                     <navigationItem key="navigationItem" id="5tn-0H-TRC"/>
+                    <connections>
+                        <outlet property="boroughTextField" destination="Qph-lM-i3F" id="3k3-9e-zYY"/>
+                        <outlet property="genderTextField" destination="uRr-Ad-4u2" id="gRq-Ja-6lV"/>
+                        <outlet property="nameTextField" destination="U7f-bp-wNf" id="LMo-TL-xuc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="60s-ZW-5bb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

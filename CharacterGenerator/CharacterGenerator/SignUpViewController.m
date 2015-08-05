@@ -14,6 +14,9 @@
 
 @property (nonatomic) NSMutableArray *C4QStudentArray;
 @property (nonatomic) NSArray *C4QMentorArray;
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *genderTextField;
+@property (weak, nonatomic) IBOutlet UITextField *boroughTextField;
 
 @end
 
