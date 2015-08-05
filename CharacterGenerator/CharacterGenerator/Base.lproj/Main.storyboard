@@ -15,7 +15,21 @@
                     <view key="view" contentMode="scaleToFill" id="tpF-MZ-RMx">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination Details go here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMV-VX-LSn">
+                                <rect key="frame" x="279" y="145" width="206" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uMV-VX-LSn" firstAttribute="leading" secondItem="tpF-MZ-RMx" secondAttribute="leading" constant="279" id="12v-Ml-jUc"/>
+                            <constraint firstItem="jtR-CV-b6M" firstAttribute="top" secondItem="uMV-VX-LSn" secondAttribute="bottom" constant="434" id="DNh-mG-IXG"/>
+                            <constraint firstAttribute="trailing" secondItem="uMV-VX-LSn" secondAttribute="trailing" constant="115" id="Wya-Cj-u2l"/>
+                            <constraint firstItem="uMV-VX-LSn" firstAttribute="top" secondItem="ThR-js-xXf" secondAttribute="bottom" constant="81" id="chE-zZ-fmd"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hWI-Fq-cJq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -351,6 +365,15 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="xW7-tG-0FU">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="HV4-Kc-KOc">
+                            <rect key="frame" x="100" y="7" width="400" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="View Details"/>
+                                <segment title="View Destinations"/>
+                            </segments>
+                        </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="vmy-LQ-eQo">
                             <connections>
                                 <segue destination="p58-Su-Of2" kind="presentation" id="tkM-go-JZT"/>

@@ -12,6 +12,6 @@
 
 @property (nonatomic) NSDictionary *destinationDetails;
 
-- (void) initializeData;
+- (void) initializeData; // not sure if we need this or not
 
 @end
