@@ -10,4 +10,8 @@
 
 @interface DestinationDetailViewController : UIViewController
 
+@property (nonatomic) NSDictionary *destinationDetails;
+
+- (void) initializeData;
+
 @end

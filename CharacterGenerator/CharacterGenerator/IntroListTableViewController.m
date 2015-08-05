@@ -7,6 +7,7 @@
 //
 
 #import "IntroListTableViewController.h"
+#import "DestinationDetailViewController.h"
 
 @interface IntroListTableViewController ()
 
