@@ -1,5 +1,5 @@
 //
-//  DestinationDetailViewController.m
+//  DestinationDetailsViewController.m
 //  CharacterGenerator
 //
 //  Created by Justine Gartner on 8/2/15.
@@ -10,7 +10,6 @@
 
 @interface DestinationDetailViewController ()
 
-@property (nonatomic) DestinationDetailViewController
 
 @end
 
@@ -18,10 +17,8 @@
 
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    self.title = @"Your Final Destination";
-    self.navigationItem.title = @"Destinations";
+[super viewDidLoad];
+
 }
 
 - (void) initializeData {
