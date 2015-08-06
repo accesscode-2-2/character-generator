@@ -21,8 +21,6 @@
 
 -(void)setup;
 
-+ (instancetype)sharedInstance;
-
 
 
 @end
