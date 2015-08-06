@@ -13,5 +13,6 @@
 @property (nonatomic) NSString *studentName;
 @property (nonatomic) NSString *studentGender;
 @property (nonatomic) NSString *studentBorough;
+@property (nonatomic) NSString *studentImage;
 
 @end
