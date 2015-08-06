@@ -164,7 +164,7 @@
 }
 
 - (void)initializeStudentArray {
-    self.C4QStudentArray = [[NSMutableArray alloc]init];
+    _C4QStudentArray = [[NSMutableArray alloc]init];
 }
 
 @end
