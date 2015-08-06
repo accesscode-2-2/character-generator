@@ -20,7 +20,7 @@
     [super viewDidLoad];
     
     //Data Picker Choices
-    NSArray *choice = [[NSArray alloc] initWithObjects:@"Can you fight?", @"Yes", @"No", nil];
+    NSArray *choice = [[NSArray alloc] initWithObjects: @"Yes", @"No", nil];
     
     self.fight = choice;
 }
