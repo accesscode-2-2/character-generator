@@ -13,6 +13,9 @@
 
 @property (nonatomic) weekendPlans *model;
 @property (nonatomic) NSString *plans;
+@property (nonatomic) NSString *celeb;
+@property (nonatomic) NSString *food;
+@property (nonatomic) NSString *alcohol;
 
 // Emoji Buttons
 @property (weak, nonatomic) IBOutlet UIButton *angryEmojiButton;

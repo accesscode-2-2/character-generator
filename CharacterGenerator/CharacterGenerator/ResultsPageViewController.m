@@ -26,7 +26,9 @@
     [super viewDidLoad];
     
     self.labelPlans.text = self.planOne;
-
+    self.labelCeleb.text = self.planTwo;
+    self.labelFood.text = self.planThree;
+    self.labelAlcohol.text = self.planFour;
 }
 
 - (void)didReceiveMemoryWarning {

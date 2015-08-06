@@ -21,6 +21,10 @@
     self.model = [[weekendPlans alloc] init];
     [self.model initializeData];
     
+    
+    [self.alcoholSwitch setOn:NO animated:YES];
+
+    
 }
 
 
@@ -29,91 +33,158 @@
     
     if (self.angryEmojiButton.isTouchInside == YES){
         self.plans = [self.model.weekendPlans objectAtIndex:0];
+        self.alcohol = [self.model.alcohol  objectAtIndex:0];
         NSLog(@"%@", self.plans);
     }
     if (self.crazyEmojiButton.isTouchInside == YES){
         self.plans = [self.model.weekendPlans objectAtIndex:1];
+        self.alcohol = [self.model.alcohol  objectAtIndex:1];
         NSLog(@"%@", self.plans);
 
     }
     if (self.kissEmojiButton.isTouchInside == YES){
         self.plans = [self.model.weekendPlans objectAtIndex:2];
+        self.alcohol = [self.model.alcohol  objectAtIndex:2];
         NSLog(@"%@", self.plans);
     }
     if (self.poopEmojiButton.isTouchInside == YES){
         self.plans = [self.model.weekendPlans objectAtIndex:3];
+        self.alcohol = [self.model.alcohol  objectAtIndex:3];
         NSLog(@"%@", self.plans);
     }
     if (self.tearsEmojiButton.isTouchInside == YES){
         self.plans = [self.model.weekendPlans objectAtIndex:4];
+        self.alcohol = [self.model.alcohol  objectAtIndex:4];
         NSLog(@"%@", self.plans);
 
     }
     if (self.fireEmojiButton.isTouchInside == YES){
         self.plans = [self.model.weekendPlans objectAtIndex:5];
+        self.alcohol = [self.model.alcohol  objectAtIndex:5];
         NSLog(@"%@", self.plans);
     }
     
 }
-- (IBAction)foodButtonTapped:(UIButton *)sender {
-    
-    if (self.chocolateFoodButton.isTouchInside == YES){
-        NSLog(@"Chocolate");
-    }
-    if (self.macFoodButton.isTouchInside == YES){
-        NSLog(@"MackyCheese");
-    }
-    if (self.sandwichFoodButton.isTouchInside == YES){
-        NSLog(@"Sandwich");
-    }
-    if (self.pizzaFoodButton.isTouchInside == YES){
-        NSLog(@"Pizza");
-    }
-    if (self.kaleFoodButton.isTouchInside == YES){
-        NSLog(@"Kale");
-    }
-    if (self.burritoFoodButton.isTouchInside == YES){
-        NSLog(@"CHIPOTLE!");
-    }
-}
 - (IBAction)celebButtonTapped:(UIButton *)sender {
     
     if (self.shiaCelebButton.isTouchInside == YES){
-        NSLog(@"Shia");
+        self.celeb = [self.model.celebrity objectAtIndex:0];
+        NSLog(@"%@", self.celeb);
     }
     if (self.jLawCelebButton.isTouchInside == YES){
-        NSLog(@"J-Law");
+        self.celeb = [self.model.celebrity objectAtIndex:1];
+        NSLog(@"%@", self.celeb);
     }
     if (self.steveYeunCelebButton.isTouchInside == YES){
-        NSLog(@"Glenn from Walking Dead!");
+        self.celeb = [self.model.celebrity objectAtIndex:2];
+        NSLog(@"%@", self.celeb);
     }
     if (self.lupitaCelebButton.isTouchInside == YES){
-        NSLog(@"Lupita");
+        self.celeb = [self.model.celebrity objectAtIndex:3];
+        NSLog(@"%@", self.celeb);
     }
     if (self.theRockCelebButton.isTouchInside == YES){
-        NSLog(@"THE ROCK!");
+        self.celeb = [self.model.celebrity objectAtIndex:4];
+        NSLog(@"%@", self.celeb);
     }
     if (self.sofiaVergaraCelebButton.isTouchInside == YES){
-        NSLog(@"Sofia");
+        self.celeb = [self.model.celebrity objectAtIndex:5];
+        NSLog(@"%@", self.celeb);
     }
 }
+- (IBAction)foodButtonTapped:(UIButton *)sender {
+    
+    if (self.chocolateFoodButton.isTouchInside == YES){
+        self.food = [self.model.food objectAtIndex:0];
+        NSLog(@"%@", self.food);
 
+    }
+    if (self.macFoodButton.isTouchInside == YES){
+        self.food = [self.model.food objectAtIndex:1];
+        NSLog(@"%@", self.food);
+    }
+    if (self.sandwichFoodButton.isTouchInside == YES){
+        self.food = [self.model.food objectAtIndex:2];
+        NSLog(@"%@", self.food);
+    }
+    if (self.pizzaFoodButton.isTouchInside == YES){
+        self.food = [self.model.food objectAtIndex:3];
+        NSLog(@"%@", self.food);
+    }
+    if (self.kaleFoodButton.isTouchInside == YES){
+        self.food = [self.model.food objectAtIndex:4];
+        NSLog(@"%@", self.food);
+    }
+    if (self.burritoFoodButton.isTouchInside == YES){
+        self.food = [self.model.food objectAtIndex:5];
+        NSLog(@"%@", self.food);
+    }
+}
 - (IBAction)switchedON:(UISwitch *)sender {
     
-    if (self.alcoholSwitch.isOn == YES){
-        NSLog(@"Beer Me!");
-    } else {
-        NSLog(@"Lame...");
+    
+    if (sender.isOn && self.plans == [self.model.weekendPlans objectAtIndex:0]){
+        self.alcohol = [self.model.alcohol objectAtIndex:6];
+        NSLog(@"%@", self.alcohol);
     }
+    if (!sender.isOn && self.plans == [self.model.weekendPlans objectAtIndex:0]){
+        self.alcohol = [self.model.alcohol objectAtIndex:0];
+        NSLog(@"%@", self.alcohol);
+    }
+    if (sender.isOn && self.plans == [self.model.weekendPlans objectAtIndex:1]){
+        self.alcohol = [self.model.alcohol objectAtIndex:7];
+        NSLog(@"%@", self.alcohol);
+    }
+    if (!sender.isOn && self.plans == [self.model.weekendPlans objectAtIndex:1]){
+        self.alcohol = [self.model.alcohol objectAtIndex:1];
+        NSLog(@"%@", self.alcohol);
+    }
+    if (sender.isOn && self.plans == [self.model.weekendPlans objectAtIndex:2]){
+        self.alcohol = [self.model.alcohol objectAtIndex:8];
+        NSLog(@"%@", self.alcohol);
+    }
+    if (!sender.isOn && self.plans == [self.model.weekendPlans objectAtIndex:2]){
+        self.alcohol = [self.model.alcohol objectAtIndex:2];
+        NSLog(@"%@", self.alcohol);
+    }
+    if (sender.isOn && self.plans == [self.model.weekendPlans objectAtIndex:3]){
+        self.alcohol = [self.model.alcohol objectAtIndex:9];
+        NSLog(@"%@", self.alcohol);
+    }
+    if (!sender.isOn && self.plans == [self.model.weekendPlans objectAtIndex:3]){
+        self.alcohol = [self.model.alcohol objectAtIndex:3];
+        NSLog(@"%@", self.alcohol);
+    }
+    if (sender.isOn && self.plans == [self.model.weekendPlans objectAtIndex:4]){
+        self.alcohol = [self.model.alcohol objectAtIndex:10];
+        NSLog(@"%@", self.alcohol);
+    }
+    if (!sender.isOn && self.plans == [self.model.weekendPlans objectAtIndex:4]){
+        self.alcohol = [self.model.alcohol objectAtIndex:4];
+        NSLog(@"%@", self.alcohol);
+    }
+    if (sender.isOn && self.plans == [self.model.weekendPlans objectAtIndex:5]){
+        self.alcohol = [self.model.alcohol objectAtIndex:11];
+        NSLog(@"%@", self.alcohol);
+    }
+    if (!sender.isOn && self.plans == [self.model.weekendPlans objectAtIndex:5]){
+        self.alcohol = [self.model.alcohol objectAtIndex:5];
+        NSLog(@"%@", self.alcohol);
+    }
+
+    
+
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    NSLog(@"check");
     
     
     ResultsPageViewController *resultsPageViewController = segue.destinationViewController;
     
     resultsPageViewController.planOne = self.plans;
-
+    resultsPageViewController.planTwo = self.celeb;
+    resultsPageViewController.planThree = self.food;
+    resultsPageViewController.planFour = self.alcohol;
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

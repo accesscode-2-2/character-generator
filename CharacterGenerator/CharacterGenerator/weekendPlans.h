@@ -13,6 +13,6 @@
 -(void) initializeData;
 @property (nonatomic) NSArray * weekendPlans;
 @property (nonatomic) NSArray * celebrity;
-
-
+@property (nonatomic) NSArray * food;
+@property (nonatomic) NSArray * alcohol;
 @end

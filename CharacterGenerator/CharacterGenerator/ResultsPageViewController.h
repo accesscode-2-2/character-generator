@@ -11,10 +11,14 @@
 @interface ResultsPageViewController : UIViewController
 
 @property (nonatomic) NSString *planOne;
+@property (nonatomic) NSString *planTwo;
+@property (nonatomic) NSString *planThree;
+@property (nonatomic) NSString *planFour;
 
 @property (weak, nonatomic) IBOutlet UILabel *labelPlans;
 @property (weak, nonatomic) IBOutlet UILabel *labelCeleb;
 @property (weak, nonatomic) IBOutlet UILabel *labelFood;
+@property (weak, nonatomic) IBOutlet UILabel *labelAlcohol;
 
 
 
