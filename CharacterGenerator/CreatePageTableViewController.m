@@ -8,6 +8,7 @@
 
 #import "CreatePageTableViewController.h"
 #import "ResultsPageViewController.h"
+#import "MainTableViewController.h"
 
 @interface CreatePageTableViewController ()
 
@@ -17,23 +18,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     self.model = [[weekendPlans alloc] init];
     [self.model initializeData];
-    
-    
+
+
     [self.alcoholSwitch setOn:NO animated:YES];
 
-    
+
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NSLog(@"check");
 
+    ResultsPageViewController *resultsPageViewController = segue.destinationViewController;
+    resultsPageViewController.planOne = self.plans;
+    resultsPageViewController.titles = self.titles;
+    //all this below is probably not needed, but I'll leave it here for now - Ayuna
+//    resultsPageViewController.angryEmojiButton = self.angryEmojiButton;
+//    resultsPageViewController.crazyEmojiButton = self.crazyEmojiButton;
+//    resultsPageViewController.kissEmojiButton = self.kissEmojiButton;
+//    resultsPageViewController.poopEmojiButton = self.poopEmojiButton;
+//    resultsPageViewController.tearsEmojiButton = self.tearsEmojiButton;
+//    resultsPageViewController.fireEmojiButton = self.fireEmojiButton;
+}
 
 - (IBAction)buttonTapped:(UIButton *)sender {
-    
+
     if (self.angryEmojiButton.isTouchInside == YES){
         self.plans = [self.model.weekendPlans objectAtIndex:0];
         self.alcohol = [self.model.alcohol  objectAtIndex:0];
+        self.titleToDisplayInMainTableVC = [self.model.titles objectAtIndex:0];
+        [self.titles addObject:_titleToDisplayInMainTableVC];
         NSLog(@"%@", self.plans);
     }
     if (self.crazyEmojiButton.isTouchInside == YES){
@@ -63,10 +79,10 @@
         self.alcohol = [self.model.alcohol  objectAtIndex:5];
         NSLog(@"%@", self.plans);
     }
-    
+
 }
 - (IBAction)celebButtonTapped:(UIButton *)sender {
-    
+
     if (self.shiaCelebButton.isTouchInside == YES){
         self.celeb = [self.model.celebrity objectAtIndex:0];
         NSLog(@"%@", self.celeb);
@@ -93,7 +109,7 @@
     }
 }
 - (IBAction)foodButtonTapped:(UIButton *)sender {
-    
+
     if (self.chocolateFoodButton.isTouchInside == YES){
         self.food = [self.model.food objectAtIndex:0];
         NSLog(@"%@", self.food);
@@ -121,8 +137,8 @@
     }
 }
 - (IBAction)switchedON:(UISwitch *)sender {
-    
-    
+
+
     if (sender.isOn && self.plans == [self.model.weekendPlans objectAtIndex:0]){
         self.alcohol = [self.model.alcohol objectAtIndex:6];
         NSLog(@"%@", self.alcohol);
@@ -172,20 +188,22 @@
         NSLog(@"%@", self.alcohol);
     }
 
-    
+
 
 }
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    
-    
+
+
     ResultsPageViewController *resultsPageViewController = segue.destinationViewController;
-    
+
     resultsPageViewController.planOne = self.plans;
     resultsPageViewController.planTwo = self.celeb;
     resultsPageViewController.planThree = self.food;
     resultsPageViewController.planFour = self.alcohol;
-    
+
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -204,9 +222,9 @@
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
+
     // Configure the cell...
-    
+
     return cell;
 }
 */
@@ -227,7 +245,7 @@
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    }
 }
 */
 
