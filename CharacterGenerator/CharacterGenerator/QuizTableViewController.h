@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class IntroListTableViewController;
 
 @interface QuizTableViewController : UITableViewController
 
-
+@property (nonatomic) IntroListTableViewController *introListTableViewController;
 
 @end

@@ -355,7 +355,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="XVQ-BU-z1Y" kind="show" id="Bq9-sa-9h8"/>
+                                    <segue destination="XVQ-BU-z1Y" kind="show" identifier="showDestinationDetails" id="Bq9-sa-9h8"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -376,7 +376,7 @@
                         </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="vmy-LQ-eQo">
                             <connections>
-                                <segue destination="p58-Su-Of2" kind="presentation" id="tkM-go-JZT"/>
+                                <segue destination="p58-Su-Of2" kind="presentation" identifier="showQuizTableViewController" id="tkM-go-JZT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
