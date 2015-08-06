@@ -153,6 +153,9 @@
                                                             <state key="normal" image="earth_kingdom">
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="locationButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="o3E-9B-JvP"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -173,6 +176,9 @@
                                                             <state key="normal" image="Eastern_Air_Temple">
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="locationButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="yRY-IR-ckc"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -189,6 +195,9 @@
                                                             <state key="normal" image="fire_Nation">
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="locationButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="qc2-Qr-icd"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -206,6 +215,9 @@
                                                     <state key="normal" image="water_tribe">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="locationButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="QtH-et-h4n"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="1" green="0.40645203569999999" blue="0.37846521059999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -517,6 +529,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="pXo-6g-3uY"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="9uc-S4-4Ks" id="ooa-bY-4cp"/>
+                        <outletCollection property="locationQuestionButtons" destination="G8L-4i-0wL" id="nj6-dW-xmw"/>
+                        <outletCollection property="locationQuestionButtons" destination="ihe-7u-qSs" id="C9g-5T-Qgw"/>
+                        <outletCollection property="locationQuestionButtons" destination="ccK-Cn-WAt" id="hTH-Qo-aPD"/>
+                        <outletCollection property="locationQuestionButtons" destination="hEZ-RI-83F" id="WHV-GP-kBt"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rTD-PG-cpG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

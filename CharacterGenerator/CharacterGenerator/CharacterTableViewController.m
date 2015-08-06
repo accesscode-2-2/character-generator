@@ -11,6 +11,7 @@
 @interface CharacterTableViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *locationQuestionButtons;
+
 @end
 
 @implementation CharacterTableViewController
@@ -28,6 +29,7 @@
 - (IBAction)locationButtonTapped:(UIButton *)sender {
     
     for(int i=0; i < self.locationQuestionButtons.count; i++){
+        
         if(sender != self.locationQuestionButtons[i]){
             [self.locationQuestionButtons[i] setEnabled:NO];
         }
