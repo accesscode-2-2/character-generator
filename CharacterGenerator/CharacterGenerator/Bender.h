@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Bender : NSObject
+
+@property (nonatomic) NSString *name;
+@property (nonatomic) UIImage *location;
+@property (nonatomic) UIImage *color;
+@property (nonatomic) UIImage *texture;
+@property (nonatomic) UIImage *animal;
 
 @end

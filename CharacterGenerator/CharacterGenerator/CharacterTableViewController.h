@@ -1,15 +1,15 @@
 //
-//  BenderDetailViewController.h
+//  CharacterTableViewController.h
 //  CharacterGenerator
 //
-//  Created by Christian Maldonado on 8/4/15.
+//  Created by Mesfin Bekele Mekonnen on 8/6/15.
 //  Copyright (c) 2015 Mike Kavouras. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import "Bender.h"
 
-@interface BenderDetailViewController : UIViewController
+@interface CharacterTableViewController : UITableViewController
 
 @property (nonatomic) Bender *bender;
 

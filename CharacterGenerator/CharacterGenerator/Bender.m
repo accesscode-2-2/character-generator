@@ -7,7 +7,12 @@
 //
 
 #import "Bender.h"
+#import "BenderManager.h"
 
 @implementation Bender
+
+-(UIImage *)animalForColor:(UIImage *)color AndTexture:(UIImage *)texture{
+    return nil;
+}
 
 @end
