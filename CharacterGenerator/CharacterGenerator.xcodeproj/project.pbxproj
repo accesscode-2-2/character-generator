@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		693962171B6E987D00599A5E /* COD4database.m in Sources */ = {isa = PBXBuildFile; fileRef = 693962161B6E987D00599A5E /* COD4database.m */; };
 		6939621A1B6EAB6000599A5E /* Soldier.m in Sources */ = {isa = PBXBuildFile; fileRef = 693962191B6EAB6000599A5E /* Soldier.m */; };
-		6939621D1B6EAEC700599A5E /* SoldierListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6939621C1B6EAEC700599A5E /* SoldierListTableViewController.m */; };
 		693962231B6EC6C000599A5E /* CreateSoldierTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693962221B6EC6C000599A5E /* CreateSoldierTableViewController.m */; };
 		695C30391B73D87400BD1267 /* SoldierDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 695C30381B73D87400BD1267 /* SoldierDetailViewController.m */; };
 		695C303C1B74123600BD1267 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 695C303B1B74123600BD1267 /* Manager.m */; };
+		695C303E1B741A0B00BD1267 /* SoldierListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 695C303D1B741A0B00BD1267 /* SoldierListTableViewController.m */; };
 		8D7B0FFB1B6E6FC6003F4FB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B0FFA1B6E6FC6003F4FB8 /* main.m */; };
 		8D7B0FFE1B6E6FC6003F4FB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B0FFD1B6E6FC6003F4FB8 /* AppDelegate.m */; };
 		8D7B10041B6E6FC6003F4FB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7B10021B6E6FC6003F4FB8 /* Main.storyboard */; };
@@ -37,13 +37,13 @@
 		693962181B6EAB6000599A5E /* Soldier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Soldier.h; sourceTree = "<group>"; };
 		693962191B6EAB6000599A5E /* Soldier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Soldier.m; sourceTree = "<group>"; };
 		6939621B1B6EAEC700599A5E /* SoldierListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoldierListTableViewController.h; sourceTree = "<group>"; };
-		6939621C1B6EAEC700599A5E /* SoldierListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoldierListTableViewController.m; sourceTree = "<group>"; };
 		693962211B6EC6C000599A5E /* CreateSoldierTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateSoldierTableViewController.h; sourceTree = "<group>"; };
 		693962221B6EC6C000599A5E /* CreateSoldierTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateSoldierTableViewController.m; sourceTree = "<group>"; };
 		695C30371B73D87400BD1267 /* SoldierDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoldierDetailViewController.h; sourceTree = "<group>"; };
 		695C30381B73D87400BD1267 /* SoldierDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoldierDetailViewController.m; sourceTree = "<group>"; };
 		695C303A1B74123600BD1267 /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
 		695C303B1B74123600BD1267 /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
+		695C303D1B741A0B00BD1267 /* SoldierListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoldierListTableViewController.m; sourceTree = "<group>"; };
 		8D7B0FF51B6E6FC6003F4FB8 /* CharacterGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CharacterGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7B0FF91B6E6FC6003F4FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D7B0FFA1B6E6FC6003F4FB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 				695C303A1B74123600BD1267 /* Manager.h */,
 				695C303B1B74123600BD1267 /* Manager.m */,
 				6939621B1B6EAEC700599A5E /* SoldierListTableViewController.h */,
-				6939621C1B6EAEC700599A5E /* SoldierListTableViewController.m */,
+				695C303D1B741A0B00BD1267 /* SoldierListTableViewController.m */,
 				693962211B6EC6C000599A5E /* CreateSoldierTableViewController.h */,
 				693962221B6EC6C000599A5E /* CreateSoldierTableViewController.m */,
 				695C30371B73D87400BD1267 /* SoldierDetailViewController.h */,
@@ -244,10 +244,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				695C303E1B741A0B00BD1267 /* SoldierListTableViewController.m in Sources */,
 				695C30391B73D87400BD1267 /* SoldierDetailViewController.m in Sources */,
 				693962171B6E987D00599A5E /* COD4database.m in Sources */,
 				8D7B0FFE1B6E6FC6003F4FB8 /* AppDelegate.m in Sources */,
-				6939621D1B6EAEC700599A5E /* SoldierListTableViewController.m in Sources */,
 				8D7B0FFB1B6E6FC6003F4FB8 /* main.m in Sources */,
 				693962231B6EC6C000599A5E /* CreateSoldierTableViewController.m in Sources */,
 				6939621A1B6EAB6000599A5E /* Soldier.m in Sources */,

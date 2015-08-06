@@ -16,9 +16,6 @@
 @property (nonatomic) NSDictionary *perks;
 @property (nonatomic) NSDictionary *team;
 
-
-@property (nonatomic) NSMutableArray *myRecruits;
-
 -(void)setup;
 
 

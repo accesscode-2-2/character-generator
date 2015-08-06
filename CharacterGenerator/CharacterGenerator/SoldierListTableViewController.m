@@ -7,6 +7,7 @@
 //
 
 #import "SoldierListTableViewController.h"
+#import "Soldier.h"
 
 
 @interface SoldierListTableViewController ()
@@ -18,6 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //create manager
+    Manager *myManager = [Manager sharedInstance];
+    self.manager = myManager;
+    
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
     
     // Uncomment the following line to preserve selection between presentations.
@@ -26,15 +31,16 @@
     self.model = [[COD4database alloc] init];;
     [self.model setup];
     
-    self.model.myRecruits = [[NSMutableArray alloc] init];
+    Soldier *rob = [[Soldier alloc] init];
+    rob.name = @"Rob";
     
-    [self.model.myRecruits addObject:@"Jamal"];
-    [self.model.myRecruits addObject:@"Ken"];
-    [self.model.myRecruits addObject:@"Mariah"];
-    [self.model.myRecruits addObject:@"Leeroy"];
+    [myManager addRecruit:rob];
     
+}
+
+-(void)viewWillAppear:(BOOL)animated{
     [self.tableView reloadData];
-    
+    animated = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,14 +57,18 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return self.model.myRecruits.count;
+    return self.manager.myRecruits.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SoldierIdentifier" forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.textLabel.text = [self.model.myRecruits objectAtIndex:indexPath.row];
+    
+    //id type vs. soldier type
+    
+    Soldier *currentSoldier = [self.manager recruitAtIndex:indexPath.row];
+    cell.textLabel.text = currentSoldier.name;
     
     return cell;
 }

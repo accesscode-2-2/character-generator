@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SoldierListTableViewController.h"
 #import "Soldier.h"
+#import "Manager.h"
 
 @interface CreateSoldierTableViewController : UITableViewController
 

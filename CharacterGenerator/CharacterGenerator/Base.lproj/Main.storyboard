@@ -60,9 +60,6 @@
                                                     </state>
                                                     <connections>
                                                         <action selector="dismissModalView:" destination="Dvq-rh-B9V" eventType="touchUpInside" id="Pcz-z5-6HK"/>
-                                                        <segue destination="anq-E3-s9f" kind="popoverPresentation" popoverAnchorView="dov-Pz-xdt" id="MVe-TB-TRf">
-                                                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                                        </segue>
                                                     </connections>
                                                 </button>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rR6-B0-RHO" userLabel="name box">
@@ -82,9 +79,6 @@
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
-                                                            <connections>
-                                                                <action selector="textFieldValueChanged:" destination="Dvq-rh-B9V" eventType="valueChanged" id="NT5-Jy-RGr"/>
-                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -210,7 +204,4 @@
             <point key="canvasLocation" x="2060" y="901"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="5Rw-ur-fqV"/>
-    </inferredMetricsTieBreakers>
 </document>
