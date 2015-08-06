@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Soldier.h"
+#import "COD4database.h"
+
 
 @interface SoldierListTableViewController : UITableViewController
+
+@property COD4database *model;
 
 @end

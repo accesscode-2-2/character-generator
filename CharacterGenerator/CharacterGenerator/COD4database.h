@@ -17,4 +17,12 @@
 @property (nonatomic) NSDictionary *team;
 
 
+@property (nonatomic) NSMutableArray *myRecruits;
+
+-(void)setup;
+
++ (instancetype)sharedInstance;
+
+
+
 @end

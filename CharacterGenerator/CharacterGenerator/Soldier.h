@@ -10,13 +10,13 @@
 
 @interface Soldier : NSObject
 
+@property (nonatomic) NSString *name;
+
 @property (nonatomic) NSString *primaryWeapon;
 @property (nonatomic) NSString *secondaryWeapon;
 @property (nonatomic) NSString *specialGrenade;
 @property (nonatomic) NSString *team;
 
 @property (nonatomic) NSArray *perks;
-
-
 
 @end

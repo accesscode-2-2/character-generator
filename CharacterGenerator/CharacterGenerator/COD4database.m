@@ -10,6 +10,18 @@
 
 @implementation COD4database
 
+//singleton code
++ (instancetype)sharedInstance
+{
+    static COD4database *sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [[COD4database alloc] init];
+        // Do any other initialisation stuff here
+    });
+    return sharedInstance;
+}
+
 -(void)setup{
     [self setupPrimaryWeapons];
     [self setupSecondaryWeapons];

@@ -8,16 +8,12 @@
 
 #import "SoldierListTableViewController.h"
 
+
 @interface SoldierListTableViewController ()
 
 @end
 
 @implementation SoldierListTableViewController
-
-- (IBAction)edit:(UIBarButtonItem *)sender {
-    [self setEditing:YES animated:YES];
-}
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,12 +23,17 @@
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-//     self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    self.model = [[COD4database alloc] init];;
+    [self.model setup];
     
-//    UIBarButtonItem *addButton = [[UIBarButtonItem alloc ] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(add:)];
-//    
-//    self.navigationItem.rightBarButtonItem = addButton;
+    self.model.myRecruits = [[NSMutableArray alloc] init];
+    
+    [self.model.myRecruits addObject:@"Jamal"];
+    [self.model.myRecruits addObject:@"Ken"];
+    [self.model.myRecruits addObject:@"Mariah"];
+    [self.model.myRecruits addObject:@"Leeroy"];
+    
+    [self.tableView reloadData];
     
 }
 
@@ -44,21 +45,20 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 3;
+    return self.model.myRecruits.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SoldierIdentifier" forIndexPath:indexPath];
     
     // Configure the cell...
+    cell.textLabel.text = [self.model.myRecruits objectAtIndex:indexPath.row];
     
     return cell;
 }
