@@ -9,12 +9,16 @@
 #import "SignUpViewController.h"
 #import "C4QStudent.h"
 #import "C4QStudentArrayBuilder.h"
+#import "QuestionnaireTableViewController.h"
 
 @interface SignUpViewController ()
 
 @property (nonatomic) NSMutableArray *C4QStudentArray;
 @property (nonatomic) NSArray *C4QMentorArray;
 @property (nonatomic) C4QStudentArrayBuilder *SAB;
+@property (nonatomic) NSString *studentName;
+@property (nonatomic) NSString *studentGender;
+@property (nonatomic) NSString *studentBorough;
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *genderTextField;
 @property (weak, nonatomic) IBOutlet UITextField *boroughTextField;
@@ -34,20 +38,19 @@
 }
 
 - (IBAction)enterTapped:(id)sender {
-    C4QStudent *student = [[C4QStudent alloc] init];
-    //student.name =
-    [self.C4QStudentArray addObject:student];
-    
+    self.studentName = self.nameTextField.text;
+    self.studentGender = self.genderTextField.text;
+    self.studentBorough = self.boroughTextField.text;
 }
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+    QuestionnaireTableViewController *QVC = segue.destinationViewController;
+    
 }
-*/
+
 
 @end
