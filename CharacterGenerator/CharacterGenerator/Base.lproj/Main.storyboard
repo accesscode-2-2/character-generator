@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yws-ID-9tA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -29,7 +30,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="lk7-Sx-Yta">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="benderIdentifier" id="lk7-Sx-Yta">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lk7-Sx-Yta" id="ONH-g8-Jep">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -83,31 +84,207 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="PAY-dm-Mgc" kind="relationship" relationship="rootViewController" id="aX4-lb-ixG"/>
+                        <segue destination="7np-Tw-zrI" kind="relationship" relationship="rootViewController" id="uL6-ix-G85"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7pR-O4-eDu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1331" y="608"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="F7c-Gc-wBM">
+        <!--Table View Controller-->
+        <scene sceneID="rqT-d8-j26">
             <objects>
-                <viewController id="PAY-dm-Mgc" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="PRH-7P-O2v"/>
-                        <viewControllerLayoutGuide type="bottom" id="MZf-mP-CSG"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7uv-le-99K">
+                <tableViewController id="7np-Tw-zrI" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="XBB-uV-IfM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="CSH-4Z-lid"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YXR-mn-8j1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <sections>
+                            <tableViewSection id="sk4-ck-mK2">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qzI-2n-xcX" userLabel="What's your name? Cell">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qzI-2n-xcX" id="1YK-qs-Y7d" userLabel="whats your name">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What's your name?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9uc-S4-4Ks">
+                                                    <rect key="frame" x="8" y="8" width="584" height="30"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9uc-S4-4Ks" firstAttribute="top" secondItem="1YK-qs-Y7d" secondAttribute="topMargin" id="RX3-Yg-tSF"/>
+                                                <constraint firstItem="9uc-S4-4Ks" firstAttribute="trailing" secondItem="1YK-qs-Y7d" secondAttribute="trailingMargin" id="Vip-vE-dp1"/>
+                                                <constraint firstItem="9uc-S4-4Ks" firstAttribute="leading" secondItem="1YK-qs-Y7d" secondAttribute="leadingMargin" id="aac-ur-pko"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Oyf-ZX-PsD" userLabel="choose a location">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oyf-ZX-PsD" id="W4Y-zH-ytm">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Choose a location!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Aoi-hi-PxK">
+                                                    <rect key="frame" x="8" y="0.0" width="584" height="43"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Aoi-hi-PxK" firstAttribute="top" secondItem="W4Y-zH-ytm" secondAttribute="top" id="1Hl-OO-Uir"/>
+                                                <constraint firstAttribute="trailing" secondItem="Aoi-hi-PxK" secondAttribute="trailing" constant="8" id="OOX-Tu-xaO"/>
+                                                <constraint firstAttribute="bottom" secondItem="Aoi-hi-PxK" secondAttribute="bottom" id="d1p-qr-2vD"/>
+                                                <constraint firstItem="Aoi-hi-PxK" firstAttribute="leading" secondItem="W4Y-zH-ytm" secondAttribute="leading" constant="8" id="hHM-BA-2Nx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="275" id="FM3-nI-9ui" userLabel="location Cell">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FM3-nI-9ui" id="Dw4-2t-sFc">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yhp-BN-dMC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="274"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="earth_kingdom" translatesAutoresizingMaskIntoConstraints="NO" id="7gf-v1-IpE">
+                                                            <rect key="frame" x="8" y="8" width="160" height="130"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Eastern_Air_Temple" translatesAutoresizingMaskIntoConstraints="NO" id="0Xy-v7-UbO">
+                                                            <rect key="frame" x="432" y="8" width="160" height="130"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="water_tribe" translatesAutoresizingMaskIntoConstraints="NO" id="qer-Gb-RyI">
+                                                            <rect key="frame" x="432" y="136" width="160" height="130"/>
+                                                        </imageView>
+                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="klF-uX-k7r">
+                                                            <rect key="frame" x="0.0" y="0.0" width="600" height="274"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="earth_kingdom" translatesAutoresizingMaskIntoConstraints="NO" id="0jU-PO-88i">
+                                                                    <rect key="frame" x="8" y="8" width="160" height="130"/>
+                                                                </imageView>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Eastern_Air_Temple" translatesAutoresizingMaskIntoConstraints="NO" id="Otq-sd-1F3">
+                                                                    <rect key="frame" x="432" y="8" width="160" height="130"/>
+                                                                </imageView>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="water_tribe" translatesAutoresizingMaskIntoConstraints="NO" id="Poc-YT-6Ff">
+                                                                    <rect key="frame" x="432" y="136" width="160" height="130"/>
+                                                                </imageView>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fire_Nation" translatesAutoresizingMaskIntoConstraints="NO" id="dXN-qh-kV9">
+                                                                    <rect key="frame" x="8" y="136" width="160" height="130"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </view>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fire_Nation" translatesAutoresizingMaskIntoConstraints="NO" id="7r0-9K-T7Q">
+                                                            <rect key="frame" x="8" y="136" width="160" height="130"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="yhp-BN-dMC" firstAttribute="top" secondItem="Dw4-2t-sFc" secondAttribute="top" id="H5X-hr-fKY"/>
+                                                <constraint firstItem="yhp-BN-dMC" firstAttribute="leading" secondItem="Dw4-2t-sFc" secondAttribute="leading" id="T77-V3-49j"/>
+                                                <constraint firstAttribute="bottom" secondItem="yhp-BN-dMC" secondAttribute="bottom" id="eAA-KC-T8n"/>
+                                                <constraint firstAttribute="trailing" secondItem="yhp-BN-dMC" secondAttribute="trailing" id="qEM-eQ-vGM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="53" id="FBn-a3-obS" userLabel="animal question  Cell">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FBn-a3-obS" id="k2D-zy-hud">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Whats your spirit animal?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mj7-hy-Uf1">
+                                                    <rect key="frame" x="8" y="15" width="584" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="288" id="kEQ-XB-6a2" userLabel="choose your animal Cell">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kEQ-XB-6a2" id="d6o-hW-6LC">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dGk-Ua-Wrs">
+                                                    <rect key="frame" x="0.0" y="12" width="600" height="275"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="great white" translatesAutoresizingMaskIntoConstraints="NO" id="q9B-JA-BYc">
+                                                            <rect key="frame" x="8" y="8" width="160" height="130"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scorpion" translatesAutoresizingMaskIntoConstraints="NO" id="zga-eo-0WR">
+                                                            <rect key="frame" x="8" y="138" width="160" height="130"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="praying mantis-1" translatesAutoresizingMaskIntoConstraints="NO" id="N0a-4G-hPR">
+                                                            <rect key="frame" x="432" y="8" width="160" height="130"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eagle" translatesAutoresizingMaskIntoConstraints="NO" id="mrN-SU-dAR">
+                                                            <rect key="frame" x="432" y="138" width="160" height="130"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="45" id="CHl-2I-2Lw" userLabel="choose a color Cell">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CHl-2I-2Lw" id="PxM-6H-PdV">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What's your favorite color?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3t-1r-JpB">
+                                                    <rect key="frame" x="8" y="13" width="584" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="292" id="Nf7-c0-YVs">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nf7-c0-YVs" id="daf-rS-OS1">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1k-Qr-e4a">
+                                                    <rect key="frame" x="8" y="8" width="600" height="251"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="Vtq-fP-2Wx">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vtq-fP-2Wx" id="IaV-dS-DPW">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="7np-Tw-zrI" id="nD6-Ag-k1Z"/>
+                            <outlet property="delegate" destination="7np-Tw-zrI" id="ZAq-Lu-H0S"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="pXo-6g-3uY"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rTD-PG-cpG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2010" y="608"/>
+            <point key="canvasLocation" x="2047" y="608"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Eastern_Air_Temple" width="166" height="125"/>
+        <image name="eagle" width="141" height="89"/>
+        <image name="earth_kingdom" width="129" height="97"/>
+        <image name="fire_Nation" width="129" height="97"/>
+        <image name="great white" width="150" height="84"/>
+        <image name="praying mantis-1" width="138" height="91"/>
+        <image name="scorpion" width="123" height="102"/>
+        <image name="water_tribe" width="129" height="97"/>
+    </resources>
 </document>
