@@ -15,28 +15,29 @@
 
 @property (nonatomic) DestinationsModel *destinationModel;
 
-@property (nonatomic) UIButton *answer1a;
-@property (nonatomic) UIButton *answer1b;
-@property (nonatomic) UIButton *answer1c;
-@property (nonatomic) UIButton *answer1d;
+@property (weak, nonatomic) IBOutlet UIButton *answer1a;
+@property (weak, nonatomic) IBOutlet UIButton *answer1b;
+@property (weak, nonatomic) IBOutlet UIButton *answer1c;
+@property (weak, nonatomic) IBOutlet UIButton *answer1d;
 
-@property (nonatomic) UIButton *answer2a;
-@property (nonatomic) UIButton *answer2b;
+@property (weak, nonatomic) IBOutlet UIButton *answer2a;
+@property (weak, nonatomic) IBOutlet UIButton *answer2b;
 
-@property (nonatomic) UIButton *answer3a;
-@property (nonatomic) UIButton *answer3b;
+@property (weak, nonatomic) IBOutlet UIButton *answer3a;
+@property (weak, nonatomic) IBOutlet UIButton *answer3b;
 
-@property (nonatomic) UIButton *answer4a;
-@property (nonatomic) UIButton *answer4b;
-@property (nonatomic) UIButton *answer4c;
-@property (nonatomic) UIButton *answer4d;
-@property (nonatomic) UIButton *answer4e;
+@property (weak, nonatomic) IBOutlet UIButton *answer4a;
+@property (weak, nonatomic) IBOutlet UIButton *answer4b;
+@property (weak, nonatomic) IBOutlet UIButton *answer4c;
+@property (weak, nonatomic) IBOutlet UIButton *answer4d;
+@property (weak, nonatomic) IBOutlet UIButton *answer4e;
 
-@property (nonatomic) UIButton *answer5a;
-@property (nonatomic) UIButton *answer5b;
-@property (nonatomic) UIButton *answer5c;
-@property (nonatomic) UIButton *answer5d;
-@property (nonatomic) UIButton *answer5e;
+@property (weak, nonatomic) IBOutlet UIButton *answer5a;
+@property (weak, nonatomic) IBOutlet UIButton *answer5b;
+@property (weak, nonatomic) IBOutlet UIButton *answer5c;
+@property (weak, nonatomic) IBOutlet UIButton *answer5d;
+@property (weak, nonatomic) IBOutlet UIButton *answer5e;
+
 
 @property (nonatomic) NSMutableArray *selectedButtons;
 @property (nonatomic) NSMutableDictionary *dictionaryValues;
@@ -69,7 +70,7 @@
     [self.answer1b setBackgroundColor:[UIColor whiteColor]];
     [self.answer1c setBackgroundColor:[UIColor whiteColor]];
     [self.answer1d setBackgroundColor:[UIColor whiteColor]];
-    
+    NSLog(@"hello");
     
 }
 
@@ -81,7 +82,7 @@
     [self.answer1b setBackgroundColor:[UIColor lightGrayColor]];
     [self.answer1c setBackgroundColor:[UIColor whiteColor]];
     [self.answer1d setBackgroundColor:[UIColor whiteColor]];
-
+    
     
 }
 
@@ -93,7 +94,7 @@
     [self.answer1b setBackgroundColor:[UIColor whiteColor]];
     [self.answer1c setBackgroundColor:[UIColor lightGrayColor]];
     [self.answer1d setBackgroundColor:[UIColor whiteColor]];
-
+    
     
 }
 
@@ -105,7 +106,7 @@
     [self.answer1b setBackgroundColor:[UIColor whiteColor]];
     [self.answer1c setBackgroundColor:[UIColor whiteColor]];
     [self.answer1d setBackgroundColor:[UIColor lightGrayColor]];
-
+    
     
 }
 
@@ -142,7 +143,7 @@
     
     [self.answer3a setBackgroundColor:[UIColor whiteColor]];
     [self.answer3b setBackgroundColor:[UIColor lightGrayColor]];
-
+    
     
 }
 
@@ -215,7 +216,7 @@
     [self.answer5c setBackgroundColor:[UIColor whiteColor]];
     [self.answer5d setBackgroundColor:[UIColor whiteColor]];
     [self.answer5e setBackgroundColor:[UIColor whiteColor]];
-
+    
 }
 
 -(void)selectedAnswer5b{
@@ -262,7 +263,7 @@
     [self.answer5c setBackgroundColor:[UIColor whiteColor]];
     [self.answer5d setBackgroundColor:[UIColor whiteColor]];
     [self.answer5e setBackgroundColor:[UIColor lightGrayColor]];
-
+    
     
 }
 
@@ -319,42 +320,42 @@
         }
         
         
-         if (selectedButtonAtCurrentIndex == self.answer1c) {
-             
-             
-             //change dictionary value for Bali
+        if (selectedButtonAtCurrentIndex == self.answer1c) {
+            
+            
+            //change dictionary value for Bali
+            
+            NSNumber *valueForAnswer1c = @(1);
+            
+            NSNumber *currentValueForBali = [self.dictionaryValues objectForKey:@"Bali"];
+            
+            NSInteger currentValueAsAnInteger = [currentValueForBali integerValue];
+            currentValueAsAnInteger += [valueForAnswer1c integerValue];
+            
+            NSNumber *newValueForBali = @(currentValueAsAnInteger);
+            
+            [self.dictionaryValues setValue:newValueForBali forKey:@"Bali"];
+            
+        }
         
-             NSNumber *valueForAnswer1c = @(1);
-             
-             NSNumber *currentValueForBali = [self.dictionaryValues objectForKey:@"Bali"];
-             
-             NSInteger currentValueAsAnInteger = [currentValueForBali integerValue];
-             currentValueAsAnInteger += [valueForAnswer1c integerValue];
-             
-             NSNumber *newValueForBali = @(currentValueAsAnInteger);
-             
-             [self.dictionaryValues setValue:newValueForBali forKey:@"Bali"];
-             
-         }
         
-        
-         if (selectedButtonAtCurrentIndex == self.answer1d) {
-             
-             
-             //change dictionary value for Monaco
-             
-             NSNumber *valueForAnswer1d = @(1);
-             
-             NSNumber *currentValueForMonaco = [self.dictionaryValues objectForKey:@"Monaco"];
-             
-             NSInteger currentValueAsAnInteger = [currentValueForMonaco integerValue];
-             currentValueAsAnInteger += [valueForAnswer1d integerValue];
-             
-             NSNumber *newValueForMonaco = @(currentValueAsAnInteger);
-             
-             [self.dictionaryValues setValue:newValueForMonaco forKey:@"Monaco"];
-
-         }
+        if (selectedButtonAtCurrentIndex == self.answer1d) {
+            
+            
+            //change dictionary value for Monaco
+            
+            NSNumber *valueForAnswer1d = @(1);
+            
+            NSNumber *currentValueForMonaco = [self.dictionaryValues objectForKey:@"Monaco"];
+            
+            NSInteger currentValueAsAnInteger = [currentValueForMonaco integerValue];
+            currentValueAsAnInteger += [valueForAnswer1d integerValue];
+            
+            NSNumber *newValueForMonaco = @(currentValueAsAnInteger);
+            
+            [self.dictionaryValues setValue:newValueForMonaco forKey:@"Monaco"];
+            
+        }
         
         
         if (selectedButtonAtCurrentIndex == self.answer2a) {
@@ -550,7 +551,7 @@
             NSNumber *newValueForMonaco = @(currentValueAsAnInteger);
             
             [self.dictionaryValues setValue:newValueForMonaco forKey:@"Monaco"];
-
+            
             
         }
         
@@ -569,7 +570,7 @@
             NSNumber *newValueForAspen = @(currentValueAsAnInteger);
             
             [self.dictionaryValues setValue:newValueForAspen forKey:@"Aspen"];
-
+            
             
         }
         
@@ -685,7 +686,7 @@
     
     
     
-//    self.introListTableViewController updateListTableViewWithData ....
+    //    self.introListTableViewController updateListTableViewWithData ....
     
 }
 

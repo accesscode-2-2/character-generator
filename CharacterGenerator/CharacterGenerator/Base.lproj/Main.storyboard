@@ -89,14 +89,14 @@
                             <tableViewSection id="6pR-3E-660">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="cxR-ht-5kw">
-                                        <rect key="frame" x="0.0" y="64" width="600" height="133"/>
+                                        <rect key="frame" x="0.0" y="230" width="600" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxR-ht-5kw" id="SbO-FH-suf">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="132"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="129"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What's your favorite season?" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sB-Np-Xpr">
-                                                    <rect key="frame" x="0.0" y="20" width="600" height="31.5"/>
+                                                    <rect key="frame" x="0.0" y="20" width="600" height="32"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -157,10 +157,10 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="gN4-iI-91O">
-                                        <rect key="frame" x="0.0" y="197" width="600" height="170"/>
+                                        <rect key="frame" x="0.0" y="360" width="600" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gN4-iI-91O" id="5za-HZ-KaM">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="169"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="129"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwP-Pl-f4F" userLabel="B">
@@ -219,10 +219,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="37n-fB-o1v">
-                                        <rect key="frame" x="0.0" y="367" width="600" height="141"/>
+                                        <rect key="frame" x="0.0" y="490" width="600" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="37n-fB-o1v" id="MhD-Ms-qBA">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="140"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="129"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIr-CN-53T" userLabel="A">
@@ -269,10 +269,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="Wht-bo-USQ">
-                                        <rect key="frame" x="0.0" y="508" width="600" height="141"/>
+                                        <rect key="frame" x="0.0" y="620" width="600" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wht-bo-USQ" id="9pO-eu-YIO">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="140"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="129"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What do you want to eat RIGHT now? " textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYM-pS-Zs7">
@@ -295,10 +295,10 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tx-53-luE" userLabel="E">
-                                                    <rect key="frame" x="432" y="61" width="54" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJd-61-kZU" userLabel="C">
+                                                    <rect key="frame" x="252" y="61" width="48" height="30"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                                    <state key="normal" title="Pavlova">
+                                                    <state key="normal" title="Souffle">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
@@ -309,10 +309,10 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJd-61-kZU" userLabel="C">
-                                                    <rect key="frame" x="252" y="61" width="48" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tx-53-luE" userLabel="E">
+                                                    <rect key="frame" x="432" y="61" width="54" height="30"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                                    <state key="normal" title="Souffle">
+                                                    <state key="normal" title="Pavlova">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
@@ -355,10 +355,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="165" id="rNn-hL-IF3">
-                                        <rect key="frame" x="0.0" y="649" width="600" height="191"/>
+                                        <rect key="frame" x="0.0" y="750" width="600" height="165"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rNn-hL-IF3" id="X9W-rB-sp8">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="190"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="164"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Which alcohol do you prefer?" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpc-a6-b4D">
@@ -388,17 +388,17 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gQ-GV-0O8" userLabel="E">
-                                                    <rect key="frame" x="305" y="102" width="95" height="30"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                                    <state key="normal" title="Fosters Lager">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8s-db-NAu" userLabel="D">
                                                     <rect key="frame" x="190" y="102" width="98" height="30"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                                     <state key="normal" title="Dom Perignon">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gQ-GV-0O8" userLabel="E">
+                                                    <rect key="frame" x="305" y="102" width="95" height="30"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                    <state key="normal" title="Fosters Lager">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
@@ -464,6 +464,26 @@
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1400"/>
+                    <connections>
+                        <outlet property="answer1a" destination="lcE-PX-vUk" id="2lB-Jf-CnA"/>
+                        <outlet property="answer1b" destination="01i-dc-FTY" id="DHz-Rq-nYg"/>
+                        <outlet property="answer1c" destination="XCZ-Ui-tYy" id="8yd-2t-yDF"/>
+                        <outlet property="answer1d" destination="eEt-uE-2rj" id="qXm-oc-B8F"/>
+                        <outlet property="answer2a" destination="3Et-Og-fZf" id="m2W-kS-oLG"/>
+                        <outlet property="answer2b" destination="pwP-Pl-f4F" id="pUz-S1-WPl"/>
+                        <outlet property="answer3a" destination="sIr-CN-53T" id="5q6-CV-FwD"/>
+                        <outlet property="answer3b" destination="DZE-aw-yfQ" id="flk-yB-xRL"/>
+                        <outlet property="answer4a" destination="xIk-nW-SbO" id="5Ux-Ke-bBR"/>
+                        <outlet property="answer4b" destination="A6s-kj-B1u" id="xSL-6x-N2p"/>
+                        <outlet property="answer4c" destination="rJd-61-kZU" id="cUZ-EE-wg8"/>
+                        <outlet property="answer4d" destination="Igh-dJ-3pQ" id="p80-8v-suB"/>
+                        <outlet property="answer4e" destination="7tx-53-luE" id="SXM-mh-Jk1"/>
+                        <outlet property="answer5a" destination="ypP-Li-lA7" id="ewk-io-dIc"/>
+                        <outlet property="answer5b" destination="Wre-nQ-HGi" id="eGe-My-PTb"/>
+                        <outlet property="answer5c" destination="2x0-q5-IWF" id="fvZ-GC-cq2"/>
+                        <outlet property="answer5d" destination="x8s-db-NAu" id="quA-U9-GxR"/>
+                        <outlet property="answer5e" destination="4gQ-GV-0O8" id="rlg-xL-lr2"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RWo-X3-70l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
