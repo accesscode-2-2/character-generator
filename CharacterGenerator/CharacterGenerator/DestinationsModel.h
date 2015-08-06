@@ -14,4 +14,6 @@
 @property (nonatomic) NSMutableDictionary *destinationValues;
 @property (nonatomic) NSMutableDictionary *userDestinations;
 
++ (DestinationsModel *)sharedModel;
+
 @end

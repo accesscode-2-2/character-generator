@@ -13,8 +13,6 @@
 
 @interface QuizTableViewController ()
 
-@property (nonatomic) DestinationsModel *destinationModel;
-
 @property (weak, nonatomic) IBOutlet UIButton *answer1a;
 @property (weak, nonatomic) IBOutlet UIButton *answer1b;
 @property (weak, nonatomic) IBOutlet UIButton *answer1c;
@@ -54,11 +52,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.destinationModel = [[DestinationsModel alloc] init];
-    
     self.selectedButtons = [[NSMutableArray alloc] init];
-    
-    
     
 }
 
@@ -684,7 +678,7 @@
     }
     
     
-    
+    [[DestinationsModel sharedModel].userDestinations setObject:@"" forKey:@""];
     
     //    self.introListTableViewController updateListTableViewWithData ....
     

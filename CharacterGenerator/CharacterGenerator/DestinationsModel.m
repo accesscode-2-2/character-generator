@@ -8,7 +8,18 @@
 
 #import "DestinationsModel.h"
 
+
 @implementation DestinationsModel
+
++ (DestinationsModel *)sharedModel {
+    static DestinationsModel *sharedMyManager = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedMyManager = [[self alloc] init];
+    });
+    return sharedMyManager;
+}
+
 
 -(instancetype) init{
     

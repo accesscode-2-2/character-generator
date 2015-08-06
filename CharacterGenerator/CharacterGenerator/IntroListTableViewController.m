@@ -60,6 +60,7 @@
  - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UserDestinationCellIdentifier" forIndexPath:indexPath];
  
+     [[DestinationsModel sharedModel].userDestinations objectForKey:@""];
  // Configure the cell...
  
  return cell;
