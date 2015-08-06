@@ -121,9 +121,9 @@
 
 - (NSMutableArray *)setMentorQuirks:(NSMutableArray *)tempArray {
     NSArray *quirks = @[
-                        @"Though you look peaceful, you are actually a deadly MMA fighter.",
-                        @"You would marry a salteña if you could, but first you'd wander all over Sunnyside looking for it.",
-                        @"You break all laptops within close proximity before spilling juice all over them and losing your wallet. And that's just the first five minutes of class.",
+                        @"You are secretly an MMA fighter.",
+                        @"You would marry a salteña if you could.",
+                        @"You break all laptops nearby.",
                         @"You're so metal you've wrestled an alligator then asked him to be the bass player in your band.",
                         @"Your hipster moustache grows faster than you can make one good cup of coffee.",
                         @"Your laptop plays music loudly without your knowledge, making your adowable baby face sad.",
