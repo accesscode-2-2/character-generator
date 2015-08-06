@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface newCharacterTableViewController : UITableViewController
+@interface newCharacterTableViewController : UITableViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+
+// Data Picker 
+@property (weak, nonatomic) IBOutlet UIPickerView *yesOrNoPicker;
+- (IBAction)buttonPressed:(id)sender;
 
 @end
