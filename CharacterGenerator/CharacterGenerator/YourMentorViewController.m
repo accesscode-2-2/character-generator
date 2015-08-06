@@ -25,6 +25,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)restart:(UIButton *)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 
 /*
 #pragma mark - Navigation
