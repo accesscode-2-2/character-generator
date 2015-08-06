@@ -1,19 +1,17 @@
 //
-//  DestinationDetails.h
+//  DestinationsModel.h
 //  CharacterGenerator
 //
-//  Created by Charles Kang on 8/5/15.
+//  Created by Justine Gartner on 8/6/15.
 //  Copyright (c) 2015 Mike Kavouras. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface DestinationDetails : NSObject
+@interface DestinationsModel : NSObject
 
 @property (nonatomic) NSDictionary *destinationDetails;
 @property (nonatomic) NSMutableDictionary *destinationValues;
 @property (nonatomic) NSMutableDictionary *userDestinations;
-
-- (void) initializeData; // not sure if we need this or not
 
 @end

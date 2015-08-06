@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--Destination Detail View Controller-->
+        <!--Destination Detail Page View Controller-->
         <scene sceneID="Nrj-EX-2wB">
             <objects>
-                <viewController id="XVQ-BU-z1Y" customClass="DestinationDetailViewController" sceneMemberID="viewController">
+                <viewController id="XVQ-BU-z1Y" customClass="DestinationDetailPageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ThR-js-xXf"/>
                         <viewControllerLayoutGuide type="bottom" id="jtR-CV-b6M"/>
@@ -16,21 +16,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination Details go here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMV-VX-LSn">
-                                <rect key="frame" x="279" y="145" width="206" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tfu-oR-uOM">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination Details go here" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMV-VX-LSn">
+                                <rect key="frame" x="50" y="290" width="500" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUp-2P-hjG">
+                                <rect key="frame" x="0.0" y="210" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="uMV-VX-LSn" firstAttribute="leading" secondItem="tpF-MZ-RMx" secondAttribute="leading" constant="279" id="12v-Ml-jUc"/>
-                            <constraint firstItem="jtR-CV-b6M" firstAttribute="top" secondItem="uMV-VX-LSn" secondAttribute="bottom" constant="434" id="DNh-mG-IXG"/>
-                            <constraint firstAttribute="trailing" secondItem="uMV-VX-LSn" secondAttribute="trailing" constant="115" id="Wya-Cj-u2l"/>
-                            <constraint firstItem="uMV-VX-LSn" firstAttribute="top" secondItem="ThR-js-xXf" secondAttribute="bottom" constant="81" id="chE-zZ-fmd"/>
+                            <constraint firstAttribute="trailing" secondItem="AUp-2P-hjG" secondAttribute="trailing" id="302-Q9-qD1"/>
+                            <constraint firstItem="AUp-2P-hjG" firstAttribute="leading" secondItem="tpF-MZ-RMx" secondAttribute="leading" id="AxS-a8-GxA"/>
+                            <constraint firstItem="tfu-oR-uOM" firstAttribute="top" secondItem="ThR-js-xXf" secondAttribute="bottom" id="SS3-CE-3q9"/>
+                            <constraint firstItem="uMV-VX-LSn" firstAttribute="top" secondItem="AUp-2P-hjG" secondAttribute="bottom" constant="50" id="SjK-xB-J5q"/>
+                            <constraint firstAttribute="trailing" secondItem="uMV-VX-LSn" secondAttribute="trailing" constant="50" id="X3s-m3-SYN"/>
+                            <constraint firstItem="jtR-CV-b6M" firstAttribute="top" secondItem="tfu-oR-uOM" secondAttribute="bottom" id="bFk-NR-XEs"/>
+                            <constraint firstAttribute="trailing" secondItem="tfu-oR-uOM" secondAttribute="trailing" id="ipW-Nx-8Rk"/>
+                            <constraint firstAttribute="centerY" secondItem="uMV-VX-LSn" secondAttribute="centerY" id="ne7-h0-V1f"/>
+                            <constraint firstItem="uMV-VX-LSn" firstAttribute="leading" secondItem="tpF-MZ-RMx" secondAttribute="leading" constant="50" id="qGc-nD-XBA"/>
+                            <constraint firstItem="tfu-oR-uOM" firstAttribute="leading" secondItem="tpF-MZ-RMx" secondAttribute="leading" id="sDF-XF-KiZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundDestinationImageView" destination="tfu-oR-uOM" id="TJv-sM-SAg"/>
+                        <outlet property="destinationDetailsLabel" destination="uMV-VX-LSn" id="mbz-M0-3qW"/>
+                        <outlet property="destinationNameLabel" destination="AUp-2P-hjG" id="6EJ-eB-GNP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hWI-Fq-cJq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -347,7 +367,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="iIh-9A-Bwu">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserDestinationCellIdentifier" id="iIh-9A-Bwu">
                                 <rect key="frame" x="0.0" y="86" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iIh-9A-Bwu" id="dMC-yR-V0D">

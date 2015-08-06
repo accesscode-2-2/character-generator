@@ -7,11 +7,13 @@
 //
 
 #import "QuizTableViewController.h"
-#import "DestinationDetails.h"
+#import "DestinationsModel.h"
+//Created a new separate file/class for the model
+//#import "DestinationDetails.h"
 
 @interface QuizTableViewController ()
 
-@property (nonatomic) DestinationDetails *destinationModel;
+@property (nonatomic) DestinationsModel *destinationModel;
 
 @property (nonatomic) UIButton *answer1a;
 @property (nonatomic) UIButton *answer1b;
@@ -51,7 +53,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.destinationModel = [[DestinationDetails alloc] init];
+    self.destinationModel = [[DestinationsModel alloc] init];
     
     self.selectedButtons = [[NSMutableArray alloc] init];
     
@@ -679,6 +681,8 @@
             
         }
     }
+    
+    
     
     
 //    self.introListTableViewController updateListTableViewWithData ....

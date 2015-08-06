@@ -99,6 +99,8 @@
 @end
 
 
+//Added this below to initialize data, but then realized we didn't have a separate class for the model and this was associated with the detail view controller.  Let's chat about what's going on here and above -Justine
+
 @implementation DestinationDetails
 
 -(instancetype) init{
@@ -118,11 +120,11 @@
         
         
         self.destinationDetails = @{
-                                    @"Aspen" : aspen,
-                                    @"Bali" : bali,
+                                    @"Aspen"       : aspen,
+                                    @"Bali"        : bali,
                                     @"Fox Glacier" : foxGlacier,
-                                    @"Hokkaido" : hokkaido,
-                                    @"Monaco" : monaco
+                                    @"Hokkaido"    : hokkaido,
+                                    @"Monaco"      : monaco
                                     };
         
         self.destinationValues = @{
@@ -132,6 +134,9 @@
                                    @"Hokkaido"    : @(0),
                                    @"Monaco"      : @(0)
                                    }.mutableCopy;
+        
+        self.userDestinations = @{
+                                  }.mutableCopy;
         
     }
     return self;

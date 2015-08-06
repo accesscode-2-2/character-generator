@@ -8,7 +8,13 @@
 
 #import "IntroListTableViewController.h"
 #import "QuizTableViewController.h"
+#import "DestinationsModel.h"
+//Above is the class/model with all of our hard coded data -Justine
+//Below is the view controller for the original detail page, but I changed the file for the detail view controller -Justine
 #import "DestinationDetails.h"
+//Below is the new destination detail page view controller
+#import "DestinationDetailPageViewController.h"
+
 
 @interface IntroListTableViewController ()
 
@@ -21,7 +27,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"Your Final Destination"; // change this if you want
+    //Not sure that we need this below -Justine
+    //self.navigationItem.title = @"Your Final Destination"; // change this if you want
     
 // lines 26 and 27 will give weird red flags if uncommented, not sure how to implement in code
 
@@ -50,16 +57,17 @@
 }
 
 
-/*
+
  - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
- UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+ UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UserDestinationCellIdentifier" forIndexPath:indexPath];
  
  // Configure the cell...
  
  return cell;
  }
- */
 
+
+//the method below is our segue from the intro list to the quiz AND from the intro list to the detail view
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
     if ([segue.identifier isEqualToString:@"showQuizTableViewController"] ) {
@@ -68,7 +76,7 @@
         QuizTableViewController *quizTableViewController = (QuizTableViewController *)destinationContoller.topViewController;
         quizTableViewController.introListTableViewController = self;
     } else if ([segue.identifier isEqualToString:@"showDestinationDetails"]) {
-        // prepare destination details view controller
+        // prepare destination details page view controller
         // pass it destination data
     }
         
