@@ -11,6 +11,7 @@
 @interface DestinationDetails : NSObject
 
 @property (nonatomic) NSDictionary *destinationDetails;
+@property (nonatomic) NSMutableDictionary *destinationValues;
 
 - (void) initializeData; // not sure if we need this or not
 
