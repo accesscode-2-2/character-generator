@@ -19,6 +19,7 @@
 @property (nonatomic) NSString *studentName;
 @property (nonatomic) NSString *studentGender;
 @property (nonatomic) NSString *studentBorough;
+@property (nonatomic) NSString *studentImage;
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *genderTextField;
 @property (weak, nonatomic) IBOutlet UITextField *boroughTextField;
@@ -49,6 +50,10 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 
     QuestionnaireTableViewController *QVC = segue.destinationViewController;
+    QVC.studentName = self.studentName;
+    QVC.studentGender = self.studentGender;
+    QVC.studentBorough = self.studentBorough;
+    QVC.studentImage = self.studentImage;
     
 }
 
