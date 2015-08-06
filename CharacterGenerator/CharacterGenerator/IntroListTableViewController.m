@@ -10,15 +10,14 @@
 #import "QuizTableViewController.h"
 #import "DestinationsModel.h"
 //Above is the class/model with all of our hard coded data -Justine
-//Below is the view controller for the original detail page, but I changed the file for the detail view controller -Justine
-#import "DestinationDetails.h"
+
 //Below is the new destination detail page view controller
 #import "DestinationDetailPageViewController.h"
 
 
 @interface IntroListTableViewController ()
 
-@property (nonatomic) DestinationDetails *destinationLocation;
+//@property (nonatomic) DestinationDetails *destinationLocation;
 
 @end
 
@@ -43,7 +42,7 @@
 }
 
 #pragma mark - Table view data source
-
+/*
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
     return [self.destinationLocation.destinationDetails allKeys].count;
@@ -54,7 +53,7 @@
     NSString *key = [keys objectAtIndex:section];
     NSArray *values = [self.destinationLocation.destinationDetails objectForKey:key];
     return values.count;
-}
+}*/
 
 
 

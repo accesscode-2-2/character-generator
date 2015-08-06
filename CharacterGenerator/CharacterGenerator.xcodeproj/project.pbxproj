@@ -17,7 +17,6 @@
 		8D7B10061B6E6FC6003F4FB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D7B10051B6E6FC6003F4FB8 /* Images.xcassets */; };
 		8D7B10091B6E6FC6003F4FB8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D7B10071B6E6FC6003F4FB8 /* LaunchScreen.xib */; };
 		8D7B10151B6E6FC6003F4FB8 /* CharacterGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B10141B6E6FC6003F4FB8 /* CharacterGeneratorTests.m */; };
-		BF47B5681B72B9C5009775A0 /* DestinationDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = BF47B5671B72B9C5009775A0 /* DestinationDetails.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +49,6 @@
 		8D7B100E1B6E6FC6003F4FB8 /* CharacterGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CharacterGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7B10131B6E6FC6003F4FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D7B10141B6E6FC6003F4FB8 /* CharacterGeneratorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharacterGeneratorTests.m; sourceTree = "<group>"; };
-		BF47B5661B72B9C5009775A0 /* DestinationDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationDetails.h; sourceTree = "<group>"; };
-		BF47B5671B72B9C5009775A0 /* DestinationDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationDetails.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +92,6 @@
 			children = (
 				8D7B0FFC1B6E6FC6003F4FB8 /* AppDelegate.h */,
 				8D7B0FFD1B6E6FC6003F4FB8 /* AppDelegate.m */,
-				BF47B5661B72B9C5009775A0 /* DestinationDetails.h */,
-				BF47B5671B72B9C5009775A0 /* DestinationDetails.m */,
 				6B277A4A1B73BE9D00118854 /* DestinationsModel.h */,
 				6B277A4B1B73BE9D00118854 /* DestinationsModel.m */,
 				6B277A4D1B73C1C800118854 /* DestinationDetailPageViewController.h */,
@@ -245,7 +240,6 @@
 				6B277A4C1B73BE9D00118854 /* DestinationsModel.m in Sources */,
 				8D7B0FFB1B6E6FC6003F4FB8 /* main.m in Sources */,
 				6B1E6FB31B6ECDF200010BBA /* IntroListTableViewController.m in Sources */,
-				BF47B5681B72B9C5009775A0 /* DestinationDetails.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
