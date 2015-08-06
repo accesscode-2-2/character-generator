@@ -14,6 +14,7 @@
 
 @property (nonatomic) NSMutableArray *C4QStudentArray;
 @property (nonatomic) NSArray *C4QMentorArray;
+@property (nonatomic) C4QStudentArrayBuilder *SAB;
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *genderTextField;
 @property (weak, nonatomic) IBOutlet UITextField *boroughTextField;
@@ -24,17 +25,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    C4QStudentArrayBuilder *SAB = [[C4QStudentArrayBuilder alloc] init];
-    [SAB initializeMentorArray];
-    self.C4QMentorArray = SAB.C4QMentorArray;
+    self.SAB = [[C4QStudentArrayBuilder alloc] init];
+    [self.SAB initializeMentorArray];
+    self.C4QMentorArray = self.SAB.C4QMentorArray;
     
-    [SAB initializeStudentArray];
-    self.C4QStudentArray = SAB.C4QStudentArray;
+    [self.SAB initializeStudentArray];
+    self.C4QStudentArray = self.SAB.C4QStudentArray;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)enterTapped:(id)sender {
+    C4QStudent *student = [[C4QStudent alloc] init];
+    //student.name =
+    [self.C4QStudentArray addObject:student];
+    
 }
 
 /*

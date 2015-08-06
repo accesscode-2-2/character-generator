@@ -410,12 +410,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZM-HX-gJb">
-                                <rect key="frame" x="282" y="492" width="37" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZM-HX-gJb">
+                                <rect key="frame" x="282" y="490" width="37" height="30"/>
                                 <state key="normal" title="Enter">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="enterTapped:" destination="5Et-ib-bG6" eventType="touchUpInside" id="29Z-Km-fza"/>
                                     <segue destination="MC3-FO-hcc" kind="show" id="LEP-Ot-z8p"/>
                                 </connections>
                             </button>
@@ -705,10 +706,10 @@
             </objects>
             <point key="canvasLocation" x="1784" y="86"/>
         </scene>
-        <!--View Controller-->
+        <!--Your Mentor View Controller-->
         <scene sceneID="WSH-Fj-RnZ">
             <objects>
-                <viewController id="Wfx-zT-aOV" sceneMemberID="viewController">
+                <viewController id="Wfx-zT-aOV" customClass="YourMentorViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7a6-e7-Cy0"/>
                         <viewControllerLayoutGuide type="bottom" id="p7b-lk-fxE"/>
