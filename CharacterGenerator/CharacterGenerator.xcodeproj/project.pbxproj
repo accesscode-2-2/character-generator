@@ -16,6 +16,7 @@
 		9A4F3B881B6EBEDC0009DD28 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F3B871B6EBEDC0009DD28 /* MainTableViewController.m */; };
 		9A4F3BC61B6FE31E0009DD28 /* CreatePageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F3BC51B6FE31E0009DD28 /* CreatePageTableViewController.m */; };
 		9A4F3BC91B6FFFA20009DD28 /* ResultsPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F3BC81B6FFFA20009DD28 /* ResultsPageViewController.m */; };
+		9AA50A431B72E11800B368DF /* weekendPlans.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA50A421B72E11800B368DF /* weekendPlans.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		9A4F3BC51B6FE31E0009DD28 /* CreatePageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreatePageTableViewController.m; path = ../CreatePageTableViewController.m; sourceTree = "<group>"; };
 		9A4F3BC71B6FFFA20009DD28 /* ResultsPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsPageViewController.h; sourceTree = "<group>"; };
 		9A4F3BC81B6FFFA20009DD28 /* ResultsPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsPageViewController.m; sourceTree = "<group>"; };
+		9AA50A411B72E11800B368DF /* weekendPlans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weekendPlans.h; sourceTree = "<group>"; };
+		9AA50A421B72E11800B368DF /* weekendPlans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weekendPlans.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				8D7B0FFC1B6E6FC6003F4FB8 /* AppDelegate.h */,
 				8D7B0FFD1B6E6FC6003F4FB8 /* AppDelegate.m */,
 				8D7B10021B6E6FC6003F4FB8 /* Main.storyboard */,
+				9AA50A411B72E11800B368DF /* weekendPlans.h */,
+				9AA50A421B72E11800B368DF /* weekendPlans.m */,
 				9A4F3B861B6EBEDC0009DD28 /* MainTableViewController.h */,
 				9A4F3B871B6EBEDC0009DD28 /* MainTableViewController.m */,
 				9A4F3BC41B6FE31E0009DD28 /* CreatePageTableViewController.h */,
@@ -233,6 +238,7 @@
 				8D7B0FFE1B6E6FC6003F4FB8 /* AppDelegate.m in Sources */,
 				9A4F3BC91B6FFFA20009DD28 /* ResultsPageViewController.m in Sources */,
 				9A4F3BC61B6FE31E0009DD28 /* CreatePageTableViewController.m in Sources */,
+				9AA50A431B72E11800B368DF /* weekendPlans.m in Sources */,
 				8D7B0FFB1B6E6FC6003F4FB8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

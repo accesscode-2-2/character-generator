@@ -9,6 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface ResultsPageViewController : UIViewController
+
+@property (nonatomic) NSString *planOne;
+
+@property (weak, nonatomic) IBOutlet UILabel *labelPlans;
+@property (weak, nonatomic) IBOutlet UILabel *labelCeleb;
+@property (weak, nonatomic) IBOutlet UILabel *labelFood;
+
+
+
 @property (weak, nonatomic) IBOutlet UIButton *HomeButton;
 
 @end

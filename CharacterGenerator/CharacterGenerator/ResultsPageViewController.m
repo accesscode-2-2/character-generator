@@ -16,7 +16,6 @@
 @implementation ResultsPageViewController
 - (IBAction)buttonTapped:(UIButton *)sender {
     
-  //  [self dismissViewControllerAnimated:YES completion:nil];
     [self.navigationController popToRootViewControllerAnimated:YES];
 
     
@@ -25,6 +24,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.labelPlans.text = self.planOne;
 
 }
 

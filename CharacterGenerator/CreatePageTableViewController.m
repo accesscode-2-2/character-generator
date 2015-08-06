@@ -7,31 +7,51 @@
 //
 
 #import "CreatePageTableViewController.h"
+#import "ResultsPageViewController.h"
 
 @interface CreatePageTableViewController ()
 
 @end
 
 @implementation CreatePageTableViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.model = [[weekendPlans alloc] init];
+    [self.model initializeData];
+    
+}
+
+
+
 - (IBAction)buttonTapped:(UIButton *)sender {
     
     if (self.angryEmojiButton.isTouchInside == YES){
-        NSLog(@"Angry");
+        self.plans = [self.model.weekendPlans objectAtIndex:0];
+        NSLog(@"%@", self.plans);
     }
     if (self.crazyEmojiButton.isTouchInside == YES){
-        NSLog(@"Crazy");
+        self.plans = [self.model.weekendPlans objectAtIndex:1];
+        NSLog(@"%@", self.plans);
+
     }
     if (self.kissEmojiButton.isTouchInside == YES){
-        NSLog(@"Kiss");
+        self.plans = [self.model.weekendPlans objectAtIndex:2];
+        NSLog(@"%@", self.plans);
     }
     if (self.poopEmojiButton.isTouchInside == YES){
-        NSLog(@"Poop");
+        self.plans = [self.model.weekendPlans objectAtIndex:3];
+        NSLog(@"%@", self.plans);
     }
     if (self.tearsEmojiButton.isTouchInside == YES){
-        NSLog(@"Tears");
+        self.plans = [self.model.weekendPlans objectAtIndex:4];
+        NSLog(@"%@", self.plans);
+
     }
     if (self.fireEmojiButton.isTouchInside == YES){
-        NSLog(@"Fire!");
+        self.plans = [self.model.weekendPlans objectAtIndex:5];
+        NSLog(@"%@", self.plans);
     }
     
 }
@@ -86,13 +106,15 @@
         NSLog(@"Lame...");
     }
 }
-
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NSLog(@"check");
     
-}
+    
+    ResultsPageViewController *resultsPageViewController = segue.destinationViewController;
+    
+    resultsPageViewController.planOne = self.plans;
 
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

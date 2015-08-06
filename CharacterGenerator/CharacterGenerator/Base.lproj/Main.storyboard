@@ -542,7 +542,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F6K-Ci-cf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1829" y="-1601"/>
+            <point key="canvasLocation" x="1641" y="-1657"/>
         </scene>
         <!--Results Page View Controller-->
         <scene sceneID="pe5-MH-oPp">
@@ -569,16 +569,14 @@
                                     <constraint firstAttribute="width" constant="120" id="v5o-uG-kjZ"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTS-ga-WdW">
-                                <rect key="frame" x="20" y="285" width="560" height="101"/>
-                                <string key="text">Wes Anderson umami twee, flannel put a bird on it XOXO YOLO semiotics letterpress vegan cred. Taxidermy typewriter Brooklyn keytar, organic pug chambray keffiyeh master cleanse sriracha post-ironic trust fund beard letterpress. Etsy chillwave Godard lomo, four loko Echo Park flexitarian whatever. Biodiesel mlkshk bitters, mixtape Marfa retro viral cornhole. Cornhole gluten-free authentic, Helvetica banjo cardigan deep v gentrify skateboard viral.</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#1 Plans" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTS-ga-WdW">
+                                <rect key="frame" x="20" y="285" width="560" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zzx-iX-dnL">
-                                <rect key="frame" x="20" y="394" width="560" height="101"/>
-                                <string key="text">Wes Anderson umami twee, flannel put a bird on it XOXO YOLO semiotics letterpress vegan cred. Taxidermy typewriter Brooklyn keytar, organic pug chambray keffiyeh master cleanse sriracha post-ironic trust fund beard letterpress. Etsy chillwave Godard lomo, four loko Echo Park flexitarian whatever. Biodiesel mlkshk bitters, mixtape Marfa retro viral cornhole. Cornhole gluten-free authentic, Helvetica banjo cardigan deep v gentrify skateboard viral.</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#2 Celeb" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zzx-iX-dnL">
+                                <rect key="frame" x="20" y="310" width="560" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -593,19 +591,29 @@
                                     <action selector="buttonTapped:" destination="zdv-NB-CzM" eventType="touchUpInside" id="YqK-Be-pFZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#3 Food" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fki-dR-m5s">
+                                <rect key="frame" x="20" y="335" width="560" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Fki-dR-m5s" firstAttribute="leading" secondItem="QTO-6Z-7DL" secondAttribute="leading" constant="20" id="1oY-Ay-XId"/>
                             <constraint firstItem="VSB-zi-cCZ" firstAttribute="top" secondItem="RqN-uD-nZ6" secondAttribute="bottom" constant="16" id="2RP-ft-zgl"/>
+                            <constraint firstItem="Fki-dR-m5s" firstAttribute="top" secondItem="Zzx-iX-dnL" secondAttribute="bottom" constant="8" id="9SH-8h-R12"/>
                             <constraint firstItem="RqN-uD-nZ6" firstAttribute="leading" secondItem="QTO-6Z-7DL" secondAttribute="leadingMargin" constant="20" id="BhE-HL-aR6"/>
                             <constraint firstItem="RqN-uD-nZ6" firstAttribute="top" secondItem="YjC-pP-GYL" secondAttribute="bottom" constant="48" id="Brh-xi-2YC"/>
                             <constraint firstItem="VSB-zi-cCZ" firstAttribute="centerX" secondItem="xTS-ga-WdW" secondAttribute="centerX" id="DR6-hV-Vs3"/>
                             <constraint firstAttribute="trailing" secondItem="xTS-ga-WdW" secondAttribute="trailing" constant="20" id="F14-m5-1UU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RqN-uD-nZ6" secondAttribute="trailing" constant="20" id="Jzr-Eh-7yb"/>
                             <constraint firstItem="Zzx-iX-dnL" firstAttribute="leading" secondItem="QTO-6Z-7DL" secondAttribute="leading" constant="20" id="LmY-sb-WCx"/>
+                            <constraint firstAttribute="trailing" secondItem="Fki-dR-m5s" secondAttribute="trailing" constant="20" id="QCh-gx-sPm"/>
                             <constraint firstAttribute="centerX" secondItem="RqN-uD-nZ6" secondAttribute="centerX" id="SLy-Zd-JGD"/>
                             <constraint firstAttribute="trailing" secondItem="gMI-62-FKZ" secondAttribute="trailing" constant="16" id="Tmt-JC-RHc"/>
                             <constraint firstItem="gMI-62-FKZ" firstAttribute="leading" secondItem="QTO-6Z-7DL" secondAttribute="leading" constant="16" id="Vks-D2-fgb"/>
+                            <constraint firstItem="Fki-dR-m5s" firstAttribute="centerX" secondItem="Zzx-iX-dnL" secondAttribute="centerX" id="hEf-b3-2Bq"/>
                             <constraint firstItem="Zzx-iX-dnL" firstAttribute="top" secondItem="xTS-ga-WdW" secondAttribute="bottom" constant="8" id="kCQ-JK-WyZ"/>
                             <constraint firstItem="RqN-uD-nZ6" firstAttribute="centerX" secondItem="VSB-zi-cCZ" secondAttribute="centerX" id="kQp-9E-XCZ"/>
                             <constraint firstAttribute="trailing" secondItem="Zzx-iX-dnL" secondAttribute="trailing" constant="20" id="nBP-pc-wg9"/>
@@ -623,11 +631,14 @@
                     <navigationItem key="navigationItem" id="wal-aH-C88"/>
                     <connections>
                         <outlet property="HomeButton" destination="gMI-62-FKZ" id="VeK-VS-qvm"/>
+                        <outlet property="labelCeleb" destination="Zzx-iX-dnL" id="Ok1-CK-Q2E"/>
+                        <outlet property="labelFood" destination="Fki-dR-m5s" id="Jc9-JD-5ao"/>
+                        <outlet property="labelPlans" destination="xTS-ga-WdW" id="3lY-Th-Ty8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTQ-p1-nv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2514" y="-789"/>
+            <point key="canvasLocation" x="2536" y="-707"/>
         </scene>
     </scenes>
     <resources>
