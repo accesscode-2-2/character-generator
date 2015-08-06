@@ -16,6 +16,7 @@
     [self initializeCelebrity];
     [self initializeFood];
     [self initializeAlcohol];
+    [self initializeTitles]; 
 }
 
 -(void) initializeWeekendPlans {
@@ -30,6 +31,7 @@
                         ];
     
 }
+
 
 -(void) initializeCelebrity {
     
@@ -74,6 +76,17 @@
                         @"Both of you bust open grandma's little liquor cabinet and party! Sometimes Grandma likes to let loose - it reminds her of the 50's!",
                         @"You crack open some Coronas and you have yourself a Jean-Claude Van Damme-a-thon! Bloodsport!",
                         @"You just dropped $200 on drinks. Dang should've pre-gamed. Reminder: clubs are wack.",
+                    ];
+}
+
+-(void) initializeTitles {
+    self.titles = @[
+                    @"Read a book",
+                    @"Beach",
+                    @"Road trip",
+                    @"Grandma",
+                    @"Netflix",
+                    @"Party"
                     ];
 }
 

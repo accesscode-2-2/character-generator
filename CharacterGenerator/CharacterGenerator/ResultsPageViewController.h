@@ -20,7 +20,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelFood;
 @property (weak, nonatomic) IBOutlet UILabel *labelAlcohol;
 
-
+//add the property title 
 
 @property (weak, nonatomic) IBOutlet UIButton *HomeButton;
 

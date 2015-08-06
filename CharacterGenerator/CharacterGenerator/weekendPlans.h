@@ -15,4 +15,7 @@
 @property (nonatomic) NSArray * celebrity;
 @property (nonatomic) NSArray * food;
 @property (nonatomic) NSArray * alcohol;
+@property (nonatomic) NSArray * titles; 
+-(void) initializeTitles;
+
 @end
