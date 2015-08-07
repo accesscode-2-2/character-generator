@@ -125,18 +125,16 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oyf-ZX-PsD" id="W4Y-zH-ytm">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Choose a location!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Aoi-hi-PxK">
-                                                    <rect key="frame" x="8" y="0.0" width="584" height="43"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a Location!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7LS-LX-kYT">
+                                                    <rect key="frame" x="226" y="11" width="149" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Aoi-hi-PxK" firstAttribute="top" secondItem="W4Y-zH-ytm" secondAttribute="top" id="1Hl-OO-Uir"/>
-                                                <constraint firstAttribute="trailing" secondItem="Aoi-hi-PxK" secondAttribute="trailing" constant="8" id="OOX-Tu-xaO"/>
-                                                <constraint firstAttribute="bottom" secondItem="Aoi-hi-PxK" secondAttribute="bottom" id="d1p-qr-2vD"/>
-                                                <constraint firstItem="Aoi-hi-PxK" firstAttribute="leading" secondItem="W4Y-zH-ytm" secondAttribute="leading" constant="8" id="hHM-BA-2Nx"/>
+                                                <constraint firstAttribute="centerY" secondItem="7LS-LX-kYT" secondAttribute="centerY" id="0qA-kO-cVT"/>
+                                                <constraint firstAttribute="centerX" secondItem="7LS-LX-kYT" secondAttribute="centerX" id="zUV-4h-7uv"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
