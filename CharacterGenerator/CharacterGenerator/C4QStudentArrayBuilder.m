@@ -12,10 +12,9 @@
 @implementation C4QStudentArrayBuilder
 
 - (void)initializeMentorArray {
-    C4QStudent *student = [[C4QStudent alloc] init];
     NSMutableArray *tempArray = [[NSMutableArray alloc] init];
     for (int i = 0; i < 32; i++) {
-        [tempArray addObject:student];
+        [tempArray addObject:[[C4QStudent alloc] init]];
     }
     NSLog(@"%@", tempArray);
     
@@ -44,14 +43,17 @@
     
     for (int i = 0; i < 32; i++) {
         [tempArray[i] setName:names[i]];
-        NSLog(@"%@", [tempArray[i] name]);
+    }
+    
+    for (C4QStudent *s in tempArray) {
+        NSLog(@"%@", s.name);
     }
     
     return tempArray;
 }
 
 - (NSMutableArray *)setMentorGenders:(NSMutableArray *)tempArray {
-    NSArray *names = @[
+    NSArray *genders = @[
                        @"male", @"female", @"male",
                        @"male", @"male", @"male",
                        @"female", @"male", @"male",
@@ -66,15 +68,18 @@
                        ];
     
     for (int i = 0; i < 32; i++) {
-        [tempArray[i] setName:names[i]];
-        NSLog(@"%@", [tempArray[i] name]);
+        [tempArray[i] setName:genders[i]];
+    }
+    
+    for (C4QStudent *s in tempArray) {
+        NSLog(@"%@", s.gender);
     }
     
     return tempArray;
 }
 
 - (NSMutableArray *)setMentorResidences:(NSMutableArray *)tempArray {
-    NSArray *places = @[
+    NSArray *residences = @[
                         @"Queens", @"Queens", @"Bronx",
                         @"Queens", @"Brooklyn", @"Manhattan",
                         @"Bronx", @"New Jersey", @"Westchester County",
@@ -89,8 +94,11 @@
                         ];
     
     for (int i = 0; i < 32; i++) {
-        [tempArray[i] setResidence:places[i]];
-        NSLog(@"%@", [tempArray[i] residence]);
+        [tempArray[i] setResidence:residences[i]];
+    }
+    
+    for (C4QStudent *s in tempArray) {
+        NSLog(@"%@", s.residence);
     }
     
     return tempArray;
@@ -113,7 +121,10 @@
     
     for (int i = 0; i < 32; i++) {
         [tempArray[i] setImageName:imageNames[i]];
-        NSLog(@"%@", [tempArray[i] imageName]);
+    }
+    
+    for (C4QStudent *s in tempArray) {
+        NSLog(@"%@", s.imageName);
     }
     
     return tempArray;
@@ -157,7 +168,10 @@
     
     for (int i = 0; i < 32; i++) {
         [tempArray[i] setQuirk:quirks[i]];
-        NSLog(@"%@", [tempArray[i] quirk]);
+    }
+
+    for (C4QStudent *s in tempArray) {
+        NSLog(@"%@", s.quirk);
     }
     
     return tempArray;

@@ -20,9 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    for (int i = 0; i < 32; i++) {
-        [self.quirkLabels[i] text];
-    }
+//    for (int i = 0; i < 32; i++) {
+//        NSLog(@"Quirk %d: %@", i, [self.C4QMentorArray[i] quirk]);
+//    }
     
     for (int i = 0; i < 32; i++) {
         [(UILabel *) self.quirkLabels[i] setText:[(C4QStudent *) self.C4QMentorArray[i] quirk]];
