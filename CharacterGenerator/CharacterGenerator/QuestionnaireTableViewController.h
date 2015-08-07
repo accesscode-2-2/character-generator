@@ -14,5 +14,6 @@
 @property (nonatomic) NSString *studentGender;
 @property (nonatomic) NSString *studentBorough;
 @property (nonatomic) NSString *studentImage;
+@property (nonatomic) NSArray *C4QMentorArray;
 
 @end
