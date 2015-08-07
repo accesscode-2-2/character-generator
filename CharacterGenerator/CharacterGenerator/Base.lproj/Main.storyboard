@@ -1360,15 +1360,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hz7-ym-uBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
-<<<<<<< HEAD
             <point key="canvasLocation" x="1822" y="-356"/>
-=======
-            <point key="canvasLocation" x="1755" y="-328"/>
->>>>>>> df537302cdc9d82a01ef4c35f8415e5581b97e36
-=======
-            <point key="canvasLocation" x="1755" y="-328"/>
->>>>>>> 15e99e2a3aaa1ece3759370900778de868d27e6d
         </scene>
         <!--Your Mentor View Controller-->
         <scene sceneID="WSH-Fj-RnZ">
