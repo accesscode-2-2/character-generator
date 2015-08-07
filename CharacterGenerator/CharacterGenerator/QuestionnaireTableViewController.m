@@ -7,8 +7,11 @@
 //
 
 #import "QuestionnaireTableViewController.h"
+#import "C4QStudent.h"
 
 @interface QuestionnaireTableViewController ()
+
+@property (nonatomic,strong) IBOutletCollection(UILabel) NSArray *quirkLabels;
 
 @end
 
@@ -16,6 +19,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    for (int i = 0; i < 32; i++) {
+        [self.quirkLabels[i] text];
+    }
+    
+    for (int i = 0; i < 32; i++) {
+        [(UILabel *) self.quirkLabels[i] setText:[(C4QStudent *) self.C4QMentorArray[i] quirk]];
+    }
     
 }
 
@@ -33,7 +44,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 32;
+    return 33;
 }
 
 /*

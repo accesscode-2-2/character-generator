@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VHr-mx-fWp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VHr-mx-fWp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -915,10 +915,44 @@
                     <navigationItem key="navigationItem" id="8Qy-Li-Yto"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="2000"/>
+                    <connections>
+                        <outletCollection property="quirkLabels" destination="ehn-H2-r9u" id="QHq-rc-tpc"/>
+                        <outletCollection property="quirkLabels" destination="fDa-VM-WL3" id="lbb-de-fAK"/>
+                        <outletCollection property="quirkLabels" destination="Hkn-tZ-mHB" id="kUe-8E-tn3"/>
+                        <outletCollection property="quirkLabels" destination="Xrg-ie-PHj" id="dZI-fE-6Ba"/>
+                        <outletCollection property="quirkLabels" destination="UcN-2F-7qV" id="tnw-np-E1y"/>
+                        <outletCollection property="quirkLabels" destination="IfE-DD-oXQ" id="1m4-4u-RS4"/>
+                        <outletCollection property="quirkLabels" destination="rje-c1-AX4" id="L8F-Lc-Ziz"/>
+                        <outletCollection property="quirkLabels" destination="0kO-GC-M6t" id="6V8-Oo-JCp"/>
+                        <outletCollection property="quirkLabels" destination="ORM-eF-eBp" id="1mH-zk-ZSM"/>
+                        <outletCollection property="quirkLabels" destination="QXa-8B-UER" id="RLB-3J-12P"/>
+                        <outletCollection property="quirkLabels" destination="pDh-0e-OsD" id="VFG-lj-tBw"/>
+                        <outletCollection property="quirkLabels" destination="v0g-23-6mh" id="J4g-Lg-2y6"/>
+                        <outletCollection property="quirkLabels" destination="p9W-ua-jJI" id="deN-5m-Xya"/>
+                        <outletCollection property="quirkLabels" destination="o5k-wM-tOM" id="ENr-Es-r2B"/>
+                        <outletCollection property="quirkLabels" destination="eoZ-2f-zxg" id="HDH-1Q-Z2B"/>
+                        <outletCollection property="quirkLabels" destination="ygO-kp-T5E" id="SpM-NV-m8U"/>
+                        <outletCollection property="quirkLabels" destination="cgk-31-fQ4" id="Cvk-UF-Xv9"/>
+                        <outletCollection property="quirkLabels" destination="oNE-bd-aho" id="FBG-S2-kOe"/>
+                        <outletCollection property="quirkLabels" destination="Bqb-c9-LFj" id="jho-S3-0UD"/>
+                        <outletCollection property="quirkLabels" destination="TLF-zU-yHY" id="pqJ-Jo-KIO"/>
+                        <outletCollection property="quirkLabels" destination="ceY-8k-BKZ" id="cHW-AM-Kwt"/>
+                        <outletCollection property="quirkLabels" destination="Iku-eS-UjB" id="NQm-yE-4i1"/>
+                        <outletCollection property="quirkLabels" destination="CGN-vr-UdE" id="Ss6-1n-GNF"/>
+                        <outletCollection property="quirkLabels" destination="5SS-0D-L6H" id="1yN-MW-EEo"/>
+                        <outletCollection property="quirkLabels" destination="3Er-j2-0aP" id="WhO-P0-dur"/>
+                        <outletCollection property="quirkLabels" destination="6Fy-gz-U6S" id="eGC-N1-XeQ"/>
+                        <outletCollection property="quirkLabels" destination="LIH-WN-hFT" id="PDg-na-A4X"/>
+                        <outletCollection property="quirkLabels" destination="Df4-Yy-m0B" id="Bx8-fq-9jy"/>
+                        <outletCollection property="quirkLabels" destination="tnN-Mv-XfP" id="TiU-qh-L54"/>
+                        <outletCollection property="quirkLabels" destination="LYY-TD-ueX" id="Og4-ZU-inn"/>
+                        <outletCollection property="quirkLabels" destination="NYn-fW-FaB" id="UvC-g3-5j4"/>
+                        <outletCollection property="quirkLabels" destination="X9H-hi-fFl" id="LMV-HH-PDr"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DfY-9x-PsK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1755" y="1043"/>
+            <point key="canvasLocation" x="1761" y="1543"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="RD4-hO-XPe">
