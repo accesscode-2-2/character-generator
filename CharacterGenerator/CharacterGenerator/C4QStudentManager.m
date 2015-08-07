@@ -23,10 +23,14 @@
 
 + (id)sharedC4QStudentManager {
     static C4QStudentManager *sharedC4QStudentManager = nil;
+    
+    // this token and the dispatch_once method make sure that the singleton is
+    // created only ONCE, so we can use it throughout the app.
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedC4QStudentManager = [[self alloc] init];
     });
+    
     return sharedC4QStudentManager;
 }
 
@@ -35,8 +39,8 @@
         // initialize array properties
 
         self.SAB = [[C4QStudentArrayBuilder alloc] init];
-        [self.SAB initializeMentorArray];
         
+        [self.SAB initializeMentorArray];
         self.C4QMentorArray = self.SAB.C4QMentorArray;
         
         [self.SAB initializeStudentArray];
@@ -49,6 +53,7 @@
     // Should never be called, but just here for clarity really.
 }
 
+// custom method to add student to the student array.
 - (void)addNewStudentWithName:(NSString *)name
                        gender:(NSString *)gender
                     residence:(NSString *)residence
@@ -61,7 +66,6 @@
     newStudent.imageName = imageName;
     
     [self.C4QStudentArray addObject:newStudent];
-    
 }
 
 @end

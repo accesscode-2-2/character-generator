@@ -897,6 +897,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
+                                                        <action selector="doneButtonTapped:" destination="MC3-FO-hcc" eventType="touchUpInside" id="7l3-Gm-13n"/>
                                                         <segue destination="Wfx-zT-aOV" kind="show" id="dWo-rc-DJ5"/>
                                                     </connections>
                                                 </button>
@@ -952,6 +953,38 @@
                         <outletCollection property="quirkLabels" destination="LYY-TD-ueX" id="Og4-ZU-inn"/>
                         <outletCollection property="quirkLabels" destination="NYn-fW-FaB" id="UvC-g3-5j4"/>
                         <outletCollection property="quirkLabels" destination="X9H-hi-fFl" id="LMV-HH-PDr"/>
+                        <outletCollection property="quirkSwitches" destination="zbI-5i-BIg" id="u4e-Xx-QVd"/>
+                        <outletCollection property="quirkSwitches" destination="nBS-uB-fM0" id="hmM-Vs-jLx"/>
+                        <outletCollection property="quirkSwitches" destination="zH4-nF-dmw" id="vGC-TK-2Ue"/>
+                        <outletCollection property="quirkSwitches" destination="qqe-6u-PgO" id="eKO-G4-ENM"/>
+                        <outletCollection property="quirkSwitches" destination="yB8-qL-NBl" id="0Uu-xV-cEj"/>
+                        <outletCollection property="quirkSwitches" destination="lMq-Hg-CVJ" id="Pey-Gp-caF"/>
+                        <outletCollection property="quirkSwitches" destination="RQd-su-vVI" id="4zi-9A-R50"/>
+                        <outletCollection property="quirkSwitches" destination="xt5-5j-gkJ" id="A8t-ph-bHR"/>
+                        <outletCollection property="quirkSwitches" destination="vbV-Bz-Umo" id="3R5-d8-IHJ"/>
+                        <outletCollection property="quirkSwitches" destination="qCJ-64-BV1" id="wXk-cr-cBO"/>
+                        <outletCollection property="quirkSwitches" destination="gJq-tQ-kSZ" id="Myq-Yz-AR4"/>
+                        <outletCollection property="quirkSwitches" destination="3Ws-2X-NpP" id="xlg-kP-0wY"/>
+                        <outletCollection property="quirkSwitches" destination="2Jk-i6-PQl" id="oXb-e0-x9q"/>
+                        <outletCollection property="quirkSwitches" destination="K26-HK-zoC" id="V5v-Dm-PcE"/>
+                        <outletCollection property="quirkSwitches" destination="CD8-8m-cBV" id="s8g-cE-kVT"/>
+                        <outletCollection property="quirkSwitches" destination="86l-lZ-UbQ" id="vp4-L8-EIS"/>
+                        <outletCollection property="quirkSwitches" destination="ng3-ah-IjT" id="2to-Nq-fn3"/>
+                        <outletCollection property="quirkSwitches" destination="fmJ-Ww-EAR" id="m6o-Wc-KTg"/>
+                        <outletCollection property="quirkSwitches" destination="pfN-A2-XAu" id="cdj-ZY-FtG"/>
+                        <outletCollection property="quirkSwitches" destination="le3-ge-0DN" id="NNb-Xh-KQr"/>
+                        <outletCollection property="quirkSwitches" destination="GZY-7Z-ujN" id="ovN-cF-Foj"/>
+                        <outletCollection property="quirkSwitches" destination="5ju-7P-zJt" id="Rrc-7p-gUw"/>
+                        <outletCollection property="quirkSwitches" destination="dMi-un-VBB" id="T0J-uI-YYb"/>
+                        <outletCollection property="quirkSwitches" destination="lOl-8C-nXI" id="Ir2-sN-tEQ"/>
+                        <outletCollection property="quirkSwitches" destination="BYa-db-6bV" id="HYE-vF-CBe"/>
+                        <outletCollection property="quirkSwitches" destination="WFp-O8-yMH" id="6QN-Ib-NBz"/>
+                        <outletCollection property="quirkSwitches" destination="OX9-iV-7Sj" id="0R2-w2-4vs"/>
+                        <outletCollection property="quirkSwitches" destination="aEY-4V-6Dy" id="X9b-gm-HiV"/>
+                        <outletCollection property="quirkSwitches" destination="u9d-CQ-3eP" id="WRX-nq-NBP"/>
+                        <outletCollection property="quirkSwitches" destination="eg9-Mc-m5D" id="IUp-Fw-fEz"/>
+                        <outletCollection property="quirkSwitches" destination="DXy-UJ-Vr4" id="aXi-6s-GN2"/>
+                        <outletCollection property="quirkSwitches" destination="ewr-yJ-G3i" id="H09-02-6HT"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DfY-9x-PsK" userLabel="First Responder" sceneMemberID="firstResponder"/>

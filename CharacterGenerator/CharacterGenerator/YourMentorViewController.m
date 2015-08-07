@@ -7,17 +7,18 @@
 //
 
 #import "YourMentorViewController.h"
+#import "C4QStudentManager.h"
 
 @interface YourMentorViewController ()
-
+@property (nonatomic) C4QStudentManager *manager;
 @end
 
 @implementation YourMentorViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
+    self.manager = [C4QStudentManager sharedC4QStudentManager];
     [self.navigationItem setHidesBackButton:YES animated:YES];
 }
 
