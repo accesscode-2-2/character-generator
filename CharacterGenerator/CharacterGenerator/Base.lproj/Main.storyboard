@@ -305,6 +305,9 @@
                                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="textureButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="RJe-gG-iyH"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -326,6 +329,9 @@
                                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="textureButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="S1k-8l-Ubg"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -347,6 +353,9 @@
                                                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="textureButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="0v2-0g-axu"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -368,6 +377,9 @@
                                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="textureButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="2FL-Wt-ty1"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -438,7 +450,7 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMO-wn-Qai">
                                                             <rect key="frame" x="0.0" y="0.0" width="300" height="146"/>
                                                             <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qE6-sC-IqV">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qE6-sC-IqV">
                                                                     <rect key="frame" x="175" y="21" width="120" height="120"/>
                                                                     <color key="backgroundColor" red="0.79572302278820373" green="0.044128202687749321" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <constraints>
@@ -454,6 +466,9 @@
                                                                             <integer key="value" value="60"/>
                                                                         </userDefinedRuntimeAttribute>
                                                                     </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="colorButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="m0v-5U-KVa"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -465,7 +480,7 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Le-S6-aSE">
                                                             <rect key="frame" x="300" y="0.0" width="300" height="146"/>
                                                             <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzc-bX-bfO">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzc-bX-bfO">
                                                                     <rect key="frame" x="5" y="21" width="120" height="120"/>
                                                                     <color key="backgroundColor" red="0.01136712749" green="0.5640289879" blue="0.069075322689999996" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <constraints>
@@ -481,6 +496,9 @@
                                                                             <integer key="value" value="60"/>
                                                                         </userDefinedRuntimeAttribute>
                                                                     </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="colorButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="1KY-SK-xjk"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -492,7 +510,7 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePE-Wz-7fF">
                                                             <rect key="frame" x="300" y="146" width="300" height="145"/>
                                                             <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAR-A2-2VH">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAR-A2-2VH">
                                                                     <rect key="frame" x="5" y="5" width="120" height="120"/>
                                                                     <color key="backgroundColor" red="0.84680797590000001" green="0.75337782060000003" blue="0.14518033729999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <constraints>
@@ -509,6 +527,9 @@
                                                                             <integer key="value" value="60"/>
                                                                         </userDefinedRuntimeAttribute>
                                                                     </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="colorButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="zet-fW-v4R"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -520,7 +541,7 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQZ-wT-trb">
                                                             <rect key="frame" x="0.0" y="146" width="300" height="145"/>
                                                             <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naC-hv-fAB">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naC-hv-fAB">
                                                                     <rect key="frame" x="175" y="5" width="120" height="120"/>
                                                                     <color key="backgroundColor" red="0.029810115580000001" green="0.1410947243" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <constraints>
@@ -537,6 +558,9 @@
                                                                             <integer key="value" value="60"/>
                                                                         </userDefinedRuntimeAttribute>
                                                                     </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="colorButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="uOe-Zx-W6Y"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -602,6 +626,14 @@
                         <outletCollection property="locationQuestionButtons" destination="ihe-7u-qSs" id="C9g-5T-Qgw"/>
                         <outletCollection property="locationQuestionButtons" destination="ccK-Cn-WAt" id="hTH-Qo-aPD"/>
                         <outletCollection property="locationQuestionButtons" destination="hEZ-RI-83F" id="WHV-GP-kBt"/>
+                        <outletCollection property="textureQuestionButtons" destination="tUR-Oq-cRq" id="rHh-17-34i"/>
+                        <outletCollection property="textureQuestionButtons" destination="832-sT-VbX" id="cq5-2n-1gt"/>
+                        <outletCollection property="textureQuestionButtons" destination="3Tu-dW-XA1" id="vSL-co-8iJ"/>
+                        <outletCollection property="textureQuestionButtons" destination="vX0-pN-s4S" id="WqL-ef-ddn"/>
+                        <outletCollection property="colorQuestionButtons" destination="qE6-sC-IqV" id="hL2-59-myV"/>
+                        <outletCollection property="colorQuestionButtons" destination="Fzc-bX-bfO" id="awu-B6-203"/>
+                        <outletCollection property="colorQuestionButtons" destination="naC-hv-fAB" id="szt-oi-czP"/>
+                        <outletCollection property="colorQuestionButtons" destination="gAR-A2-2VH" id="Byr-fZ-7PG"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rTD-PG-cpG" userLabel="First Responder" sceneMemberID="firstResponder"/>

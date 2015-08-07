@@ -11,7 +11,8 @@
 @interface CharacterTableViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *locationQuestionButtons;
-
+@property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *textureQuestionButtons;
+@property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *colorQuestionButtons;
 @end
 
 @implementation CharacterTableViewController
@@ -32,6 +33,25 @@
         
         if(sender != self.locationQuestionButtons[i]){
             [self.locationQuestionButtons[i] setEnabled:NO];
+        }
+    }
+}
+
+- (IBAction)colorButtonTapped:(UIButton *)sender {
+    for(int i=0; i < self.colorQuestionButtons.count; i++){
+        
+        if(sender != self.colorQuestionButtons[i]){
+            [self.colorQuestionButtons[i] setEnabled:NO];
+        }
+    }
+
+}
+
+- (IBAction)textureButtonTapped:(UIButton *)sender {
+    for(int i=0; i < self.textureQuestionButtons.count; i++){
+        
+        if(sender != self.textureQuestionButtons[i]){
+            [self.textureQuestionButtons[i] setEnabled:NO];
         }
     }
 }
