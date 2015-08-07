@@ -9,6 +9,8 @@
 #import "BenderDetailViewController.h"
 
 @interface BenderDetailViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 
 @end
 
@@ -16,7 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.nameLabel.text = self.bender.name;
+    self.locationLabel.text = self.bender.location;
+    
 }
 
 - (void)didReceiveMemoryWarning {

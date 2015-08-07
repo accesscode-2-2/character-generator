@@ -11,6 +11,6 @@
 
 @interface CharacterTableViewController : UITableViewController
 
-@property (nonatomic) Bender *bender;
+//@property (nonatomic) Bender *bender;
 
 @end

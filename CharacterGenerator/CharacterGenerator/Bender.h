@@ -8,13 +8,23 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "CharacterTableViewController.h"
+
 
 @interface Bender : NSObject
 
 @property (nonatomic) NSString *name;
-@property (nonatomic) UIImage *location;
-@property (nonatomic) UIImage *color;
-@property (nonatomic) UIImage *texture;
+@property (nonatomic) NSString *location;
+@property (nonatomic) NSString *color;
+@property (nonatomic) NSString *texture;
 @property (nonatomic) UIImage *animal;
+@property (nonatomic) NSDictionary *colorsToNumbers;
+@property (nonatomic) NSDictionary *texturesToNumbers;
+
++ (NSArray *)locations;
++ (NSArray *)textures;
++ (NSArray *)colors;
+-(void)colorsAndTexturesToNumbers;
+-(void)animalForColor:(NSString *)color AndTexture:(NSString *)texture;
 
 @end
