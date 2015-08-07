@@ -31,8 +31,12 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     NSLog(@"check");
     ResultsPageViewController *resultsPageViewController = segue.destinationViewController;
-    resultsPageViewController.planOne = self.plans;
     resultsPageViewController.titles = self.titles;
+    
+    resultsPageViewController.planOne = self.plans;
+    resultsPageViewController.planTwo = self.celeb;
+    resultsPageViewController.planThree = self.food;
+    resultsPageViewController.planFour = self.alcohol;
     //all this below is probably not needed, but I'll leave it here for now - Ayuna
 //    resultsPageViewController.angryEmojiButton = self.angryEmojiButton;
 //    resultsPageViewController.crazyEmojiButton = self.crazyEmojiButton;
@@ -41,6 +45,7 @@
 //    resultsPageViewController.tearsEmojiButton = self.tearsEmojiButton;
 //    resultsPageViewController.fireEmojiButton = self.fireEmojiButton;
 }
+
 
 - (IBAction)buttonTapped:(UIButton *)sender {
 
@@ -201,17 +206,6 @@
 
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-
-
-    ResultsPageViewController *resultsPageViewController = segue.destinationViewController;
-
-    resultsPageViewController.planOne = self.plans;
-    resultsPageViewController.planTwo = self.celeb;
-    resultsPageViewController.planThree = self.food;
-    resultsPageViewController.planFour = self.alcohol;
-
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
