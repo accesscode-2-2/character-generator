@@ -68,8 +68,8 @@
 }
 
 
-
--(void)selectedAnswer1b{
+- (IBAction)selectedAnswer1b:(UIButton *)sender {
+    
     
     [self.selectedButtons insertObject:self.answer1b atIndex:0];
     
@@ -81,7 +81,9 @@
     
 }
 
--(void)selectedAnswer1c{
+
+- (IBAction)selectedAnswer1c:(UIButton *)sender {
+    
     
     [self.selectedButtons insertObject:self.answer1c atIndex:0];
     
@@ -90,10 +92,11 @@
     [self.answer1c setBackgroundColor:[UIColor lightGrayColor]];
     [self.answer1d setBackgroundColor:[UIColor whiteColor]];
     
-    
 }
 
--(void)selectedAnswer1d{
+
+
+- (IBAction)selectedAnswer1d:(UIButton *)sender {
     
     [self.selectedButtons insertObject:self.answer1d atIndex:0];
     
@@ -101,11 +104,12 @@
     [self.answer1b setBackgroundColor:[UIColor whiteColor]];
     [self.answer1c setBackgroundColor:[UIColor whiteColor]];
     [self.answer1d setBackgroundColor:[UIColor lightGrayColor]];
-    
-    
 }
 
--(void)selectedAnswer2a{
+
+
+
+- (IBAction)selectedAnswer2a:(UIButton *)sender {
     
     [self.selectedButtons insertObject:self.answer2a atIndex:1];
     
@@ -114,16 +118,21 @@
     
 }
 
--(void)selectedAnswer2b{
+
+
+- (IBAction)selectedAnswer2b:(UIButton *)sender {
+    
     
     [self.selectedButtons insertObject:self.answer2b atIndex:1];
     
     [self.answer2a setBackgroundColor:[UIColor whiteColor]];
     [self.answer2b setBackgroundColor:[UIColor lightGrayColor]];
     
+    
 }
 
--(void)selectedAnswer3a{
+
+- (IBAction)selectedAnswer3a:(UIButton *)sender {
     
     [self.selectedButtons insertObject:self.answer3a atIndex:2];
     
@@ -132,17 +141,18 @@
     
 }
 
--(void)selectedAnswer3b{
+
+- (IBAction)selectedAnswer3b:(UIButton *)sender {
     
     [self.selectedButtons insertObject:self.answer3b atIndex:2];
     
     [self.answer3a setBackgroundColor:[UIColor whiteColor]];
     [self.answer3b setBackgroundColor:[UIColor lightGrayColor]];
     
-    
 }
 
--(void)selectedAnswer4a{
+
+- (IBAction)selectedAnswer4a:(UIButton *)sender {
     
     [self.selectedButtons insertObject:self.answer4a atIndex:3];
     
@@ -151,10 +161,13 @@
     [self.answer4c setBackgroundColor:[UIColor whiteColor]];
     [self.answer4d setBackgroundColor:[UIColor whiteColor]];
     [self.answer4e setBackgroundColor:[UIColor whiteColor]];
-    
 }
 
--(void)selectedAnswer4b{
+
+
+
+- (IBAction)selectedAnswer4b:(UIButton *)sender {
+    
     
     [self.selectedButtons insertObject:self.answer4b atIndex:3];
     
@@ -166,7 +179,8 @@
     
 }
 
--(void)selectedAnswer4c{
+
+- (IBAction)selectedAnswer4c:(UIButton *)sender {
     
     [self.selectedButtons insertObject:self.answer4c atIndex:3];
     
@@ -176,9 +190,13 @@
     [self.answer4d setBackgroundColor:[UIColor whiteColor]];
     [self.answer4e setBackgroundColor:[UIColor whiteColor]];
     
+    
 }
 
--(void)selectedAnswer4d{
+
+
+
+- (IBAction)selectedAnswer4d:(UIButton *)sender {
     
     [self.selectedButtons insertObject:self.answer4d atIndex:3];
     
@@ -190,7 +208,10 @@
     
 }
 
--(void)selectedAnswer4e{
+
+
+- (IBAction)selectedAnswer4e:(UIButton *)sender {
+    
     
     [self.selectedButtons insertObject:self.answer4e atIndex:3];
     
@@ -202,7 +223,9 @@
     
 }
 
--(void)selectedAnswer5a{
+
+
+- (IBAction)selectedAnswer5a:(UIButton *)sender {
     
     [self.selectedButtons insertObject:self.answer5a atIndex:4];
     
@@ -212,9 +235,13 @@
     [self.answer5d setBackgroundColor:[UIColor whiteColor]];
     [self.answer5e setBackgroundColor:[UIColor whiteColor]];
     
+    
+    
 }
 
--(void)selectedAnswer5b{
+
+
+- (IBAction)selectedAnswer5b:(UIButton *)sender {
     
     [self.selectedButtons insertObject:self.answer5b atIndex:4];
     
@@ -226,7 +253,9 @@
     
 }
 
--(void)selectedAnswer5c{
+
+
+- (IBAction)selectedAnswer5c:(UIButton *)sender {
     
     [self.selectedButtons insertObject:self.answer5c atIndex:4];
     
@@ -235,9 +264,12 @@
     [self.answer5c setBackgroundColor:[UIColor lightGrayColor]];
     [self.answer5d setBackgroundColor:[UIColor whiteColor]];
     [self.answer5e setBackgroundColor:[UIColor whiteColor]];
+    
+    
 }
 
--(void)selectedAnswer5d{
+
+- (IBAction)selectedAnswer5d:(UIButton *)sender {
     
     [self.selectedButtons insertObject:self.answer5d atIndex:4];
     
@@ -247,9 +279,12 @@
     [self.answer5d setBackgroundColor:[UIColor lightGrayColor]];
     [self.answer5e setBackgroundColor:[UIColor whiteColor]];
     
+    
+    
 }
 
--(void)selectedAnswer5e{
+
+- (IBAction)selectedAnswer5e:(UIButton *)sender {
     
     [self.selectedButtons insertObject:self.answer5e atIndex:4];
     
@@ -259,8 +294,8 @@
     [self.answer5d setBackgroundColor:[UIColor whiteColor]];
     [self.answer5e setBackgroundColor:[UIColor lightGrayColor]];
     
-    
 }
+
 
 - (void)selectedDone {
     
