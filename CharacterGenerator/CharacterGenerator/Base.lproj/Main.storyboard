@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VHr-mx-fWp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VHr-mx-fWp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -30,6 +30,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zbI-5i-BIg">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -67,6 +69,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nBS-uB-fM0">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -98,6 +102,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zH4-nF-dmw">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -129,6 +135,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qqe-6u-PgO">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -164,6 +172,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yB8-qL-NBl">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -197,6 +207,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lMq-Hg-CVJ">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -222,6 +234,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RQd-su-vVI">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -247,6 +261,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xt5-5j-gkJ">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -266,6 +282,8 @@
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vbV-Bz-Umo">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="9. Do you have a favorite word? Sick!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ORM-eF-eBp">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
@@ -297,6 +315,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qCJ-64-BV1">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -322,6 +342,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gJq-tQ-kSZ">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -347,6 +369,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3Ws-2X-NpP">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -372,6 +396,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2Jk-i6-PQl">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -398,6 +424,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="K26-HK-zoC">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -429,6 +457,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CD8-8m-cBV">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -449,6 +479,8 @@
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="86l-lZ-UbQ">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="16. Do you tell dry corny jokes? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ygO-kp-T5E" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
@@ -481,6 +513,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ng3-ah-IjT">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -507,6 +541,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fmJ-Ww-EAR">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -533,6 +569,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pfN-A2-XAu">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -559,6 +597,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="le3-ge-0DN">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -585,6 +625,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GZY-7Z-ujN">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -612,6 +654,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5ju-7P-zJt">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -638,6 +682,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dMi-un-VBB">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -664,6 +710,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lOl-8C-nXI">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -690,6 +738,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BYa-db-6bV">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -716,6 +766,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WFp-O8-yMH">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -742,6 +794,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OX9-iV-7Sj">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -768,6 +822,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aEY-4V-6Dy">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -794,6 +850,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="u9d-CQ-3eP">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -820,6 +878,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eg9-Mc-m5D">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -846,6 +906,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DXy-UJ-Vr4">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -872,6 +934,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ewr-yJ-G3i">
                                                     <rect key="frame" x="533" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -1254,7 +1318,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hz7-ym-uBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1784" y="86"/>
+            <point key="canvasLocation" x="1755" y="-328"/>
         </scene>
         <!--Your Mentor View Controller-->
         <scene sceneID="WSH-Fj-RnZ">
