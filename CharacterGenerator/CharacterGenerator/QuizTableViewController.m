@@ -709,24 +709,25 @@
     NSArray *keys = [[DestinationsModel sharedModel].destinationValues allKeys];
     NSLog(@"%@", keys);
     
-    NSNumber *max = 0;
-    NSString *key2;
+    NSNumber *highestValue = 0;
+    NSString *userCity;
     
     for (int i = 0; i < keys.count; i++) {
         NSString *key = keys[i];
-        if ([[DestinationsModel sharedModel].destinationValues objectForKey:key] > max){
-            max = [[DestinationsModel sharedModel].destinationValues objectForKey:key];
-            key2 = key;
+        if ([[DestinationsModel sharedModel].destinationValues objectForKey:key] > highestValue){
+            highestValue = [[DestinationsModel sharedModel].destinationValues objectForKey:key];
+            userCity = key;
         }
     }
     
-    [[DestinationsModel sharedModel].userDestinations setObject:max forKey:key2];
+    [[DestinationsModel sharedModel].userDestinations setObject:highestValue forKey:userCity];
     NSLog(@"%@", [DestinationsModel sharedModel].userDestinations);
     
+    // Call this when ever you want to refresh the tableView in Class2
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"RefreshTable" object:nil userInfo:nil];
     
     [self dismissViewControllerAnimated:YES completion:nil];
     
-    //    self.introListTableViewController updateListTableViewWithData ....
     
 }
 
