@@ -77,6 +77,9 @@
     self.secondaryWeaponPicker.dataSource = self;
     self.secondaryWeaponPicker.delegate = self;
     
+    self.perksPicker.dataSource = self;
+    self.perksPicker.delegate = self;
+    
 }
 
 - (IBAction)specialGrenadeSegmentedControlChanged:(UISegmentedControl *)sender {
@@ -111,6 +114,11 @@
 // The number of columns of data
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
+    
+    if ([pickerView isEqual:self.perksPicker]) {
+        return self.model.perks.count;
+    }
+    
     return 1;
 }
 
@@ -150,6 +158,10 @@
         NSArray *weaponsForType = [self.model.secondaryWeapons objectForKey:secondaryWeaponType];
         return weaponsForType.count;
     }
+    else if ([pickerView isEqual:self.perksPicker]){
+        NSArray *perks = [self.model.perks objectAtIndex:component];
+        return perks.count;
+    }
     
     return 1;
 }
@@ -178,6 +190,9 @@
         NSArray *secondaryWeaponTypes = [self.model.secondaryWeapons allKeys];
         NSString *secondaryWeaponType = [secondaryWeaponTypes objectAtIndex:typeRow];
         return [[self.model.secondaryWeapons objectForKey:secondaryWeaponType] objectAtIndex:row];
+    }
+    else if ([pickerView isEqual:self.perksPicker]){
+        return self.model.perks[component][row];
     }
     
     return @"1";
@@ -234,6 +249,17 @@
         NSString *secondaryWeaponType = [secondaryWeaponTypes objectAtIndex:typeRow];
         NSString *selectedSecondaryWeapon = [[self.model.secondaryWeapons objectForKey:secondaryWeaponType] objectAtIndex:row];
         self.secondaryWeaponImageView.image = [UIImage imageNamed:selectedSecondaryWeapon];
+    }
+    else if ([pickerView isEqual:self.perksPicker]){
+        NSString *perk1 = [[self.model.perks objectAtIndex:0] objectAtIndex:row];
+        self.perk1ImageView.image = [UIImage imageNamed:perk1];
+        
+        NSString *perk2 = [[self.model.perks objectAtIndex:1] objectAtIndex:row];
+        self.perk2ImageView.image = [UIImage imageNamed:perk2];
+        
+        NSString *perk3 = [[self.model.perks objectAtIndex:2] objectAtIndex:row];
+        self.perk3ImageView.image = [UIImage imageNamed:perk3];
+        
     }
 }
 

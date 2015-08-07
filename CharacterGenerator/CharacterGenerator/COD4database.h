@@ -14,7 +14,7 @@
 @property (nonatomic) NSDictionary *primaryWeapons;
 @property (nonatomic) NSDictionary *secondaryWeapons;
 @property (nonatomic) NSArray *specialGrenades;
-@property (nonatomic) NSDictionary *perks;
+@property (nonatomic) NSArray *perks;
 @property (nonatomic) NSDictionary *team;
 
 -(void)setup;
