@@ -984,7 +984,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="gQ9-7S-JC0"/>
-                    <navigationItem key="navigationItem" id="8Qy-Li-Yto"/>
+                    <navigationItem key="navigationItem" title="Personality Quiz" id="8Qy-Li-Yto"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="2000"/>
                 </tableViewController>
