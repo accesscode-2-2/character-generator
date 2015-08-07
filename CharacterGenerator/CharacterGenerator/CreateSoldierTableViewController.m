@@ -7,10 +7,13 @@
 //
 
 #import "CreateSoldierTableViewController.h"
+#import "COD4database.h"
 
 @interface CreateSoldierTableViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+
+@property (nonatomic) COD4database *model;
 
 @end
 
@@ -21,6 +24,9 @@
     Soldier *recruit = [[Soldier alloc] init];
     recruit.name = self.nameTextField.text;
     
+    NSInteger row = [self.teamPicker selectedRowInComponent:0];
+    recruit.team = [[self.model.team allKeys] objectAtIndex:row];
+    
     Manager *manager = [Manager sharedInstance];
     [manager addRecruit: recruit];
     
@@ -30,6 +36,18 @@
     
     [self saveRecruit];
     [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    
+    //setup model
+    self.model = [[COD4database alloc] init];
+    [self.model setup];
+    
+    // Connect data
+    self.teamPicker.dataSource = self;
+    self.teamPicker.delegate = self;
     
 }
 
@@ -45,5 +63,36 @@
     // Pass the selected object to the new view controller.
     NSLog(@"preparing");
 }
+
+#pragma mark - picker view
+
+// The number of columns of data
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+// The number of rows of data
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    NSArray *teams = [self.model.team allKeys];
+    
+    return teams.count;
+}
+
+// The data to return for the row and component (column) that's being passed in
+- (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return [[self.model.team allKeys] objectAtIndex:row];
+}
+
+// Catpure the picker view selection
+//- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+//{
+//    // This method is triggered whenever the user makes a change to the picker selection.
+//    // The parameter named row and component represents what was selected.
+//    
+//    self.label.text = [self.model.team allKeys] objectAtIndex:row];
+//}
 
 @end

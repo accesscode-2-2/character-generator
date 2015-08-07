@@ -118,6 +118,34 @@
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="179" id="kbl-Wh-ufX">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kbl-Wh-ufX" id="Xfe-Zy-0bk">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5V-AF-4eu">
+                                                    <rect key="frame" x="279" y="8" width="41" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="A7h-JD-At4"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="71I-7o-lBk">
+                                                    <rect key="frame" x="16" y="18.5" width="568" height="162"/>
+                                                </pickerView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerX" secondItem="B5V-AF-4eu" secondAttribute="centerX" id="3nq-73-wF2"/>
+                                                <constraint firstItem="B5V-AF-4eu" firstAttribute="top" secondItem="Xfe-Zy-0bk" secondAttribute="topMargin" id="87a-yk-fjQ"/>
+                                                <constraint firstItem="71I-7o-lBk" firstAttribute="leading" secondItem="Xfe-Zy-0bk" secondAttribute="leadingMargin" constant="8" id="ITY-tE-iOT"/>
+                                                <constraint firstItem="71I-7o-lBk" firstAttribute="top" secondItem="B5V-AF-4eu" secondAttribute="bottom" constant="8" id="IXA-kZ-0iG"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="71I-7o-lBk" secondAttribute="bottom" constant="8" id="djl-2A-FCe"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="71I-7o-lBk" secondAttribute="trailing" constant="8" id="uXV-7b-cU6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -131,6 +159,7 @@
                     <size key="freeformSize" width="600" height="1800"/>
                     <connections>
                         <outlet property="nameTextField" destination="txQ-Ln-8ap" id="s61-32-uxN"/>
+                        <outlet property="teamPicker" destination="71I-7o-lBk" id="DP5-L8-Zyz"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hkN-VG-WU9" userLabel="First Responder" sceneMemberID="firstResponder"/>

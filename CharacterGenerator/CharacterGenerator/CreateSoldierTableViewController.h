@@ -11,6 +11,10 @@
 #import "Soldier.h"
 #import "Manager.h"
 
-@interface CreateSoldierTableViewController : UITableViewController
+@interface CreateSoldierTableViewController : UITableViewController<UIPickerViewDataSource, UIPickerViewDelegate>
+
+
+@property (weak, nonatomic) IBOutlet UIPickerView *teamPicker;
+
 
 @end
