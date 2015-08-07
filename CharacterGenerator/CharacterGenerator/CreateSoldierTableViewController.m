@@ -49,6 +49,12 @@
     self.teamPicker.dataSource = self;
     self.teamPicker.delegate = self;
     
+    self.primaryWeaponTypePicker.dataSource = self;
+    self.primaryWeaponTypePicker.delegate = self;
+    
+    self.primaryWeaponPicker.dataSource = self;
+    self.primaryWeaponPicker.delegate = self;
+    
 }
 
 
@@ -75,15 +81,47 @@
 // The number of rows of data
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    NSArray *teams = [self.model.team allKeys];
     
-    return teams.count;
+    if ([pickerView isEqual:self.teamPicker]) {
+         NSArray *teams = [self.model.team allKeys];
+        return teams.count;
+    }
+    else if ([pickerView isEqual:self.primaryWeaponTypePicker]){
+        NSArray *primaryWeaponTypes = [self.model.primaryWeapons allKeys];
+        return primaryWeaponTypes.count;
+    }
+    else if ([pickerView isEqual:self.primaryWeaponPicker]){
+        //get row of selected weapon type
+        NSInteger row = [self.primaryWeaponTypePicker selectedRowInComponent:0];
+        
+        //get array of weapons for selected type
+        NSArray *primaryWeaponTypes = [self.model.primaryWeapons allKeys];
+        NSString *primaryWeaponType = [primaryWeaponTypes objectAtIndex:row];
+        NSArray *weaponsForType = [self.model.primaryWeapons objectForKey:primaryWeaponType];
+        return weaponsForType.count;
+    }
+    
+    return 1;
 }
 
 // The data to return for the row and component (column) that's being passed in
 - (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    return [[self.model.team allKeys] objectAtIndex:row];
+    
+    if ([pickerView isEqual:self.teamPicker]) {
+        return [[self.model.team allKeys] objectAtIndex:row];
+    }
+    else if ([pickerView isEqual:self.primaryWeaponTypePicker]){
+        return [[self.model.primaryWeapons allKeys] objectAtIndex:row];
+    }
+    else if ([pickerView isEqual:self.primaryWeaponPicker]){
+        NSInteger typeRow = [self.primaryWeaponTypePicker selectedRowInComponent:0];
+        NSArray *primaryWeaponTypes = [self.model.primaryWeapons allKeys];
+        NSString *primaryWeaponType = [primaryWeaponTypes objectAtIndex:typeRow];
+        return [[self.model.primaryWeapons objectForKey:primaryWeaponType] objectAtIndex:row];
+    }
+    
+    return @"1";
 }
 
  //Catpure the picker view selection
@@ -91,8 +129,20 @@
 {
     // This method is triggered whenever the user makes a change to the picker selection.
     // The parameter named row and component represents what was selected.
-    NSString *selectedTeam = [[self.model.team allKeys] objectAtIndex:row];
-    self.teamImageView.image = [UIImage imageNamed:selectedTeam];
+    
+    if ([pickerView isEqual:self.teamPicker]) {
+        NSString *selectedTeam = [[self.model.team allKeys] objectAtIndex:row];
+        self.teamImageView.image = [UIImage imageNamed:selectedTeam];
+    }
+    else if ([pickerView isEqual:self.primaryWeaponTypePicker]){
+        //refresh the weapon picker to display options of selected weapon type
+        [self.primaryWeaponPicker reloadAllComponents];
+        
+    }
+    else if ([pickerView isEqual:self.primaryWeaponPicker]){
+        NSString *selectedPrimaryWeapon = [[self.model allPrimaryWeapons] objectAtIndex:row];
+        self.primaryWeaponImageView.image = [UIImage imageNamed:selectedPrimaryWeapon];
+    }
 }
 
 @end

@@ -18,6 +18,8 @@
 @property (nonatomic) NSDictionary *team;
 
 -(void)setup;
+-(NSArray*)allPrimaryWeapons;
+-(NSArray*)primaryWeaponsForType:(NSString*)type;
 
 
 

@@ -48,7 +48,7 @@
                         <sections>
                             <tableViewSection id="bdb-nu-dKh">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="179" id="LQg-vy-wOr">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="179" id="LQg-vy-wOr" userLabel="Name">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LQg-vy-wOr" id="MV0-Kd-Tpu">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -118,7 +118,7 @@
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="303" id="kbl-Wh-ufX">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="303" id="kbl-Wh-ufX" userLabel="Team">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kbl-Wh-ufX" id="Xfe-Zy-0bk">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -135,7 +135,7 @@
                                                 <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="71I-7o-lBk">
                                                     <rect key="frame" x="16" y="136" width="568" height="162"/>
                                                 </pickerView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bFZ-Iv-xud">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bFZ-Iv-xud">
                                                     <rect key="frame" x="200" y="45" width="200" height="95"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="200" id="9DY-t5-LIO"/>
@@ -163,6 +163,70 @@
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="303" id="rDi-kB-rrc" userLabel="Primary Weapon">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rDi-kB-rrc" id="146-uH-Sjc">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Primary Weapon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pG-SC-vbA">
+                                                    <rect key="frame" x="236" y="16" width="127" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="pDA-ge-Qwd"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="My5-12-KrX">
+                                                    <rect key="frame" x="384" y="152.5" width="200" height="162"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="LKp-Qo-O3s"/>
+                                                    </constraints>
+                                                </pickerView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Iid-fl-KWo">
+                                                    <rect key="frame" x="172" y="45" width="256" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="128" id="0Hz-Eq-n4f"/>
+                                                        <constraint firstAttribute="width" constant="256" id="7GA-RI-NSB"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZVx-RL-8KQ">
+                                                    <rect key="frame" x="16" y="152.5" width="368" height="162"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="186" id="ZzD-pp-h4m"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="ZzD-pp-h4m"/>
+                                                        </mask>
+                                                    </variation>
+                                                </pickerView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="My5-12-KrX" firstAttribute="height" secondItem="ZVx-RL-8KQ" secondAttribute="height" id="03v-l4-pPT"/>
+                                                <constraint firstItem="9pG-SC-vbA" firstAttribute="top" secondItem="146-uH-Sjc" secondAttribute="topMargin" constant="8" id="0WQ-j5-ATu"/>
+                                                <constraint firstItem="ZVx-RL-8KQ" firstAttribute="leading" secondItem="146-uH-Sjc" secondAttribute="leadingMargin" constant="8" id="1oR-j9-85T"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="My5-12-KrX" secondAttribute="trailing" constant="8" id="8jI-2P-HAn"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="My5-12-KrX" secondAttribute="bottom" constant="8" id="EpV-6I-j9e"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Iid-fl-KWo" secondAttribute="bottom" constant="8" id="MWQ-Hk-7dP"/>
+                                                <constraint firstItem="Iid-fl-KWo" firstAttribute="top" secondItem="9pG-SC-vbA" secondAttribute="bottom" constant="8" id="Pf5-Df-8n3"/>
+                                                <constraint firstAttribute="centerX" secondItem="Iid-fl-KWo" secondAttribute="centerX" id="RCu-7o-ofC"/>
+                                                <constraint firstItem="My5-12-KrX" firstAttribute="leading" secondItem="146-uH-Sjc" secondAttribute="leadingMargin" constant="8" id="fcP-Xi-kcD"/>
+                                                <constraint firstItem="My5-12-KrX" firstAttribute="top" secondItem="9pG-SC-vbA" secondAttribute="bottom" constant="8" id="foC-VV-Bx6"/>
+                                                <constraint firstItem="My5-12-KrX" firstAttribute="top" secondItem="Iid-fl-KWo" secondAttribute="bottom" constant="8" id="iDK-N1-Xak"/>
+                                                <constraint firstAttribute="centerX" secondItem="9pG-SC-vbA" secondAttribute="centerX" id="o10-Di-U00"/>
+                                                <constraint firstItem="My5-12-KrX" firstAttribute="leading" secondItem="ZVx-RL-8KQ" secondAttribute="trailing" id="ryp-jA-Qaz"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ZVx-RL-8KQ" secondAttribute="bottom" constant="8" id="y0i-7D-bCQ"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="MWQ-Hk-7dP"/>
+                                                    <exclude reference="fcP-Xi-kcD"/>
+                                                    <exclude reference="foC-VV-Bx6"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -176,6 +240,9 @@
                     <size key="freeformSize" width="600" height="1800"/>
                     <connections>
                         <outlet property="nameTextField" destination="txQ-Ln-8ap" id="s61-32-uxN"/>
+                        <outlet property="primaryWeaponImageView" destination="Iid-fl-KWo" id="myJ-Lm-sv6"/>
+                        <outlet property="primaryWeaponPicker" destination="My5-12-KrX" id="Qg2-Jz-q80"/>
+                        <outlet property="primaryWeaponTypePicker" destination="ZVx-RL-8KQ" id="O7m-9E-U5T"/>
                         <outlet property="teamImageView" destination="bFZ-Iv-xud" id="al9-MB-bpX"/>
                         <outlet property="teamPicker" destination="71I-7o-lBk" id="DP5-L8-Zyz"/>
                     </connections>

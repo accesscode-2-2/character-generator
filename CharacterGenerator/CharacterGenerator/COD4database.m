@@ -117,5 +117,22 @@
     
 }
 
+-(NSArray*)allPrimaryWeapons{
+    NSMutableArray *weps = [[NSMutableArray alloc] init];
+    
+    [self setup];
+    for (NSString *weaponType in self.primaryWeapons) {
+        NSArray *allWepsForKey = [self.primaryWeapons objectForKey:weaponType];
+        for (int i = 0; i<allWepsForKey.count; i++) {
+            [weps addObject:[allWepsForKey objectAtIndex:i]];
+        }
+    }
+    NSArray *wepsImmutable = [NSArray arrayWithArray:weps];
+    return wepsImmutable;
+}
+
+-(NSArray*)primaryWeaponsForType:(NSString*)type{
+    return (NSArray *)[self.primaryWeapons objectForKey:type];
+}
 
 @end
