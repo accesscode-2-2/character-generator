@@ -86,13 +86,13 @@
     return [[self.model.team allKeys] objectAtIndex:row];
 }
 
-// Catpure the picker view selection
-//- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
-//{
-//    // This method is triggered whenever the user makes a change to the picker selection.
-//    // The parameter named row and component represents what was selected.
-//    
-//    self.label.text = [self.model.team allKeys] objectAtIndex:row];
-//}
+ //Catpure the picker view selection
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    // This method is triggered whenever the user makes a change to the picker selection.
+    // The parameter named row and component represents what was selected.
+    NSString *selectedTeam = [[self.model.team allKeys] objectAtIndex:row];
+    self.teamImageView.image = [UIImage imageNamed:selectedTeam];
+}
 
 @end

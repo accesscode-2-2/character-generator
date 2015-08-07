@@ -118,13 +118,13 @@
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="179" id="kbl-Wh-ufX">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="303" id="kbl-Wh-ufX">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kbl-Wh-ufX" id="Xfe-Zy-0bk">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5V-AF-4eu">
-                                                    <rect key="frame" x="279" y="8" width="41" height="21"/>
+                                                    <rect key="frame" x="279" y="16" width="41" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="A7h-JD-At4"/>
                                                     </constraints>
@@ -133,17 +133,34 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="71I-7o-lBk">
-                                                    <rect key="frame" x="16" y="18.5" width="568" height="162"/>
+                                                    <rect key="frame" x="16" y="136" width="568" height="162"/>
                                                 </pickerView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bFZ-Iv-xud">
+                                                    <rect key="frame" x="200" y="45" width="200" height="95"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="9DY-t5-LIO"/>
+                                                        <constraint firstAttribute="height" constant="95" id="tmc-0L-9OQ"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="bFZ-Iv-xud" firstAttribute="top" secondItem="B5V-AF-4eu" secondAttribute="bottom" constant="8" id="28J-4X-Vl4"/>
                                                 <constraint firstAttribute="centerX" secondItem="B5V-AF-4eu" secondAttribute="centerX" id="3nq-73-wF2"/>
-                                                <constraint firstItem="B5V-AF-4eu" firstAttribute="top" secondItem="Xfe-Zy-0bk" secondAttribute="topMargin" id="87a-yk-fjQ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="bFZ-Iv-xud" secondAttribute="bottom" constant="8" id="50m-K3-NFX"/>
+                                                <constraint firstItem="B5V-AF-4eu" firstAttribute="top" secondItem="Xfe-Zy-0bk" secondAttribute="topMargin" constant="8" id="87a-yk-fjQ"/>
+                                                <constraint firstItem="71I-7o-lBk" firstAttribute="top" secondItem="bFZ-Iv-xud" secondAttribute="bottom" constant="8" id="Fwo-9P-EEy"/>
                                                 <constraint firstItem="71I-7o-lBk" firstAttribute="leading" secondItem="Xfe-Zy-0bk" secondAttribute="leadingMargin" constant="8" id="ITY-tE-iOT"/>
                                                 <constraint firstItem="71I-7o-lBk" firstAttribute="top" secondItem="B5V-AF-4eu" secondAttribute="bottom" constant="8" id="IXA-kZ-0iG"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="71I-7o-lBk" secondAttribute="bottom" constant="8" id="djl-2A-FCe"/>
+                                                <constraint firstAttribute="centerX" secondItem="bFZ-Iv-xud" secondAttribute="centerX" id="rf5-Em-LHp"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="71I-7o-lBk" secondAttribute="trailing" constant="8" id="uXV-7b-cU6"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="IXA-kZ-0iG"/>
+                                                    <exclude reference="50m-K3-NFX"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -159,6 +176,7 @@
                     <size key="freeformSize" width="600" height="1800"/>
                     <connections>
                         <outlet property="nameTextField" destination="txQ-Ln-8ap" id="s61-32-uxN"/>
+                        <outlet property="teamImageView" destination="bFZ-Iv-xud" id="al9-MB-bpX"/>
                         <outlet property="teamPicker" destination="71I-7o-lBk" id="DP5-L8-Zyz"/>
                     </connections>
                 </tableViewController>
