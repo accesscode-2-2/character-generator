@@ -8,13 +8,11 @@
 
 #import "QuestionnaireTableViewController.h"
 #import "C4QStudent.h"
+#import "C4QStudentManager.h"
 
 @interface QuestionnaireTableViewController ()
-
 @property (nonatomic, strong) IBOutletCollection(UILabel) NSArray *quirkLabels;
-
-@property (nonatomic, strong) IBOutletCollection(UIView) NSArray *quirkContainerViews;
-
+@property (nonatomic) C4QStudentManager *manager;
 @end
 
 @implementation QuestionnaireTableViewController
@@ -22,18 +20,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.manager = [C4QStudentManager sharedC4QStudentManager];
+    
     for (int i = 0; i < 32; i++) {
         [self.quirkLabels[i] setLineBreakMode:NSLineBreakByWordWrapping];
         [self.quirkLabels[i] setNumberOfLines:0];
-//        [self.quirkLabels[i] addConstraint:[NSLayoutConstraint constraintWithItem:self.quirkLabels[i] attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.quirkContainerViews[i] attribute:NSLayoutAttributeTopMargin multiplier:1.0 constant:4.0]];
-        [(UILabel *) self.quirkLabels[i] setText:[(C4QStudent *) self.C4QMentorArray[i] quirk]];
+        [(UILabel *) self.quirkLabels[i] setText:[(C4QStudent *) self.manager.C4QMentorArray[i] quirk]];
     }
     
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source

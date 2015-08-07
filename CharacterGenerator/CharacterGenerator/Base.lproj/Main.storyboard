@@ -22,7 +22,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="1. Do you wear glasses? " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehn-H2-r9u">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="1. " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehn-H2-r9u" userLabel="1. Do you wear glasses?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -35,24 +35,12 @@
                                                 </switch>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="centerY" secondItem="ehn-H2-r9u" secondAttribute="centerY" id="7CZ-71-tzN"/>
                                                 <constraint firstAttribute="centerY" secondItem="ehn-H2-r9u" secondAttribute="centerY" id="8J5-R4-lhC"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="zbI-5i-BIg" secondAttribute="trailing" constant="10" id="HHO-Zi-Ifa"/>
                                                 <constraint firstItem="ehn-H2-r9u" firstAttribute="leading" secondItem="pYT-Hc-SqQ" secondAttribute="leadingMargin" constant="10" id="cM5-No-9dM"/>
                                                 <constraint firstAttribute="centerY" secondItem="zbI-5i-BIg" secondAttribute="centerY" id="d39-ZB-dvO"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="zbI-5i-BIg" secondAttribute="trailing" constant="10" id="ekM-wh-GnI"/>
                                                 <constraint firstItem="zbI-5i-BIg" firstAttribute="leading" secondItem="ehn-H2-r9u" secondAttribute="trailing" constant="10" id="hhM-wa-if6"/>
-                                                <constraint firstAttribute="centerY" secondItem="zbI-5i-BIg" secondAttribute="centerY" id="mR0-Tp-TOj"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="zbI-5i-BIg" secondAttribute="trailing" constant="10" id="td6-gR-783"/>
                                             </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="7CZ-71-tzN"/>
-                                                    <exclude reference="HHO-Zi-Ifa"/>
-                                                    <exclude reference="ekM-wh-GnI"/>
-                                                    <exclude reference="mR0-Tp-TOj"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="bGW-94-z4y" userLabel="Question Two">
@@ -61,7 +49,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="2. Are you consistently late? " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDa-VM-WL3">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="2. " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDa-VM-WL3">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -79,13 +67,7 @@
                                                 <constraint firstItem="nBS-uB-fM0" firstAttribute="leading" secondItem="fDa-VM-WL3" secondAttribute="trailing" constant="10" id="58u-hj-2cV"/>
                                                 <constraint firstItem="fDa-VM-WL3" firstAttribute="leading" secondItem="Zuo-K9-oLn" secondAttribute="leadingMargin" constant="10" id="7m4-Fb-5og"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="nBS-uB-fM0" secondAttribute="trailing" constant="10" id="Ofd-oC-PVD"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="nBS-uB-fM0" secondAttribute="trailing" constant="10" id="c6C-lU-6Xv"/>
                                             </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="c6C-lU-6Xv"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="40z-TX-Geb" userLabel="Question Three">
@@ -94,7 +76,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="3. Do you break computers? " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkn-tZ-mHB">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="3. " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkn-tZ-mHB">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -108,17 +90,11 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="centerY" secondItem="Hkn-tZ-mHB" secondAttribute="centerY" id="4uJ-X8-KUs"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="zH4-nF-dmw" secondAttribute="trailing" constant="10" id="NAi-V4-Ad0"/>
                                                 <constraint firstAttribute="centerY" secondItem="zH4-nF-dmw" secondAttribute="centerY" id="PUN-SX-zfo"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="zH4-nF-dmw" secondAttribute="trailing" constant="10" id="WBj-CF-FzH"/>
                                                 <constraint firstItem="zH4-nF-dmw" firstAttribute="leading" secondItem="Hkn-tZ-mHB" secondAttribute="trailing" constant="10" id="ePr-pm-7zb"/>
                                                 <constraint firstItem="Hkn-tZ-mHB" firstAttribute="leading" secondItem="eOv-NG-nHC" secondAttribute="leadingMargin" constant="10" id="pVn-0g-Jdf"/>
                                             </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="NAi-V4-Ad0"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="jtq-YV-Kuq" userLabel="Question Four">
@@ -127,7 +103,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="4. Are you utterly disruptive during class? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xrg-ie-PHj">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="4. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xrg-ie-PHj">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -140,22 +116,12 @@
                                                 </switch>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="qqe-6u-PgO" firstAttribute="leading" secondItem="Xrg-ie-PHj" secondAttribute="trailing" constant="10" id="Ar4-pP-neI"/>
                                                 <constraint firstItem="qqe-6u-PgO" firstAttribute="leading" secondItem="Xrg-ie-PHj" secondAttribute="trailing" constant="10" id="Eqa-qr-uiF"/>
                                                 <constraint firstAttribute="centerY" secondItem="qqe-6u-PgO" secondAttribute="centerY" id="H6n-Km-0Us"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="qqe-6u-PgO" secondAttribute="trailing" constant="10" id="VIY-ur-Q3e"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="qqe-6u-PgO" secondAttribute="trailing" constant="10" id="VZM-mm-iRb"/>
                                                 <constraint firstAttribute="centerY" secondItem="Xrg-ie-PHj" secondAttribute="centerY" id="WYF-wX-Q1j"/>
-                                                <constraint firstItem="Xrg-ie-PHj" firstAttribute="leading" secondItem="pWl-Lw-gQJ" secondAttribute="leadingMargin" constant="10" id="aY1-u5-H24"/>
                                                 <constraint firstItem="Xrg-ie-PHj" firstAttribute="leading" secondItem="pWl-Lw-gQJ" secondAttribute="leadingMargin" constant="10" id="bVF-ar-IDd"/>
                                             </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="aY1-u5-H24"/>
-                                                    <exclude reference="Ar4-pP-neI"/>
-                                                    <exclude reference="VIY-ur-Q3e"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="xAe-hS-sHc" userLabel="Question Five">
@@ -164,7 +130,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="5. Do you talk to other people?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UcN-2F-7qV">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="5. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UcN-2F-7qV">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -177,20 +143,12 @@
                                                 </switch>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="yB8-qL-NBl" firstAttribute="leading" secondItem="UcN-2F-7qV" secondAttribute="trailing" constant="10" id="FgA-Lc-SXU"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="yB8-qL-NBl" secondAttribute="trailing" constant="10" id="U4W-jA-Bxn"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="yB8-qL-NBl" secondAttribute="trailing" constant="10" id="Y5P-kh-Rgi"/>
                                                 <constraint firstItem="yB8-qL-NBl" firstAttribute="leading" secondItem="UcN-2F-7qV" secondAttribute="trailing" constant="10" id="dSK-Bh-Luk"/>
                                                 <constraint firstAttribute="centerY" secondItem="UcN-2F-7qV" secondAttribute="centerY" id="gc2-vy-Wx8"/>
                                                 <constraint firstAttribute="centerY" secondItem="yB8-qL-NBl" secondAttribute="centerY" id="mRY-eR-v0s"/>
                                                 <constraint firstItem="UcN-2F-7qV" firstAttribute="leading" secondItem="A5c-Jo-KSl" secondAttribute="leadingMargin" constant="10" id="sWI-Zf-nSA"/>
                                             </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="FgA-Lc-SXU"/>
-                                                    <exclude reference="Y5P-kh-Rgi"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="StE-9j-vM6" userLabel="Question Six">
@@ -199,7 +157,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="6. Do you wear socks? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IfE-DD-oXQ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="6. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IfE-DD-oXQ">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -226,7 +184,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="7. Do you play loud music?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rje-c1-AX4">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="7. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rje-c1-AX4">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -253,7 +211,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="8. Do have an assigned seats?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0kO-GC-M6t">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="8. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0kO-GC-M6t">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -285,7 +243,7 @@
                                                     <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="9. Do you have a favorite word? Sick!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ORM-eF-eBp">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="9. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ORM-eF-eBp">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -307,7 +265,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="10. Do you drive a beat up car? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QXa-8B-UER">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="10. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QXa-8B-UER">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -334,7 +292,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="11. Do you have a baby face?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pDh-0e-OsD">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="11. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pDh-0e-OsD">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -361,7 +319,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="12. Please work" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="v0g-23-6mh" userLabel="12. Do you tell dry corny jokes?">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="12. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="v0g-23-6mh" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -388,7 +346,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="13. Do you tell dry corny jokes? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="p9W-ua-jJI" userLabel="12. Do you tell dry corny jokes?">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="13. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="p9W-ua-jJI" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -406,7 +364,6 @@
                                                 <constraint firstItem="p9W-ua-jJI" firstAttribute="leading" secondItem="OLW-Si-bZa" secondAttribute="leadingMargin" constant="10" id="dws-cl-tKX"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="2Jk-i6-PQl" secondAttribute="trailing" constant="10" id="jl0-7A-LO8"/>
                                                 <constraint firstAttribute="centerY" secondItem="p9W-ua-jJI" secondAttribute="centerY" id="vaq-F1-QcS"/>
-                                                <constraint firstItem="2Jk-i6-PQl" firstAttribute="leading" secondItem="p9W-ua-jJI" secondAttribute="trailing" constant="10" id="vjb-sA-hOn"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -416,7 +373,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="14. Do you tell dry corny jokes? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="o5k-wM-tOM" userLabel="12. Do you tell dry corny jokes?">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="14. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="o5k-wM-tOM" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -429,18 +386,12 @@
                                                 </switch>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="K26-HK-zoC" firstAttribute="leading" secondItem="o5k-wM-tOM" secondAttribute="trailing" constant="15" id="APd-KR-WX4"/>
                                                 <constraint firstItem="K26-HK-zoC" firstAttribute="leading" secondItem="o5k-wM-tOM" secondAttribute="trailing" constant="10" id="Ah4-ko-9iU"/>
                                                 <constraint firstAttribute="centerY" secondItem="K26-HK-zoC" secondAttribute="centerY" id="Cnv-Ym-h86"/>
                                                 <constraint firstItem="o5k-wM-tOM" firstAttribute="leading" secondItem="2dE-gb-qWK" secondAttribute="leadingMargin" constant="10" id="Gdl-0A-bGJ"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="K26-HK-zoC" secondAttribute="trailing" constant="10" id="K2b-cs-d9u"/>
                                                 <constraint firstAttribute="centerY" secondItem="o5k-wM-tOM" secondAttribute="centerY" id="i2j-sx-EpD"/>
                                             </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="APd-KR-WX4"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="FvP-kR-4rT" userLabel="Question Fifteen">
@@ -449,7 +400,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="15. Do you tell dry corny jokes? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eoZ-2f-zxg" userLabel="12. Do you tell dry corny jokes?">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="15. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eoZ-2f-zxg" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -462,7 +413,6 @@
                                                 </switch>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="CD8-8m-cBV" firstAttribute="leading" secondItem="eoZ-2f-zxg" secondAttribute="trailing" constant="10" id="aHr-eK-cdX"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="CD8-8m-cBV" secondAttribute="trailing" constant="10" id="fBc-0O-6oz"/>
                                                 <constraint firstAttribute="centerY" secondItem="CD8-8m-cBV" secondAttribute="centerY" id="kpi-ag-lxf"/>
                                                 <constraint firstItem="eoZ-2f-zxg" firstAttribute="leading" secondItem="wVi-Ua-Kvz" secondAttribute="leadingMargin" constant="10" id="rQ3-lw-H0C"/>
@@ -482,7 +432,7 @@
                                                     <color key="onTintColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="16. Do you tell dry corny jokes? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ygO-kp-T5E" userLabel="12. Do you tell dry corny jokes?">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="16. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ygO-kp-T5E" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -492,7 +442,6 @@
                                             <constraints>
                                                 <constraint firstItem="ygO-kp-T5E" firstAttribute="leading" secondItem="dpw-In-d0L" secondAttribute="leadingMargin" constant="10" id="HuN-Qy-ubW"/>
                                                 <constraint firstAttribute="centerY" secondItem="86l-lZ-UbQ" secondAttribute="centerY" id="Ns7-cp-7yH"/>
-                                                <constraint firstItem="86l-lZ-UbQ" firstAttribute="leading" secondItem="ygO-kp-T5E" secondAttribute="trailing" constant="10" id="SYC-V3-gcy"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="86l-lZ-UbQ" secondAttribute="trailing" constant="10" id="TXu-el-ceb"/>
                                                 <constraint firstItem="86l-lZ-UbQ" firstAttribute="leading" secondItem="ygO-kp-T5E" secondAttribute="trailing" constant="10" id="Vg5-UO-UYu"/>
                                                 <constraint firstAttribute="centerY" secondItem="ygO-kp-T5E" secondAttribute="centerY" id="ozZ-Su-zfu"/>
@@ -505,7 +454,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="17. Do you tell dry corny jokes? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cgk-31-fQ4" userLabel="12. Do you tell dry corny jokes?">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="17. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cgk-31-fQ4" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -518,7 +467,6 @@
                                                 </switch>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ng3-ah-IjT" firstAttribute="leading" secondItem="cgk-31-fQ4" secondAttribute="trailing" constant="10" id="9oq-ra-m0o"/>
                                                 <constraint firstAttribute="centerY" secondItem="ng3-ah-IjT" secondAttribute="centerY" id="R8c-x7-daN"/>
                                                 <constraint firstAttribute="centerY" secondItem="cgk-31-fQ4" secondAttribute="centerY" id="YCw-ZU-XYP"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="ng3-ah-IjT" secondAttribute="trailing" constant="10" id="eDT-uH-wrE"/>
@@ -533,7 +481,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="18. Do you tell dry corny jokes? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oNE-bd-aho" userLabel="12. Do you tell dry corny jokes?">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="18. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oNE-bd-aho" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -549,7 +497,6 @@
                                                 <constraint firstAttribute="centerY" secondItem="oNE-bd-aho" secondAttribute="centerY" id="6cz-TJ-vSL"/>
                                                 <constraint firstItem="fmJ-Ww-EAR" firstAttribute="leading" secondItem="oNE-bd-aho" secondAttribute="trailing" constant="10" id="BLh-5s-Rhg"/>
                                                 <constraint firstItem="oNE-bd-aho" firstAttribute="leading" secondItem="Ro7-W5-6NF" secondAttribute="leadingMargin" constant="10" id="I6p-vx-aJ9"/>
-                                                <constraint firstItem="fmJ-Ww-EAR" firstAttribute="leading" secondItem="oNE-bd-aho" secondAttribute="trailing" constant="10" id="UeH-pH-yDc"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="fmJ-Ww-EAR" secondAttribute="trailing" constant="10" id="jlT-x7-8xT"/>
                                                 <constraint firstAttribute="centerY" secondItem="fmJ-Ww-EAR" secondAttribute="centerY" id="kKh-sv-CEN"/>
                                             </constraints>
@@ -561,7 +508,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="19. Do you tell dry corny jokes? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Bqb-c9-LFj" userLabel="12. Do you tell dry corny jokes?">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="19. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Bqb-c9-LFj" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -578,7 +525,6 @@
                                                 <constraint firstItem="Bqb-c9-LFj" firstAttribute="leading" secondItem="mMg-Kx-GAb" secondAttribute="leadingMargin" constant="10" id="4kc-XW-wId"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="pfN-A2-XAu" secondAttribute="trailing" constant="10" id="SNB-Xf-GgA"/>
                                                 <constraint firstAttribute="centerY" secondItem="Bqb-c9-LFj" secondAttribute="centerY" id="UM3-x6-kag"/>
-                                                <constraint firstItem="pfN-A2-XAu" firstAttribute="leading" secondItem="Bqb-c9-LFj" secondAttribute="trailing" constant="10" id="epP-Dd-KmW"/>
                                                 <constraint firstAttribute="centerY" secondItem="pfN-A2-XAu" secondAttribute="centerY" id="soj-FW-6i4"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -589,7 +535,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="20. Do you tell dry corny jokes? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TLF-zU-yHY" userLabel="12. Do you tell dry corny jokes?">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="20. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TLF-zU-yHY" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -606,7 +552,6 @@
                                                 <constraint firstAttribute="centerY" secondItem="le3-ge-0DN" secondAttribute="centerY" id="FqJ-6c-bWi"/>
                                                 <constraint firstItem="TLF-zU-yHY" firstAttribute="leading" secondItem="9wP-7b-BGE" secondAttribute="leadingMargin" constant="10" id="Lzn-XH-hMO"/>
                                                 <constraint firstAttribute="centerY" secondItem="TLF-zU-yHY" secondAttribute="centerY" id="TVh-Xp-SEo"/>
-                                                <constraint firstItem="le3-ge-0DN" firstAttribute="leading" secondItem="TLF-zU-yHY" secondAttribute="trailing" constant="10" id="ZSd-o9-boT"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="le3-ge-0DN" secondAttribute="trailing" constant="10" id="tWH-ek-UEd"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -617,7 +562,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="21. Do you tell dry corny jokes? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ceY-8k-BKZ" userLabel="12. Do you tell dry corny jokes?">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="21. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ceY-8k-BKZ" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -635,8 +580,6 @@
                                                 <constraint firstItem="ceY-8k-BKZ" firstAttribute="leading" secondItem="hoa-6J-vIC" secondAttribute="leadingMargin" constant="10" id="S28-bg-Lh6"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="GZY-7Z-ujN" secondAttribute="trailing" constant="10" id="WId-hb-b8L"/>
                                                 <constraint firstAttribute="centerY" secondItem="ceY-8k-BKZ" secondAttribute="centerY" id="Y8y-GF-gok"/>
-                                                <constraint firstItem="GZY-7Z-ujN" firstAttribute="leading" secondItem="ceY-8k-BKZ" secondAttribute="trailing" constant="10" id="hsr-Vm-ua2"/>
-                                                <constraint firstAttribute="centerY" secondItem="ceY-8k-BKZ" secondAttribute="centerY" id="meC-JV-KLb"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -646,7 +589,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="22. Do you tell dry corny jokes? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Iku-eS-UjB" userLabel="12. Do you tell dry corny jokes?">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="22. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Iku-eS-UjB" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -661,7 +604,6 @@
                                             <constraints>
                                                 <constraint firstItem="5ju-7P-zJt" firstAttribute="leading" secondItem="Iku-eS-UjB" secondAttribute="trailing" constant="10" id="FFf-st-UEP"/>
                                                 <constraint firstAttribute="centerY" secondItem="Iku-eS-UjB" secondAttribute="centerY" id="JTh-3h-Xcq"/>
-                                                <constraint firstItem="5ju-7P-zJt" firstAttribute="leading" secondItem="Iku-eS-UjB" secondAttribute="trailing" constant="10" id="ZsY-VX-mOG"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="5ju-7P-zJt" secondAttribute="trailing" constant="10" id="eLj-wS-lGy"/>
                                                 <constraint firstItem="Iku-eS-UjB" firstAttribute="leading" secondItem="fwx-bB-XvA" secondAttribute="leadingMargin" constant="10" id="mh2-Zd-gtQ"/>
                                                 <constraint firstAttribute="centerY" secondItem="5ju-7P-zJt" secondAttribute="centerY" id="pQ6-Fu-Ut6"/>
@@ -674,7 +616,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="23. Do you tell dry corny jokes? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CGN-vr-UdE" userLabel="12. Do you tell dry corny jokes?">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="23. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CGN-vr-UdE" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -690,7 +632,6 @@
                                                 <constraint firstAttribute="centerY" secondItem="dMi-un-VBB" secondAttribute="centerY" id="0eH-yl-ZxH"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="dMi-un-VBB" secondAttribute="trailing" constant="10" id="0jj-gp-zyN"/>
                                                 <constraint firstItem="dMi-un-VBB" firstAttribute="leading" secondItem="CGN-vr-UdE" secondAttribute="trailing" constant="10" id="AWK-PU-3sK"/>
-                                                <constraint firstItem="dMi-un-VBB" firstAttribute="leading" secondItem="CGN-vr-UdE" secondAttribute="trailing" constant="10" id="KGd-fi-IfN"/>
                                                 <constraint firstItem="CGN-vr-UdE" firstAttribute="leading" secondItem="aj2-Vz-7PU" secondAttribute="leadingMargin" constant="10" id="PFp-37-O08"/>
                                                 <constraint firstAttribute="centerY" secondItem="CGN-vr-UdE" secondAttribute="centerY" id="hGf-56-kdb"/>
                                             </constraints>
@@ -702,7 +643,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="24. Do you tell dry corny jokes? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5SS-0D-L6H" userLabel="12. Do you tell dry corny jokes?">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="24. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5SS-0D-L6H" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -720,7 +661,6 @@
                                                 <constraint firstItem="5SS-0D-L6H" firstAttribute="leading" secondItem="4fC-3s-rtj" secondAttribute="leadingMargin" constant="10" id="cSm-8b-mpD"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="lOl-8C-nXI" secondAttribute="trailing" constant="10" id="i5g-9V-erX"/>
                                                 <constraint firstItem="lOl-8C-nXI" firstAttribute="leading" secondItem="5SS-0D-L6H" secondAttribute="trailing" constant="10" id="kFo-3U-lIy"/>
-                                                <constraint firstItem="lOl-8C-nXI" firstAttribute="leading" secondItem="5SS-0D-L6H" secondAttribute="trailing" constant="10" id="qWc-OE-C4b"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -730,7 +670,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="25.. Do you tell dry corny jokes? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3Er-j2-0aP" userLabel="12. Do you tell dry corny jokes?">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="25. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3Er-j2-0aP" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -748,7 +688,6 @@
                                                 <constraint firstAttribute="centerY" secondItem="BYa-db-6bV" secondAttribute="centerY" id="Rhm-5r-9wb"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="BYa-db-6bV" secondAttribute="trailing" constant="10" id="UBM-ab-q31"/>
                                                 <constraint firstItem="BYa-db-6bV" firstAttribute="leading" secondItem="3Er-j2-0aP" secondAttribute="trailing" constant="10" id="hQR-ac-m6m"/>
-                                                <constraint firstItem="BYa-db-6bV" firstAttribute="leading" secondItem="3Er-j2-0aP" secondAttribute="trailing" constant="10" id="z1b-l5-sWb"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -758,7 +697,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="26. Do you tell dry corny jokes? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Fy-gz-U6S" userLabel="12. Do you tell dry corny jokes?">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="26. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Fy-gz-U6S" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -774,7 +713,6 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="WFp-O8-yMH" secondAttribute="trailing" constant="10" id="6vv-1X-jWs"/>
                                                 <constraint firstItem="WFp-O8-yMH" firstAttribute="leading" secondItem="6Fy-gz-U6S" secondAttribute="trailing" constant="10" id="9e9-vn-7Yk"/>
                                                 <constraint firstAttribute="centerY" secondItem="WFp-O8-yMH" secondAttribute="centerY" id="WjE-kc-L3J"/>
-                                                <constraint firstItem="WFp-O8-yMH" firstAttribute="leading" secondItem="6Fy-gz-U6S" secondAttribute="trailing" constant="10" id="dE5-y3-zwj"/>
                                                 <constraint firstAttribute="centerY" secondItem="6Fy-gz-U6S" secondAttribute="centerY" id="dh4-4o-Efk"/>
                                                 <constraint firstItem="6Fy-gz-U6S" firstAttribute="leading" secondItem="tE4-tZ-h2R" secondAttribute="leadingMargin" constant="10" id="hpT-hN-6ci"/>
                                             </constraints>
@@ -786,7 +724,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="27. Do you tell dry corny jokes? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LIH-WN-hFT" userLabel="12. Do you tell dry corny jokes?">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="27. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LIH-WN-hFT" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -802,7 +740,6 @@
                                                 <constraint firstItem="OX9-iV-7Sj" firstAttribute="leading" secondItem="LIH-WN-hFT" secondAttribute="trailing" constant="10" id="GRb-2C-Pr8"/>
                                                 <constraint firstItem="LIH-WN-hFT" firstAttribute="leading" secondItem="zO8-3v-MYf" secondAttribute="leadingMargin" constant="10" id="KVX-Pd-DfK"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="OX9-iV-7Sj" secondAttribute="trailing" constant="10" id="Qtt-06-GRZ"/>
-                                                <constraint firstItem="OX9-iV-7Sj" firstAttribute="leading" secondItem="LIH-WN-hFT" secondAttribute="trailing" constant="10" id="a2L-ER-Yiv"/>
                                                 <constraint firstAttribute="centerY" secondItem="LIH-WN-hFT" secondAttribute="centerY" id="myP-wz-Fpr"/>
                                                 <constraint firstAttribute="centerY" secondItem="OX9-iV-7Sj" secondAttribute="centerY" id="zWY-gF-mWJ"/>
                                             </constraints>
@@ -814,7 +751,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="28. Do you tell dry corny jokes? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Df4-Yy-m0B" userLabel="12. Do you tell dry corny jokes?">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="28. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Df4-Yy-m0B" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -830,7 +767,6 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="aEY-4V-6Dy" secondAttribute="trailing" constant="10" id="2Db-sQ-1ZR"/>
                                                 <constraint firstAttribute="centerY" secondItem="Df4-Yy-m0B" secondAttribute="centerY" id="4Er-CI-rks"/>
                                                 <constraint firstItem="aEY-4V-6Dy" firstAttribute="leading" secondItem="Df4-Yy-m0B" secondAttribute="trailing" constant="10" id="NWK-8n-pse"/>
-                                                <constraint firstItem="aEY-4V-6Dy" firstAttribute="leading" secondItem="Df4-Yy-m0B" secondAttribute="trailing" constant="10" id="g3J-lC-R9A"/>
                                                 <constraint firstAttribute="centerY" secondItem="aEY-4V-6Dy" secondAttribute="centerY" id="pcx-Qk-7Ac"/>
                                                 <constraint firstItem="Df4-Yy-m0B" firstAttribute="leading" secondItem="5iv-Gh-59p" secondAttribute="leadingMargin" constant="10" id="zde-AO-ryS"/>
                                             </constraints>
@@ -842,7 +778,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="29. Do you tell dry corny jokes? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tnN-Mv-XfP" userLabel="12. Do you tell dry corny jokes?">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="29. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tnN-Mv-XfP" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -860,7 +796,6 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="u9d-CQ-3eP" secondAttribute="trailing" constant="10" id="WMg-ZL-s5X"/>
                                                 <constraint firstItem="u9d-CQ-3eP" firstAttribute="leading" secondItem="tnN-Mv-XfP" secondAttribute="trailing" constant="10" id="bRR-wb-e48"/>
                                                 <constraint firstItem="tnN-Mv-XfP" firstAttribute="leading" secondItem="mFy-fy-IxZ" secondAttribute="leadingMargin" constant="10" id="bgA-gv-cqW"/>
-                                                <constraint firstItem="u9d-CQ-3eP" firstAttribute="leading" secondItem="tnN-Mv-XfP" secondAttribute="trailing" constant="10" id="rOg-VO-LQF"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -870,7 +805,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="30. Do you tell dry corny jokes? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LYY-TD-ueX" userLabel="12. Do you tell dry corny jokes?">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="30. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LYY-TD-ueX" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -887,7 +822,6 @@
                                                 <constraint firstAttribute="centerY" secondItem="LYY-TD-ueX" secondAttribute="centerY" id="5GB-FO-Gd3"/>
                                                 <constraint firstItem="LYY-TD-ueX" firstAttribute="leading" secondItem="Ox7-fQ-fZS" secondAttribute="leadingMargin" constant="10" id="Q2Y-XD-e6i"/>
                                                 <constraint firstAttribute="centerY" secondItem="eg9-Mc-m5D" secondAttribute="centerY" id="VsL-HQ-eKd"/>
-                                                <constraint firstItem="eg9-Mc-m5D" firstAttribute="leading" secondItem="LYY-TD-ueX" secondAttribute="trailing" constant="10" id="hPY-u1-9Ye"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="eg9-Mc-m5D" secondAttribute="trailing" constant="10" id="vxI-lY-3M1"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -898,7 +832,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="31. Do you tell dry corny jokes? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NYn-fW-FaB" userLabel="12. Do you tell dry corny jokes?">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="31. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NYn-fW-FaB" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -916,7 +850,6 @@
                                                 <constraint firstAttribute="centerY" secondItem="NYn-fW-FaB" secondAttribute="centerY" id="Wsz-Sv-01y"/>
                                                 <constraint firstItem="DXy-UJ-Vr4" firstAttribute="leading" secondItem="NYn-fW-FaB" secondAttribute="trailing" constant="10" id="X9j-sx-WP8"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="DXy-UJ-Vr4" secondAttribute="trailing" constant="10" id="axF-XO-9fO"/>
-                                                <constraint firstItem="DXy-UJ-Vr4" firstAttribute="leading" secondItem="NYn-fW-FaB" secondAttribute="trailing" constant="10" id="kMy-pG-j90"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -926,7 +859,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="32. Do you tell dry corny jokes? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="X9H-hi-fFl" userLabel="12. Do you tell dry corny jokes?">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="32. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="X9H-hi-fFl" userLabel="12. Do you tell dry corny jokes?">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -944,7 +877,6 @@
                                                 <constraint firstItem="ewr-yJ-G3i" firstAttribute="leading" secondItem="X9H-hi-fFl" secondAttribute="trailing" constant="10" id="OBp-kG-7Ef"/>
                                                 <constraint firstAttribute="centerY" secondItem="X9H-hi-fFl" secondAttribute="centerY" id="Shv-QG-r5D"/>
                                                 <constraint firstItem="X9H-hi-fFl" firstAttribute="leading" secondItem="MhS-1H-uMU" secondAttribute="leadingMargin" constant="10" id="Sia-Xv-fNP"/>
-                                                <constraint firstItem="ewr-yJ-G3i" firstAttribute="leading" secondItem="X9H-hi-fFl" secondAttribute="trailing" constant="10" id="u3h-GE-8cm"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1020,38 +952,6 @@
                         <outletCollection property="quirkLabels" destination="LYY-TD-ueX" id="Og4-ZU-inn"/>
                         <outletCollection property="quirkLabels" destination="NYn-fW-FaB" id="UvC-g3-5j4"/>
                         <outletCollection property="quirkLabels" destination="X9H-hi-fFl" id="LMV-HH-PDr"/>
-                        <outletCollection property="quirkContainerViews" destination="pYT-Hc-SqQ" id="ofK-Yi-nXk"/>
-                        <outletCollection property="quirkContainerViews" destination="Zuo-K9-oLn" id="ZiB-Mr-SLi"/>
-                        <outletCollection property="quirkContainerViews" destination="eOv-NG-nHC" id="eMX-f5-NCr"/>
-                        <outletCollection property="quirkContainerViews" destination="pWl-Lw-gQJ" id="U2Q-mg-MrP"/>
-                        <outletCollection property="quirkContainerViews" destination="A5c-Jo-KSl" id="xGC-mZ-Uhq"/>
-                        <outletCollection property="quirkContainerViews" destination="EoY-39-o0h" id="JPM-na-CKt"/>
-                        <outletCollection property="quirkContainerViews" destination="gwK-ha-cai" id="nVr-sp-NVW"/>
-                        <outletCollection property="quirkContainerViews" destination="TK0-d9-gXU" id="y6D-2A-t8K"/>
-                        <outletCollection property="quirkContainerViews" destination="Ffb-Vu-ve8" id="pM7-EA-Wvb"/>
-                        <outletCollection property="quirkContainerViews" destination="Fi7-Vc-WJJ" id="y3H-tk-Tyx"/>
-                        <outletCollection property="quirkContainerViews" destination="ksW-7D-jtC" id="BB6-Q1-P3q"/>
-                        <outletCollection property="quirkContainerViews" destination="2qb-Vi-zMU" id="rjY-PH-kYy"/>
-                        <outletCollection property="quirkContainerViews" destination="OLW-Si-bZa" id="Hj8-kW-eST"/>
-                        <outletCollection property="quirkContainerViews" destination="2dE-gb-qWK" id="d3y-h2-k12"/>
-                        <outletCollection property="quirkContainerViews" destination="wVi-Ua-Kvz" id="96y-Wb-vZA"/>
-                        <outletCollection property="quirkContainerViews" destination="dpw-In-d0L" id="35x-Wm-zZn"/>
-                        <outletCollection property="quirkContainerViews" destination="MAU-2q-tO4" id="4pg-UL-HFX"/>
-                        <outletCollection property="quirkContainerViews" destination="Ro7-W5-6NF" id="fNi-P3-UZm"/>
-                        <outletCollection property="quirkContainerViews" destination="mMg-Kx-GAb" id="Lg4-DS-Wf4"/>
-                        <outletCollection property="quirkContainerViews" destination="9wP-7b-BGE" id="R5r-eQ-IHn"/>
-                        <outletCollection property="quirkContainerViews" destination="hoa-6J-vIC" id="7oc-Kf-I0L"/>
-                        <outletCollection property="quirkContainerViews" destination="fwx-bB-XvA" id="mtz-Li-HmB"/>
-                        <outletCollection property="quirkContainerViews" destination="aj2-Vz-7PU" id="sD5-AD-xVg"/>
-                        <outletCollection property="quirkContainerViews" destination="4fC-3s-rtj" id="jBg-AJ-VGp"/>
-                        <outletCollection property="quirkContainerViews" destination="IuA-hq-Oo0" id="jRd-qo-xAb"/>
-                        <outletCollection property="quirkContainerViews" destination="tE4-tZ-h2R" id="d9l-3u-ot0"/>
-                        <outletCollection property="quirkContainerViews" destination="zO8-3v-MYf" id="zqv-hU-Pbo"/>
-                        <outletCollection property="quirkContainerViews" destination="5iv-Gh-59p" id="l8Z-vr-44c"/>
-                        <outletCollection property="quirkContainerViews" destination="mFy-fy-IxZ" id="JYh-Ht-iEy"/>
-                        <outletCollection property="quirkContainerViews" destination="Ox7-fQ-fZS" id="moY-dG-Oq0"/>
-                        <outletCollection property="quirkContainerViews" destination="Xd5-B8-XlR" id="1JN-E8-0m6"/>
-                        <outletCollection property="quirkContainerViews" destination="MhS-1H-uMU" id="yWL-DQ-aC5"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DfY-9x-PsK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1222,6 +1122,7 @@
                     <connections>
                         <outlet property="boroughTextField" destination="Qph-lM-i3F" id="3k3-9e-zYY"/>
                         <outlet property="genderTextField" destination="uRr-Ad-4u2" id="gRq-Ja-6lV"/>
+                        <outlet property="imageTextField" destination="4wq-QP-e1y" id="gbJ-1A-gAJ"/>
                         <outlet property="nameTextField" destination="U7f-bp-wNf" id="LMo-TL-xuc"/>
                     </connections>
                 </viewController>
