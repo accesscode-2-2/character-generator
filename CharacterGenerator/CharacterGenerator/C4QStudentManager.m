@@ -68,17 +68,40 @@
     [self.C4QStudentArray addObject:newStudent];
 }
 
+// This method picks a mentor for the new student based on their questionnaire
+// answers. It allows one mentor to be responsible for multiple new students
+// (it does not remove a picked mentor from the candidate field).
 - (void)pickMentor:(NSArray *)questionnaireAnswers {
     
+    // filter out only the yes answers to narrow the field of mentor
+    // candidates
     NSMutableArray *picks = [[NSMutableArray alloc] init];
-    
     for (int i = 0; i < [questionnaireAnswers count]; i++) {
         if ([questionnaireAnswers[i] isEqualToNumber:@1]) {
             [picks addObject:@(i)];
         }
     }
     
+    // if user sent an array of answers without a single yes, populate
+    // picks with all mentor indexes for a completely random pick
+    if ([picks count] == 0) {
+        for (int i = 0; i < [self.C4QMentorArray count]; i++) {
+            picks[i] = @(i);
+        }
+    }
     NSLog(@"Picks: %@", picks);
+    
+    // pick a random mentor index from the ones selected
+    NSUInteger randomIndex = arc4random_uniform((u_int32_t) [picks count]);
+    NSLog(@"randomIndex: %lu", randomIndex);
+    
+    NSUInteger randomPick = [picks[randomIndex] unsignedIntegerValue];
+    NSLog(@"randomPick: %lu", randomPick);
+    
+    // set the latest student's mentorIndex property to the mentor pick
+    [self.C4QStudentArray[[self.C4QStudentArray count] - 1] setMentorIndex:randomPick];
+    NSLog(@"Mentor: %@", [self.C4QMentorArray[randomPick] name]);
+    
 }
 
 @end

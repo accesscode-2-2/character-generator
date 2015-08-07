@@ -15,5 +15,6 @@
 @property (nonatomic) NSString *residence;
 @property (nonatomic) NSString *imageName;
 @property (nonatomic) NSString *quirk;
+@property (nonatomic) NSUInteger mentorIndex;
 
 @end
