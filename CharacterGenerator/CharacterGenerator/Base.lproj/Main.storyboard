@@ -382,7 +382,7 @@
                                                         <action selector="celebButtonTapped:" destination="BOx-XR-w7v" eventType="touchUpInside" id="cBe-6b-1hM"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OT-3q-8qF">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OT-3q-8qF">
                                                     <rect key="frame" x="361" y="233" width="90" height="90"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="90" id="Wy3-rk-jab"/>
