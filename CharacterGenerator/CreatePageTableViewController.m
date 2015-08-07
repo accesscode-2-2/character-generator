@@ -30,7 +30,6 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     NSLog(@"check");
-
     ResultsPageViewController *resultsPageViewController = segue.destinationViewController;
     resultsPageViewController.planOne = self.plans;
     resultsPageViewController.titles = self.titles;
@@ -55,28 +54,38 @@
     if (self.crazyEmojiButton.isTouchInside == YES){
         self.plans = [self.model.weekendPlans objectAtIndex:1];
         self.alcohol = [self.model.alcohol  objectAtIndex:1];
+        self.titleToDisplayInMainTableVC = [self.model.titles objectAtIndex:1];
+        [self.titles addObject:_titleToDisplayInMainTableVC];
         NSLog(@"%@", self.plans);
 
     }
     if (self.kissEmojiButton.isTouchInside == YES){
         self.plans = [self.model.weekendPlans objectAtIndex:2];
         self.alcohol = [self.model.alcohol  objectAtIndex:2];
+        self.titleToDisplayInMainTableVC = [self.model.titles objectAtIndex:2];
+        [self.titles addObject:_titleToDisplayInMainTableVC];
         NSLog(@"%@", self.plans);
     }
     if (self.poopEmojiButton.isTouchInside == YES){
         self.plans = [self.model.weekendPlans objectAtIndex:3];
         self.alcohol = [self.model.alcohol  objectAtIndex:3];
+        self.titleToDisplayInMainTableVC = [self.model.titles objectAtIndex:3];
+        [self.titles addObject:_titleToDisplayInMainTableVC];
         NSLog(@"%@", self.plans);
     }
     if (self.tearsEmojiButton.isTouchInside == YES){
         self.plans = [self.model.weekendPlans objectAtIndex:4];
         self.alcohol = [self.model.alcohol  objectAtIndex:4];
+        self.titleToDisplayInMainTableVC = [self.model.titles objectAtIndex:4];
+        [self.titles addObject:_titleToDisplayInMainTableVC];
         NSLog(@"%@", self.plans);
 
     }
     if (self.fireEmojiButton.isTouchInside == YES){
         self.plans = [self.model.weekendPlans objectAtIndex:5];
         self.alcohol = [self.model.alcohol  objectAtIndex:5];
+        self.titleToDisplayInMainTableVC = [self.model.titles objectAtIndex:5];
+        [self.titles addObject:_titleToDisplayInMainTableVC];
         NSLog(@"%@", self.plans);
     }
 
