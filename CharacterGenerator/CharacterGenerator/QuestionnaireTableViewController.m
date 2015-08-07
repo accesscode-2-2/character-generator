@@ -11,7 +11,9 @@
 
 @interface QuestionnaireTableViewController ()
 
-@property (nonatomic,strong) IBOutletCollection(UILabel) NSArray *quirkLabels;
+@property (nonatomic, strong) IBOutletCollection(UILabel) NSArray *quirkLabels;
+
+@property (nonatomic, strong) IBOutletCollection(UIView) NSArray *quirkContainerViews;
 
 @end
 
@@ -20,11 +22,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    for (int i = 0; i < 32; i++) {
-//        NSLog(@"Quirk %d: %@", i, [self.C4QMentorArray[i] quirk]);
-//    }
-    
     for (int i = 0; i < 32; i++) {
+        [self.quirkLabels[i] setLineBreakMode:NSLineBreakByWordWrapping];
+        [self.quirkLabels[i] setNumberOfLines:0];
+//        [self.quirkLabels[i] addConstraint:[NSLayoutConstraint constraintWithItem:self.quirkLabels[i] attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.quirkContainerViews[i] attribute:NSLayoutAttributeTopMargin multiplier:1.0 constant:4.0]];
         [(UILabel *) self.quirkLabels[i] setText:[(C4QStudent *) self.C4QMentorArray[i] quirk]];
     }
     

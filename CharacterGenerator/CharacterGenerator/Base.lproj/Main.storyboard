@@ -22,7 +22,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="1. Do you wear glasses? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ehn-H2-r9u">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="1. Do you wear glasses? " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehn-H2-r9u">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -61,7 +61,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="2. Are you consistently late? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fDa-VM-WL3">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="2. Are you consistently late? " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDa-VM-WL3">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -94,7 +94,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="3. Do you break computers? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Hkn-tZ-mHB">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="3. Do you break computers? " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkn-tZ-mHB">
                                                     <rect key="frame" x="18" y="11" width="505" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1020,6 +1020,38 @@
                         <outletCollection property="quirkLabels" destination="LYY-TD-ueX" id="Og4-ZU-inn"/>
                         <outletCollection property="quirkLabels" destination="NYn-fW-FaB" id="UvC-g3-5j4"/>
                         <outletCollection property="quirkLabels" destination="X9H-hi-fFl" id="LMV-HH-PDr"/>
+                        <outletCollection property="quirkContainerViews" destination="pYT-Hc-SqQ" id="ofK-Yi-nXk"/>
+                        <outletCollection property="quirkContainerViews" destination="Zuo-K9-oLn" id="ZiB-Mr-SLi"/>
+                        <outletCollection property="quirkContainerViews" destination="eOv-NG-nHC" id="eMX-f5-NCr"/>
+                        <outletCollection property="quirkContainerViews" destination="pWl-Lw-gQJ" id="U2Q-mg-MrP"/>
+                        <outletCollection property="quirkContainerViews" destination="A5c-Jo-KSl" id="xGC-mZ-Uhq"/>
+                        <outletCollection property="quirkContainerViews" destination="EoY-39-o0h" id="JPM-na-CKt"/>
+                        <outletCollection property="quirkContainerViews" destination="gwK-ha-cai" id="nVr-sp-NVW"/>
+                        <outletCollection property="quirkContainerViews" destination="TK0-d9-gXU" id="y6D-2A-t8K"/>
+                        <outletCollection property="quirkContainerViews" destination="Ffb-Vu-ve8" id="pM7-EA-Wvb"/>
+                        <outletCollection property="quirkContainerViews" destination="Fi7-Vc-WJJ" id="y3H-tk-Tyx"/>
+                        <outletCollection property="quirkContainerViews" destination="ksW-7D-jtC" id="BB6-Q1-P3q"/>
+                        <outletCollection property="quirkContainerViews" destination="2qb-Vi-zMU" id="rjY-PH-kYy"/>
+                        <outletCollection property="quirkContainerViews" destination="OLW-Si-bZa" id="Hj8-kW-eST"/>
+                        <outletCollection property="quirkContainerViews" destination="2dE-gb-qWK" id="d3y-h2-k12"/>
+                        <outletCollection property="quirkContainerViews" destination="wVi-Ua-Kvz" id="96y-Wb-vZA"/>
+                        <outletCollection property="quirkContainerViews" destination="dpw-In-d0L" id="35x-Wm-zZn"/>
+                        <outletCollection property="quirkContainerViews" destination="MAU-2q-tO4" id="4pg-UL-HFX"/>
+                        <outletCollection property="quirkContainerViews" destination="Ro7-W5-6NF" id="fNi-P3-UZm"/>
+                        <outletCollection property="quirkContainerViews" destination="mMg-Kx-GAb" id="Lg4-DS-Wf4"/>
+                        <outletCollection property="quirkContainerViews" destination="9wP-7b-BGE" id="R5r-eQ-IHn"/>
+                        <outletCollection property="quirkContainerViews" destination="hoa-6J-vIC" id="7oc-Kf-I0L"/>
+                        <outletCollection property="quirkContainerViews" destination="fwx-bB-XvA" id="mtz-Li-HmB"/>
+                        <outletCollection property="quirkContainerViews" destination="aj2-Vz-7PU" id="sD5-AD-xVg"/>
+                        <outletCollection property="quirkContainerViews" destination="4fC-3s-rtj" id="jBg-AJ-VGp"/>
+                        <outletCollection property="quirkContainerViews" destination="IuA-hq-Oo0" id="jRd-qo-xAb"/>
+                        <outletCollection property="quirkContainerViews" destination="tE4-tZ-h2R" id="d9l-3u-ot0"/>
+                        <outletCollection property="quirkContainerViews" destination="zO8-3v-MYf" id="zqv-hU-Pbo"/>
+                        <outletCollection property="quirkContainerViews" destination="5iv-Gh-59p" id="l8Z-vr-44c"/>
+                        <outletCollection property="quirkContainerViews" destination="mFy-fy-IxZ" id="JYh-Ht-iEy"/>
+                        <outletCollection property="quirkContainerViews" destination="Ox7-fQ-fZS" id="moY-dG-Oq0"/>
+                        <outletCollection property="quirkContainerViews" destination="Xd5-B8-XlR" id="1JN-E8-0m6"/>
+                        <outletCollection property="quirkContainerViews" destination="MhS-1H-uMU" id="yWL-DQ-aC5"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DfY-9x-PsK" userLabel="First Responder" sceneMemberID="firstResponder"/>
