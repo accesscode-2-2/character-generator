@@ -12,6 +12,7 @@
 		3BF12C451B72C948003D1D1C /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF12C441B72C948003D1D1C /* SignUpViewController.m */; };
 		3BF12C481B72DC05003D1D1C /* YourMentorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF12C471B72DC05003D1D1C /* YourMentorViewController.m */; };
 		3BF12C4E1B72E62E003D1D1C /* QuestionnaireTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF12C4D1B72E62E003D1D1C /* QuestionnaireTableViewController.m */; };
+		45826B731B7452C100A5D0CF /* MyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45826B721B7452C100A5D0CF /* MyManager.m */; };
 		8D7B0FFB1B6E6FC6003F4FB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B0FFA1B6E6FC6003F4FB8 /* main.m */; };
 		8D7B0FFE1B6E6FC6003F4FB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B0FFD1B6E6FC6003F4FB8 /* AppDelegate.m */; };
 		8D7B10041B6E6FC6003F4FB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7B10021B6E6FC6003F4FB8 /* Main.storyboard */; };
@@ -41,6 +42,8 @@
 		3BF12C471B72DC05003D1D1C /* YourMentorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YourMentorViewController.m; sourceTree = "<group>"; };
 		3BF12C4C1B72E62E003D1D1C /* QuestionnaireTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionnaireTableViewController.h; sourceTree = "<group>"; };
 		3BF12C4D1B72E62E003D1D1C /* QuestionnaireTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionnaireTableViewController.m; sourceTree = "<group>"; };
+		45826B711B7452C100A5D0CF /* MyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyManager.h; sourceTree = "<group>"; };
+		45826B721B7452C100A5D0CF /* MyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyManager.m; sourceTree = "<group>"; };
 		8D7B0FF51B6E6FC6003F4FB8 /* CharacterGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CharacterGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7B0FF91B6E6FC6003F4FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D7B0FFA1B6E6FC6003F4FB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,6 +100,8 @@
 				8D7B0FFD1B6E6FC6003F4FB8 /* AppDelegate.m */,
 				3BF12C3A1B72C070003D1D1C /* C4QStudent.h */,
 				3BF12C3B1B72C070003D1D1C /* C4QStudent.m */,
+				45826B711B7452C100A5D0CF /* MyManager.h */,
+				45826B721B7452C100A5D0CF /* MyManager.m */,
 				3BF12C3D1B72C0D3003D1D1C /* C4QStudentArrayBuilder.h */,
 				3BF12C3E1B72C0D3003D1D1C /* C4QStudentArrayBuilder.m */,
 				3BF12C431B72C948003D1D1C /* SignUpViewController.h */,
@@ -246,6 +251,7 @@
 				3BF12C3C1B72C070003D1D1C /* C4QStudent.m in Sources */,
 				3BF12C481B72DC05003D1D1C /* YourMentorViewController.m in Sources */,
 				8D7B0FFB1B6E6FC6003F4FB8 /* main.m in Sources */,
+				45826B731B7452C100A5D0CF /* MyManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
