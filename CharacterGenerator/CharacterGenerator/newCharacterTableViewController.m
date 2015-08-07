@@ -29,9 +29,18 @@
 }
 - (IBAction)onSubmit:(UIButton *)sender {
     
-    NSLog(@"%@", self.nameLabel.text);
-    NSLog(@"%@", self.pushupLabel.text);
-    NSLog(@"%@", self.beerLabel.text);
+    Character *person = [[Character alloc]init];
+    
+    int pushUpInt = [self.pushupLabel.text intValue];
+    int beerInt = [self.beerLabel.text intValue];
+    NSString *fightString = [self.fight objectAtIndex:[_yesOrNoPicker selectedRowInComponent:0]];
+    BOOL canFight = [fightString boolValue];
+    
+    [person initializeName:self.nameLabel.text pushups:pushUpInt fighter:canFight andBeer:beerInt];
+    
+    characterModel * shared = [characterModel sharedInstance];
+    [shared.allCharacters addObject:person];
+    // add person to out character model data
     
     
 }
@@ -49,17 +58,17 @@
 
 - (NSInteger)pickerView:(nonnull UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
     
-    return [_fight count];
+    return [self.fight count];
 }
 
 #pragma mark Picker Delagate Methods
 
 - (NSString *)pickerView:(nonnull UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    return [_fight objectAtIndex:row];
+    return [self.fight objectAtIndex:row];
 }
 - (IBAction)buttonPressed:(id)sender {
     
-    NSString *select = [_fight objectAtIndex:[_yesOrNoPicker selectedRowInComponent:0]];
+    NSString *select = [self.fight objectAtIndex:[_yesOrNoPicker selectedRowInComponent:0]];
     
     NSString *title = [[NSString alloc]initWithFormat:@"Awesome!", select];
     

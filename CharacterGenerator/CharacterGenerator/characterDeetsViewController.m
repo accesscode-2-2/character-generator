@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *pushupsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *fightLabel;
 @property (weak, nonatomic) IBOutlet UILabel *beerLabel;
+@property (weak, nonatomic) IBOutlet UILabel *superHeroLabel;
 
 @end
 
@@ -32,6 +33,7 @@
         self.fightLabel.text = @"No";
     }
     self.beerLabel.text = [NSString stringWithFormat:@"%d",self.beerLimit];
+    self.superHeroLabel.text = self.superHeroName;
     
 //    @property (nonatomic) int pushupLimit;
 //    @property (nonatomic) BOOL canFight;

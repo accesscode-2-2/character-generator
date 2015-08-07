@@ -10,6 +10,7 @@
 #import "characterModel.h"
 #import "Character.h"
 #import "characterDeetsViewController.h"
+#import "newCharacterTableViewController.h"
 
 @interface AllCharactersTableViewController ()
 @property (nonatomic) characterModel * model;
@@ -23,9 +24,16 @@
     
     self.title = @"AC 2.2 Hunger Games";
     
-    self.model = [[characterModel alloc]init];
+    self.model = [characterModel sharedInstance];
+    
+//    self.model = [[characterModel alloc]init];
     [self.model initializeCharacters];
 
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData]; // to reload selected cell
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,6 +57,7 @@
         destination.canFight = canFight;
         destination.pushupLimit = pushUpLimit;
         destination.beerLimit = beerLimit;
+        destination.superHeroName = person.superPower;
     
     }
    

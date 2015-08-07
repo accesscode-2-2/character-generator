@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "characterModel.h"
+#import "Character.h"
 
 @interface newCharacterTableViewController : UITableViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+
 
 // Data Picker 
 @property (weak, nonatomic) IBOutlet UIPickerView *yesOrNoPicker;

@@ -14,4 +14,6 @@
 @property (nonatomic) NSMutableArray *allCharacters;
 -(void) initializeCharacters;
 
++ (characterModel *)sharedInstance;
+
 @end

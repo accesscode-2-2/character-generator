@@ -11,6 +11,29 @@
 
 @implementation characterModel
 
++ (characterModel *)sharedInstance
+{
+    static dispatch_once_t once;
+    static id sharedInstance;
+    dispatch_once(&once, ^{
+        sharedInstance = [[self alloc] init];
+    });
+    return sharedInstance;
+}
+
+
+//+ (characterModel *)sharedModel {
+//    static characterModel *sharedMyManager = nil;
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        sharedMyManager = [[self alloc] init];
+//        sharedMyManager.characterData = [[NSMutableArray alloc] init];
+//    });
+//    return sharedMyManager;
+//}
+
+
+
 -(void) initializeCharacters {
     
     self.allCharacters = [[NSMutableArray alloc]init];
