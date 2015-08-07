@@ -54,6 +54,7 @@
     QVC.studentGender = self.studentGender;
     QVC.studentBorough = self.studentBorough;
     QVC.studentImage = self.studentImage;
+    QVC.C4QMentorArray = self.C4QMentorArray;
     
 }
 
