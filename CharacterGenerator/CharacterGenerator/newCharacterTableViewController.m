@@ -11,6 +11,9 @@
 @interface newCharacterTableViewController ()
 
 @property (strong, nonatomic) NSArray *fight;
+@property (weak, nonatomic) IBOutlet UITextField *nameLabel;
+@property (weak, nonatomic) IBOutlet UITextField *pushupLabel;
+@property (weak, nonatomic) IBOutlet UITextField *beerLabel;
 
 @end
 
@@ -23,6 +26,14 @@
     NSArray *choice = [[NSArray alloc] initWithObjects: @"Yes", @"No", nil];
     
     self.fight = choice;
+}
+- (IBAction)onSubmit:(UIButton *)sender {
+    
+    NSLog(@"%@", self.nameLabel.text);
+    NSLog(@"%@", self.pushupLabel.text);
+    NSLog(@"%@", self.beerLabel.text);
+    
+    
 }
 
 #pragma mark Picker Data Source Methods
