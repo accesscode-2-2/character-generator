@@ -9,15 +9,10 @@
 #import "IntroListTableViewController.h"
 #import "QuizTableViewController.h"
 #import "DestinationsModel.h"
-//Above is the class/model with all of our hard coded data -Justine
-
-//Below is the new destination detail page view controller
 #import "DestinationDetailPageViewController.h"
 
 
 @interface IntroListTableViewController ()
-
-//@property (nonatomic) DestinationDetails *destinationLocation;
 
 @end
 
@@ -26,33 +21,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //Not sure that we need this below -Justine
-    //self.navigationItem.title = @"Your Final Destination"; // change this if you want
-    
-// lines 26 and 27 will give weird red flags if uncommented, not sure how to implement in code
 
-//    self.destinationLocation = [[DestinationDetails alloc] init];
-//    [self.destinationLocation initializeData];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 #pragma mark - Table view data source
 /*
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
-    return [self.destinationLocation.destinationDetails allKeys].count;
+    return
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSArray *keys = [self.destinationLocation.destinationDetails allKeys];
-    NSString *key = [keys objectAtIndex:section];
-    NSArray *values = [self.destinationLocation.destinationDetails objectForKey:key];
-    return values.count;
+ 
+    return 
 }*/
 
 
