@@ -56,7 +56,7 @@
     
 }
 
--(void)selectedAnswer1a{
+- (IBAction)selectedAnswer1a:(UIButton *)sender {
     
     [self.selectedButtons insertObject:self.answer1a atIndex:0];
     
@@ -65,8 +65,9 @@
     [self.answer1c setBackgroundColor:[UIColor whiteColor]];
     [self.answer1d setBackgroundColor:[UIColor whiteColor]];
     NSLog(@"hello");
-    
 }
+
+
 
 -(void)selectedAnswer1b{
     
