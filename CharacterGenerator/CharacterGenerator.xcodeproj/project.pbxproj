@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51A83DD31B74271B000115B8 /* fur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51A83DD21B74271B000115B8 /* fur.jpg */; };
+		51A83DD51B742735000115B8 /* skin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51A83DD41B742735000115B8 /* skin.jpg */; };
+		51A83DD71B742740000115B8 /* feathers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51A83DD61B742740000115B8 /* feathers.jpg */; };
+		51A83DD91B742745000115B8 /* scales.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51A83DD81B742745000115B8 /* scales.jpg */; };
 		8D7B0FFB1B6E6FC6003F4FB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B0FFA1B6E6FC6003F4FB8 /* main.m */; };
 		8D7B0FFE1B6E6FC6003F4FB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B0FFD1B6E6FC6003F4FB8 /* AppDelegate.m */; };
 		8D7B10041B6E6FC6003F4FB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7B10021B6E6FC6003F4FB8 /* Main.storyboard */; };
@@ -31,6 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51A83DD21B74271B000115B8 /* fur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fur.jpg; sourceTree = "<group>"; };
+		51A83DD41B742735000115B8 /* skin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skin.jpg; sourceTree = "<group>"; };
+		51A83DD61B742740000115B8 /* feathers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = feathers.jpg; sourceTree = "<group>"; };
+		51A83DD81B742745000115B8 /* scales.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scales.jpg; sourceTree = "<group>"; };
 		8D7B0FF51B6E6FC6003F4FB8 /* CharacterGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CharacterGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7B0FF91B6E6FC6003F4FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D7B0FFA1B6E6FC6003F4FB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -134,6 +142,10 @@
 		8D7B10121B6E6FC6003F4FB8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				51A83DD21B74271B000115B8 /* fur.jpg */,
+				51A83DD41B742735000115B8 /* skin.jpg */,
+				51A83DD81B742745000115B8 /* scales.jpg */,
+				51A83DD61B742740000115B8 /* feathers.jpg */,
 				8D7B10131B6E6FC6003F4FB8 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -229,6 +241,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51A83DD91B742745000115B8 /* scales.jpg in Resources */,
+				51A83DD71B742740000115B8 /* feathers.jpg in Resources */,
+				51A83DD51B742735000115B8 /* skin.jpg in Resources */,
+				51A83DD31B74271B000115B8 /* fur.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
