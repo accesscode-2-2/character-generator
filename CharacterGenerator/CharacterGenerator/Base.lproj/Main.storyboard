@@ -890,8 +890,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Caw-PN-4KM">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Caw-PN-4KM">
                                                     <rect key="frame" x="280" y="6" width="39" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="32" id="La9-HY-dPG"/>
+                                                        <constraint firstAttribute="width" constant="39" id="YVB-Gz-Bbk"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <state key="normal" title="Done">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -901,6 +905,10 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="Caw-PN-4KM" secondAttribute="centerY" id="LO2-yN-cGC"/>
+                                                <constraint firstAttribute="centerX" secondItem="Caw-PN-4KM" secondAttribute="centerX" id="ZL8-qD-yZ5"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -1254,7 +1262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hz7-ym-uBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1784" y="86"/>
+            <point key="canvasLocation" x="1822" y="-356"/>
         </scene>
         <!--Your Mentor View Controller-->
         <scene sceneID="WSH-Fj-RnZ">
