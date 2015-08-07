@@ -13,7 +13,11 @@
 @property (nonatomic) NSString *name;
 
 @property (nonatomic) NSString *primaryWeapon;
+@property (nonatomic) NSString *primaryWeaponType;
+
 @property (nonatomic) NSString *secondaryWeapon;
+@property (nonatomic) NSString *secondaryWeaponType;
+
 @property (nonatomic) NSString *specialGrenade;
 @property (nonatomic) NSString *team;
 

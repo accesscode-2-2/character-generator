@@ -21,6 +21,10 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *primaryWeaponPicker;
 @property (weak, nonatomic) IBOutlet UIImageView *primaryWeaponImageView;
 
+@property (weak, nonatomic) IBOutlet UIPickerView *secondaryWeaponTypePicker;
+@property (weak, nonatomic) IBOutlet UIPickerView *secondaryWeaponPicker;
+@property (weak, nonatomic) IBOutlet UIImageView *secondaryWeaponImageView;
+
 
 
 @end

@@ -24,8 +24,22 @@
     Soldier *recruit = [[Soldier alloc] init];
     recruit.name = self.nameTextField.text;
     
-    NSInteger row = [self.teamPicker selectedRowInComponent:0];
-    recruit.team = [[self.model.team allKeys] objectAtIndex:row];
+    NSInteger teamRow = [self.teamPicker selectedRowInComponent:0];
+    recruit.team = [[self.model.team allKeys] objectAtIndex:teamRow];
+    
+    NSInteger primaryWeaponTypeRow = [self.primaryWeaponTypePicker selectedRowInComponent:0];
+    recruit.primaryWeaponType = [[self.model.primaryWeapons allKeys] objectAtIndex:primaryWeaponTypeRow];
+    
+    NSInteger primaryWeaponRow = [self.primaryWeaponPicker selectedRowInComponent:0];
+    NSArray *primaryWeaponsOfType = [self.model.primaryWeapons objectForKey:recruit.primaryWeaponType];
+    recruit.primaryWeapon = [primaryWeaponsOfType objectAtIndex:primaryWeaponRow];
+    
+    NSInteger secondaryWeaponTypeRow = [self.secondaryWeaponTypePicker selectedRowInComponent:0];
+    recruit.secondaryWeaponType = [[self.model.secondaryWeapons allKeys] objectAtIndex:secondaryWeaponTypeRow];
+    
+    NSInteger secondaryWeaponRow = [self.secondaryWeaponPicker selectedRowInComponent:0];
+    NSArray *secondaryWeaponsOfType = [self.model.secondaryWeapons objectForKey:recruit.secondaryWeaponType];
+    recruit.secondaryWeapon = [secondaryWeaponsOfType objectAtIndex:secondaryWeaponRow];
     
     Manager *manager = [Manager sharedInstance];
     [manager addRecruit: recruit];
@@ -54,6 +68,12 @@
     
     self.primaryWeaponPicker.dataSource = self;
     self.primaryWeaponPicker.delegate = self;
+    
+    self.secondaryWeaponTypePicker.dataSource = self;
+    self.secondaryWeaponTypePicker.delegate = self;
+    
+    self.secondaryWeaponPicker.dataSource = self;
+    self.secondaryWeaponPicker.delegate = self;
     
 }
 
@@ -100,6 +120,20 @@
         NSArray *weaponsForType = [self.model.primaryWeapons objectForKey:primaryWeaponType];
         return weaponsForType.count;
     }
+    else if ([pickerView isEqual:self.secondaryWeaponTypePicker]){
+        NSArray *secondaryWeaponTypes = [self.model.secondaryWeapons allKeys];
+        return secondaryWeaponTypes.count;
+    }
+    else if ([pickerView isEqual:self.secondaryWeaponPicker]){
+        //get row of selected weapon type
+        NSInteger row = [self.secondaryWeaponTypePicker selectedRowInComponent:0];
+        
+        //get array of weapons for selected type
+        NSArray *secondaryWeaponTypes = [self.model.secondaryWeapons allKeys];
+        NSString *secondaryWeaponType = [secondaryWeaponTypes objectAtIndex:row];
+        NSArray *weaponsForType = [self.model.secondaryWeapons objectForKey:secondaryWeaponType];
+        return weaponsForType.count;
+    }
     
     return 1;
 }
@@ -120,6 +154,15 @@
         NSString *primaryWeaponType = [primaryWeaponTypes objectAtIndex:typeRow];
         return [[self.model.primaryWeapons objectForKey:primaryWeaponType] objectAtIndex:row];
     }
+    else if ([pickerView isEqual:self.secondaryWeaponTypePicker]){
+        return [[self.model.secondaryWeapons allKeys] objectAtIndex:row];
+    }
+    else if ([pickerView isEqual:self.secondaryWeaponPicker]){
+        NSInteger typeRow = [self.secondaryWeaponTypePicker selectedRowInComponent:0];
+        NSArray *secondaryWeaponTypes = [self.model.secondaryWeapons allKeys];
+        NSString *secondaryWeaponType = [secondaryWeaponTypes objectAtIndex:typeRow];
+        return [[self.model.secondaryWeapons objectForKey:secondaryWeaponType] objectAtIndex:row];
+    }
     
     return @"1";
 }
@@ -135,13 +178,46 @@
         self.teamImageView.image = [UIImage imageNamed:selectedTeam];
     }
     else if ([pickerView isEqual:self.primaryWeaponTypePicker]){
+        
         //refresh the weapon picker to display options of selected weapon type
         [self.primaryWeaponPicker reloadAllComponents];
         
+        //update imageView
+        NSString *selectedWeaponType = [[self.model.primaryWeapons allKeys] objectAtIndex:row];
+        NSArray *weaponsForType = [self.model.primaryWeapons objectForKey:selectedWeaponType];
+        NSInteger selectedWeaponRow = [self.primaryWeaponPicker selectedRowInComponent:0];
+        NSString *selectedWeapon = [weaponsForType objectAtIndex:selectedWeaponRow];
+        self.primaryWeaponImageView.image = [UIImage imageNamed:selectedWeapon];
+        
     }
     else if ([pickerView isEqual:self.primaryWeaponPicker]){
-        NSString *selectedPrimaryWeapon = [[self.model allPrimaryWeapons] objectAtIndex:row];
+        
+        NSInteger typeRow = [self.primaryWeaponTypePicker selectedRowInComponent:0];
+        NSArray *primaryWeaponTypes = [self.model.primaryWeapons allKeys];
+        NSString *primaryWeaponType = [primaryWeaponTypes objectAtIndex:typeRow];
+        NSString *selectedPrimaryWeapon = [[self.model.primaryWeapons objectForKey:primaryWeaponType] objectAtIndex:row];
         self.primaryWeaponImageView.image = [UIImage imageNamed:selectedPrimaryWeapon];
+    }
+    else if ([pickerView isEqual:self.secondaryWeaponTypePicker]){
+        
+        //refresh the weapon picker to display options of selected weapon type
+        [self.secondaryWeaponPicker reloadAllComponents];
+        
+        //update imageView
+        NSString *selectedWeaponType = [[self.model.secondaryWeapons allKeys] objectAtIndex:row];
+        NSArray *weaponsForType = [self.model.secondaryWeapons objectForKey:selectedWeaponType];
+        NSInteger selectedWeaponRow = [self.secondaryWeaponPicker selectedRowInComponent:0];
+        NSString *selectedWeapon = [weaponsForType objectAtIndex:selectedWeaponRow];
+        self.secondaryWeaponImageView.image = [UIImage imageNamed:selectedWeapon];
+        
+    }
+    else if ([pickerView isEqual:self.secondaryWeaponPicker]){
+        
+        NSInteger typeRow = [self.secondaryWeaponTypePicker selectedRowInComponent:0];
+        NSArray *secondaryWeaponTypes = [self.model.secondaryWeapons allKeys];
+        NSString *secondaryWeaponType = [secondaryWeaponTypes objectAtIndex:typeRow];
+        NSString *selectedSecondaryWeapon = [[self.model.secondaryWeapons objectForKey:secondaryWeaponType] objectAtIndex:row];
+        self.secondaryWeaponImageView.image = [UIImage imageNamed:selectedSecondaryWeapon];
     }
 }
 

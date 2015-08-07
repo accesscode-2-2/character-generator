@@ -52,11 +52,11 @@
                               ];
     
     NSDictionary *primaryWeapons = @{
-                                     @"Assault Rifles" : assaultRifles,
-                                     @"Submachine Guns" : submachineGuns,
-                                     @"Light Machine Guns" : lightMachineGuns,
-                                     @"Shotguns" : shotguns,
-                                     @"Sniper Rifles" : sniperRifles
+                                     @"Assault Rifle" : assaultRifles,
+                                     @"Submachine Gun" : submachineGuns,
+                                     @"Light Machine Gun" : lightMachineGuns,
+                                     @"Shotgun" : shotguns,
+                                     @"Sniper Rifle" : sniperRifles
                                      };
     
     self.primaryWeapons = primaryWeapons;
@@ -77,8 +77,8 @@
                                  ];
     
     NSDictionary *secondaryWeapons = @{
-                                       @"Handguns" : handguns,
-                                       @"Rocket Launchers" : rocketLaunchers
+                                       @"Handgun" : handguns,
+                                       @"Rocket Launcher" : rocketLaunchers
                                        };
     
     self.secondaryWeapons = secondaryWeapons;
