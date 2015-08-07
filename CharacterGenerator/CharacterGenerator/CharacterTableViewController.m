@@ -41,7 +41,7 @@
     newBender.name = self.nameTextField.text;
     newBender.color = self.color;
     newBender.texture = self.texture;
-    newBender.location = self.location;
+    newBender.location = [newBender imageForName:self.location];
     
     [newBender animalForColor:self.color AndTexture:self.texture];
     

@@ -10,7 +10,13 @@
 
 @interface BenderDetailViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *locationLabel;
+
+@property (weak, nonatomic) IBOutlet UIImageView *blownUpImageView;
+
+@property (weak, nonatomic) IBOutlet UILabel *color;
+@property (weak, nonatomic) IBOutlet UILabel *texture;
+@property (weak, nonatomic) IBOutlet UIImageView *animalImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *locationImageView;
 
 @end
 
@@ -20,7 +26,22 @@
     [super viewDidLoad];
     
     self.nameLabel.text = self.bender.name;
-    self.locationLabel.text = self.bender.location;
+    self.locationImageView.image = self.bender.location;
+    self.color.text = self.bender.color;
+    self.texture.text = self.bender.texture;
+    self.blownUpImageView.image =self.bender.location;
+    self.animalImageView.image = self.bender.animal;
+    
+  //  self.blownUpImageView.image = [UIImage imageNamed:[self.bender imageForName:self.bender.location]];
+    
+    UIVisualEffect *blurEffect;
+    blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    
+    UIVisualEffectView *visualEffectView;
+    visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+    
+    visualEffectView.frame = self.blownUpImageView.bounds;
+    [self.blownUpImageView addSubview:visualEffectView];
     
 }
 

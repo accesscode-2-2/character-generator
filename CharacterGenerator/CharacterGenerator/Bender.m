@@ -38,10 +38,9 @@
     }
     //Praying Mantis
     if(value ==34 || value ==33 || value == 95 || value==77){
-        self.animal =  [UIImage imageNamed:@"praying mantis-1"];
+        self.animal =  [UIImage imageNamed:@"praying_mantis-1"];
     }
 }
-
 -(void)colorsAndTexturesToNumbers{
     if(self.colorsToNumbers == nil){
     

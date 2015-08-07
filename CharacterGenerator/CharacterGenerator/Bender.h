@@ -14,7 +14,7 @@
 @interface Bender : NSObject
 
 @property (nonatomic) NSString *name;
-@property (nonatomic) NSString *location;
+@property (nonatomic) UIImage *location;
 @property (nonatomic) NSString *color;
 @property (nonatomic) NSString *texture;
 @property (nonatomic) UIImage *animal;
@@ -26,5 +26,6 @@
 + (NSArray *)colors;
 -(void)colorsAndTexturesToNumbers;
 -(void)animalForColor:(NSString *)color AndTexture:(NSString *)texture;
+- (UIImage *)imageForName:(NSString *)name ;
 
 @end
