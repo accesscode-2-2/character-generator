@@ -45,17 +45,15 @@
 }
 
 - (IBAction)doneButtonTapped:(id)sender {
-    NSMutableArray *onStatus = [[NSMutableArray alloc] initWithCapacity:32];
-    for (UISwitch *s in self.quirkSwitches) {
-        if (s.on) {
-            [onStatus addObject:@(YES)];
-        } else {
-            [onStatus addObject:@(NO)];
-        }
-    }
-    NSLog(@"%@", onStatus);
+    NSMutableArray *questionnaireAnswers = [[NSMutableArray alloc]
+                                            initWithCapacity:[self.manager.C4QMentorArray count]];
     
-//    [self.manager pickMentor:onStatus];
+    for (UISwitch *s in self.quirkSwitches) {
+        [questionnaireAnswers addObject:@(s.on)];
+    }
+    //NSLog(@"%@", questionnaireAnswers);
+    
+    [self.manager pickMentor:questionnaireAnswers];
 }
 
 /*

@@ -21,5 +21,6 @@
                        gender:(NSString *)gender
                     residence:(NSString *)residence
                  andImageName:(NSString *)imageName;
+- (void)pickMentor:(NSArray *)questionnaireAnswers;
 
 @end

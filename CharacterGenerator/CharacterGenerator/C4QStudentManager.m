@@ -68,4 +68,17 @@
     [self.C4QStudentArray addObject:newStudent];
 }
 
+- (void)pickMentor:(NSArray *)questionnaireAnswers {
+    
+    NSMutableArray *picks = [[NSMutableArray alloc] init];
+    
+    for (int i = 0; i < [questionnaireAnswers count]; i++) {
+        if ([questionnaireAnswers[i] isEqualToNumber:@1]) {
+            [picks addObject:@(i)];
+        }
+    }
+    
+    NSLog(@"Picks: %@", picks);
+}
+
 @end
