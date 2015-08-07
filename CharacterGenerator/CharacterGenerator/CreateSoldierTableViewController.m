@@ -17,8 +17,10 @@
 @implementation CreateSoldierTableViewController
 
 -(void)saveRecruit{
+    
     Soldier *recruit = [[Soldier alloc] init];
     recruit.name = self.nameTextField.text;
+    
     Manager *manager = [Manager sharedInstance];
     [manager addRecruit: recruit];
     
