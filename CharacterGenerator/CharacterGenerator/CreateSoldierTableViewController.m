@@ -41,6 +41,8 @@
     NSArray *secondaryWeaponsOfType = [self.model.secondaryWeapons objectForKey:recruit.secondaryWeaponType];
     recruit.secondaryWeapon = [secondaryWeaponsOfType objectAtIndex:secondaryWeaponRow];
     
+    recruit.specialGrenade = [self.model.specialGrenades objectAtIndex:self.specialGrenadeSegmentedControl.selectedSegmentIndex];
+    
     Manager *manager = [Manager sharedInstance];
     [manager addRecruit: recruit];
     
@@ -75,6 +77,20 @@
     self.secondaryWeaponPicker.dataSource = self;
     self.secondaryWeaponPicker.delegate = self;
     
+}
+
+- (IBAction)specialGrenadeSegmentedControlChanged:(UISegmentedControl *)sender {
+    //remove all segment images
+    for( int i = 0; i < self.model.specialGrenades.count; i++ ) {
+        [self.specialGrenadeSegmentedControl setImage:nil forSegmentAtIndex:i];
+        [self.specialGrenadeSegmentedControl setTitle:self.model.specialGrenades[i] forSegmentAtIndex:i];
+    }
+    //set image when segment is selected
+    NSInteger indexOfSelectedSegment = self.specialGrenadeSegmentedControl.selectedSegmentIndex;
+    NSString *selectedSpecialGrenade = [self.model.specialGrenades objectAtIndex:indexOfSelectedSegment];
+    [self.specialGrenadeSegmentedControl setImage: [UIImage imageNamed:selectedSpecialGrenade]forSegmentAtIndex:indexOfSelectedSegment];
+    
+    self.specialGrenadeImageView.image = [UIImage imageNamed:selectedSpecialGrenade];
 }
 
 

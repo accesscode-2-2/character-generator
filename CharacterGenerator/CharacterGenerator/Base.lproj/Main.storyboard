@@ -227,7 +227,7 @@
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="303" id="POw-Oi-9gC" userLabel="Primary Weapon">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="303" id="POw-Oi-9gC" userLabel="Secondary Weapon">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="POw-Oi-9gC" id="xlg-fV-HtI">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -291,6 +291,53 @@
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="303" id="Ymf-RQ-EQr" userLabel="Secondary Weapon">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ymf-RQ-EQr" id="Gzk-FP-IUq">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Special Grenade" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfe-14-ASL">
+                                                    <rect key="frame" x="237" y="16" width="127" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="WYR-1G-v79"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="9EX-6Z-YWj">
+                                                    <rect key="frame" x="150" y="232" width="300" height="31"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="EsM-Qe-AgG"/>
+                                                        <constraint firstAttribute="width" constant="300" id="Jhu-er-D1E"/>
+                                                    </constraints>
+                                                    <segments>
+                                                        <segment title="Flashbang"/>
+                                                        <segment title="Stun"/>
+                                                        <segment title="Smoke"/>
+                                                    </segments>
+                                                    <connections>
+                                                        <action selector="specialGrenadeSegmentedControlChanged:" destination="Dvq-rh-B9V" eventType="valueChanged" id="bx0-Iz-aAy"/>
+                                                    </connections>
+                                                </segmentedControl>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eA6-SA-rpj">
+                                                    <rect key="frame" x="275" y="90" width="50" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="AR0-mH-6Op"/>
+                                                        <constraint firstAttribute="height" constant="100" id="Su6-fO-aO4"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tfe-14-ASL" firstAttribute="top" secondItem="Gzk-FP-IUq" secondAttribute="topMargin" constant="8" id="F1K-qq-wOz"/>
+                                                <constraint firstItem="9EX-6Z-YWj" firstAttribute="top" secondItem="eA6-SA-rpj" secondAttribute="bottom" constant="42" id="NzP-WF-zib"/>
+                                                <constraint firstAttribute="centerX" secondItem="9EX-6Z-YWj" secondAttribute="centerX" id="PPj-Xb-TVn"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="9EX-6Z-YWj" secondAttribute="bottom" constant="32" id="XNz-6U-vT1"/>
+                                                <constraint firstAttribute="centerX" secondItem="eA6-SA-rpj" secondAttribute="centerX" id="l4o-4l-M7P"/>
+                                                <constraint firstAttribute="centerX" secondItem="tfe-14-ASL" secondAttribute="centerX" id="tRw-UX-Ior"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -310,6 +357,8 @@
                         <outlet property="secondaryWeaponImageView" destination="LLq-3g-VQu" id="rfG-1O-zML"/>
                         <outlet property="secondaryWeaponPicker" destination="8yT-ah-qvK" id="S68-26-8Xr"/>
                         <outlet property="secondaryWeaponTypePicker" destination="d6h-mT-WGp" id="p4A-TU-IYM"/>
+                        <outlet property="specialGrenadeImageView" destination="eA6-SA-rpj" id="cRZ-JQ-t1V"/>
+                        <outlet property="specialGrenadeSegmentedControl" destination="9EX-6Z-YWj" id="1D7-9d-hpQ"/>
                         <outlet property="teamImageView" destination="bFZ-Iv-xud" id="al9-MB-bpX"/>
                         <outlet property="teamPicker" destination="71I-7o-lBk" id="DP5-L8-Zyz"/>
                     </connections>
