@@ -13,6 +13,8 @@
 @property (nonatomic) C4QStudentManager *manager;
 @property (weak, nonatomic) IBOutlet UILabel *mentorNameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *mentorImageView;
+@property (weak, nonatomic) IBOutlet UILabel *mentorLocation;
+@property (weak, nonatomic) IBOutlet UILabel *mentorGender;
 
 @end
 
@@ -25,10 +27,14 @@
     [self.navigationItem setHidesBackButton:YES animated:YES];
     
     self.mentorNameLabel.text = [self.manager detailMentorName];
+    self.mentorLocation.text = [self. manager detailMentorResidence];
+    self.mentorGender.text = [self. manager detailMentorGender];
+
     
     NSString *imageName = [self.manager.detailMentorName lowercaseString];
     
     self.mentorImageView.image = [UIImage imageNamed:imageName];
+    
     self.navigationItem.title = [self.manager detailMentorName];
 
 }
