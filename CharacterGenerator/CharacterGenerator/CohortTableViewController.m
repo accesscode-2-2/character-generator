@@ -42,7 +42,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"StudentCellIdentifier" forIndexPath:indexPath];
     
-         self.manager.C4QStudentArray;
+    
         NSString *studentName = self.manager.C4QStudentArray[indexPath.row];
     
     
