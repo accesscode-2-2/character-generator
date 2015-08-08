@@ -1266,7 +1266,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StudentCellIdentifier" id="fsq-tj-EgX">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="StudentCellIdentifier" id="fsq-tj-EgX">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fsq-tj-EgX" id="QZB-LY-dTk">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -1300,32 +1300,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of Dev" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiW-LV-87b">
-                                <rect key="frame" x="250" y="134" width="100" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="243" y="134" width="115" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Borough" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pa-9y-181">
-                                <rect key="frame" x="271" y="371" width="59" height="18"/>
+                                <rect key="frame" x="271" y="390" width="59" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4FD-Nw-0b4">
-                                <rect key="frame" x="225" y="205" width="150" height="150"/>
+                                <rect key="frame" x="225" y="208" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="M42-y0-ytj"/>
                                     <constraint firstAttribute="width" constant="150" id="dRv-4b-yHO"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lu6-hG-AXb">
-                                <rect key="frame" x="275" y="405" width="51" height="18"/>
+                                <rect key="frame" x="275" y="424" width="51" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mentor: " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKi-BZ-SpB">
-                                <rect key="frame" x="175" y="439" width="250" height="18"/>
+                                <rect key="frame" x="175" y="458" width="250" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="DXQ-Ku-s5t"/>
                                 </constraints>
@@ -1341,7 +1341,7 @@
                             <constraint firstAttribute="centerX" secondItem="lu6-hG-AXb" secondAttribute="centerX" id="CfZ-mw-SdG"/>
                             <constraint firstAttribute="centerX" secondItem="jiW-LV-87b" secondAttribute="centerX" id="HRb-SJ-d5i"/>
                             <constraint firstItem="lu6-hG-AXb" firstAttribute="top" secondItem="2pa-9y-181" secondAttribute="bottom" constant="16" id="KNj-jM-bJH"/>
-                            <constraint firstItem="2pa-9y-181" firstAttribute="top" secondItem="4FD-Nw-0b4" secondAttribute="bottom" constant="16" id="dAv-gh-yvR"/>
+                            <constraint firstItem="2pa-9y-181" firstAttribute="top" secondItem="4FD-Nw-0b4" secondAttribute="bottom" constant="32" id="dAv-gh-yvR"/>
                             <constraint firstItem="yKi-BZ-SpB" firstAttribute="top" secondItem="lu6-hG-AXb" secondAttribute="bottom" constant="16" id="gdC-nT-Non"/>
                             <constraint firstAttribute="centerX" secondItem="4FD-Nw-0b4" secondAttribute="centerX" id="tZM-24-7oJ"/>
                             <constraint firstAttribute="centerX" secondItem="2pa-9y-181" secondAttribute="centerX" id="xGa-Yq-szi"/>

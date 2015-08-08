@@ -117,7 +117,7 @@
                         @"You love answering dumb questions about twins.",
                         @"Your get-rich plan is to sell Git t-shirts.",
                         @"Your beard is perfectly symmetrical.",
-                        @"You sound like a Russian spy.",
+                        @"You sound like a you might be a Russian spy.",
                         @"You correct your teacher in class about things you don't understand.",
                         @"You've gotten tired of asking people to restart their computers.",
                         @"You secretly love apples but don't want to admit it.",
