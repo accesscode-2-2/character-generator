@@ -21,9 +21,8 @@
 @property (nonatomic) BOOL nothingSelected;
 
 
-
-
 + (id)sharedC4QStudentManager;
+
 - (void)addNewStudentWithName:(NSString *)name
                        gender:(NSString *)gender
                     residence:(NSString *)residence
