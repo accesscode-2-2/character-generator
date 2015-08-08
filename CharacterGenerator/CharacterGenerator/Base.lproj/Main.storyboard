@@ -153,7 +153,7 @@
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="345" id="rDi-kB-rrc" userLabel="Primary Weapon">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="345" id="rDi-kB-rrc" userLabel="Primary Weapon">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rDi-kB-rrc" id="146-uH-Sjc">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -217,7 +217,7 @@
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="364" id="POw-Oi-9gC" userLabel="Secondary Weapon">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="364" id="POw-Oi-9gC" userLabel="Secondary Weapon">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="POw-Oi-9gC" id="xlg-fV-HtI">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -281,7 +281,7 @@
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="303" id="Ymf-RQ-EQr" userLabel="Special Grenade">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="303" id="Ymf-RQ-EQr" userLabel="Special Grenade">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ymf-RQ-EQr" id="Gzk-FP-IUq">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -328,7 +328,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="407" id="xk3-vT-4OV" userLabel="Perks">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="407" id="xk3-vT-4OV" userLabel="Perks">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xk3-vT-4OV" id="QHT-A8-dkw">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -381,8 +381,8 @@
                                                                     </constraints>
                                                                     <variation key="default">
                                                                         <mask key="constraints">
-                                                                            <exclude reference="ztb-R7-k4k"/>
                                                                             <exclude reference="8nU-Jh-g6W"/>
+                                                                            <exclude reference="ztb-R7-k4k"/>
                                                                         </mask>
                                                                     </variation>
                                                                 </imageView>
@@ -486,7 +486,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="205" id="Doo-P3-tPy" userLabel="CreateButton">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="205" id="Doo-P3-tPy" userLabel="CreateButton">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Doo-P3-tPy" id="Ls9-TR-jfp">
                                             <autoresizingMask key="autoresizingMask"/>

@@ -98,13 +98,26 @@
     
 }
 
--(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-
+-(void)setDefaultPickerValues{
+    [self pickerView:self.teamPicker didSelectRow:0 inComponent:0];
     [self pickerView:self.primaryWeaponTypePicker didSelectRow:0 inComponent:0];
     [self pickerView:self.primaryWeaponPicker didSelectRow:0 inComponent:0];
-//    self.primaryWeaponImageView.image = [UIImage imageNamed:@"MP5"];
+    [self pickerView:self.secondaryWeaponTypePicker didSelectRow:0 inComponent:0];
+    [self pickerView:self.secondaryWeaponPicker didSelectRow:0 inComponent:0];
+    [self pickerView:self.perk1Picker didSelectRow:0 inComponent:0];
+    [self pickerView:self.perk2Picker didSelectRow:0 inComponent:0];
+    [self pickerView:self.perk3Picker didSelectRow:0 inComponent:0];
     
+    NSInteger specialGrenadeIndex = 0;
+    NSString *specialGrenade = [self.model.specialGrenades objectAtIndex:specialGrenadeIndex];
+    self.specialGrenadeImageView.image = [UIImage imageNamed: specialGrenade];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    [self setDefaultPickerValues];
+
 }
 
 - (IBAction)specialGrenadeSegmentedControlChanged:(UISegmentedControl *)sender {
