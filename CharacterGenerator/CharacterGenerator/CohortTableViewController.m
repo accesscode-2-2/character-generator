@@ -23,10 +23,6 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -42,19 +38,13 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"StudentCellIdentifier" forIndexPath:indexPath];
     
-    
         NSString *studentName = [self.manager.C4QStudentArray[indexPath.row] name];
-    
     
         cell.textLabel.text = studentName;
         cell.imageView.image = [UIImage imageNamed:studentName];
         
         return cell;
-    
-   
 }
-
-
 
 
 @end
