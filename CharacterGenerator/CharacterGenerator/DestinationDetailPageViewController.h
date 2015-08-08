@@ -11,5 +11,6 @@
 @interface DestinationDetailPageViewController : UIViewController
 @property (nonatomic) NSString *destinationName;
 @property (nonatomic) NSString *destinationDetails;
+@property (nonatomic) UIImage *destinationImage;
 
 @end

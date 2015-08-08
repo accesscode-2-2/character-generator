@@ -90,11 +90,18 @@
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
-        NSString *userDestinationName = [self objectForIndexPath: indexPath];
+        NSArray *userDestinations = [[DestinationsModel sharedModel].destinationDetails allKeys];
+        NSString *userDestinationName =  userDestinations[indexPath.section];
+        NSArray *destinationDescriptions = [[DestinationsModel sharedModel].destinationDetails objectForKey:userDestinationName];
+        NSString *destinationBlurb = destinationDescriptions[indexPath.row];
+        
+        NSString *imageName = [userDestinationName stringByReplacingOccurrencesOfString:@"_" withString:@" "];
         
         DestinationDetailPageViewController *detailViewController = (DestinationDetailPageViewController *) destinationController;
         
         detailViewController.destinationName = userDestinationName;
+        detailViewController.destinationDetails = destinationBlurb;
+        detailViewController.destinationImage = [UIImage imageNamed:imageName];
         
     }
         
@@ -105,11 +112,11 @@
 
 -(NSString *)objectForIndexPath: (NSIndexPath *)indexPath {
     
-    NSArray *userDestinations = [self.tableData allKeys];
-    NSString *userDestinationsTitle = userDestinations [indexPath.section];
-    NSArray *destinationDescriptions = [self.tableData objectForKey:userDestinationsTitle];
+    NSArray *userDestinations = [[DestinationsModel sharedModel].destinationDetails allKeys];
+    NSString *userDestinationName =  userDestinations[indexPath.section];
+    NSArray *destinationDescriptions = [[DestinationsModel sharedModel].destinationDetails objectForKey:userDestinationName];
     
-    return destinationDescriptions [indexPath.row];
+    return destinationDescriptions[indexPath.row];
     
 }
 
