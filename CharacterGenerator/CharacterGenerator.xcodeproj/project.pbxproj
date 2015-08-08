@@ -13,6 +13,7 @@
 		3BF12C481B72DC05003D1D1C /* YourMentorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF12C471B72DC05003D1D1C /* YourMentorViewController.m */; };
 		3BF12C4E1B72E62E003D1D1C /* QuestionnaireTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF12C4D1B72E62E003D1D1C /* QuestionnaireTableViewController.m */; };
 		3BF12C861B750BE0003D1D1C /* C4QStudentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF12C851B750BE0003D1D1C /* C4QStudentManager.m */; };
+		45826B761B7592DD00A5D0CF /* CohortTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45826B751B7592DD00A5D0CF /* CohortTableViewController.m */; };
 		8D7B0FFB1B6E6FC6003F4FB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B0FFA1B6E6FC6003F4FB8 /* main.m */; };
 		8D7B0FFE1B6E6FC6003F4FB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B0FFD1B6E6FC6003F4FB8 /* AppDelegate.m */; };
 		8D7B10041B6E6FC6003F4FB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7B10021B6E6FC6003F4FB8 /* Main.storyboard */; };
@@ -44,6 +45,8 @@
 		3BF12C4D1B72E62E003D1D1C /* QuestionnaireTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionnaireTableViewController.m; sourceTree = "<group>"; };
 		3BF12C841B750BE0003D1D1C /* C4QStudentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C4QStudentManager.h; sourceTree = "<group>"; };
 		3BF12C851B750BE0003D1D1C /* C4QStudentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C4QStudentManager.m; sourceTree = "<group>"; };
+		45826B741B7592DD00A5D0CF /* CohortTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CohortTableViewController.h; sourceTree = "<group>"; };
+		45826B751B7592DD00A5D0CF /* CohortTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CohortTableViewController.m; sourceTree = "<group>"; };
 		8D7B0FF51B6E6FC6003F4FB8 /* CharacterGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CharacterGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7B0FF91B6E6FC6003F4FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D7B0FFA1B6E6FC6003F4FB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -106,6 +109,8 @@
 				3BF12C851B750BE0003D1D1C /* C4QStudentManager.m */,
 				3BF12C431B72C948003D1D1C /* SignUpViewController.h */,
 				3BF12C441B72C948003D1D1C /* SignUpViewController.m */,
+				45826B741B7592DD00A5D0CF /* CohortTableViewController.h */,
+				45826B751B7592DD00A5D0CF /* CohortTableViewController.m */,
 				3BF12C4C1B72E62E003D1D1C /* QuestionnaireTableViewController.h */,
 				3BF12C4D1B72E62E003D1D1C /* QuestionnaireTableViewController.m */,
 				3BF12C461B72DC05003D1D1C /* YourMentorViewController.h */,
@@ -244,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45826B761B7592DD00A5D0CF /* CohortTableViewController.m in Sources */,
 				3BF12C861B750BE0003D1D1C /* C4QStudentManager.m in Sources */,
 				3BF12C3F1B72C0D3003D1D1C /* C4QStudentArrayBuilder.m in Sources */,
 				3BF12C451B72C948003D1D1C /* SignUpViewController.m in Sources */,
