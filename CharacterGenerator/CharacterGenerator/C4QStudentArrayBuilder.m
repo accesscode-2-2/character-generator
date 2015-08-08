@@ -20,7 +20,6 @@
     
     tempArray = [self setMentorNames:tempArray];
     tempArray = [self setMentorResidences:tempArray];
-    tempArray = [self setMentorImageNames:tempArray];
     tempArray = [self setMentorQuirks:tempArray];
     
     _C4QMentorArray = tempArray;
@@ -104,31 +103,7 @@
     return tempArray;
 }
 
-- (NSMutableArray *)setMentorImageNames:(NSMutableArray *)tempArray {
-    NSArray *imageNames = @[
-                            @"artur", @"ayuna", @"bereket",
-                            @"brian", @"charles", @"chris",
-                            @"christella", @"christian", @"daniel",
-                            @"derek", @"diana", @"elber",
-                            @"eric sanchez", @"eric sze", @"felicia",
-                            @"henna", @"jackie", @"jamaal",
-                            @"jason", @"jovanny", @"justine",
-                            @"kaisha", @"krishna", @"lauren",
-                            @"mesfin", @"natalia", @"shena",
-                            @"umar", @"fatima", @"varindra",
-                            @"xiulan", @"zoufishan"
-                            ];
-    
-    for (int i = 0; i < 32; i++) {
-        [tempArray[i] setImageName:imageNames[i]];
-    }
-    
-    for (C4QStudent *s in tempArray) {
-        NSLog(@"%@", s.imageName);
-    }
-    
-    return tempArray;
-}
+
 
 - (NSMutableArray *)setMentorQuirks:(NSMutableArray *)tempArray {
     NSArray *quirks = @[
