@@ -85,8 +85,10 @@
     Character *person = [self.model.allCharacters objectAtIndex:indexPath.row];
     
     NSString * name = [person name];
+    UIImage * image = [person image];
     
     cell.textLabel.text = name;
+    cell.imageView.image = image;
     
     return cell;
 }
