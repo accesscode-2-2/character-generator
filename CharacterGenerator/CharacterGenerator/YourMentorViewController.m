@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *mentorImageView;
 @property (weak, nonatomic) IBOutlet UILabel *mentorLocation;
 @property (weak, nonatomic) IBOutlet UILabel *mentorGender;
+@property (weak, nonatomic) IBOutlet UILabel *selectedRandomly;
 
 
 @end
@@ -25,13 +26,20 @@
     [super viewDidLoad];
     
     self.manager = [C4QStudentManager sharedC4QStudentManager];
+    self.selectedRandomly.hidden = YES;
+
+    
+    if (self.manager.nothingSelected == YES) {
+        self.selectedRandomly.hidden = NO;
+    
+    }
+    
     [self.navigationItem setHidesBackButton:YES animated:YES];
     
     self.mentorNameLabel.text = [self.manager detailMentorName];
     self.mentorLocation.text = [self.manager detailMentorResidence];
     self.mentorGender.text = [[self.manager detailMentorGender] capitalizedString];
 
-    
     NSString *imageName = [self.manager.detailMentorName lowercaseString];
     
     self.mentorImageView.image = [UIImage imageNamed:imageName];

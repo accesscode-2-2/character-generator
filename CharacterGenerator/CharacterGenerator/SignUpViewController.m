@@ -18,7 +18,6 @@
 @property (nonatomic) C4QStudentManager *manager;
 @property (weak, nonatomic) IBOutlet UIButton *enterButtonActive;
 
-@property (weak, nonatomic) IBOutlet UILabel *warningFillOutNameField;
 
 @end
 
@@ -27,7 +26,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.manager = [C4QStudentManager sharedC4QStudentManager];
-    self.warningFillOutNameField.hidden = YES;
    
     
     if (self.nameTextField.text.length == 0) {
