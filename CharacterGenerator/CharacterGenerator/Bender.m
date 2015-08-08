@@ -25,7 +25,7 @@
     
     NSInteger value = colorValue * textureValue;
     //Scorpion
-    if(value == 22 || value == 85){
+    if(value == 22 || value == 85 || value == 91 || value == 133){
         self.animal =  [UIImage imageNamed:@"scorpion"];
     }
     //Eagles
@@ -33,7 +33,7 @@
          self.animal =  [UIImage imageNamed:@"eagle"];
     }
     //Great White
-    if(value == 38||value == 57|| value == 55){
+    if(value == 38||value == 57|| value == 55 || value == 119){
         self.animal =  [UIImage imageNamed:@"great_white"];
     }
     //Praying Mantis
