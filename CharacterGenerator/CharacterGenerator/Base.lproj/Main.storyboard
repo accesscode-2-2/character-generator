@@ -1184,7 +1184,7 @@
         <!--Welcome Screen-->
         <scene sceneID="7xY-bv-Nzy">
             <objects>
-                <viewController id="Iux-gE-9Vf" userLabel="Welcome Screen" sceneMemberID="viewController">
+                <viewController id="Iux-gE-9Vf" userLabel="Welcome Screen" customClass="HomeScreenViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gaD-28-Wkw"/>
                         <viewControllerLayoutGuide type="bottom" id="jkv-jO-hyL"/>
@@ -1248,6 +1248,9 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="aDn-OC-fcM"/>
+                    <connections>
+                        <outlet property="c4qLogo" destination="x1q-ko-qB7" id="0Iu-l9-W1S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4V0-KT-zjn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
