@@ -104,6 +104,8 @@
     NSLog(@"Mentor: %@", [self.C4QMentorArray[randomPick] name]);
     
     self.detailMentorName = [self.C4QMentorArray[randomPick] name];
+    self.detailMentorResidence = [self.C4QMentorArray[randomPick] residence];
+    self.detailMentorGender = [self.C4QMentorArray[randomPick] gender];
 }
 
 @end

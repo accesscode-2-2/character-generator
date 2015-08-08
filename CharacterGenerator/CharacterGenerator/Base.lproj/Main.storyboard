@@ -1360,7 +1360,12 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dh-M1-RAK">
+<<<<<<< HEAD
+                                <rect key="frame" x="255" y="466" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.81728130200000004" green="0.89528383219999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+=======
                                 <rect key="frame" x="270" y="366" width="60" height="30"/>
+>>>>>>> db93e41ea06d69e2272e35bc1c80b698dec74cda
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="Adl-e1-fuT"/>
                                     <constraint firstAttribute="height" constant="30" id="vQV-N5-q6T"/>
@@ -1372,21 +1377,104 @@
                                     <action selector="restart:" destination="Wfx-zT-aOV" eventType="touchUpInside" id="6MK-0Y-VE6"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rj8-3T-43O" userLabel="LocationView">
+                                <rect key="frame" x="177" y="410" width="246" height="38"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C62-mi-ohG">
+                                        <rect key="frame" x="10" y="8" width="72" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="LhJ-ih-XJx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mentor's location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dM-ju-zP9">
+                                        <rect key="frame" x="107" y="7" width="134" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="C62-mi-ohG" firstAttribute="leading" secondItem="rj8-3T-43O" secondAttribute="leading" constant="10" id="Bh1-fZ-way"/>
+                                    <constraint firstItem="6dM-ju-zP9" firstAttribute="top" secondItem="rj8-3T-43O" secondAttribute="top" constant="7" id="Css-0L-rca"/>
+                                    <constraint firstAttribute="bottom" secondItem="C62-mi-ohG" secondAttribute="bottom" constant="8" id="IBS-Ej-fsV"/>
+                                    <constraint firstAttribute="width" constant="332" id="R72-qS-H3t"/>
+                                    <constraint firstAttribute="height" constant="38" id="U2e-Zh-HKw"/>
+                                    <constraint firstAttribute="bottom" secondItem="6dM-ju-zP9" secondAttribute="bottom" constant="10" id="eSc-pu-EgL"/>
+                                    <constraint firstAttribute="trailing" secondItem="6dM-ju-zP9" secondAttribute="trailing" constant="5" id="iuj-nw-Plj"/>
+                                    <constraint firstItem="6dM-ju-zP9" firstAttribute="leading" secondItem="C62-mi-ohG" secondAttribute="trailing" constant="25" id="knQ-EV-t56"/>
+                                    <constraint firstItem="C62-mi-ohG" firstAttribute="top" secondItem="rj8-3T-43O" secondAttribute="top" constant="8" id="x14-KM-XLc"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="R72-qS-H3t"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Biw-Kc-GSR" userLabel="GenderView">
+                                <rect key="frame" x="185" y="356" width="230" height="39"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6u-rH-3vr">
+                                        <rect key="frame" x="8" y="8" width="67" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="67" id="xJh-Uf-4oN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mentor's Gender" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZm-9Z-8R3">
+                                        <rect key="frame" x="100" y="8" width="130" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="2p5-N7-45M"/>
+                                    <constraint firstAttribute="width" constant="230" id="3PY-VP-m5r"/>
+                                    <constraint firstItem="xZm-9Z-8R3" firstAttribute="leading" secondItem="f6u-rH-3vr" secondAttribute="trailing" constant="25" id="4CB-Ig-Kwd"/>
+                                    <constraint firstItem="xZm-9Z-8R3" firstAttribute="top" secondItem="Biw-Kc-GSR" secondAttribute="top" constant="8" id="5w3-tu-xsp"/>
+                                    <constraint firstItem="f6u-rH-3vr" firstAttribute="leading" secondItem="Biw-Kc-GSR" secondAttribute="leading" constant="8" id="Kja-KT-gok"/>
+                                    <constraint firstAttribute="bottom" secondItem="f6u-rH-3vr" secondAttribute="bottom" constant="8" id="Mk0-q1-eOv"/>
+                                    <constraint firstAttribute="bottom" secondItem="xZm-9Z-8R3" secondAttribute="bottom" constant="8" id="Tsa-9c-ux1"/>
+                                    <constraint firstAttribute="trailing" secondItem="xZm-9Z-8R3" secondAttribute="trailing" id="jY2-Hz-EZS"/>
+                                    <constraint firstItem="f6u-rH-3vr" firstAttribute="top" secondItem="Biw-Kc-GSR" secondAttribute="top" constant="8" id="jon-D4-QQX"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="j25-WD-WHw" firstAttribute="top" secondItem="7a6-e7-Cy0" secondAttribute="bottom" constant="50" id="1iZ-lv-44m"/>
                             <constraint firstAttribute="centerX" secondItem="CQB-fB-P1c" secondAttribute="centerX" id="Djr-b3-opR"/>
                             <constraint firstItem="CQB-fB-P1c" firstAttribute="top" secondItem="zRj-Zu-Ro4" secondAttribute="bottom" constant="10" id="Kns-Pa-Oq5"/>
-                            <constraint firstItem="1dh-M1-RAK" firstAttribute="top" secondItem="CQB-fB-P1c" secondAttribute="bottom" constant="20" id="Nfo-vF-Op5"/>
+                            <constraint firstItem="1dh-M1-RAK" firstAttribute="top" secondItem="CQB-fB-P1c" secondAttribute="bottom" constant="120" id="Nfo-vF-Op5"/>
+                            <constraint firstItem="Biw-Kc-GSR" firstAttribute="top" secondItem="CQB-fB-P1c" secondAttribute="bottom" constant="10" id="P1k-bn-eci"/>
+                            <constraint firstItem="rj8-3T-43O" firstAttribute="leading" secondItem="9sV-s4-BEg" secondAttribute="leadingMargin" constant="50" id="P7f-g4-wJR"/>
                             <constraint firstAttribute="centerX" secondItem="1dh-M1-RAK" secondAttribute="centerX" id="QvX-w7-V6J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rj8-3T-43O" secondAttribute="trailing" constant="50" id="W7r-et-V1R"/>
                             <constraint firstAttribute="centerX" secondItem="zRj-Zu-Ro4" secondAttribute="centerX" id="YO4-CN-poq"/>
                             <constraint firstAttribute="centerX" secondItem="j25-WD-WHw" secondAttribute="centerX" id="ehI-Cf-1qI"/>
+                            <constraint firstItem="rj8-3T-43O" firstAttribute="top" secondItem="CQB-fB-P1c" secondAttribute="bottom" constant="64" id="fwX-Fn-x0q"/>
+                            <constraint firstAttribute="centerX" secondItem="rj8-3T-43O" secondAttribute="centerX" id="hto-s6-aEX"/>
                             <constraint firstItem="zRj-Zu-Ro4" firstAttribute="top" secondItem="j25-WD-WHw" secondAttribute="bottom" constant="30" id="xwO-fX-VIv"/>
+                            <constraint firstAttribute="centerX" secondItem="Biw-Kc-GSR" secondAttribute="centerX" id="zyO-gL-6vu"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="P7f-g4-wJR"/>
+                                <exclude reference="W7r-et-V1R"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
+                        <outlet property="mentorGender" destination="xZm-9Z-8R3" id="gY6-aU-8GJ"/>
                         <outlet property="mentorImageView" destination="CQB-fB-P1c" id="jIN-3L-hrk"/>
+                        <outlet property="mentorLocation" destination="6dM-ju-zP9" id="H2R-0G-5ui"/>
                         <outlet property="mentorNameLabel" destination="zRj-Zu-Ro4" id="IQ9-tf-rVr"/>
                     </connections>
                 </viewController>

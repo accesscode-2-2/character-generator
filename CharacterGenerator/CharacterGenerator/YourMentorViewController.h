@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface YourMentorViewController : UIViewController
-@property (nonatomic) NSString *detailMentorName;
 
 @end
