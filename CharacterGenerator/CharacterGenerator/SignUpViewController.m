@@ -29,28 +29,16 @@
     self.manager = [C4QStudentManager sharedC4QStudentManager];
     self.warningFillOutNameField.hidden = YES;
    
-
     
     if (self.nameTextField.text.length == 0) {
-        //   self.warningFillOutNameField.hidden = NO;
         
         [self.enterButtonActive setEnabled:NO];
         
     }
-    
-//
-//    else
-//        [self.enterButtonActive setEnabled:YES];
-//    
 
 }
 
-//- (void)textFieldDidBeginEditing:(UITextField *)textField{
-//    [self.enterButtonActive setEnabled:YES];
-//  //   [self.tableView reloadData];
-//
-//    
-//}
+
 -(void)awakeFromNib {
 
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -60,14 +48,8 @@
 }
 
 -(void) textedit {
-  //  if (self.nameTextField.text.length == 0) {
     [self.enterButtonActive setEnabled:YES];
-//    }
-//    
-//        [self.enterButtonActive setEnabled:YES];
 
-    
-    
 }
 
 
