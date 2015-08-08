@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VHr-mx-fWp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VHr-mx-fWp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -1078,8 +1078,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucg-31-QR6">
-                                <rect key="frame" x="36" y="259" width="55" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: ** " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucg-31-QR6">
+                                <rect key="frame" x="36" y="259" width="72" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1184,7 +1184,7 @@
         <!--Welcome Screen-->
         <scene sceneID="7xY-bv-Nzy">
             <objects>
-                <viewController id="Iux-gE-9Vf" userLabel="Welcome Screen" sceneMemberID="viewController">
+                <viewController id="Iux-gE-9Vf" userLabel="Welcome Screen" customClass="HomeScreenViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gaD-28-Wkw"/>
                         <viewControllerLayoutGuide type="bottom" id="jkv-jO-hyL"/>
@@ -1248,6 +1248,9 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="aDn-OC-fcM"/>
+                    <connections>
+                        <outlet property="c4qLogo" destination="x1q-ko-qB7" id="0Iu-l9-W1S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4V0-KT-zjn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1401,8 +1404,8 @@
                                     <constraint firstAttribute="height" constant="30" id="vQV-N5-q6T"/>
                                 </constraints>
                                 <state key="normal" title="Home">
-                                    <color key="titleColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -1489,6 +1492,16 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="selected randomly" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGO-RN-UGc">
+                                <rect key="frame" x="218" y="136" width="164" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="Mje-FI-H3G"/>
+                                    <constraint firstAttribute="height" constant="21" id="xJw-oc-pO1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.75611636510000002" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.88235294119999996" green="0.8862745098" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1497,6 +1510,7 @@
                             <constraint firstItem="rj8-3T-43O" firstAttribute="top" secondItem="Biw-Kc-GSR" secondAttribute="bottom" constant="5" id="Edh-wu-PNu"/>
                             <constraint firstItem="CQB-fB-P1c" firstAttribute="top" secondItem="zRj-Zu-Ro4" secondAttribute="bottom" constant="10" id="Kns-Pa-Oq5"/>
                             <constraint firstItem="1dh-M1-RAK" firstAttribute="top" secondItem="CQB-fB-P1c" secondAttribute="bottom" constant="120" id="Nfo-vF-Op5"/>
+                            <constraint firstAttribute="centerX" secondItem="oGO-RN-UGc" secondAttribute="centerX" id="NsR-6U-BFd"/>
                             <constraint firstItem="Biw-Kc-GSR" firstAttribute="top" secondItem="CQB-fB-P1c" secondAttribute="bottom" constant="10" id="P1k-bn-eci"/>
                             <constraint firstItem="rj8-3T-43O" firstAttribute="leading" secondItem="9sV-s4-BEg" secondAttribute="leadingMargin" constant="50" id="P7f-g4-wJR"/>
                             <constraint firstAttribute="centerX" secondItem="1dh-M1-RAK" secondAttribute="centerX" id="QvX-w7-V6J"/>
@@ -1505,6 +1519,7 @@
                             <constraint firstAttribute="centerX" secondItem="j25-WD-WHw" secondAttribute="centerX" id="ehI-Cf-1qI"/>
                             <constraint firstItem="rj8-3T-43O" firstAttribute="top" secondItem="CQB-fB-P1c" secondAttribute="bottom" constant="64" id="fwX-Fn-x0q"/>
                             <constraint firstAttribute="centerX" secondItem="rj8-3T-43O" secondAttribute="centerX" constant="2.5" id="hto-s6-aEX"/>
+                            <constraint firstItem="oGO-RN-UGc" firstAttribute="top" secondItem="j25-WD-WHw" secondAttribute="bottom" constant="1" id="uzi-ON-ygS"/>
                             <constraint firstItem="zRj-Zu-Ro4" firstAttribute="top" secondItem="j25-WD-WHw" secondAttribute="bottom" constant="30" id="xwO-fX-VIv"/>
                             <constraint firstAttribute="centerX" secondItem="Biw-Kc-GSR" secondAttribute="centerX" constant="4.5" id="zyO-gL-6vu"/>
                         </constraints>
@@ -1521,6 +1536,7 @@
                         <outlet property="mentorImageView" destination="CQB-fB-P1c" id="jIN-3L-hrk"/>
                         <outlet property="mentorLocation" destination="6dM-ju-zP9" id="H2R-0G-5ui"/>
                         <outlet property="mentorNameLabel" destination="zRj-Zu-Ro4" id="IQ9-tf-rVr"/>
+                        <outlet property="selectedRandomly" destination="oGO-RN-UGc" id="cJW-a6-6ld"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j6r-aE-nyM" userLabel="First Responder" sceneMemberID="firstResponder"/>

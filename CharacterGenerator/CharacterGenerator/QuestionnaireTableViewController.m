@@ -29,6 +29,9 @@
         [self.quirkLabels[i] setFont:[UIFont systemFontOfSize:15.0]];
         [(UILabel *) self.quirkLabels[i]
             setText:[(C4QStudent *) self.manager.C4QMentorArray[i] quirk]];
+    
+        [self.navigationItem setHidesBackButton:YES animated:YES];
+
     }
 }
 
