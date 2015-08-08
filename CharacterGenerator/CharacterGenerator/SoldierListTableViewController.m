@@ -8,9 +8,11 @@
 
 #import "SoldierListTableViewController.h"
 #import "Soldier.h"
+#import "SoldierDetailViewController.h"
 
 
 @interface SoldierListTableViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *primaryWeaponTypeLabel;
 
 @end
 
@@ -31,10 +33,10 @@
     self.model = [[COD4database alloc] init];;
     [self.model setup];
     
-    Soldier *rob = [[Soldier alloc] init];
-    rob.name = @"Rob";
-    
-    [myManager addRecruit:rob];
+//    Soldier *rob = [[Soldier alloc] init];
+//    rob.name = @"Rob";
+//    
+//    [myManager addRecruit:rob];
     
 }
 
@@ -69,6 +71,8 @@
     
     Soldier *currentSoldier = [self.manager recruitAtIndex:indexPath.row];
     cell.textLabel.text = currentSoldier.name;
+    cell.imageView.image = [UIImage imageNamed:currentSoldier.team];
+    cell.detailTextLabel.text = currentSoldier.primaryWeaponType;
     
     return cell;
 }
@@ -107,14 +111,29 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqual:@"showAdd"]) {
+        //
+    }
+    else{
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        Soldier *currentSoldier = [self.manager recruitAtIndex:indexPath.row];
+        
+        SoldierDetailViewController *detailVC = segue.destinationViewController;
+        
+        detailVC.soldier = currentSoldier;
+        
+        
+    }
+    
+    
 }
-*/
 
 @end

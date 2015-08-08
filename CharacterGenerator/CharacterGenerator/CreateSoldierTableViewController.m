@@ -19,6 +19,40 @@
 
 @implementation CreateSoldierTableViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    //setup model
+    self.model = [[COD4database alloc] init];
+    [self.model setup];
+    
+    // Connect data
+    self.teamPicker.dataSource = self;
+    self.teamPicker.delegate = self;
+    
+    self.primaryWeaponTypePicker.dataSource = self;
+    self.primaryWeaponTypePicker.delegate = self;
+    
+    self.primaryWeaponPicker.dataSource = self;
+    self.primaryWeaponPicker.delegate = self;
+    
+    self.secondaryWeaponTypePicker.dataSource = self;
+    self.secondaryWeaponTypePicker.delegate = self;
+    
+    self.secondaryWeaponPicker.dataSource = self;
+    self.secondaryWeaponPicker.delegate = self;
+    
+    self.perk1Picker.dataSource = self;
+    self.perk1Picker.delegate = self;
+    
+    self.perk2Picker.dataSource = self;
+    self.perk2Picker.delegate = self;
+    
+    self.perk3Picker.dataSource = self;
+    self.perk3Picker.delegate = self;
+    
+}
+
 -(void)saveRecruit{
     
     Soldier *recruit = [[Soldier alloc] init];
@@ -64,36 +98,12 @@
     
 }
 
--(void)viewWillAppear:(BOOL)animated{
-    
-    //setup model
-    self.model = [[COD4database alloc] init];
-    [self.model setup];
-    
-    // Connect data
-    self.teamPicker.dataSource = self;
-    self.teamPicker.delegate = self;
-    
-    self.primaryWeaponTypePicker.dataSource = self;
-    self.primaryWeaponTypePicker.delegate = self;
-    
-    self.primaryWeaponPicker.dataSource = self;
-    self.primaryWeaponPicker.delegate = self;
-    
-    self.secondaryWeaponTypePicker.dataSource = self;
-    self.secondaryWeaponTypePicker.delegate = self;
-    
-    self.secondaryWeaponPicker.dataSource = self;
-    self.secondaryWeaponPicker.delegate = self;
-    
-    self.perk1Picker.dataSource = self;
-    self.perk1Picker.delegate = self;
-    
-    self.perk2Picker.dataSource = self;
-    self.perk2Picker.delegate = self;
-    
-    self.perk3Picker.dataSource = self;
-    self.perk3Picker.delegate = self;
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+
+    [self pickerView:self.primaryWeaponTypePicker didSelectRow:0 inComponent:0];
+    [self pickerView:self.primaryWeaponPicker didSelectRow:0 inComponent:0];
+//    self.primaryWeaponImageView.image = [UIImage imageNamed:@"MP5"];
     
 }
 

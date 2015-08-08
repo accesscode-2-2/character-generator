@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Soldier.h"
 
 @interface SoldierDetailViewController : UIViewController
+
+@property (nonatomic) Soldier *soldier;
 
 @end
