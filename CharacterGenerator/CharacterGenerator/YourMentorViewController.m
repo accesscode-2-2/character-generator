@@ -11,6 +11,9 @@
 
 @interface YourMentorViewController ()
 @property (nonatomic) C4QStudentManager *manager;
+@property (weak, nonatomic) IBOutlet UILabel *mentorNameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *mentorImageView;
+
 @end
 
 @implementation YourMentorViewController
@@ -20,6 +23,9 @@
     
     self.manager = [C4QStudentManager sharedC4QStudentManager];
     [self.navigationItem setHidesBackButton:YES animated:YES];
+    
+    self.mentorNameLabel.text = [self.manager detailMentorName];
+
 }
 
 - (void)didReceiveMemoryWarning {
