@@ -28,6 +28,7 @@
     
     self.mentorNameLabel.text = [self.manager detailMentorName];
     self.mentorLocation.text = [self.manager detailMentorResidence];
+    self.mentorGender.text = [[self.manager detailMentorGender] capitalizedString];
 
     
     NSString *imageName = [self.manager.detailMentorName lowercaseString];
