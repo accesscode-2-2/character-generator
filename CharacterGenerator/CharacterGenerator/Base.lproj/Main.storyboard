@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VHr-mx-fWp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VHr-mx-fWp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -1304,8 +1304,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Borough: " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pa-9y-181">
-                                <rect key="frame" x="266" y="371" width="68" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Borough" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pa-9y-181">
+                                <rect key="frame" x="271" y="371" width="59" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1317,20 +1317,17 @@
                                     <constraint firstAttribute="width" constant="150" id="dRv-4b-yHO"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender: " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lu6-hG-AXb">
-                                <rect key="frame" x="270" y="397" width="60" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lu6-hG-AXb">
+                                <rect key="frame" x="275" y="397" width="51" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Mentor: " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKi-BZ-SpB">
-                                <rect key="frame" x="254" y="423" width="93" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="quirk" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qc8-nF-oIu">
-                                <rect key="frame" x="283" y="449" width="35" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mentor: " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKi-BZ-SpB">
+                                <rect key="frame" x="175" y="423" width="250" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="DXQ-Ku-s5t"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1343,8 +1340,6 @@
                             <constraint firstAttribute="centerX" secondItem="lu6-hG-AXb" secondAttribute="centerX" id="CfZ-mw-SdG"/>
                             <constraint firstAttribute="centerX" secondItem="jiW-LV-87b" secondAttribute="centerX" id="HRb-SJ-d5i"/>
                             <constraint firstItem="lu6-hG-AXb" firstAttribute="top" secondItem="2pa-9y-181" secondAttribute="bottom" constant="8" id="KNj-jM-bJH"/>
-                            <constraint firstItem="Qc8-nF-oIu" firstAttribute="top" secondItem="yKi-BZ-SpB" secondAttribute="bottom" constant="8" id="NPm-Y6-aBZ"/>
-                            <constraint firstAttribute="centerX" secondItem="Qc8-nF-oIu" secondAttribute="centerX" id="Plk-F1-1E8"/>
                             <constraint firstItem="2pa-9y-181" firstAttribute="top" secondItem="4FD-Nw-0b4" secondAttribute="bottom" constant="16" id="dAv-gh-yvR"/>
                             <constraint firstItem="yKi-BZ-SpB" firstAttribute="top" secondItem="lu6-hG-AXb" secondAttribute="bottom" constant="8" id="gdC-nT-Non"/>
                             <constraint firstAttribute="centerX" secondItem="4FD-Nw-0b4" secondAttribute="centerX" id="tZM-24-7oJ"/>
@@ -1358,7 +1353,6 @@
                         <outlet property="studentGenderLabel" destination="lu6-hG-AXb" id="qa1-TR-VfD"/>
                         <outlet property="studentImageView" destination="4FD-Nw-0b4" id="atP-T5-7jr"/>
                         <outlet property="studentNameLabel" destination="jiW-LV-87b" id="dKM-aw-noF"/>
-                        <outlet property="studentQuirkLabel" destination="Qc8-nF-oIu" id="90P-RR-Lw4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hz7-ym-uBo" userLabel="First Responder" sceneMemberID="firstResponder"/>

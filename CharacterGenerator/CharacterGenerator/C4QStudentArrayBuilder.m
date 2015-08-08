@@ -130,7 +130,7 @@
                         @"If it's proven that plants suffer you'll eat air.",
                         @"Your teacher steals your code to make Satanic apps.",
                         @"You'll skip class to go to Mexico.",
-                        @"You can simulate bad crayon drawings in Illustrator.",
+                        @"You use your company's happy hour to get drunk before tech meetups.",
                         @"Your taste in cartoons is not 'an African thing.'",
                         @"Your voice needs a tone adjustment.",
                         @"You throw up on subway platforms.",

@@ -17,7 +17,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *studentBoroughLabel;
 @property (weak, nonatomic) IBOutlet UILabel *studentGenderLabel;
 @property (weak, nonatomic) IBOutlet UILabel *mentorNameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *studentQuirkLabel;
 @end
 
 @implementation CohortDetailViewController
@@ -49,10 +48,9 @@
     self.studentImageView.layer.borderWidth = 1.5;
     self.studentImageView.layer.borderColor =  [[UIColor colorWithRed:124/255.0 green:191/255.0 blue:60/255.0 alpha:1.0] CGColor];
     
-    self.studentBoroughLabel.text = [student residence];
-    self.studentGenderLabel.text = [student gender];
-    self.mentorNameLabel.text = [mentor name];
-    self.studentQuirkLabel.text = [mentor quirk];
+    self.studentBoroughLabel.text = [NSString stringWithFormat:@"You live in %@", [student residence]];
+    self.studentGenderLabel.text = [NSString stringWithFormat:@"You are a %@ for now.", [student gender]];
+    self.mentorNameLabel.text = [NSString stringWithFormat:@"Your mentor is %@ because %@", [mentor name], [[mentor quirk] lowercaseString]];
 }
 
 @end
