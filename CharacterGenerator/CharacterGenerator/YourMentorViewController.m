@@ -26,10 +26,7 @@
     
     self.mentorNameLabel.text = [self.manager detailMentorName];
     
-    //NSString *imageName = [self.detailMentorName lowercaseString];
 
-   // self.mentorImageView.image = [UIImage imageNamed:imageName];
-   // self.navigationItem.title = self.pokemonName;
 
 }
 
