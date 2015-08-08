@@ -64,7 +64,11 @@
     newStudent.name = name;
     newStudent.gender = gender;
     newStudent.residence = residence;
-    newStudent.imageName = imageName;
+    if (![imageName isEqualToString:@""]) {
+        newStudent.imageName = imageName;
+    } else {
+        newStudent.imageName = @"horse";
+    }
     
     [self.C4QStudentArray addObject:newStudent];
 }

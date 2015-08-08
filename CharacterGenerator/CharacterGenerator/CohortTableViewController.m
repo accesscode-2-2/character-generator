@@ -44,13 +44,15 @@
     //NSLog(@"image url: %@", imageName);
     
     // Load image only if the user put in a url
-    if (![imageName isEqualToString:@""]) {
+    if (![imageName isEqualToString:@"horse"]) {
         dispatch_async(dispatch_get_main_queue(), ^{
             NSURL *studentImageLink = [NSURL URLWithString:imageName];
             NSData *imageData = [NSData dataWithContentsOfURL:studentImageLink];
             cell.imageView.image = [UIImage imageWithData:imageData];
             [self.tableView reloadData];
         });
+    } else {
+        cell.imageView.image = [UIImage imageNamed:imageName];
     }
     
     return cell;

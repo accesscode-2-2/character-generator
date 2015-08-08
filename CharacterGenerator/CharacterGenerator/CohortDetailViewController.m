@@ -14,6 +14,10 @@
 @property (nonatomic) C4QStudentManager *manager;
 @property (weak, nonatomic) IBOutlet UILabel *studentNameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *studentImageView;
+@property (weak, nonatomic) IBOutlet UILabel *studentBoroughLabel;
+@property (weak, nonatomic) IBOutlet UILabel *studentGenderLabel;
+@property (weak, nonatomic) IBOutlet UILabel *mentorNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *studentQuirkLabel;
 @end
 
 @implementation CohortDetailViewController
@@ -21,9 +25,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.manager = [C4QStudentManager sharedC4QStudentManager];
+    C4QStudent *student = self.manager.C4QStudentArray[self.studentIndex];
+    C4QStudent *mentor = self.manager.C4QMentorArray[[student mentorIndex]];
     
-    self.studentNameLabel.text = [self.manager.C4QStudentArray[self.studentIndex] name];
-    NSString *imageName = [self.manager.C4QStudentArray[self.studentIndex] imageName];
+    self.studentNameLabel.text = [student name];
+    NSString *imageName = [student imageName];
     //NSLog(@"image url: %@", imageName);
     
     // Load image only if the user put in a url
@@ -34,8 +40,15 @@
             self.studentImageView.image = [UIImage imageWithData:imageData];
             [self.view setNeedsDisplay];
         });
+    } else {
+        self.studentImageView.image = [UIImage imageNamed:imageName];
+        [self.view setNeedsDisplay];
     }
     
+    self.studentBoroughLabel.text = [student residence];
+    self.studentGenderLabel.text = [student gender];
+    self.mentorNameLabel.text = [mentor name];
+    self.studentQuirkLabel.text = [mentor quirk];
 }
 
 @end

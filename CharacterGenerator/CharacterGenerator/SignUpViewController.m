@@ -61,10 +61,6 @@
 
 - (IBAction)enterTapped:(id)sender {
     
-   
-    
-    
-    
     [self.manager addNewStudentWithName:self.nameTextField.text
                                  gender:self.genderTextField.text
                               residence:self.boroughTextField.text
