@@ -15,6 +15,8 @@
 
 @property (nonatomic, retain) NSMutableArray *C4QStudentArray;
 @property (nonatomic, retain) NSArray *C4QMentorArray;
+@property (nonatomic) NSString *detailMentorName;
+
 
 + (id)sharedC4QStudentManager;
 - (void)addNewStudentWithName:(NSString *)name

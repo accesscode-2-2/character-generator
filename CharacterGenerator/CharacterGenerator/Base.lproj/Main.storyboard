@@ -1385,6 +1385,10 @@
                             <constraint firstItem="zRj-Zu-Ro4" firstAttribute="top" secondItem="j25-WD-WHw" secondAttribute="bottom" constant="30" id="xwO-fX-VIv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mentorImageView" destination="CQB-fB-P1c" id="jIN-3L-hrk"/>
+                        <outlet property="mentorNameLabel" destination="zRj-Zu-Ro4" id="IQ9-tf-rVr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j6r-aE-nyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
