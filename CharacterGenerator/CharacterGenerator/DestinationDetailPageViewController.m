@@ -26,7 +26,9 @@
     
     self.destinationDetailsLabel.text = self.destinationDetails;
     
-    self.backgroundDestinationImageView.image = [UIImage imageNamed:self.destinationName];
+    NSString *imageName = [self.destinationName stringByReplacingOccurrencesOfString:@" " withString:@"_"];
+    
+    self.backgroundDestinationImageView.image = [UIImage imageNamed:imageName];
     
 }
 

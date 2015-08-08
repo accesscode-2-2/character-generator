@@ -323,7 +323,6 @@
                                                     </state>
                                                     <connections>
                                                         <action selector="selectedAnswer4b:" destination="dSf-yI-ttM" eventType="touchUpInside" id="VZh-bd-PWV"/>
-                                                        <action selector="selectedAnswer4c:" destination="dSf-yI-ttM" eventType="touchUpInside" id="VaD-HL-4dO"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJd-61-kZU" userLabel="C">

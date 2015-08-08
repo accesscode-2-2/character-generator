@@ -15,6 +15,7 @@
 @interface IntroListTableViewController ()
 
 @property (nonatomic) NSDictionary *tableData;
+@property (nonatomic) NSDictionary *userDestinationDetails;
 
 @end
 
@@ -26,6 +27,10 @@
     self.tableData = [DestinationsModel sharedModel].userDestinations;
     NSLog(@"%@", self.tableData);
     NSLog(@"%@", [DestinationsModel sharedModel].userDestinations);
+    
+    self.userDestinationDetails  = [DestinationsModel sharedModel].destinationDetails;
+    NSLog(@"%@", self.userDestinationDetails);
+    NSLog(@"%@", [DestinationsModel sharedModel].destinationDetails);
     
     // Add this line in viewDidLoad in same class you want the tableView to refresh
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshTableWithNotification:) name:@"RefreshTable" object:nil];
@@ -59,7 +64,7 @@
      NSString *userDestinationsTitle = userDestinations[indexPath.section];
      cell.textLabel.text = userDestinationsTitle;
      
-     NSString *imageName = [userDestinationsTitle stringByReplacingOccurrencesOfString:@"_" withString:@" "];
+     NSString *imageName = [userDestinationsTitle stringByReplacingOccurrencesOfString:@" " withString:@"_"];
      
      cell.imageView.image = [UIImage imageNamed:imageName];
      
@@ -90,17 +95,16 @@
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
-        NSArray *userDestinations = [[DestinationsModel sharedModel].destinationDetails allKeys];
+        NSArray *userDestinations = [self.tableData allKeys];
         NSString *userDestinationName =  userDestinations[indexPath.section];
-        NSArray *destinationDescriptions = [[DestinationsModel sharedModel].destinationDetails objectForKey:userDestinationName];
-        NSString *destinationBlurb = destinationDescriptions[indexPath.row];
+        NSString *destinationDescriptions = [self.userDestinationDetails objectForKey:userDestinationName];
         
-        NSString *imageName = [userDestinationName stringByReplacingOccurrencesOfString:@"_" withString:@" "];
+        NSString *imageName = [userDestinationName stringByReplacingOccurrencesOfString:@" " withString:@"_"];
         
         DestinationDetailPageViewController *detailViewController = (DestinationDetailPageViewController *) destinationController;
         
         detailViewController.destinationName = userDestinationName;
-        detailViewController.destinationDetails = destinationBlurb;
+        detailViewController.destinationDetails = destinationDescriptions;
         detailViewController.destinationImage = [UIImage imageNamed:imageName];
         
     }
@@ -112,12 +116,12 @@
 
 -(NSString *)objectForIndexPath: (NSIndexPath *)indexPath {
     
-    NSArray *userDestinations = [[DestinationsModel sharedModel].destinationDetails allKeys];
+    NSArray *userDestinations = [self.tableData allKeys];
     NSString *userDestinationName =  userDestinations[indexPath.section];
-    NSArray *destinationDescriptions = [[DestinationsModel sharedModel].destinationDetails objectForKey:userDestinationName];
+    NSArray *destinationDescriptions = [self.userDestinationDetails objectForKey:userDestinationName];
     
     return destinationDescriptions[indexPath.row];
-    
+
 }
 
 @end
