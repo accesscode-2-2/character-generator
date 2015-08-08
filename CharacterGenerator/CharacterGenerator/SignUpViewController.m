@@ -48,7 +48,12 @@
 }
 
 -(void) textedit {
-    [self.enterButtonActive setEnabled:YES];
+    if (self.nameTextField.text.length == 0) {
+    [self.enterButtonActive setEnabled:NO];
+    }
+    else if (self.nameTextField.text.length != 0) {
+        [self.enterButtonActive setEnabled:YES];
+    }
 
 }
 

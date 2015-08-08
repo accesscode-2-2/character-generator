@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VHr-mx-fWp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VHr-mx-fWp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -1004,7 +1004,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZM-HX-gJb">
-                                <rect key="frame" x="282" y="568" width="37" height="30"/>
+                                <rect key="frame" x="280" y="568" width="49" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Enter">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1133,7 +1134,7 @@
                             <constraint firstItem="ucg-31-QR6" firstAttribute="leading" secondItem="3Ry-Ir-9z3" secondAttribute="leadingMargin" constant="20" id="XYb-5r-FYG"/>
                             <constraint firstItem="ucg-31-QR6" firstAttribute="top" secondItem="Dzi-FO-k2E" secondAttribute="bottom" constant="35" id="abK-40-tk2"/>
                             <constraint firstAttribute="centerX" secondItem="hDF-RQ-oVl" secondAttribute="centerX" id="ah6-kW-yYs"/>
-                            <constraint firstAttribute="centerX" secondItem="FZM-HX-gJb" secondAttribute="centerX" id="bc2-Ke-ddN"/>
+                            <constraint firstAttribute="centerX" secondItem="FZM-HX-gJb" secondAttribute="centerX" constant="-4.5" id="bc2-Ke-ddN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4wq-QP-e1y" secondAttribute="trailing" constant="20" id="bnL-0J-fxx"/>
                             <constraint firstAttribute="centerX" secondItem="Qph-lM-i3F" secondAttribute="centerX" id="dbp-Ln-9mm"/>
                             <constraint firstAttribute="centerX" secondItem="4wq-QP-e1y" secondAttribute="centerX" id="gLZ-jp-1My"/>
