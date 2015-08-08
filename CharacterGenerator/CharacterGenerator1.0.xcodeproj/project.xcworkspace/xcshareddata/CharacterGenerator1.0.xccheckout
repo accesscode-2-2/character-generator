@@ -10,31 +10,43 @@
 	<string>CharacterGenerator1.0</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>F622C222F323CE98DE95B991764165AE5D41DB95</key>
-		<string>https://github.com/vhart/character-generator.git</string>
+		<key>1021FD30828C6B4E0690FBBD54881098877AD660</key>
+		<string>https://github.com/sheyoshida/mario-edits.git</string>
+		<key>A91788EDF6F2633431DCBBFCF0E0F681715DBB78</key>
+		<string>https://github.com/vhart/SuperMarioQuiz.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CharacterGenerator/CharacterGenerator1.0.xcodeproj</string>
+	<string>CharacterGenerator1.0.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F622C222F323CE98DE95B991764165AE5D41DB95</key>
+		<key>1021FD30828C6B4E0690FBBD54881098877AD660</key>
 		<string>../../..</string>
+		<key>A91788EDF6F2633431DCBBFCF0E0F681715DBB78</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/vhart/character-generator.git</string>
+	<string>https://github.com/vhart/SuperMarioQuiz.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F622C222F323CE98DE95B991764165AE5D41DB95</string>
+	<string>A91788EDF6F2633431DCBBFCF0E0F681715DBB78</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F622C222F323CE98DE95B991764165AE5D41DB95</string>
+			<string>1021FD30828C6B4E0690FBBD54881098877AD660</string>
 			<key>IDESourceControlWCCName</key>
-			<string>character-generator</string>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A91788EDF6F2633431DCBBFCF0E0F681715DBB78</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SuperMarioQuiz</string>
 		</dict>
 	</array>
 </dict>
