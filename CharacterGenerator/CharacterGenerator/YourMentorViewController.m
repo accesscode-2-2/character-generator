@@ -29,6 +29,7 @@
     NSString *imageName = [self.manager.detailMentorName lowercaseString];
     
     self.mentorImageView.image = [UIImage imageNamed:imageName];
+    self.navigationItem.title = [self.manager detailMentorName];
 
 }
 
