@@ -29,4 +29,7 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *yesOrNoPicker;
 - (IBAction)buttonPressed:(id)sender;
 
+
+//checks if they added an image
+@property (nonatomic) BOOL addedImage;
 @end

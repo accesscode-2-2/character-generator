@@ -44,25 +44,27 @@
     int beer = 0;
     UIImage * image = [UIImage imageNamed:@"henna"];
     [Henna initializeName:@"Henna" pushups:pushup fighter:NO andBeer:beer withImage: image];
-    //[Henna initializeName:@"Henna" pushups:pushup fighter:NO andBeer:beer];
+    
 
     [self.allCharacters addObject:Henna];
     
     
-//    Character *Artur = [[Character alloc] init];
-//    pushup = 10;
-//    beer = 2;
-//    [Artur initializeName:@"Artur" pushups:pushup fighter:YES andBeer:beer];
-//
-//     [self.allCharacters addObject:Artur];
-//    
-//    
-//    Character *Brian = [[Character alloc] init];
-//    pushup = 20;
-//    beer = 0;
-//    [Brian initializeName:@"Brian" pushups:pushup fighter:YES andBeer:beer];
-//
-//     [self.allCharacters addObject:Brian];
+    Character *Artur = [[Character alloc] init];
+    pushup = 10;
+    beer = 2;
+    image = [UIImage imageNamed:@"artur"];
+    [Artur initializeName:@"Artur" pushups:pushup fighter:YES andBeer:beer withImage:image];
+
+     [self.allCharacters addObject:Artur];
+
+    
+    Character *Brian = [[Character alloc] init];
+    pushup = 20;
+    beer = 0;
+    image = [UIImage imageNamed:@"brian"];
+    [Brian initializeName:@"Brian" pushups:pushup fighter:YES andBeer:beer withImage:image];
+
+     [self.allCharacters addObject:Brian];
 
 }
 

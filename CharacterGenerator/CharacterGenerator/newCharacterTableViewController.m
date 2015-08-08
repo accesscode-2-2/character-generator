@@ -38,11 +38,13 @@
     [imagePicker2 setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
     [self presentViewController:imagePicker2 animated:YES completion:NULL];
     
+    
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
     image = [info objectForKey:UIImagePickerControllerOriginalImage];
     [imageView setImage:image];
+    self.addedImage = YES;
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
@@ -58,7 +60,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.addedImage = NO;
     //Data Picker Choices
     NSArray *choice = [[NSArray alloc] initWithObjects: @"Yes", @"No", nil];
     
@@ -67,13 +69,18 @@
 - (IBAction)onSubmit:(UIButton *)sender {
     
     Character *person = [[Character alloc]init];
-    
+    NSString * personName = self.nameLabel.text;
     int pushUpInt = [self.pushupLabel.text intValue];
     int beerInt = [self.beerLabel.text intValue];
     NSString *fightString = [self.fight objectAtIndex:[_yesOrNoPicker selectedRowInComponent:0]];
     BOOL canFight = [fightString boolValue];
     
-    [person initializeName:self.nameLabel.text pushups:pushUpInt fighter:canFight andBeer:beerInt withImage:image];
+    if (!self.addedImage) {
+        
+        image = [UIImage imageNamed:[personName lowercaseString]];
+    }
+    
+    [person initializeName:personName pushups:pushUpInt fighter:canFight andBeer:beerInt withImage:image];
     
     //[person initializeName:self.nameLabel.text pushups:pushUpInt fighter:canFight andBeer:beerInt ];
     
