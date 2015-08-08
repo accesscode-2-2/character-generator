@@ -368,6 +368,11 @@
                                                             <state key="normal" image="earth_kingdom">
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                             <connections>
                                                                 <action selector="locationButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="o3E-9B-JvP"/>
                                                             </connections>
@@ -391,6 +396,11 @@
                                                             <state key="normal" image="Eastern_Air_Temple">
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                             <connections>
                                                                 <action selector="locationButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="yRY-IR-ckc"/>
                                                             </connections>
@@ -410,6 +420,11 @@
                                                             <state key="normal" image="fire_Nation">
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                             <connections>
                                                                 <action selector="locationButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="qc2-Qr-icd"/>
                                                             </connections>
@@ -430,6 +445,11 @@
                                                     <state key="normal" image="water_tribe">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <action selector="locationButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="QtH-et-h4n"/>
                                                     </connections>
@@ -512,7 +532,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Paz-EI-reL">
                                                     <rect key="frame" x="0.0" y="144" width="300" height="143"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="832-sT-VbX">
+                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="832-sT-VbX">
                                                             <rect key="frame" x="166" y="5" width="129" height="97"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="97" id="2D1-l5-ZmJ"/>
@@ -522,6 +542,11 @@
                                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                             <connections>
                                                                 <action selector="textureButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="RJe-gG-iyH"/>
                                                             </connections>
@@ -536,7 +561,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mmz-z9-DvF">
                                                     <rect key="frame" x="300" y="0.0" width="300" height="144"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Tu-dW-XA1">
+                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Tu-dW-XA1">
                                                             <rect key="frame" x="5" y="42" width="129" height="97"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="97" id="9Xp-Hr-84e"/>
@@ -546,6 +571,11 @@
                                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                             <connections>
                                                                 <action selector="textureButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="S1k-8l-Ubg"/>
                                                             </connections>
@@ -560,7 +590,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R6O-pW-NUe">
                                                     <rect key="frame" x="300" y="144" width="300" height="143"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vX0-pN-s4S">
+                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vX0-pN-s4S">
                                                             <rect key="frame" x="5" y="5" width="129" height="97"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="129" id="6MB-xN-15j"/>
@@ -570,6 +600,11 @@
                                                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                             <connections>
                                                                 <action selector="textureButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="0v2-0g-axu"/>
                                                             </connections>
@@ -584,7 +619,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4W-WZ-XLz">
                                                     <rect key="frame" x="0.0" y="0.0" width="300" height="144"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUR-Oq-cRq">
+                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUR-Oq-cRq">
                                                             <rect key="frame" x="166" y="42" width="129" height="97"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="97" id="2A8-8h-adg"/>
@@ -594,6 +629,11 @@
                                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                             <connections>
                                                                 <action selector="textureButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="2FL-Wt-ty1"/>
                                                             </connections>
@@ -636,17 +676,10 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CHl-2I-2Lw" id="PxM-6H-PdV">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3t-1r-JpB">
-                                                    <rect key="frame" x="198" y="12" width="205" height="20"/>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="What's your favorite color?">
-                                                            <attributes>
-                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What's your favorite color?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3t-1r-JpB">
+                                                    <rect key="frame" x="199" y="13" width="204" height="19"/>
+                                                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -664,36 +697,6 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="379-Aa-Xd0">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="291"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMO-wn-Qai">
-                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="146"/>
-                                                            <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qE6-sC-IqV">
-                                                                    <rect key="frame" x="175" y="21" width="120" height="120"/>
-                                                                    <color key="backgroundColor" red="0.79572302278820373" green="0.044128202687749321" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" constant="120" id="0dC-63-3gK"/>
-                                                                        <constraint firstAttribute="height" constant="120" id="RLB-zS-Uk6"/>
-                                                                    </constraints>
-                                                                    <state key="normal" title="Red">
-                                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                                    </state>
-                                                                    <userDefinedRuntimeAttributes>
-                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                            <integer key="value" value="60"/>
-                                                                        </userDefinedRuntimeAttribute>
-                                                                    </userDefinedRuntimeAttributes>
-                                                                    <connections>
-                                                                        <action selector="colorButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="m0v-5U-KVa"/>
-                                                                    </connections>
-                                                                </button>
-                                                            </subviews>
-                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="trailing" secondItem="qE6-sC-IqV" secondAttribute="trailing" constant="5" id="4O5-ks-yuV"/>
-                                                                <constraint firstAttribute="bottom" secondItem="qE6-sC-IqV" secondAttribute="bottom" constant="5" id="fBf-bJ-b9m"/>
-                                                            </constraints>
-                                                        </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Le-S6-aSE">
                                                             <rect key="frame" x="300" y="0.0" width="300" height="146"/>
                                                             <subviews>
@@ -784,6 +787,36 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" secondItem="naC-hv-fAB" secondAttribute="trailing" constant="5" id="Fdq-BV-cLk"/>
                                                                 <constraint firstItem="naC-hv-fAB" firstAttribute="top" secondItem="iQZ-wT-trb" secondAttribute="top" constant="5" id="egb-aR-0r2"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMO-wn-Qai">
+                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="146"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qE6-sC-IqV">
+                                                                    <rect key="frame" x="175" y="21" width="120" height="120"/>
+                                                                    <color key="backgroundColor" red="0.79572302278820373" green="0.044128202687749321" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="120" id="0dC-63-3gK"/>
+                                                                        <constraint firstAttribute="height" constant="120" id="RLB-zS-Uk6"/>
+                                                                    </constraints>
+                                                                    <state key="normal" title="Red">
+                                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="60"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="colorButtonTapped:" destination="7np-Tw-zrI" eventType="touchUpInside" id="m0v-5U-KVa"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="qE6-sC-IqV" secondAttribute="trailing" constant="5" id="4O5-ks-yuV"/>
+                                                                <constraint firstAttribute="bottom" secondItem="qE6-sC-IqV" secondAttribute="bottom" constant="5" id="fBf-bJ-b9m"/>
                                                             </constraints>
                                                         </view>
                                                     </subviews>
