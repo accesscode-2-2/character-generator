@@ -33,12 +33,16 @@
          self.animal =  [UIImage imageNamed:@"eagle"];
     }
     //Great White
-    if(value == 38||value == 57|| value == 55 || value == 119){
+    if(value == 38||value == 57|| value == 55){
         self.animal =  [UIImage imageNamed:@"great_white"];
     }
     //Praying Mantis
     if(value ==34 || value ==33 || value == 95 || value==77){
         self.animal =  [UIImage imageNamed:@"praying_mantis-1"];
+    }
+    //Unicorn
+    if(value == 91 || value == 119){
+        self.animal = [UIImage imageNamed:@"Unicorn"];
     }
 }
 -(void)colorsAndTexturesToNumbers{
