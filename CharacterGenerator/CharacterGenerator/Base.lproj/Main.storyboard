@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VHr-mx-fWp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VHr-mx-fWp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -1052,7 +1052,7 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Fill Out Application Below" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dzi-FO-k2E">
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Fill Out Application Below" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dzi-FO-k2E">
                                 <rect key="frame" x="206" y="189" width="188" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1200,7 +1200,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRj-lK-PN5">
-                                <rect key="frame" x="250" y="389" width="100" height="30"/>
+                                <rect key="frame" x="250" y="395" width="100" height="30"/>
                                 <state key="normal" title="New Applicant">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1208,21 +1208,15 @@
                                     <segue destination="5Et-ib-bG6" kind="show" id="FJh-L4-yit"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Welcome to Access Code 2.2 " borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEu-kI-Kga">
-                                <rect key="frame" x="143" y="139" width="315" height="30"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c4q" translatesAutoresizingMaskIntoConstraints="NO" id="x1q-ko-qB7" userLabel="C4Q Logo">
-                                <rect key="frame" x="225" y="189" width="150" height="150"/>
+                                <rect key="frame" x="225" y="195" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="baY-4c-2qV"/>
                                     <constraint firstAttribute="width" constant="150" id="zQv-li-gzs"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIo-9j-GM2">
-                                <rect key="frame" x="242" y="469" width="116" height="30"/>
+                                <rect key="frame" x="242" y="475" width="116" height="30"/>
                                 <state key="normal" title="Show Applicants">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1230,17 +1224,23 @@
                                     <segue destination="A2s-4M-YGq" kind="show" id="d2U-Qz-sch"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Access Code 2.2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="443-I2-e3T">
+                                <rect key="frame" x="157" y="139" width="287" height="26"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.88235294117647056" green="0.88627450980392153" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="x1q-ko-qB7" firstAttribute="top" secondItem="KEu-kI-Kga" secondAttribute="bottom" constant="20" id="0Lb-zx-YX8"/>
                             <constraint firstAttribute="centerX" secondItem="PRj-lK-PN5" secondAttribute="centerX" id="1Vo-qs-kMr"/>
                             <constraint firstAttribute="centerX" secondItem="x1q-ko-qB7" secondAttribute="centerX" id="4C7-OI-rGt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mIo-9j-GM2" secondAttribute="trailing" constant="100" id="5Xb-gt-c11"/>
+                            <constraint firstItem="x1q-ko-qB7" firstAttribute="top" secondItem="443-I2-e3T" secondAttribute="bottom" constant="30" id="CSa-Ld-ImS"/>
                             <constraint firstItem="PRj-lK-PN5" firstAttribute="leading" secondItem="cI3-8B-6cQ" secondAttribute="leadingMargin" constant="100" id="D0y-ao-fZk"/>
+                            <constraint firstAttribute="centerX" secondItem="443-I2-e3T" secondAttribute="centerX" id="T12-R1-ft7"/>
                             <constraint firstItem="mIo-9j-GM2" firstAttribute="top" secondItem="PRj-lK-PN5" secondAttribute="bottom" constant="50" id="VMQ-uW-G7m"/>
-                            <constraint firstAttribute="centerX" secondItem="KEu-kI-Kga" secondAttribute="centerX" id="XTi-xa-59c"/>
-                            <constraint firstItem="KEu-kI-Kga" firstAttribute="top" secondItem="gaD-28-Wkw" secondAttribute="bottom" constant="75" id="ceA-BH-HGo"/>
+                            <constraint firstItem="443-I2-e3T" firstAttribute="top" secondItem="gaD-28-Wkw" secondAttribute="bottom" constant="75" id="l5T-40-AhW"/>
                             <constraint firstItem="mIo-9j-GM2" firstAttribute="top" secondItem="x1q-ko-qB7" secondAttribute="bottom" constant="50" id="qx9-Vf-PYZ"/>
                             <constraint firstAttribute="centerX" secondItem="mIo-9j-GM2" secondAttribute="centerX" id="va9-dR-XsN"/>
                             <constraint firstItem="PRj-lK-PN5" firstAttribute="top" secondItem="x1q-ko-qB7" secondAttribute="bottom" constant="50" id="wa6-4x-AeX"/>
@@ -1368,15 +1368,21 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dh-M1-RAK">
-                                <rect key="frame" x="270" y="466" width="60" height="30"/>
-                                <color key="backgroundColor" red="0.81728130200000004" green="0.89528383219999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="280" y="466" width="41" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="Adl-e1-fuT"/>
                                     <constraint firstAttribute="height" constant="30" id="vQV-N5-q6T"/>
                                 </constraints>
-                                <state key="normal" title="Restart">
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.48627450979999998" green="0.66666666669999997" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Adl-e1-fuT"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="restart:" destination="Wfx-zT-aOV" eventType="touchUpInside" id="6MK-0Y-VE6"/>
                                 </connections>
