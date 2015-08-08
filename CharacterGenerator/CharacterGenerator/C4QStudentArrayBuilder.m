@@ -17,7 +17,7 @@
         [tempArray addObject:[[C4QStudent alloc] init]];
     }
     NSLog(@"%@", tempArray);
-    
+    tempArray = [self setMentorGenders:tempArray];
     tempArray = [self setMentorNames:tempArray];
     tempArray = [self setMentorResidences:tempArray];
     tempArray = [self setMentorQuirks:tempArray];
@@ -67,7 +67,7 @@
                        ];
     
     for (int i = 0; i < 32; i++) {
-        [tempArray[i] setName:genders[i]];
+        [tempArray[i] setGender:genders[i]];
     }
     
     for (C4QStudent *s in tempArray) {

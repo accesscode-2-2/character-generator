@@ -27,8 +27,7 @@
     [self.navigationItem setHidesBackButton:YES animated:YES];
     
     self.mentorNameLabel.text = [self.manager detailMentorName];
-    self.mentorLocation.text = [self. manager detailMentorResidence];
-    self.mentorGender.text = [self. manager detailMentorGender];
+    self.mentorLocation.text = [self.manager detailMentorResidence];
 
     
     NSString *imageName = [self.manager.detailMentorName lowercaseString];
