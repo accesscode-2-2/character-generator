@@ -39,19 +39,19 @@
     NSString *studentName = [self.manager.C4QStudentArray[indexPath.row] name];
     cell.textLabel.text = studentName;
     
-    if ([self.manager.C4QStudentArray[indexPath.row] imageName] != nil) {
-        NSURL *imageURL = [NSURL URLWithString:[self.manager.C4QStudentArray[indexPath.row] imageName]];
-        
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-            NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
-            
-            dispatch_async(dispatch_get_main_queue(), ^{
-                // Update the UI
-                cell.imageView.image = [UIImage imageWithData:imageData];
-            });
+    NSString *imageName = [self.manager.C4QStudentArray[indexPath.row] imageName];
+    NSLog(@"image url: %@", imageName);
+    
+    // Load image only if the user put in a url
+    if (![imageName isEqualToString:@""]) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSURL *studentImageLink = [NSURL URLWithString:imageName];
+            NSData *imageData = [NSData dataWithContentsOfURL:studentImageLink];
+            cell.imageView.image = [UIImage imageWithData:imageData];
+            [self.tableView reloadData];
         });
     }
-        
+    
     return cell;
 }
 
