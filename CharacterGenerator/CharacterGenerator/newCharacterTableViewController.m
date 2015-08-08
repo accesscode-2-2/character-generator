@@ -40,11 +40,15 @@
     
 }
 
-- (void) imagePickerController:(nonnull UIImagePickerController *)picker didFinishPickingMediaWithInfo:(nonnull NSDictionary<NSString *,id> *)info {
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
     image = [info objectForKey:UIImagePickerControllerOriginalImage];
     [imageView setImage:image];
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
+
+//- (void) imagePickerController:(nonnull UIImagePickerController *)picker didFinishPickingMediaWithInfo:(nonnull NSDictionary<NSString *,id> *)info {
+//
+//}
 
 - (void) imagePickerControllerDidCancel:(nonnull UIImagePickerController *)picker {
     [self dismissViewControllerAnimated:YES completion:NULL];
