@@ -69,8 +69,9 @@
     NSString *fightString = [self.fight objectAtIndex:[_yesOrNoPicker selectedRowInComponent:0]];
     BOOL canFight = [fightString boolValue];
     
+    [person initializeName:self.nameLabel.text pushups:pushUpInt fighter:canFight andBeer:beerInt withImage:image];
     
-    [person initializeName:self.nameLabel.text pushups:pushUpInt fighter:canFight andBeer:beerInt];
+    //[person initializeName:self.nameLabel.text pushups:pushUpInt fighter:canFight andBeer:beerInt ];
     
     characterModel * shared = [characterModel sharedInstance];
     [shared.allCharacters addObject:person];

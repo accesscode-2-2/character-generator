@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Character : NSObject
 
@@ -15,13 +16,14 @@
 @property (nonatomic) int pushupLimit;
 @property (nonatomic) BOOL canFight;
 @property (nonatomic) int beerLimit;
+@property (nonatomic) UIImage * image;
 
 //we can determine this
 @property (nonatomic) NSString * superPower;
 
 //Method
 //- (void) determineSuperPower;
-- (void) initializeName: (NSString *) name pushups: (int) pushupLimit fighter: (BOOL) canFight andBeer: (int) beerLimit;
+- (void) initializeName: (NSString *) name pushups: (int) pushupLimit fighter: (BOOL) canFight andBeer: (int) beerLimit withImage: (UIImage*) image;
 
 
 

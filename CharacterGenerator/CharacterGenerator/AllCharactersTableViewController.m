@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"AC 2.2 Hunger Games";
+    self.title = @"AC 2.2 Super Heroes";
     
     self.model = [characterModel sharedInstance];
     
@@ -60,6 +60,7 @@
         destination.pushupLimit = pushUpLimit;
         destination.beerLimit = beerLimit;
         destination.superHeroName = person.superPower;
+        destination.deetsImageName = person.image;
         
     
     }

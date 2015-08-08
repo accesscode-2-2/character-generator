@@ -10,13 +10,14 @@
 
 @implementation Character
 
-- (void) initializeName: (NSString *) name pushups: (int) pushupLimit fighter: (BOOL) canFight andBeer: (int) beerLimit{
+- (void) initializeName: (NSString *) name pushups: (int) pushupLimit fighter: (BOOL) canFight andBeer: (int) beerLimit withImage: (UIImage*) image;{
     
     self.name = name;
     self.pushupLimit = pushupLimit;
     self.canFight = canFight;
     self.beerLimit = beerLimit;
     self.superPower = self.determineSuperPower;
+    self.image = image;
 }
 
 - (NSString *) determineSuperPower {

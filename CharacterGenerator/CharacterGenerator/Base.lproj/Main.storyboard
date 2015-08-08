@@ -384,7 +384,7 @@
                     </view>
                     <connections>
                         <outlet property="beerLabel" destination="xmU-eg-mef" id="KlN-GP-lXO"/>
-                        <outlet property="deetsImage" destination="iyI-Dn-ORD" id="HUi-K9-Kqg"/>
+                        <outlet property="deetsImage" destination="iyI-Dn-ORD" id="nV4-Lp-6q2"/>
                         <outlet property="fightLabel" destination="gDk-X3-jDZ" id="3iQ-Z5-Zm9"/>
                         <outlet property="nameLabel" destination="rS3-Hb-8B0" id="D0B-98-nsl"/>
                         <outlet property="pushupsLabel" destination="ET1-pj-VWN" id="MWC-c7-txQ"/>

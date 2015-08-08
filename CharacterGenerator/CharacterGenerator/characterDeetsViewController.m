@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *fightLabel;
 @property (weak, nonatomic) IBOutlet UILabel *beerLabel;
 @property (weak, nonatomic) IBOutlet UILabel *superHeroLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *deetsImage;
 
 @end
 
@@ -35,6 +36,7 @@
     }
     self.beerLabel.text = [NSString stringWithFormat:@"%d",self.beerLimit];
     self.superHeroLabel.text = self.superHeroName;
+    self.deetsImage.image = self.deetsImageName;
 
     
 //    @property (nonatomic) int pushupLimit;

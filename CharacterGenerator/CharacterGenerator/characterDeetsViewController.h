@@ -15,6 +15,6 @@
 @property (nonatomic) BOOL canFight;
 @property (nonatomic) int beerLimit;
 @property (nonatomic) NSString * superHeroName;
-@property (weak, nonatomic) IBOutlet UIImageView *deetsImage;
+@property (nonatomic) UIImage *deetsImageName;
 
 @end

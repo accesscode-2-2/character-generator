@@ -9,6 +9,7 @@
 #import "characterModel.h"
 #import "Character.h"
 
+
 @implementation characterModel
 
 + (characterModel *)sharedInstance
@@ -41,25 +42,27 @@
     Character *Henna = [[Character alloc] init];
     int pushup = 3;
     int beer = 0;
-    [Henna initializeName:@"Henna" pushups:pushup fighter:NO andBeer:beer];
+    UIImage * image = [UIImage imageNamed:@"henna"];
+    [Henna initializeName:@"Henna" pushups:pushup fighter:NO andBeer:beer withImage: image];
+    //[Henna initializeName:@"Henna" pushups:pushup fighter:NO andBeer:beer];
 
     [self.allCharacters addObject:Henna];
     
     
-    Character *Artur = [[Character alloc] init];
-    pushup = 10;
-    beer = 2;
-    [Artur initializeName:@"Artur" pushups:pushup fighter:YES andBeer:beer];
-
-     [self.allCharacters addObject:Artur];
-    
-    
-    Character *Brian = [[Character alloc] init];
-    pushup = 20;
-    beer = 0;
-    [Brian initializeName:@"Brian" pushups:pushup fighter:YES andBeer:beer];
-
-     [self.allCharacters addObject:Brian];
+//    Character *Artur = [[Character alloc] init];
+//    pushup = 10;
+//    beer = 2;
+//    [Artur initializeName:@"Artur" pushups:pushup fighter:YES andBeer:beer];
+//
+//     [self.allCharacters addObject:Artur];
+//    
+//    
+//    Character *Brian = [[Character alloc] init];
+//    pushup = 20;
+//    beer = 0;
+//    [Brian initializeName:@"Brian" pushups:pushup fighter:YES andBeer:beer];
+//
+//     [self.allCharacters addObject:Brian];
 
 }
 
