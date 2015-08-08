@@ -15,9 +15,11 @@
 @property (weak, nonatomic) IBOutlet UITextField *pushupLabel;
 @property (weak, nonatomic) IBOutlet UITextField *beerLabel;
 
+
 @end
 
 @implementation newCharacterTableViewController
+
 
 
 // Take photo button action
@@ -65,13 +67,20 @@
     NSArray *choice = [[NSArray alloc] initWithObjects: @"Yes", @"No", nil];
     
     self.fight = choice;
+    
+    self.pushupLabel.keyboardType = UIKeyboardTypeNumberPad;
+    self.beerLabel.keyboardType = UIKeyboardTypeNumberPad;
+    
+    
 }
 - (IBAction)onSubmit:(UIButton *)sender {
+    
+    
     
     Character *person = [[Character alloc]init];
     NSString * personName = self.nameLabel.text;
     int pushUpInt = [self.pushupLabel.text intValue];
-    int beerInt = [self.beerLabel.text intValue];
+    int beerInt =  [self.beerLabel.text intValue];
     NSString *fightString = [self.fight objectAtIndex:[_yesOrNoPicker selectedRowInComponent:0]];
     BOOL canFight = [fightString boolValue];
     
@@ -87,6 +96,9 @@
     characterModel * shared = [characterModel sharedInstance];
     [shared.allCharacters addObject:person];
     // add person to out character model data
+    
+        [self dismissViewControllerAnimated:YES completion:nil];
+
     
     
 }
@@ -112,16 +124,7 @@
 - (NSString *)pickerView:(nonnull UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
     return [self.fight objectAtIndex:row];
 }
-- (IBAction)buttonPressed:(id)sender {
-    
-    NSString *select = [self.fight objectAtIndex:[_yesOrNoPicker selectedRowInComponent:0]];
-    
-    NSString *title = [[NSString alloc]initWithFormat:@"Awesome!", select];
-    
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:@"You picked!" delegate:nil cancelButtonTitle:@"Let's continue!" otherButtonTitles: nil];
-    
-    [alert show];
-}
+
 
 
 

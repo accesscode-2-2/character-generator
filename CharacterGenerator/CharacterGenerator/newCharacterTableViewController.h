@@ -24,10 +24,11 @@
 - (IBAction)TakePhoto;
 - (IBAction)ChooseExisting;
 
-
+// numeric keyboard
+@property (nonatomic)UIKeyboardType keyboardType;
 // Data Picker 
 @property (weak, nonatomic) IBOutlet UIPickerView *yesOrNoPicker;
-- (IBAction)buttonPressed:(id)sender;
+
 
 
 //checks if they added an image

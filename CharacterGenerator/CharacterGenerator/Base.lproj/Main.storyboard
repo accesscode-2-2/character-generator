@@ -167,7 +167,6 @@
                                                         </mask>
                                                     </variation>
                                                     <connections>
-                                                        <action selector="buttonPressed:" destination="XUV-AR-K0r" eventType="touchUpInside" id="BjK-0K-0VR"/>
                                                         <action selector="onSubmit:" destination="XUV-AR-K0r" eventType="touchUpInside" id="pcI-dR-2dq"/>
                                                     </connections>
                                                 </button>
