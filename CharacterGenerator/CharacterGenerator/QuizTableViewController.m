@@ -24,6 +24,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *answer4a;
 @property (weak, nonatomic) IBOutlet UIButton *answer4b;
+
 @property (weak, nonatomic) IBOutlet UIButton *answer4c;
 @property (weak, nonatomic) IBOutlet UIButton *answer4d;
 @property (weak, nonatomic) IBOutlet UIButton *answer4e;
@@ -161,7 +162,6 @@
 
 
 - (IBAction)selectedAnswer4b:(UIButton *)sender {
-    
     
     [self.selectedButtons insertObject:self.answer4b atIndex:3];
     

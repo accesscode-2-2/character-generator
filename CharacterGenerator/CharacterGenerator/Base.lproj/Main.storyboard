@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="z88-Wl-m2U">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="z88-Wl-m2U">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -175,7 +175,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="129"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwP-Pl-f4F" userLabel="B">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwP-Pl-f4F" userLabel="B">
                                                     <rect key="frame" x="305" y="75" width="187" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="AdS-qX-REW"/>
@@ -188,7 +188,7 @@
                                                         <action selector="selectedAnswer2b:" destination="dSf-yI-ttM" eventType="touchUpInside" id="Ipd-jF-djq"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Et-Og-fZf" userLabel="A">
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Et-Og-fZf" userLabel="A">
                                                     <rect key="frame" x="108" y="74" width="187" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="aaq-fg-tC4"/>
@@ -201,7 +201,7 @@
                                                         <action selector="selectedAnswer2a:" destination="dSf-yI-ttM" eventType="touchUpInside" id="B0O-wP-2gk"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Urban or Rural Setting?" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NM7-QK-Dsh">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Urban or Rural Setting?" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NM7-QK-Dsh">
                                                     <rect key="frame" x="0.0" y="20" width="600" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -243,7 +243,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="129"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIr-CN-53T" userLabel="A">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIr-CN-53T" userLabel="A">
                                                     <rect key="frame" x="100" y="78" width="191" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="BpP-pf-Dic"/>
@@ -256,7 +256,7 @@
                                                         <action selector="selectedAnswer3a:" destination="dSf-yI-ttM" eventType="touchUpInside" id="YoM-7a-iSJ"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZE-aw-yfQ" userLabel="B">
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZE-aw-yfQ" userLabel="B">
                                                     <rect key="frame" x="301" y="77" width="191" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="DeK-Qf-uaF"/>
@@ -269,7 +269,7 @@
                                                         <action selector="selectedAnswer3b:" destination="dSf-yI-ttM" eventType="touchUpInside" id="2vO-fK-aJc"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Do you prefer outdoor or indoor activities?" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-0n-q3s">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you prefer outdoor or indoor activities?" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-0n-q3s">
                                                     <rect key="frame" x="24" y="20" width="552" height="23"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -305,7 +305,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIk-nW-SbO" userLabel="A">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIk-nW-SbO" userLabel="A">
                                                     <rect key="frame" x="130" y="75" width="60" height="29"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                                     <state key="normal" title="Sushi">
@@ -315,17 +315,17 @@
                                                         <action selector="selectedAnswer4a:" destination="dSf-yI-ttM" eventType="touchUpInside" id="00e-Sy-I4b"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6s-kj-B1u" userLabel="B">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6s-kj-B1u" userLabel="B">
                                                     <rect key="frame" x="200" y="75" width="60" height="29"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                                     <state key="normal" title="Curry">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="selectedAnswer4b:" destination="dSf-yI-ttM" eventType="touchUpInside" id="VZh-bd-PWV"/>
+                                                        <action selector="selectedAnswer4b:" destination="dSf-yI-ttM" eventType="touchUpInside" id="wfZ-Yy-wbz"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJd-61-kZU" userLabel="C">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJd-61-kZU" userLabel="C">
                                                     <rect key="frame" x="270" y="75" width="60" height="29"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                                     <state key="normal" title="Souffle">
@@ -335,7 +335,7 @@
                                                         <action selector="selectedAnswer4c:" destination="dSf-yI-ttM" eventType="touchUpInside" id="JF7-ET-oAg"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igh-dJ-3pQ" userLabel="D">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igh-dJ-3pQ" userLabel="D">
                                                     <rect key="frame" x="340" y="75" width="60" height="29"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                                     <state key="normal" title="Pancakes">
@@ -345,7 +345,7 @@
                                                         <action selector="selectedAnswer4d:" destination="dSf-yI-ttM" eventType="touchUpInside" id="gSi-a3-9em"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tx-53-luE" userLabel="E">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tx-53-luE" userLabel="E">
                                                     <rect key="frame" x="410" y="75" width="60" height="29"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                                     <state key="normal" title="Pavlova">
@@ -532,7 +532,7 @@
                         <outlet property="answer3a" destination="sIr-CN-53T" id="5q6-CV-FwD"/>
                         <outlet property="answer3b" destination="DZE-aw-yfQ" id="flk-yB-xRL"/>
                         <outlet property="answer4a" destination="xIk-nW-SbO" id="5Ux-Ke-bBR"/>
-                        <outlet property="answer4b" destination="A6s-kj-B1u" id="xSL-6x-N2p"/>
+                        <outlet property="answer4b" destination="A6s-kj-B1u" id="lC9-at-r8g"/>
                         <outlet property="answer4c" destination="rJd-61-kZU" id="cUZ-EE-wg8"/>
                         <outlet property="answer4d" destination="Igh-dJ-3pQ" id="p80-8v-suB"/>
                         <outlet property="answer4e" destination="7tx-53-luE" id="SXM-mh-Jk1"/>
@@ -600,7 +600,7 @@
                     <navigationItem key="navigationItem" id="xW7-tG-0FU">
                         <nil key="title"/>
                         <view key="titleView" contentMode="scaleToFill" id="ddc-5l-uB3">
-                            <rect key="frame" x="180" y="6" width="240" height="33"/>
+                            <rect key="frame" x="180" y="5.5" width="240" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a new destination" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ah-6h-dTj">
