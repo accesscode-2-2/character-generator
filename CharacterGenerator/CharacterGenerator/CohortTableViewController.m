@@ -7,6 +7,7 @@
 //
 
 #import "CohortTableViewController.h"
+#import "CohortDetailViewController.h"
 #import "C4QStudentManager.h"
 #import "C4QStudent.h"
 
@@ -40,7 +41,7 @@
     cell.textLabel.text = studentName;
     
     NSString *imageName = [self.manager.C4QStudentArray[indexPath.row] imageName];
-    NSLog(@"image url: %@", imageName);
+    //NSLog(@"image url: %@", imageName);
     
     // Load image only if the user put in a url
     if (![imageName isEqualToString:@""]) {
@@ -53,6 +54,15 @@
     }
     
     return cell;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // get the indexPath for the tapped cell
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    NSLog(@"indexPath: %@", indexPath);
+    CohortDetailViewController *cd = [segue destinationViewController];
+    NSLog(@"indexPath.row %lu", indexPath.row);
+    cd.studentIndex = indexPath.row;
 }
 
 @end

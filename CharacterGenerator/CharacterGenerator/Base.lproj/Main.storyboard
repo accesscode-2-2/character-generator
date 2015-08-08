@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VHr-mx-fWp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VHr-mx-fWp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -1281,10 +1281,10 @@
             </objects>
             <point key="canvasLocation" x="1086" y="86"/>
         </scene>
-        <!--View Controller-->
+        <!--Cohort Detail View Controller-->
         <scene sceneID="FCN-Sj-fug">
             <objects>
-                <viewController id="Ll0-9q-Z5m" sceneMemberID="viewController">
+                <viewController id="Ll0-9q-Z5m" customClass="CohortDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dZL-Me-mKJ"/>
                         <viewControllerLayoutGuide type="bottom" id="hZC-PS-Kba"/>
@@ -1323,6 +1323,10 @@
                             <constraint firstAttribute="centerX" secondItem="2pa-9y-181" secondAttribute="centerX" id="xGa-Yq-szi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="studentImageView" destination="4FD-Nw-0b4" id="atP-T5-7jr"/>
+                        <outlet property="studentNameLabel" destination="jiW-LV-87b" id="dKM-aw-noF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hz7-ym-uBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

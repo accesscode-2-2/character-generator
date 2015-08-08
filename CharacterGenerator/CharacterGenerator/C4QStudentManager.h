@@ -19,9 +19,8 @@
 @property (nonatomic) NSString *detailMentorResidence;
 @property (nonatomic) NSString *detailMentorGender;
 
-
-
 + (id)sharedC4QStudentManager;
+
 - (void)addNewStudentWithName:(NSString *)name
                        gender:(NSString *)gender
                     residence:(NSString *)residence
