@@ -95,7 +95,7 @@
     
     // pick a random mentor index from the ones selected
     NSUInteger randomIndex = arc4random_uniform((u_int32_t) [picks count]);
-    NSLog(@"randomIndex: %lu", randomIndex);
+    //NSLog(@"randomIndex: %lu", randomIndex);
     
     NSUInteger randomPick = [picks[randomIndex] unsignedIntegerValue];
     NSLog(@"randomPick: %lu", randomPick);
