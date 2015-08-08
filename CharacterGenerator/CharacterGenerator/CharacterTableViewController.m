@@ -35,9 +35,39 @@
     
 }
 
-- (IBAction)doneButtonTapped:(UIBarButtonItem *)sender {
+-(BOOL)isComplete{
     if(self.nameTextField.text.length == 0){
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Text Fields Empty!"
+        return NO;
+    }
+    for(int i=0; i < self.locationQuestionButtons.count; i++){
+        if([self.locationQuestionButtons[i] isSelected]){
+            break;
+        }
+        if(i==self.locationQuestionButtons.count-1){
+            return NO;
+        }
+    }
+    for(int i=0;i<self.colorQuestionButtons.count;i++){
+        if([self.colorQuestionButtons[i] isSelected]){
+            break;
+        }
+        if(i==self.colorQuestionButtons.count-1){
+            return NO;
+        }    }
+    for(int i=0;i<self.textureQuestionButtons.count;i++){
+        if([self.textureQuestionButtons[i] isSelected]){
+            break;
+        }
+        if(i==self.textureQuestionButtons.count-1){
+            return NO;
+        }    }
+    return YES;
+}
+
+- (IBAction)doneButtonTapped:(UIBarButtonItem *)sender {
+    if(![self isComplete]){
+   
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Missing some Field Inputs!"
                                                         message:@"Input Data bruh"
                                                        delegate:self
                                               cancelButtonTitle:@"OK"
@@ -45,19 +75,19 @@
         [alert show];
     }
     else{
-    Bender *newBender = [[Bender alloc] init];
-    
-    newBender.name = self.nameTextField.text;
-    newBender.color = self.color;
-    newBender.texture = self.texture;
-    newBender.location = [newBender imageForName:self.location];
-    
-    [newBender animalForColor:self.color AndTexture:self.texture];
-    
-    
-    
-    [[BenderManager sharedManager] addBenders:newBender];
-    
+        Bender *newBender = [[Bender alloc] init];
+        
+        newBender.name = self.nameTextField.text;
+        newBender.color = self.color;
+        newBender.texture = self.texture;
+        newBender.location = [newBender imageForName:self.location];
+        
+        [newBender animalForColor:self.color AndTexture:self.texture];
+        
+        
+        
+        [[BenderManager sharedManager] addBenders:newBender];
+        
         [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
