@@ -40,9 +40,13 @@
     UIVisualEffectView *visualEffectView;
     visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
     
-    visualEffectView.frame = self.blownUpImageView.bounds;
+//    NSLog(@"frame: %@", NSStringFromCGRect(visualEffectView.frame));
+    visualEffectView.frame = self.view.frame;
     [self.blownUpImageView addSubview:visualEffectView];
-    
+
+    //Alert forgot button
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"You forgot to press all your buttons" delegate:nil cancelButtonTitle:@"Aww Crap" otherButtonTitles:nil];
+//    [alert show];
 }
 
 - (void)didReceiveMemoryWarning {

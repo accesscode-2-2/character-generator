@@ -262,16 +262,20 @@
                             <constraint firstItem="oxP-dO-Z6t" firstAttribute="top" secondItem="VpE-WK-Qxj" secondAttribute="bottom" id="dxd-fO-8qt"/>
                             <constraint firstItem="oxP-dO-Z6t" firstAttribute="top" secondItem="XO6-TW-ebV" secondAttribute="topMargin" id="gMR-xz-Z9m"/>
                             <constraint firstItem="6jV-xj-Rpd" firstAttribute="width" secondItem="JPc-aq-otT" secondAttribute="width" id="nOZ-Nf-mtr"/>
+                            <constraint firstItem="Fk7-3g-YMO" firstAttribute="top" secondItem="6jV-xj-Rpd" secondAttribute="bottom" id="oyr-16-FN1"/>
                             <constraint firstAttribute="trailing" secondItem="JPc-aq-otT" secondAttribute="trailing" id="qS1-V7-iaO"/>
                             <constraint firstItem="JPc-aq-otT" firstAttribute="top" secondItem="VpE-WK-Qxj" secondAttribute="bottom" id="sQY-4j-0Pq"/>
                             <constraint firstItem="oxP-dO-Z6t" firstAttribute="leading" secondItem="XO6-TW-ebV" secondAttribute="leading" id="uVc-Zp-WMg"/>
+                            <constraint firstItem="Fk7-3g-YMO" firstAttribute="top" secondItem="6jV-xj-Rpd" secondAttribute="bottom" id="wYu-o9-k1J"/>
                             <constraint firstItem="6jV-xj-Rpd" firstAttribute="leading" secondItem="XO6-TW-ebV" secondAttribute="leading" id="xNQ-pT-fIx"/>
                             <constraint firstItem="6jV-xj-Rpd" firstAttribute="height" secondItem="JPc-aq-otT" secondAttribute="height" id="zh3-qR-Tm6"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="dxd-fO-8qt"/>
+                                <exclude reference="F58-sO-Ymu"/>
                                 <exclude reference="LJe-pF-B7l"/>
+                                <exclude reference="wYu-o9-k1J"/>
                             </mask>
                         </variation>
                     </view>
@@ -339,8 +343,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a Location!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7LS-LX-kYT">
-                                                    <rect key="frame" x="226" y="11" width="149" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="229" y="12" width="143" height="19"/>
+                                                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -488,8 +492,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a texture!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mj7-hy-Uf1">
-                                                    <rect key="frame" x="245" y="15" width="110" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="247" y="16" width="107" height="19"/>
+                                                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
