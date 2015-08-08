@@ -10,26 +10,22 @@
 	<string>MinionMadness</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>557DEE56C3C4EEA3BB080156F90EEC0B70A799AD</key>
-		<string>https://github.com/JovannyEspinal/MinionMadness.git</string>
 		<key>F622C222F323CE98DE95B991764165AE5D41DB95</key>
 		<string>https://github.com/JovannyEspinal/character-generator.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>MinionMadness/MinionMadness.xcodeproj</string>
+	<string>CharacterGenerator/MinionMadness.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>557DEE56C3C4EEA3BB080156F90EEC0B70A799AD</key>
-		<string>../../..</string>
 		<key>F622C222F323CE98DE95B991764165AE5D41DB95</key>
-		<string>../../../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/JovannyEspinal/MinionMadness.git</string>
+	<string>https://github.com/JovannyEspinal/character-generator.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>557DEE56C3C4EEA3BB080156F90EEC0B70A799AD</string>
+	<string>F622C222F323CE98DE95B991764165AE5D41DB95</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -38,15 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>F622C222F323CE98DE95B991764165AE5D41DB95</string>
 			<key>IDESourceControlWCCName</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>557DEE56C3C4EEA3BB080156F90EEC0B70A799AD</string>
-			<key>IDESourceControlWCCName</key>
-			<string>MinionMadness</string>
+			<string>character-generator</string>
 		</dict>
 	</array>
 </dict>

@@ -22,28 +22,31 @@
 @property (nonatomic) NSMutableArray *allCharacters;
 @property (nonatomic) NSArray *minions;
 
-//Options (A - D) for Q1
+//Options (A & B) for Q1
 @property (weak, nonatomic) IBOutlet UIButton *Q1AOption;
 @property (weak, nonatomic) IBOutlet UIButton *Q1BOption;
-@property (weak, nonatomic) IBOutlet UIButton *Q1COption;
-@property (weak, nonatomic) IBOutlet UIButton *Q1DOption;
 
-//Options (A - C) for Q2
+//Options (A - D) for Q2
 @property (weak, nonatomic) IBOutlet UIButton *Q2AOption;
 @property (weak, nonatomic) IBOutlet UIButton *Q2BOption;
 @property (weak, nonatomic) IBOutlet UIButton *Q2COption;
+@property (weak, nonatomic) IBOutlet UIButton *Q2DOption;
 
 
-//Options (A & B) for Q3
+//Options (A - D) for Q3
 @property (weak, nonatomic) IBOutlet UIButton *Q3AOption;
 @property (weak, nonatomic) IBOutlet UIButton *Q3BOption;
+@property (weak, nonatomic) IBOutlet UIButton *Q3COption;
+@property (weak, nonatomic) IBOutlet UIButton *Q3DOption;
 
 
-//Options (A - D) for Q4
+//Options (A & B) for Q4
 @property (weak, nonatomic) IBOutlet UIButton *Q4AOption;
 @property (weak, nonatomic) IBOutlet UIButton *Q4BOption;
-@property (weak, nonatomic) IBOutlet UIButton *Q4COption;
-@property (weak, nonatomic) IBOutlet UIButton *Q4DOption;
+
+@property (weak, nonatomic) IBOutlet UIButton *GenerateButton;
+
+
 
 @end
 
@@ -63,18 +66,166 @@
 }
 
 
-- (IBAction)selected:(id)sender {
-    if (self.Q1AOption == sender && self.Q2AOption == sender && self.Q3AOption == sender && (self.Q4AOption == sender || self.Q4DOption == sender)) {
+- (IBAction)selected:(UIButton *)sender {
+    if (self.Q1AOption == sender) {
+       // Set minion eye property to ONE
+       //
+        if (self.Q2AOption == sender) {
+            //set minion hair property to Flat, Center-Parted"
+            
+            if (self.Q3AOption == sender || self.Q3COption) {
+                //set minion body type to fat
+                
+                if (self.Q4AOption == sender) {
+                    // set minion height number as short
+                }
+                
+                else if (self.Q4BOption == sender){
+                    // set minion height number to average/tall
+                }
+            }
+            else if (self.Q3BOption == sender || self.Q3DOption == sender){
+                // set minion body type to slim
+            }
+        }
+        else if (self.Q2BOption == sender){
+            //set minion hair property to Spiky
+            if (self.Q3AOption == sender || self.Q3COption) {
+                //set minion body type to fat
+                
+                if (self.Q4AOption == sender) {
+                    // set minion height number as short
+                }
+                
+                else if (self.Q4BOption == sender){
+                    // set minion height number to average/tall
+                }
+            }
+            else if (self.Q3BOption == sender || self.Q3DOption == sender){
+                // set minion body type to slim
+            }
+        }
+        else if (self.Q2COption){
+            //set minion hair property to Standing Straight Up
+            if (self.Q3AOption == sender || self.Q3COption) {
+                //set minion body type to fat
+                
+                if (self.Q4AOption == sender) {
+                    // set minion height number as short
+                }
+                
+                else if (self.Q4BOption == sender){
+                    // set minion height number to average/tall
+                }
+            }
+            else if (self.Q3BOption == sender || self.Q3DOption == sender){
+                // set minion body type to slim
+            }
+        }
+        else if (self.Q2DOption){
+            //set minion hair property to Tiny Clump of Hair
+            if (self.Q3AOption == sender || self.Q3COption) {
+                //set minion body type to fat
+                
+                if (self.Q4AOption == sender) {
+                    // set minion height number as short
+                }
+                
+                else if (self.Q4BOption == sender){
+                    // set minion height number to average/tall
+                }
+            }
+            else if (self.Q3BOption == sender || self.Q3DOption == sender){
+                // set minion body type to slim
+            }
+        }
+        
        //arc4random- set to Stuart or Phil
-    } else if (self.Q1BOption == sender && self.Q2BOption == sender && self.Q3BOption == sender && (self.Q4AOption == sender || self.Q4DOption == sender)) {
-        //set to Jerry
-    } else if (self.Q1COption == sender && self.Q2AOption == sender && self.Q3BOption == sender && (self.Q4BOption == sender || self.Q4COption == sender)) {
-        //set to Jorge
-    } else if (self.Q1DOption == sender && self.Q2COption == sender && self.Q3BOption == sender && (self.Q4AOption || self.Q4DOption == sender))  {
-        //set to Tim
-    } else {
-        //what abt other possible combo of options selected
+    } else if (self.Q1BOption == sender){
+        //Set minion eye property to TWO
+        if (self.Q2AOption == sender) {
+            //set minion hair property to Flat, Center-Parted"
+            
+            if (self.Q3AOption == sender || self.Q3COption) {
+                //set minion body type to fat
+                
+                if (self.Q4AOption == sender) {
+                    // set minion height number as short
+                }
+                
+                else if (self.Q4BOption == sender){
+                    // set minion height number to average/tall
+                }
+            }
+            else if (self.Q3BOption == sender || self.Q3DOption == sender){
+                // set minion body type to slim
+            }
+        }
+        else if (self.Q2BOption == sender){
+            //set minion hair property to Spiky
+            if (self.Q3AOption == sender || self.Q3COption) {
+                //set minion body type to fat
+                
+                if (self.Q4AOption == sender) {
+                    // set minion height number as short
+                }
+                
+                else if (self.Q4BOption == sender){
+                    // set minion height number to average/tall
+                }
+            }
+            else if (self.Q3BOption == sender || self.Q3DOption == sender){
+                // set minion body type to slim
+            }
+        }
+        else if (self.Q2COption){
+            //set minion hair property to Standing Straight Up
+            if (self.Q3AOption == sender || self.Q3COption) {
+                //set minion body type to fat
+                
+                if (self.Q4AOption == sender) {
+                    // set minion height number as short
+                }
+                
+                else if (self.Q4BOption == sender){
+                    // set minion height number to average/tall
+                }
+            }
+            else if (self.Q3BOption == sender || self.Q3DOption == sender){
+                // set minion body type to slim
+            }
+        }
+        else if (self.Q2DOption){
+            //set minion hair property to Tiny Clump of Hair
+            if (self.Q3AOption == sender || self.Q3COption) {
+                //set minion body type to fat
+                
+                if (self.Q4AOption == sender) {
+                    // set minion height number as short
+                }
+                
+                else if (self.Q4BOption == sender){
+                    // set minion height number to average/tall
+                }
+            }
+            else if (self.Q3BOption == sender || self.Q3DOption == sender){
+                // set minion body type to slim
+            }
     }
+        
+        
+        
+    }
+    
+//    //&& self.Q2BOption == sender && self.Q3BOption == sender && (self.Q4AOption == sender || self.Q4DOption == sender))
+//        //set to Jerry
+//    } else if (self.Q1COption == sender && self.Q2AOption == sender && self.Q3BOption == sender && (self.Q4BOption == sender || self.Q4COption == sender)) {
+//        //set to Jorge
+//    } else if (self.Q1DOption == sender && self.Q2COption == sender && self.Q3BOption == sender && (self.Q4AOption || self.Q4DOption == sender))  {
+//        //set to Tim
+//    } else {
+//        //what abt other possible combo of options selected
+//    }
 
 }
 

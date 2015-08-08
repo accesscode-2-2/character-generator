@@ -13,6 +13,7 @@
 		5037F3CA1B6EA583004E247E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5037F3C91B6EA583004E247E /* Images.xcassets */; };
 		5037F3CD1B6EA583004E247E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5037F3CB1B6EA583004E247E /* LaunchScreen.xib */; };
 		5037F3D91B6EA583004E247E /* MinionMadnessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5037F3D81B6EA583004E247E /* MinionMadnessTests.m */; };
+		506E5ACB1B764893006E18B9 /* MInionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 506E5ACA1B764893006E18B9 /* MInionManager.m */; };
 		50A9E64D1B72D66E0032F320 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A9E64C1B72D66E0032F320 /* Character.m */; };
 		50A9E6501B72D7460032F320 /* QuizData.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A9E64F1B72D7460032F320 /* QuizData.m */; };
 		50A9E6531B72EA780032F320 /* MinionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A9E6521B72EA780032F320 /* MinionDetailViewController.m */; };
@@ -42,6 +43,8 @@
 		5037F3D21B6EA583004E247E /* MinionMadnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinionMadnessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5037F3D71B6EA583004E247E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5037F3D81B6EA583004E247E /* MinionMadnessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MinionMadnessTests.m; sourceTree = "<group>"; };
+		506E5AC91B764893006E18B9 /* MInionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MInionManager.h; sourceTree = "<group>"; };
+		506E5ACA1B764893006E18B9 /* MInionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MInionManager.m; sourceTree = "<group>"; };
 		50A9E64B1B72D66E0032F320 /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
 		50A9E64C1B72D66E0032F320 /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
 		50A9E64E1B72D7460032F320 /* QuizData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizData.h; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				50A9E64C1B72D66E0032F320 /* Character.m */,
 				50A9E64E1B72D7460032F320 /* QuizData.h */,
 				50A9E64F1B72D7460032F320 /* QuizData.m */,
+				506E5AC91B764893006E18B9 /* MInionManager.h */,
+				506E5ACA1B764893006E18B9 /* MInionManager.m */,
 				5037F3C61B6EA583004E247E /* Main.storyboard */,
 				5037F3C91B6EA583004E247E /* Images.xcassets */,
 				5037F3CB1B6EA583004E247E /* LaunchScreen.xib */,
@@ -246,6 +251,7 @@
 				5037F3BF1B6EA583004E247E /* main.m in Sources */,
 				50A9E6501B72D7460032F320 /* QuizData.m in Sources */,
 				A4C288291B6EC3B000718820 /* QuestionTableViewController.m in Sources */,
+				506E5ACB1B764893006E18B9 /* MInionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
