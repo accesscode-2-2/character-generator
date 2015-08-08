@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 
 @interface WendPlanCharacter : NSObject
 
@@ -15,5 +17,6 @@
 @property (nonatomic) NSString *foodString;
 @property (nonatomic) NSString *alcoholString;
 @property (nonatomic) NSInteger number;
+@property (nonatomic, strong) UIImage *plansImage;
 
 @end

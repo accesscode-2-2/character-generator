@@ -32,6 +32,7 @@
     self.labelCeleb.text = self.character.celebString;
     self.labelFood.text = self.character.foodString;
     self.labelAlcohol.text = self.character.alcoholString;
+    self.plansImageView.image = self.character.plansImage;
     
 //    self.pokemonNameLabel.text = self.pokemonName;
 //    self.pokemonImageView.image = [UIImage imageNamed:self.pokemonImageName];

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gVf-NX-Dru">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gVf-NX-Dru">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -563,10 +563,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza" translatesAutoresizingMaskIntoConstraints="NO" id="VSB-zi-cCZ">
-                                <rect key="frame" x="240" y="149" width="120" height="120"/>
+                                <rect key="frame" x="200" y="149" width="200" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="gNO-YI-gu4"/>
-                                    <constraint firstAttribute="width" constant="120" id="v5o-uG-kjZ"/>
+                                    <constraint firstAttribute="width" constant="200" id="v5o-uG-kjZ"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#1 Plans" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTS-ga-WdW">
@@ -645,6 +645,7 @@
                         <outlet property="labelCeleb" destination="Zzx-iX-dnL" id="Ok1-CK-Q2E"/>
                         <outlet property="labelFood" destination="Fki-dR-m5s" id="Jc9-JD-5ao"/>
                         <outlet property="labelPlans" destination="xTS-ga-WdW" id="3lY-Th-Ty8"/>
+                        <outlet property="plansImageView" destination="VSB-zi-cCZ" id="SI8-4d-giy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTQ-p1-nv4" userLabel="First Responder" sceneMemberID="firstResponder"/>

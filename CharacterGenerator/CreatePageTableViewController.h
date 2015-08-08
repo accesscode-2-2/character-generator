@@ -17,6 +17,7 @@
 @property (nonatomic) NSString *celeb;
 @property (nonatomic) NSString *food;
 @property (nonatomic) NSString *alcohol;
+@property (strong, nonatomic) UIImage *planImage;
 
 @property (nonatomic) NSMutableArray *titles;
 @property (nonatomic) weekendPlans *model;

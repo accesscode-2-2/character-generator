@@ -19,6 +19,7 @@
 @property (nonatomic) NSString *planTwo;
 @property (nonatomic) NSString *planThree;
 @property (nonatomic) NSString *planFour;
+@property (weak, nonatomic) IBOutlet UIImageView *plansImageView;
 
 @property (weak, nonatomic) IBOutlet UILabel *labelPlans;
 @property (weak, nonatomic) IBOutlet UILabel *labelCeleb;

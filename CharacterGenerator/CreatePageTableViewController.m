@@ -40,6 +40,8 @@
     newCharacter.celebString = self.celeb;
     newCharacter.foodString = self.food;
     newCharacter.alcoholString = self.alcohol;
+    newCharacter.plansImage = self.planImage;
+    
     
     [self.titles addObject:newCharacter];
     
@@ -68,6 +70,7 @@
         self.plans = [self.model.weekendPlans objectAtIndex:0];
         self.alcohol = [self.model.alcohol  objectAtIndex:0];
         self.titleToDisplayInMainTableVC = [self.model.titles objectAtIndex:0];
+        self.planImage = [UIImage imageNamed:@"library"];
 //        [self.titles addObject:_titleToDisplayInMainTableVC];
         //new line of code below
 //        [self.wendPlansObjects addObject:<#(id)#>]
@@ -77,6 +80,7 @@
         self.plans = [self.model.weekendPlans objectAtIndex:1];
         self.alcohol = [self.model.alcohol  objectAtIndex:1];
         self.titleToDisplayInMainTableVC = [self.model.titles objectAtIndex:1];
+        self.planImage = [UIImage imageNamed:@"beach"];
 //        [self.titles addObject:_titleToDisplayInMainTableVC];
         NSLog(@"%@", self.plans);
 
@@ -85,6 +89,7 @@
         self.plans = [self.model.weekendPlans objectAtIndex:2];
         self.alcohol = [self.model.alcohol  objectAtIndex:2];
         self.titleToDisplayInMainTableVC = [self.model.titles objectAtIndex:2];
+        self.planImage = [UIImage imageNamed:@"roadTrip"];
 //        [self.titles addObject:_titleToDisplayInMainTableVC];
         NSLog(@"%@", self.plans);
     }
@@ -92,6 +97,7 @@
         self.plans = [self.model.weekendPlans objectAtIndex:3];
         self.alcohol = [self.model.alcohol  objectAtIndex:3];
         self.titleToDisplayInMainTableVC = [self.model.titles objectAtIndex:3];
+        self.planImage = [UIImage imageNamed:@"grandma"];
 //        [self.titles addObject:_titleToDisplayInMainTableVC];
         NSLog(@"%@", self.plans);
     }
@@ -99,6 +105,8 @@
         self.plans = [self.model.weekendPlans objectAtIndex:4];
         self.alcohol = [self.model.alcohol  objectAtIndex:4];
         self.titleToDisplayInMainTableVC = [self.model.titles objectAtIndex:4];
+        self.planImage = [UIImage imageNamed:@"netflix"];
+
 //        [self.titles addObject:_titleToDisplayInMainTableVC];
         NSLog(@"%@", self.plans);
 
@@ -107,6 +115,8 @@
         self.plans = [self.model.weekendPlans objectAtIndex:5];
         self.alcohol = [self.model.alcohol  objectAtIndex:5];
         self.titleToDisplayInMainTableVC = [self.model.titles objectAtIndex:5];
+        self.planImage = [UIImage imageNamed:@"nightclub"];
+
 //        [self.titles addObject:_titleToDisplayInMainTableVC];
         NSLog(@"%@", self.plans);
     }
