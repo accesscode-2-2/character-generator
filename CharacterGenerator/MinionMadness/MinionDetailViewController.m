@@ -7,8 +7,10 @@
 //
 
 #import "MinionDetailViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface MinionDetailViewController ()
+@interface MinionDetailViewController()
+
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *eyesLabel;
@@ -25,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.nameLabel.text = self.minionName;
-    self.imageView.image = [UIImage imageNamed: self.minionName];
+    self.imageView.image = self.minionImage;
     
     self.eyesLabel.text = self.numberOfEyes;
     self.hairLabel.text = self.hairType;

@@ -31,6 +31,7 @@
         dave.hair = @"Flat, Center-Parted";
         dave.body = @"Slim";
         dave.name = @"Dave";
+        dave.minionImage = [UIImage imageNamed:@"Dave"];
         
         [self.mutableMinion addObject:dave];
         
@@ -41,6 +42,7 @@
         stuart.hair = @"Flat, Center-parted";
         stuart.body = @"Slim";
         stuart.name = @"Stuart";
+        stuart.minionImage = [UIImage imageNamed:@"Stuart"];
         
         [self.mutableMinion addObject:stuart];
         
@@ -52,6 +54,7 @@
         jerry.hair = @"Spiky";
         jerry.body = @"Slim";
         jerry.name = @"Jerry";
+        jerry.minionImage = [UIImage imageNamed:@"Jerry"];
         
         
         [self.mutableMinion addObject:jerry];
@@ -63,6 +66,7 @@
         jorge.hair = @"Standing Straight Up";
         jorge.body = @"Fat";
         jorge.name = @"Jorge";
+        jorge.minionImage = [UIImage imageNamed:@"Jorge"];
         
         
         [self.mutableMinion addObject:jorge];
@@ -75,6 +79,7 @@
         tim.hair = @"A Tiny Clump of Hair";
         tim.body = @"Slim";
         tim.name = @"Tim";
+        tim.minionImage = [UIImage imageNamed:@"Tim"];
         
         
         [self.mutableMinion addObject:tim];
@@ -88,6 +93,7 @@
         mark.hair = @"Flat, Center-Parted";
         mark.body = @"Slim";
         mark.name = @"Mark";
+        mark.minionImage = [UIImage imageNamed:@"Mark"];
         
         
         [self.mutableMinion addObject:mark];
@@ -101,6 +107,7 @@
         phil.hair = @"Flat, Center-Parted";
         phil.body = @"Slim";
         phil.name = @"Phil";
+        phil.minionImage = [UIImage imageNamed:@"Phil"];
         
         
         [self.mutableMinion addObject:phil];
