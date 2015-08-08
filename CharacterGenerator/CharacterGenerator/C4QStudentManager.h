@@ -18,6 +18,8 @@
 @property (nonatomic) NSString *detailMentorName;
 @property (nonatomic) NSString *detailMentorResidence;
 @property (nonatomic) NSString *detailMentorGender;
+@property (nonatomic) BOOL nothingSelected;
+
 
 
 

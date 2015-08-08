@@ -88,6 +88,8 @@
     if ([picks count] == 0) {
         for (int i = 0; i < [self.C4QMentorArray count]; i++) {
             picks[i] = @(i);
+            self.nothingSelected = YES;
+            
         }
     }
     NSLog(@"Picks: %@", picks);
