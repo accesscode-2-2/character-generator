@@ -28,7 +28,12 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *specialGrenadeSegmentedControl;
 @property (weak, nonatomic) IBOutlet UIImageView *specialGrenadeImageView;
 
-@property (weak, nonatomic) IBOutlet UIPickerView *perksPicker;
+
+@property (weak, nonatomic) IBOutlet UIPickerView *perk1Picker;
+@property (weak, nonatomic) IBOutlet UIPickerView *perk2Picker;
+@property (weak, nonatomic) IBOutlet UIPickerView *perk3Picker;
+
+
 @property (weak, nonatomic) IBOutlet UIImageView *perk1ImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *perk2ImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *perk3ImageView;

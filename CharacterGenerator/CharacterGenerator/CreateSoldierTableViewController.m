@@ -43,6 +43,15 @@
     
     recruit.specialGrenade = [self.model.specialGrenades objectAtIndex:self.specialGrenadeSegmentedControl.selectedSegmentIndex];
     
+    NSInteger perk1Index = [self.perk1Picker selectedRowInComponent:0];
+    NSString *perk1 = self.model.perks[0][perk1Index];
+    NSInteger perk2Index = [self.perk2Picker selectedRowInComponent:0];
+    NSString *perk2 = self.model.perks[1][perk2Index];
+    NSInteger perk3Index = [self.perk3Picker selectedRowInComponent:0];
+    NSString *perk3 = self.model.perks[2][perk3Index];
+    
+    recruit.perks = [NSArray arrayWithObjects:perk1, perk2, perk3, nil];
+    
     Manager *manager = [Manager sharedInstance];
     [manager addRecruit: recruit];
     
@@ -77,8 +86,14 @@
     self.secondaryWeaponPicker.dataSource = self;
     self.secondaryWeaponPicker.delegate = self;
     
-    self.perksPicker.dataSource = self;
-    self.perksPicker.delegate = self;
+    self.perk1Picker.dataSource = self;
+    self.perk1Picker.delegate = self;
+    
+    self.perk2Picker.dataSource = self;
+    self.perk2Picker.delegate = self;
+    
+    self.perk3Picker.dataSource = self;
+    self.perk3Picker.delegate = self;
     
 }
 
@@ -114,10 +129,6 @@
 // The number of columns of data
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
-    
-    if ([pickerView isEqual:self.perksPicker]) {
-        return self.model.perks.count;
-    }
     
     return 1;
 }
@@ -158,8 +169,16 @@
         NSArray *weaponsForType = [self.model.secondaryWeapons objectForKey:secondaryWeaponType];
         return weaponsForType.count;
     }
-    else if ([pickerView isEqual:self.perksPicker]){
-        NSArray *perks = [self.model.perks objectAtIndex:component];
+    else if ([pickerView isEqual:self.perk1Picker]){
+        NSArray *perks = [self.model.perks objectAtIndex:0];
+        return perks.count;
+    }
+    else if ([pickerView isEqual:self.perk2Picker]){
+        NSArray *perks = [self.model.perks objectAtIndex:1];
+        return perks.count;
+    }
+    else if ([pickerView isEqual:self.perk3Picker]){
+        NSArray *perks = [self.model.perks objectAtIndex:2];
         return perks.count;
     }
     
@@ -191,8 +210,14 @@
         NSString *secondaryWeaponType = [secondaryWeaponTypes objectAtIndex:typeRow];
         return [[self.model.secondaryWeapons objectForKey:secondaryWeaponType] objectAtIndex:row];
     }
-    else if ([pickerView isEqual:self.perksPicker]){
-        return self.model.perks[component][row];
+    else if ([pickerView isEqual:self.perk1Picker]){
+        return self.model.perks[0][row];
+    }
+    else if ([pickerView isEqual:self.perk2Picker]){
+        return self.model.perks[1][row];
+    }
+    else if ([pickerView isEqual:self.perk3Picker]){
+        return self.model.perks[2][row];
     }
     
     return @"1";
@@ -250,17 +275,20 @@
         NSString *selectedSecondaryWeapon = [[self.model.secondaryWeapons objectForKey:secondaryWeaponType] objectAtIndex:row];
         self.secondaryWeaponImageView.image = [UIImage imageNamed:selectedSecondaryWeapon];
     }
-    else if ([pickerView isEqual:self.perksPicker]){
+    else if ([pickerView isEqual:self.perk1Picker]){
         NSString *perk1 = [[self.model.perks objectAtIndex:0] objectAtIndex:row];
         self.perk1ImageView.image = [UIImage imageNamed:perk1];
-        
+    }
+    else if ([pickerView isEqual:self.perk2Picker]){
         NSString *perk2 = [[self.model.perks objectAtIndex:1] objectAtIndex:row];
         self.perk2ImageView.image = [UIImage imageNamed:perk2];
-        
+    }
+    else if ([pickerView isEqual:self.perk3Picker]){
         NSString *perk3 = [[self.model.perks objectAtIndex:2] objectAtIndex:row];
         self.perk3ImageView.image = [UIImage imageNamed:perk3];
-        
     }
+        
+    
 }
 
 @end
