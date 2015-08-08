@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *imageTextField;
 @property (nonatomic) C4QStudentManager *manager;
 @property (weak, nonatomic) IBOutlet UIButton *enterButtonActive;
+@property (weak, nonatomic) IBOutlet UIImageView *c4qLogo;
 
 
 @end
@@ -33,6 +34,10 @@
         [self.enterButtonActive setEnabled:NO];
         
     }
+    self.c4qLogo.layer.cornerRadius = 10.0;
+    self.c4qLogo.layer.masksToBounds = YES;
+    self.c4qLogo.layer.borderWidth = 1.0;
+    self.c4qLogo.layer.borderColor =  [[UIColor colorWithRed:122/255.0 green:123/255.0 blue:124/255.0 alpha:1.0] CGColor];
 
 }
 
