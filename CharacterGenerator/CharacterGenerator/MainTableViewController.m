@@ -72,7 +72,7 @@
     
     WendPlanCharacter *title = [self.titles objectAtIndex:indexPath.row];
     cell.textLabel.text = title.titleString;
-    
+    cell.imageView.image = title.plansImage; 
     return cell;
 }
 

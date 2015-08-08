@@ -47,19 +47,9 @@
     
     ResultsPageViewController *resultsPageViewController = segue.destinationViewController;
     resultsPageViewController.character = newCharacter;
-//    resultsPageViewController.titles = self.titles;
-//    resultsPageViewController.planOne = self.plans;
-//    resultsPageViewController.planTwo = self.celeb;
-//    resultsPageViewController.planThree = self.food;
-//    resultsPageViewController.planFour = self.alcohol;
     
-    //new code
     [self.wendPlansObjects addObject:_planCharacter];
-    self.planCharacter.planString = resultsPageViewController.planOne;
-    
-    //resultsPageViewController.planOne = self.planCharacter.planString;
-    
-    
+    self.planCharacter.planString = resultsPageViewController.planOne;    
 
 }
 
