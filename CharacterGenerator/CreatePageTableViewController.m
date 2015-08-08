@@ -75,6 +75,8 @@
         //new line of code below
 //        [self.wendPlansObjects addObject:<#(id)#>]
         NSLog(@"%@", self.plans);
+        [_angryEmojiButton setImage: [UIImage imageNamed: @"00FF00.png"] forState:UIControlStateHighlighted];
+
     }
     if (self.crazyEmojiButton.isTouchInside == YES){
         self.plans = [self.model.weekendPlans objectAtIndex:1];
@@ -83,6 +85,8 @@
         self.planImage = [UIImage imageNamed:@"beach"];
 //        [self.titles addObject:_titleToDisplayInMainTableVC];
         NSLog(@"%@", self.plans);
+        [_crazyEmojiButton setImage: [UIImage imageNamed: @"00FF00.png"] forState:UIControlStateHighlighted];
+
 
     }
     if (self.kissEmojiButton.isTouchInside == YES){
@@ -92,6 +96,8 @@
         self.planImage = [UIImage imageNamed:@"roadTrip"];
 //        [self.titles addObject:_titleToDisplayInMainTableVC];
         NSLog(@"%@", self.plans);
+        [_kissEmojiButton setImage: [UIImage imageNamed: @"00FF00.png"] forState:UIControlStateHighlighted];
+
     }
     if (self.poopEmojiButton.isTouchInside == YES){
         self.plans = [self.model.weekendPlans objectAtIndex:3];
@@ -100,6 +106,8 @@
         self.planImage = [UIImage imageNamed:@"grandma"];
 //        [self.titles addObject:_titleToDisplayInMainTableVC];
         NSLog(@"%@", self.plans);
+        [_poopEmojiButton setImage: [UIImage imageNamed: @"00FF00.png"] forState:UIControlStateHighlighted];
+
     }
     if (self.tearsEmojiButton.isTouchInside == YES){
         self.plans = [self.model.weekendPlans objectAtIndex:4];
@@ -109,6 +117,7 @@
 
 //        [self.titles addObject:_titleToDisplayInMainTableVC];
         NSLog(@"%@", self.plans);
+        [_tearsEmojiButton setImage: [UIImage imageNamed: @"00FF00.png"] forState:UIControlStateHighlighted];
 
     }
     if (self.fireEmojiButton.isTouchInside == YES){
@@ -119,6 +128,8 @@
 
 //        [self.titles addObject:_titleToDisplayInMainTableVC];
         NSLog(@"%@", self.plans);
+        [_fireEmojiButton setImage: [UIImage imageNamed: @"00FF00.png"] forState:UIControlStateHighlighted];
+
     }
 
 }
@@ -127,26 +138,34 @@
     if (self.shiaCelebButton.isTouchInside == YES){
         self.celeb = [self.model.celebrity objectAtIndex:0];
         NSLog(@"%@", self.celeb);
+        [_shiaCelebButton setImage: [UIImage imageNamed: @"00FF00.png"] forState:UIControlStateHighlighted];
     }
     if (self.jLawCelebButton.isTouchInside == YES){
         self.celeb = [self.model.celebrity objectAtIndex:1];
         NSLog(@"%@", self.celeb);
+        [_jLawCelebButton setImage: [UIImage imageNamed: @"00FF00.png"] forState:UIControlStateHighlighted];
     }
     if (self.steveYeunCelebButton.isTouchInside == YES){
         self.celeb = [self.model.celebrity objectAtIndex:2];
         NSLog(@"%@", self.celeb);
+        [_steveYeunCelebButton setImage: [UIImage imageNamed: @"00FF00.png"] forState:UIControlStateHighlighted];
     }
     if (self.lupitaCelebButton.isTouchInside == YES){
         self.celeb = [self.model.celebrity objectAtIndex:3];
         NSLog(@"%@", self.celeb);
+        [_lupitaCelebButton setImage: [UIImage imageNamed: @"00FF00.png"] forState:UIControlStateHighlighted];
     }
     if (self.theRockCelebButton.isTouchInside == YES){
         self.celeb = [self.model.celebrity objectAtIndex:4];
         NSLog(@"%@", self.celeb);
+        [_theRockCelebButton setImage: [UIImage imageNamed: @"00FF00.png"] forState:UIControlStateHighlighted];
+
     }
     if (self.sofiaVergaraCelebButton.isTouchInside == YES){
         self.celeb = [self.model.celebrity objectAtIndex:5];
         NSLog(@"%@", self.celeb);
+        [_sofiaVergaraCelebButton setImage: [UIImage imageNamed: @"00FF00.png"] forState:UIControlStateHighlighted];
+
     }
 }
 - (IBAction)foodButtonTapped:(UIButton *)sender {
@@ -154,27 +173,39 @@
     if (self.chocolateFoodButton.isTouchInside == YES){
         self.food = [self.model.food objectAtIndex:0];
         NSLog(@"%@", self.food);
+        [_chocolateFoodButton setImage: [UIImage imageNamed: @"00FF00.png"] forState:UIControlStateHighlighted];
 
     }
     if (self.macFoodButton.isTouchInside == YES){
         self.food = [self.model.food objectAtIndex:1];
         NSLog(@"%@", self.food);
+        [_macFoodButton setImage: [UIImage imageNamed: @"00FF00.png"] forState:UIControlStateHighlighted];
+
     }
     if (self.sandwichFoodButton.isTouchInside == YES){
         self.food = [self.model.food objectAtIndex:2];
         NSLog(@"%@", self.food);
+        [_sandwichFoodButton setImage: [UIImage imageNamed: @"00FF00.png"] forState:UIControlStateHighlighted];
+
     }
     if (self.pizzaFoodButton.isTouchInside == YES){
         self.food = [self.model.food objectAtIndex:3];
         NSLog(@"%@", self.food);
+        [_pizzaFoodButton setImage: [UIImage imageNamed: @"00FF00.png"] forState:UIControlStateHighlighted];
+
     }
     if (self.kaleFoodButton.isTouchInside == YES){
         self.food = [self.model.food objectAtIndex:4];
         NSLog(@"%@", self.food);
+        [_kaleFoodButton setImage: [UIImage imageNamed: @"00FF00.png"] forState:UIControlStateHighlighted];
+        //[[self.kaleFoodButton = [setImage: UIImage imageNamed: @"00FF00.png"] forState: UIControlStateHighlighted];
+
     }
     if (self.burritoFoodButton.isTouchInside == YES){
         self.food = [self.model.food objectAtIndex:5];
         NSLog(@"%@", self.food);
+        [_burritoFoodButton setImage: [UIImage imageNamed: @"00FF00.png"] forState:UIControlStateHighlighted];
+
     }
 }
 - (IBAction)switchedON:(UISwitch *)sender {
