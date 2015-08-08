@@ -7,9 +7,14 @@
 //
 
 #import "MinionDetailViewController.h"
+<<<<<<< HEAD
 #import <AVFoundation/AVFoundation.h> //mp3
+=======
+#import <UIKit/UIKit.h>
 
-@interface MinionDetailViewController ()
+@interface MinionDetailViewController()
+>>>>>>> 312235131d88af965723bfa6c4061d6599bb40da
+
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *eyesLabel;
@@ -39,7 +44,7 @@
     self.minionSong = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
     
     self.nameLabel.text = self.minionName;
-    self.imageView.image = [UIImage imageNamed: self.minionName];
+    self.imageView.image = self.minionImage;
     
     self.eyesLabel.text = self.numberOfEyes;
     self.hairLabel.text = self.hairType;

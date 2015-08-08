@@ -11,6 +11,7 @@
 #import "QuizData.h"
 #import "MinionMadnessTableViewController.h"
 #import "MinionDetailViewController.h"
+#import "MInionManager.h"
 
 
 
@@ -18,32 +19,43 @@
 
 // kj to call on these methods for the images to show in the table view controller next to their name.
 
-@property (nonatomic) NSDictionary *tableData;
-@property (nonatomic) NSMutableArray *allCharacters;
-@property (nonatomic) NSArray *minions;
+@property (nonatomic) NSString *eyes;
+@property (nonatomic) NSString *hair;
+@property (nonatomic) NSString *body;
+@property (nonatomic) int height;
 
-//Options (A - D) for Q1
+@property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *question1;
+@property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *question2;
+@property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *question3;
+@property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *question4;
+
+//Options (A & B) for Q1
 @property (weak, nonatomic) IBOutlet UIButton *Q1AOption;
 @property (weak, nonatomic) IBOutlet UIButton *Q1BOption;
-@property (weak, nonatomic) IBOutlet UIButton *Q1COption;
-@property (weak, nonatomic) IBOutlet UIButton *Q1DOption;
 
-//Options (A - C) for Q2
+
+//Options (A - D) for Q2
 @property (weak, nonatomic) IBOutlet UIButton *Q2AOption;
 @property (weak, nonatomic) IBOutlet UIButton *Q2BOption;
 @property (weak, nonatomic) IBOutlet UIButton *Q2COption;
+@property (weak, nonatomic) IBOutlet UIButton *Q2DOption;
 
 
-//Options (A & B) for Q3
+//Options (A - D) for Q3
 @property (weak, nonatomic) IBOutlet UIButton *Q3AOption;
 @property (weak, nonatomic) IBOutlet UIButton *Q3BOption;
+@property (weak, nonatomic) IBOutlet UIButton *Q3COption;
+@property (weak, nonatomic) IBOutlet UIButton *Q3DOption;
 
 
-//Options (A - D) for Q4
+//Options (A & B) for Q4
 @property (weak, nonatomic) IBOutlet UIButton *Q4AOption;
 @property (weak, nonatomic) IBOutlet UIButton *Q4BOption;
-@property (weak, nonatomic) IBOutlet UIButton *Q4COption;
-@property (weak, nonatomic) IBOutlet UIButton *Q4DOption;
+
+@property (weak, nonatomic) IBOutlet UIButton *GenerateButton;
+
+@property (weak, nonatomic) IBOutlet UITextField *nameField;
+
 
 @end
 
@@ -51,33 +63,88 @@
 
 @implementation QuestionTableViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
 
-
-}
-- (IBAction)buttonTapped:(id)sender {
+//Question 1
+- (IBAction)question1Tap:(UIButton *)sender {
+    NSInteger idx = [self.question1 indexOfObject:sender];
+   
+    if (idx == 0){
+        self.eyes = @"One";
+    }
+    else{
+        self.eyes = @"Two";
+    }
     
+}
+
+//Question 2
+- (IBAction)question2Tap:(UIButton *)sender {
+    NSInteger idx = [self.question2 indexOfObject:sender];
+    
+    if (idx == 0){
+        self.hair = @"Flat, Center-Parted";
+    }
+    else if (idx == 1){
+        self.hair = @"Spiky";
+    }
+    else if(idx == 2){
+        self.hair = @"Standing Straight Up";
+    }
+    else {
+        self.hair = @"A Tiny Clump of Hair";
+    }
+}
+
+//Question 3
+- (IBAction)question3Tap:(UIButton *)sender {
+    NSInteger idx = [self.question3 indexOfObject:sender];
+    
+    if (idx == 0 || idx == 2) {
+        self.body = @"Fat";
+    }
+    else {
+        self.body = @"Slim";
+    }
+}
+
+
+//Question 4
+- (IBAction)question4Tap:(UIButton *)sender {
+    NSInteger idx = [self.question4 indexOfObject:sender];
+    
+    int lowerBound = 95;
+    int midBound = 100;
+    int upperbound = 115;
+    
+    if (idx == 0) {
+        self.height = lowerBound + arc4random() % (midBound - lowerBound);;
+    }
+    else {
+        self.height = midBound + arc4random() % (upperbound - midBound);
+    }
+}
+
+
+//Generate Button
+- (IBAction)generateMinion:(UIButton *)sender {
+    Character *minion = [[Character alloc] init];
+    minion.name = self.nameField.text;
+    minion.eyes = self.eyes;
+    minion.hair = self.hair;
+    minion.body = self.body;
+    minion.height = self.height;
+    
+    [minion generateImage];
+    
+    [[MinionManager sharedManager] addMinion:minion];
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 
 
-- (IBAction)selected:(id)sender {
-    if (self.Q1AOption == sender && self.Q2AOption == sender && self.Q3AOption == sender && (self.Q4AOption == sender || self.Q4DOption == sender)) {
-       //arc4random- set to Stuart or Phil
-    } else if (self.Q1BOption == sender && self.Q2BOption == sender && self.Q3BOption == sender && (self.Q4AOption == sender || self.Q4DOption == sender)) {
-        //set to Jerry
-    } else if (self.Q1COption == sender && self.Q2AOption == sender && self.Q3BOption == sender && (self.Q4BOption == sender || self.Q4COption == sender)) {
-        //set to Jorge
-    } else if (self.Q1DOption == sender && self.Q2COption == sender && self.Q3BOption == sender && (self.Q4AOption || self.Q4DOption == sender))  {
-        //set to Tim
-    } else {
-        //what abt other possible combo of options selected
-    }
-
+- (void)viewDidLoad {
+    [super viewDidLoad];
 }
-
 
 
 - (void)didReceiveMemoryWarning {

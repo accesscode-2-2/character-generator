@@ -11,9 +11,10 @@
 #import "MinionDetailViewController.h"
 #import "Character.h"
 #import "QuestionTableViewController.h"
+#import "MInionManager.h"
 
 @interface MinionMadnessTableViewController ()
-@property(nonatomic)QuizData *model;
+@property(nonatomic)NSMutableArray *model;
 @end
 
 @implementation MinionMadnessTableViewController
@@ -21,9 +22,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    QuizData *model = [[QuizData alloc] init];
-    [model initializeArray];
-    self.model = model;
+
+    self.model =  [[MinionManager sharedManager]allMinions];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,7 +35,7 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    Character *minion = self.model.allCharacters[indexPath.row];
+    Character *minion = self.model[indexPath.row];
 
     
     
@@ -46,6 +47,7 @@
         detailViewController.hairType = minion.hair;
         detailViewController.bodyType = minion.body;
         detailViewController.height = minion.height;
+        detailViewController.minionImage = minion.minionImage;
     } else if ([segue.identifier isEqualToString:@"toQuestions"]) {
         QuestionTableViewController *QTVC = segue.destinationViewController;
     }
@@ -61,12 +63,16 @@
     
     }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [self.tableView reloadData];
+    animated = YES;
+}
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     // Return the number of rows in the section.
-    return self.model.allCharacters.count;
+    return self.model.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -74,7 +80,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MinionIdentifier" forIndexPath:indexPath];
     
 
-    Character *minion = self.model.allCharacters[indexPath.row];
+    Character *minion = self.model[indexPath.row];
     cell.textLabel.text = minion.name;
     
             return cell;
