@@ -9,6 +9,8 @@
 #import "C4QStudent.h"
 #import "C4QStudentManager.h"
 #import "C4QStudentArrayBuilder.h"
+#import "YourMentorViewController.h"
+
 
 @interface C4QStudentManager ()
 @property (nonatomic) C4QStudentArrayBuilder *SAB;
@@ -102,6 +104,7 @@
     [self.C4QStudentArray[[self.C4QStudentArray count] - 1] setMentorIndex:randomPick];
     NSLog(@"Mentor: %@", [self.C4QMentorArray[randomPick] name]);
     
+    self.detailMentorName = [self.C4QMentorArray[randomPick] name];
 }
 
 @end
