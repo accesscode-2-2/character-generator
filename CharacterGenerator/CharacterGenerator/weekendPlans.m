@@ -38,7 +38,6 @@
     self.celebrity = @[
                        @"Guess what? Shia Lebouf wants to come along. Uh oh. This might be crazy...",
                        @"Whoa! J-Law just sent you a text and wants to chill! Noice!",
-                       
                        @"Steve Yeun just Slacked you - he's bored and needs a buddy! He's coming to hang!",
                        @"Yo! Lupita Nyong'o wants to tag along!",
                        @"Dwayne Johnson wants to chill! The Rock?! Sweet!",
@@ -50,8 +49,8 @@
 - (void) initializeFood {
     
     self.food = @[
-                  @"Then you remember you have a whole jug of Nutela. Not bad.",
-                  @"Surprise! They brough you mac N cheese! What a buddy!",
+                  @"Then you remember you have a whole jug of Nutella. Not bad.",
+                  @"Surprise! They brought you mac N cheese! What a buddy!",
                   @"You have nothing but sandwiches to eat, though. Great...",
                   @"First, you pick up some artichoke pizza...amazing.",
                   @"Nothing but kale in the fridge...make KALE CHIPS!",

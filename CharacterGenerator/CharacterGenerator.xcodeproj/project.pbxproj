@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29E7BD4A1B7593AC00BF40EC /* WendPlanCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E7BD491B7593AC00BF40EC /* WendPlanCharacter.m */; };
 		8D7B0FFB1B6E6FC6003F4FB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B0FFA1B6E6FC6003F4FB8 /* main.m */; };
 		8D7B0FFE1B6E6FC6003F4FB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B0FFD1B6E6FC6003F4FB8 /* AppDelegate.m */; };
 		8D7B10041B6E6FC6003F4FB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7B10021B6E6FC6003F4FB8 /* Main.storyboard */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29E7BD481B7593AC00BF40EC /* WendPlanCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WendPlanCharacter.h; sourceTree = "<group>"; };
+		29E7BD491B7593AC00BF40EC /* WendPlanCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WendPlanCharacter.m; sourceTree = "<group>"; };
 		8D7B0FF51B6E6FC6003F4FB8 /* CharacterGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CharacterGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7B0FF91B6E6FC6003F4FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D7B0FFA1B6E6FC6003F4FB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,10 +96,12 @@
 				8D7B0FFC1B6E6FC6003F4FB8 /* AppDelegate.h */,
 				8D7B0FFD1B6E6FC6003F4FB8 /* AppDelegate.m */,
 				8D7B10021B6E6FC6003F4FB8 /* Main.storyboard */,
-				9AA50A411B72E11800B368DF /* weekendPlans.h */,
-				9AA50A421B72E11800B368DF /* weekendPlans.m */,
+				29E7BD481B7593AC00BF40EC /* WendPlanCharacter.h */,
+				29E7BD491B7593AC00BF40EC /* WendPlanCharacter.m */,
 				9A4F3B861B6EBEDC0009DD28 /* MainTableViewController.h */,
 				9A4F3B871B6EBEDC0009DD28 /* MainTableViewController.m */,
+				9AA50A411B72E11800B368DF /* weekendPlans.h */,
+				9AA50A421B72E11800B368DF /* weekendPlans.m */,
 				9A4F3BC41B6FE31E0009DD28 /* CreatePageTableViewController.h */,
 				9A4F3BC51B6FE31E0009DD28 /* CreatePageTableViewController.m */,
 				9A4F3BC71B6FFFA20009DD28 /* ResultsPageViewController.h */,
@@ -238,6 +243,7 @@
 				8D7B0FFE1B6E6FC6003F4FB8 /* AppDelegate.m in Sources */,
 				9A4F3BC91B6FFFA20009DD28 /* ResultsPageViewController.m in Sources */,
 				9A4F3BC61B6FE31E0009DD28 /* CreatePageTableViewController.m in Sources */,
+				29E7BD4A1B7593AC00BF40EC /* WendPlanCharacter.m in Sources */,
 				9AA50A431B72E11800B368DF /* weekendPlans.m in Sources */,
 				8D7B0FFB1B6E6FC6003F4FB8 /* main.m in Sources */,
 			);

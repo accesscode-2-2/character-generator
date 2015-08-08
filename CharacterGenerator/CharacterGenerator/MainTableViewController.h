@@ -14,4 +14,7 @@
 @property (nonatomic) NSMutableArray *titles;
 @property (nonatomic) weekendPlans *model; //the same object and property can exist/belong to multiple vc
 
+//new code below
+@property (nonatomic) NSMutableArray *wendPlansObjects;
+
 @end

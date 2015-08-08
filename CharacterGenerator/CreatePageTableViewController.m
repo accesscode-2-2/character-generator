@@ -9,6 +9,7 @@
 #import "CreatePageTableViewController.h"
 #import "ResultsPageViewController.h"
 #import "MainTableViewController.h"
+#import "WendPlanCharacter.h"
 
 @interface CreatePageTableViewController ()
 
@@ -22,28 +23,42 @@
     self.model = [[weekendPlans alloc] init];
     [self.model initializeData];
 
-
     [self.alcoholSwitch setOn:NO animated:YES];
-
+    
+    //new lines of code
+    self.planCharacter = [[WendPlanCharacter alloc]init];
+    NSMutableArray *wendPlansObjects = [[NSMutableArray alloc]init];
+    self.wendPlansObjects = wendPlansObjects;
 
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     NSLog(@"check");
-    ResultsPageViewController *resultsPageViewController = segue.destinationViewController;
-    resultsPageViewController.titles = self.titles;
     
-    resultsPageViewController.planOne = self.plans;
-    resultsPageViewController.planTwo = self.celeb;
-    resultsPageViewController.planThree = self.food;
-    resultsPageViewController.planFour = self.alcohol;
-    //all this below is probably not needed, but I'll leave it here for now - Ayuna
-//    resultsPageViewController.angryEmojiButton = self.angryEmojiButton;
-//    resultsPageViewController.crazyEmojiButton = self.crazyEmojiButton;
-//    resultsPageViewController.kissEmojiButton = self.kissEmojiButton;
-//    resultsPageViewController.poopEmojiButton = self.poopEmojiButton;
-//    resultsPageViewController.tearsEmojiButton = self.tearsEmojiButton;
-//    resultsPageViewController.fireEmojiButton = self.fireEmojiButton;
+    WendPlanCharacter *newCharacter = [[WendPlanCharacter alloc] init];
+    newCharacter.planString = self.plans;
+    newCharacter.celebString = self.celeb;
+    newCharacter.foodString = self.food;
+    newCharacter.alcoholString = self.alcohol;
+    
+    [self.titles addObject:newCharacter];
+    
+    ResultsPageViewController *resultsPageViewController = segue.destinationViewController;
+    resultsPageViewController.character = newCharacter;
+//    resultsPageViewController.titles = self.titles;
+//    resultsPageViewController.planOne = self.plans;
+//    resultsPageViewController.planTwo = self.celeb;
+//    resultsPageViewController.planThree = self.food;
+//    resultsPageViewController.planFour = self.alcohol;
+    
+    //new code
+    [self.wendPlansObjects addObject:_planCharacter];
+    self.planCharacter.planString = resultsPageViewController.planOne;
+    
+    //resultsPageViewController.planOne = self.planCharacter.planString;
+    
+    
+
 }
 
 
@@ -53,14 +68,16 @@
         self.plans = [self.model.weekendPlans objectAtIndex:0];
         self.alcohol = [self.model.alcohol  objectAtIndex:0];
         self.titleToDisplayInMainTableVC = [self.model.titles objectAtIndex:0];
-        [self.titles addObject:_titleToDisplayInMainTableVC];
+//        [self.titles addObject:_titleToDisplayInMainTableVC];
+        //new line of code below
+//        [self.wendPlansObjects addObject:<#(id)#>]
         NSLog(@"%@", self.plans);
     }
     if (self.crazyEmojiButton.isTouchInside == YES){
         self.plans = [self.model.weekendPlans objectAtIndex:1];
         self.alcohol = [self.model.alcohol  objectAtIndex:1];
         self.titleToDisplayInMainTableVC = [self.model.titles objectAtIndex:1];
-        [self.titles addObject:_titleToDisplayInMainTableVC];
+//        [self.titles addObject:_titleToDisplayInMainTableVC];
         NSLog(@"%@", self.plans);
 
     }
@@ -68,21 +85,21 @@
         self.plans = [self.model.weekendPlans objectAtIndex:2];
         self.alcohol = [self.model.alcohol  objectAtIndex:2];
         self.titleToDisplayInMainTableVC = [self.model.titles objectAtIndex:2];
-        [self.titles addObject:_titleToDisplayInMainTableVC];
+//        [self.titles addObject:_titleToDisplayInMainTableVC];
         NSLog(@"%@", self.plans);
     }
     if (self.poopEmojiButton.isTouchInside == YES){
         self.plans = [self.model.weekendPlans objectAtIndex:3];
         self.alcohol = [self.model.alcohol  objectAtIndex:3];
         self.titleToDisplayInMainTableVC = [self.model.titles objectAtIndex:3];
-        [self.titles addObject:_titleToDisplayInMainTableVC];
+//        [self.titles addObject:_titleToDisplayInMainTableVC];
         NSLog(@"%@", self.plans);
     }
     if (self.tearsEmojiButton.isTouchInside == YES){
         self.plans = [self.model.weekendPlans objectAtIndex:4];
         self.alcohol = [self.model.alcohol  objectAtIndex:4];
         self.titleToDisplayInMainTableVC = [self.model.titles objectAtIndex:4];
-        [self.titles addObject:_titleToDisplayInMainTableVC];
+//        [self.titles addObject:_titleToDisplayInMainTableVC];
         NSLog(@"%@", self.plans);
 
     }
@@ -90,7 +107,7 @@
         self.plans = [self.model.weekendPlans objectAtIndex:5];
         self.alcohol = [self.model.alcohol  objectAtIndex:5];
         self.titleToDisplayInMainTableVC = [self.model.titles objectAtIndex:5];
-        [self.titles addObject:_titleToDisplayInMainTableVC];
+//        [self.titles addObject:_titleToDisplayInMainTableVC];
         NSLog(@"%@", self.plans);
     }
 

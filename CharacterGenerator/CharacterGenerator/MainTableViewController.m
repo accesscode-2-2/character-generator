@@ -9,6 +9,8 @@
 #import "MainTableViewController.h"
 #import "weekendPlans.h"
 #import "CreatePageTableViewController.h"
+#import "WendPlanCharacter.h"
+#import "ResultsPageViewController.h"
 
 @interface MainTableViewController ()
 
@@ -22,6 +24,8 @@
     self.model = [[weekendPlans alloc]init];
     [self.model initializeData];
 
+    self.wendPlansObjects = [[NSMutableArray alloc]init]; //move to results
+    
     NSMutableArray *titles = [[NSMutableArray alloc] init];
     self.titles = titles; //property titles (to the left from the equal sign) equals to NSMutableArray *titles on line right above it)  
 
@@ -35,8 +39,17 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    CreatePageTableViewController *createController = (CreatePageTableViewController *)segue.destinationViewController; //we need to create a segue vc that will carry on the same properties as the sender vc
-    createController.titles = self.titles; //this table vc passes then the NSMutableArray property to the segue vc
+    if ([segue.destinationViewController isKindOfClass:[CreatePageTableViewController class]]) {
+        CreatePageTableViewController *createController = (CreatePageTableViewController *)segue.destinationViewController;
+        createController.titles = self.titles;
+    } else {
+        NSIndexPath *ip = [self.tableView indexPathForSelectedRow];
+        WendPlanCharacter *character = [self.titles objectAtIndex:ip.row];
+        ResultsPageViewController *resultsController = (ResultsPageViewController *)segue.destinationViewController;
+        resultsController.character = character;
+    }
+    //we need to create a segue vc that will carry on the same properties as the sender vc
+    //this table vc passes then the NSMutableArray property to the segue vc
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,8 +70,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier"forIndexPath:indexPath];
     
-    NSString *title = [self.titles objectAtIndex:indexPath.row];
-    cell.textLabel.text = title;
+    WendPlanCharacter *title = [self.titles objectAtIndex:indexPath.row];
+    cell.textLabel.text = title.planString;
     
     return cell;
 }

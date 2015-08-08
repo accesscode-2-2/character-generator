@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "weekendPlans.h"
 #import "MainTableViewController.h"
+#import "WendPlanCharacter.h"
 
 @interface CreatePageTableViewController : UITableViewController
 
 @property (nonatomic) NSString *plans;
-
 @property (nonatomic) NSString *celeb;
 @property (nonatomic) NSString *food;
 @property (nonatomic) NSString *alcohol;
@@ -22,6 +22,9 @@
 @property (nonatomic) weekendPlans *model;
 
 @property (nonatomic) NSString *titleToDisplayInMainTableVC;
+//new code below
+@property (nonatomic) WendPlanCharacter *planCharacter;
+@property (nonatomic) NSMutableArray *wendPlansObjects;
 
 
 // Emoji Buttons
