@@ -1004,7 +1004,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZM-HX-gJb">
-                                <rect key="frame" x="282" y="573" width="37" height="30"/>
+                                <rect key="frame" x="282" y="568" width="37" height="30"/>
                                 <state key="normal" title="Enter">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1102,6 +1102,12 @@
                                     </mask>
                                 </variation>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*Please fill out this field" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfb-zr-VRi">
+                                <rect key="frame" x="130" y="254" width="178" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.88235294117647056" green="0.88627450980392153" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1110,7 +1116,7 @@
                             <constraint firstItem="Dzi-FO-k2E" firstAttribute="top" secondItem="hDF-RQ-oVl" secondAttribute="bottom" constant="30" id="7Wi-bO-OMM"/>
                             <constraint firstItem="4wq-QP-e1y" firstAttribute="top" secondItem="J7B-zt-kfl" secondAttribute="bottom" constant="5" id="9dQ-Fg-5nY"/>
                             <constraint firstItem="Qph-lM-i3F" firstAttribute="top" secondItem="dBs-Zf-JB5" secondAttribute="bottom" constant="5" id="9wu-NG-9u9"/>
-                            <constraint firstItem="FZM-HX-gJb" firstAttribute="top" secondItem="4wq-QP-e1y" secondAttribute="bottom" constant="20" id="CHX-b5-Unz"/>
+                            <constraint firstItem="FZM-HX-gJb" firstAttribute="top" secondItem="4wq-QP-e1y" secondAttribute="bottom" constant="15" id="CHX-b5-Unz"/>
                             <constraint firstItem="hEl-XQ-LzT" firstAttribute="top" secondItem="U7f-bp-wNf" secondAttribute="bottom" constant="25" id="Elv-mb-kF6"/>
                             <constraint firstItem="J7B-zt-kfl" firstAttribute="leading" secondItem="3Ry-Ir-9z3" secondAttribute="leadingMargin" constant="20" id="HFh-bq-ir2"/>
                             <constraint firstItem="uRr-Ad-4u2" firstAttribute="top" secondItem="hEl-XQ-LzT" secondAttribute="bottom" constant="5" id="J9S-w7-UrM"/>
@@ -1154,9 +1160,11 @@
                     <navigationItem key="navigationItem" id="5tn-0H-TRC"/>
                     <connections>
                         <outlet property="boroughTextField" destination="Qph-lM-i3F" id="3k3-9e-zYY"/>
+                        <outlet property="enterButtonActive" destination="FZM-HX-gJb" id="siT-mf-Hfn"/>
                         <outlet property="genderTextField" destination="uRr-Ad-4u2" id="gRq-Ja-6lV"/>
                         <outlet property="imageTextField" destination="4wq-QP-e1y" id="gbJ-1A-gAJ"/>
                         <outlet property="nameTextField" destination="U7f-bp-wNf" id="LMo-TL-xuc"/>
+                        <outlet property="warningFillOutNameField" destination="kfb-zr-VRi" id="s53-TE-1OX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="60s-ZW-5bb" userLabel="First Responder" sceneMemberID="firstResponder"/>
