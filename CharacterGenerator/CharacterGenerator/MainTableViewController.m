@@ -71,7 +71,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier"forIndexPath:indexPath];
     
     WendPlanCharacter *title = [self.titles objectAtIndex:indexPath.row];
-    cell.textLabel.text = title.planString;
+    cell.textLabel.text = title.titleString;
     
     return cell;
 }

@@ -17,6 +17,7 @@
 @property (nonatomic) NSString *foodString;
 @property (nonatomic) NSString *alcoholString;
 @property (nonatomic) NSInteger number;
+@property (nonatomic) NSString *titleString;
 @property (nonatomic, strong) UIImage *plansImage;
 
 @end

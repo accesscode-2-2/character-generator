@@ -41,7 +41,7 @@
     newCharacter.foodString = self.food;
     newCharacter.alcoholString = self.alcohol;
     newCharacter.plansImage = self.planImage;
-    
+    newCharacter.titleString = self.titleToDisplayInMainTableVC;
     
     [self.titles addObject:newCharacter];
     
