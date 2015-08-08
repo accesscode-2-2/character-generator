@@ -11,7 +11,6 @@
 #import "C4QStudentArrayBuilder.h"
 #import "YourMentorViewController.h"
 
-
 @interface C4QStudentManager ()
 @property (nonatomic) C4QStudentArrayBuilder *SAB;
 @end

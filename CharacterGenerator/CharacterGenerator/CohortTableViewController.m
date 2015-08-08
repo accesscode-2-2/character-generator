@@ -8,7 +8,7 @@
 
 #import "CohortTableViewController.h"
 #import "C4QStudentManager.h"
-
+#import "C4QStudent.h"
 
 @interface CohortTableViewController ()
 @property (nonatomic) C4QStudentManager *manager;
@@ -20,7 +20,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.manager = [C4QStudentManager sharedC4QStudentManager];
-    
 }
 
 #pragma mark - Table view data source
@@ -33,18 +32,27 @@
     return [self.manager.C4QStudentArray count];
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"StudentCellIdentifier" forIndexPath:indexPath];
     
-        NSString *studentName = [self.manager.C4QStudentArray[indexPath.row] name];
+    NSString *studentName = [self.manager.C4QStudentArray[indexPath.row] name];
+    cell.textLabel.text = studentName;
     
-        cell.textLabel.text = studentName;
-        cell.imageView.image = [UIImage imageNamed:studentName];
+    if ([self.manager.C4QStudentArray[indexPath.row] imageName] != nil) {
+        NSURL *imageURL = [NSURL URLWithString:[self.manager.C4QStudentArray[indexPath.row] imageName]];
         
-        return cell;
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+            NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                // Update the UI
+                cell.imageView.image = [UIImage imageWithData:imageData];
+            });
+        });
+    }
+        
+    return cell;
 }
-
 
 @end
