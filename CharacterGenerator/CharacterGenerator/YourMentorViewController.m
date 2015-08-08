@@ -26,7 +26,9 @@
     
     self.mentorNameLabel.text = [self.manager detailMentorName];
     
-
+    NSString *imageName = [self.manager.detailMentorName lowercaseString];
+    
+    self.mentorImageView.image = [UIImage imageNamed:imageName];
 
 }
 
