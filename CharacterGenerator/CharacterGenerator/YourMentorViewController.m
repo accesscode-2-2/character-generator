@@ -29,13 +29,10 @@
     self.selectedRandomly.hidden = YES;
 
     
-    //NSLog (@" %i", self.manager.nothingSelected);
-    
     if (self.manager.nothingSelected == YES) {
         self.selectedRandomly.hidden = NO;
     
     }
-    
     
     [self.navigationItem setHidesBackButton:YES animated:YES];
     
@@ -43,7 +40,6 @@
     self.mentorLocation.text = [self.manager detailMentorResidence];
     self.mentorGender.text = [[self.manager detailMentorGender] capitalizedString];
 
-    
     NSString *imageName = [self.manager.detailMentorName lowercaseString];
     
     self.mentorImageView.image = [UIImage imageNamed:imageName];
