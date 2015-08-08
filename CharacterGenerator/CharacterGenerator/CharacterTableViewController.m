@@ -35,37 +35,39 @@
     
 }
 
--(BOOL)isComplete{
+-(BOOL)fieldsComplete{
     if(self.nameTextField.text.length == 0){
         return NO;
     }
     for(int i=0; i < self.locationQuestionButtons.count; i++){
-        if([self.locationQuestionButtons[i] isSelected]){
+        if(![self.locationQuestionButtons[i] isEnabled]){
             break;
         }
-        if(i==self.locationQuestionButtons.count-1){
+        else if(i == self.locationQuestionButtons.count-1){
             return NO;
         }
     }
     for(int i=0;i<self.colorQuestionButtons.count;i++){
-        if([self.colorQuestionButtons[i] isSelected]){
+        if(![self.colorQuestionButtons[i] isEnabled]){
             break;
         }
-        if(i==self.colorQuestionButtons.count-1){
+        else if(i==self.colorQuestionButtons.count-1){
             return NO;
-        }    }
+        }
+    }
     for(int i=0;i<self.textureQuestionButtons.count;i++){
-        if([self.textureQuestionButtons[i] isSelected]){
+        if(![self.textureQuestionButtons[i] isEnabled]){
             break;
         }
-        if(i==self.textureQuestionButtons.count-1){
+        else if(i==self.textureQuestionButtons.count-1){
             return NO;
-        }    }
+        }
+    }
     return YES;
 }
 
 - (IBAction)doneButtonTapped:(UIBarButtonItem *)sender {
-    if(![self isComplete]){
+    if([self fieldsComplete] == NO){
    
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Missing some Field Inputs!"
                                                         message:@"Input Data bruh"
@@ -100,7 +102,7 @@
     // disable all other buttons
     for(int i=0; i < self.locationQuestionButtons.count; i++){
         
-        if(sender != self.locationQuestionButtons[i]){
+        if(sender == self.locationQuestionButtons[i]){
             [self.locationQuestionButtons[i] setEnabled:NO];
         }
     }
@@ -112,7 +114,7 @@
     self.color = [Bender colors][idx];
     for(int i=0; i < self.colorQuestionButtons.count; i++){
         
-        if(sender != self.colorQuestionButtons[i]){
+        if(sender == self.colorQuestionButtons[i]){
             [self.colorQuestionButtons[i] setEnabled:NO];
         }
     }
@@ -125,7 +127,7 @@
     self.texture = [Bender textures][idx];
     for(int i=0; i < self.textureQuestionButtons.count; i++){
         
-        if(sender != self.textureQuestionButtons[i]){
+        if(sender == self.textureQuestionButtons[i]){
             [self.textureQuestionButtons[i] setEnabled:NO];
         }
     }

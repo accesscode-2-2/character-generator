@@ -11,5 +11,5 @@
 
 @interface CharacterTableViewController : UITableViewController
 
-
+-(BOOL)fieldsComplete;
 @end
