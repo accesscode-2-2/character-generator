@@ -43,7 +43,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"StudentCellIdentifier" forIndexPath:indexPath];
     
     
-        NSString *studentName = self.manager.C4QStudentArray[indexPath.row];
+        NSString *studentName = [self.manager.C4QStudentArray[indexPath.row] name];
     
     
         cell.textLabel.text = studentName;
