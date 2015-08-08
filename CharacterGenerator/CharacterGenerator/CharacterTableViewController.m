@@ -36,6 +36,15 @@
 }
 
 - (IBAction)doneButtonTapped:(UIBarButtonItem *)sender {
+    if(self.nameTextField.text.length == 0){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Text Fields Empty!"
+                                                        message:@"Input Data bruh"
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
+    else{
     Bender *newBender = [[Bender alloc] init];
     
     newBender.name = self.nameTextField.text;
@@ -49,7 +58,8 @@
     
     [[BenderManager sharedManager] addBenders:newBender];
     
-    [self dismissViewControllerAnimated:YES completion:nil];
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 - (IBAction)locationButtonTapped:(UIButton *)sender {
