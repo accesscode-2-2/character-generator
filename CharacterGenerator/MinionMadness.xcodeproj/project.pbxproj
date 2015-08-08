@@ -16,6 +16,9 @@
 		50A9E64D1B72D66E0032F320 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A9E64C1B72D66E0032F320 /* Character.m */; };
 		50A9E6501B72D7460032F320 /* QuizData.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A9E64F1B72D7460032F320 /* QuizData.m */; };
 		50A9E6531B72EA780032F320 /* MinionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A9E6521B72EA780032F320 /* MinionDetailViewController.m */; };
+		5F36D9651B764E9A00FB7729 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F36D9641B764E9A00FB7729 /* AVFoundation.framework */; };
+		5F36D9701B7658A200FB7729 /* minionsong2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5F36D96F1B7658A200FB7729 /* minionsong2.mp3 */; };
+		5F36D9711B7658A200FB7729 /* minionsong2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5F36D96F1B7658A200FB7729 /* minionsong2.mp3 */; };
 		A4C288231B6EA78800718820 /* MinionMadnessTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C288221B6EA78800718820 /* MinionMadnessTableViewController.m */; };
 		A4C288291B6EC3B000718820 /* QuestionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C288281B6EC3B000718820 /* QuestionTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -48,6 +51,8 @@
 		50A9E64F1B72D7460032F320 /* QuizData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizData.m; sourceTree = "<group>"; };
 		50A9E6511B72EA780032F320 /* MinionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinionDetailViewController.h; sourceTree = "<group>"; };
 		50A9E6521B72EA780032F320 /* MinionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinionDetailViewController.m; sourceTree = "<group>"; };
+		5F36D9641B764E9A00FB7729 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5F36D96F1B7658A200FB7729 /* minionsong2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = minionsong2.mp3; sourceTree = "<group>"; };
 		A4C288211B6EA78800718820 /* MinionMadnessTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinionMadnessTableViewController.h; sourceTree = SOURCE_ROOT; };
 		A4C288221B6EA78800718820 /* MinionMadnessTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinionMadnessTableViewController.m; sourceTree = SOURCE_ROOT; };
 		A4C288271B6EC3B000718820 /* QuestionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionTableViewController.h; path = ../QuestionTableViewController.h; sourceTree = "<group>"; };
@@ -59,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F36D9651B764E9A00FB7729 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +81,7 @@
 		5037F3B01B6EA583004E247E = {
 			isa = PBXGroup;
 			children = (
+				5F36D9641B764E9A00FB7729 /* AVFoundation.framework */,
 				5037F3BB1B6EA583004E247E /* MinionMadness */,
 				5037F3D51B6EA583004E247E /* MinionMadnessTests */,
 				5037F3BA1B6EA583004E247E /* Products */,
@@ -107,6 +114,7 @@
 				50A9E64F1B72D7460032F320 /* QuizData.m */,
 				5037F3C61B6EA583004E247E /* Main.storyboard */,
 				5037F3C91B6EA583004E247E /* Images.xcassets */,
+				5F36D96F1B7658A200FB7729 /* minionsong2.mp3 */,
 				5037F3CB1B6EA583004E247E /* LaunchScreen.xib */,
 				5037F3BC1B6EA583004E247E /* Supporting Files */,
 			);
@@ -219,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F36D9701B7658A200FB7729 /* minionsong2.mp3 in Resources */,
 				5037F3C81B6EA583004E247E /* Main.storyboard in Resources */,
 				5037F3CD1B6EA583004E247E /* LaunchScreen.xib in Resources */,
 				5037F3CA1B6EA583004E247E /* Images.xcassets in Resources */,
@@ -229,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F36D9711B7658A200FB7729 /* minionsong2.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
