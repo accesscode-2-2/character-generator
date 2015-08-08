@@ -57,11 +57,15 @@
     
     [self.selectedButtons insertObject:self.answer1a atIndex:0];
     
-    [self.answer1a setBackgroundColor:[UIColor lightGrayColor]];
+    [self.answer1a setBackgroundColor:[UIColor orangeColor]];
+    [self.answer1a setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.answer1b setBackgroundColor:[UIColor whiteColor]];
+    [self.answer1b setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     [self.answer1c setBackgroundColor:[UIColor whiteColor]];
+    [self.answer1c setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     [self.answer1d setBackgroundColor:[UIColor whiteColor]];
-    NSLog(@"hello");
+    [self.answer1d setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
 }
 
 
@@ -70,10 +74,18 @@
     
     [self.selectedButtons insertObject:self.answer1b atIndex:0];
     
+    
     [self.answer1a setBackgroundColor:[UIColor whiteColor]];
-    [self.answer1b setBackgroundColor:[UIColor lightGrayColor]];
+    [self.answer1a setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
+    [self.answer1b setBackgroundColor:[UIColor orangeColor]];
+    [self.answer1b setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
     [self.answer1c setBackgroundColor:[UIColor whiteColor]];
+    [self.answer1c setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer1d setBackgroundColor:[UIColor whiteColor]];
+    [self.answer1d setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     
     
 }
@@ -85,9 +97,16 @@
     [self.selectedButtons insertObject:self.answer1c atIndex:0];
     
     [self.answer1a setBackgroundColor:[UIColor whiteColor]];
+    [self.answer1a setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer1b setBackgroundColor:[UIColor whiteColor]];
-    [self.answer1c setBackgroundColor:[UIColor lightGrayColor]];
+    [self.answer1b setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
+    [self.answer1c setBackgroundColor:[UIColor orangeColor]];
+    [self.answer1c setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
     [self.answer1d setBackgroundColor:[UIColor whiteColor]];
+    [self.answer1d setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     
 }
 
@@ -98,9 +117,16 @@
     [self.selectedButtons insertObject:self.answer1d atIndex:0];
     
     [self.answer1a setBackgroundColor:[UIColor whiteColor]];
+    [self.answer1a setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer1b setBackgroundColor:[UIColor whiteColor]];
+    [self.answer1b setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer1c setBackgroundColor:[UIColor whiteColor]];
-    [self.answer1d setBackgroundColor:[UIColor lightGrayColor]];
+    [self.answer1c setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
+    [self.answer1d setBackgroundColor:[UIColor orangeColor]];
+    [self.answer1d setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 }
 
 
@@ -110,8 +136,11 @@
     
     [self.selectedButtons insertObject:self.answer2a atIndex:1];
     
-    [self.answer2a setBackgroundColor:[UIColor lightGrayColor]];
+    [self.answer2a setBackgroundColor:[UIColor orangeColor]];
+    [self.answer2a setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
     [self.answer2b setBackgroundColor:[UIColor whiteColor]];
+    [self.answer2b setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     
 }
 
@@ -123,7 +152,10 @@
     [self.selectedButtons insertObject:self.answer2b atIndex:1];
     
     [self.answer2a setBackgroundColor:[UIColor whiteColor]];
-    [self.answer2b setBackgroundColor:[UIColor lightGrayColor]];
+    [self.answer2a setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
+    [self.answer2b setBackgroundColor:[UIColor orangeColor]];
+    [self.answer2b setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
     
 }
@@ -133,8 +165,11 @@
     
     [self.selectedButtons insertObject:self.answer3a atIndex:2];
     
-    [self.answer3a setBackgroundColor:[UIColor lightGrayColor]];
+    [self.answer3a setBackgroundColor:[UIColor orangeColor]];
+    [self.answer3a setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
     [self.answer3b setBackgroundColor:[UIColor whiteColor]];
+    [self.answer3b setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     
 }
 
@@ -144,7 +179,11 @@
     [self.selectedButtons insertObject:self.answer3b atIndex:2];
     
     [self.answer3a setBackgroundColor:[UIColor whiteColor]];
-    [self.answer3b setBackgroundColor:[UIColor lightGrayColor]];
+    [self.answer3a setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
+    [self.answer3b setBackgroundColor:[UIColor orangeColor]];
+    [self.answer3b setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
     
 }
 
@@ -153,11 +192,20 @@
     
     [self.selectedButtons insertObject:self.answer4a atIndex:3];
     
-    [self.answer4a setBackgroundColor:[UIColor lightGrayColor]];
+    [self.answer4a setBackgroundColor:[UIColor orangeColor]];
+    [self.answer4a setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
     [self.answer4b setBackgroundColor:[UIColor whiteColor]];
+    [self.answer4b setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer4c setBackgroundColor:[UIColor whiteColor]];
+    [self.answer4c setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer4d setBackgroundColor:[UIColor whiteColor]];
+    [self.answer4d setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer4e setBackgroundColor:[UIColor whiteColor]];
+    [self.answer4e setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
 }
 
 
@@ -166,10 +214,19 @@
     [self.selectedButtons insertObject:self.answer4b atIndex:3];
     
     [self.answer4a setBackgroundColor:[UIColor whiteColor]];
-    [self.answer4b setBackgroundColor:[UIColor lightGrayColor]];
+    [self.answer4a setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
+    [self.answer4b setBackgroundColor:[UIColor orangeColor]];
+    [self.answer4b setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
     [self.answer4c setBackgroundColor:[UIColor whiteColor]];
+    [self.answer4c setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer4d setBackgroundColor:[UIColor whiteColor]];
+    [self.answer4d setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer4e setBackgroundColor:[UIColor whiteColor]];
+    [self.answer4e setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     
 }
 
@@ -179,10 +236,19 @@
     [self.selectedButtons insertObject:self.answer4c atIndex:3];
     
     [self.answer4a setBackgroundColor:[UIColor whiteColor]];
+    [self.answer4a setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer4b setBackgroundColor:[UIColor whiteColor]];
-    [self.answer4c setBackgroundColor:[UIColor lightGrayColor]];
+    [self.answer4b setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
+    [self.answer4c setBackgroundColor:[UIColor orangeColor]];
+    [self.answer4c setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
+    [self.answer4d setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     [self.answer4d setBackgroundColor:[UIColor whiteColor]];
+    
     [self.answer4e setBackgroundColor:[UIColor whiteColor]];
+    [self.answer4e setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     
     
 }
@@ -193,9 +259,18 @@
     [self.selectedButtons insertObject:self.answer4d atIndex:3];
     
     [self.answer4a setBackgroundColor:[UIColor whiteColor]];
+    [self.answer4a setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer4b setBackgroundColor:[UIColor whiteColor]];
+    [self.answer4b setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer4c setBackgroundColor:[UIColor whiteColor]];
-    [self.answer4d setBackgroundColor:[UIColor lightGrayColor]];
+    [self.answer4c setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
+    [self.answer4d setBackgroundColor:[UIColor orangeColor]];
+    [self.answer4d setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
+    [self.answer4e setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     [self.answer4e setBackgroundColor:[UIColor whiteColor]];
     
 }
@@ -208,10 +283,19 @@
     [self.selectedButtons insertObject:self.answer4e atIndex:3];
     
     [self.answer4a setBackgroundColor:[UIColor whiteColor]];
+    [self.answer4a setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer4b setBackgroundColor:[UIColor whiteColor]];
+    [self.answer4b setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer4c setBackgroundColor:[UIColor whiteColor]];
+    [self.answer4c setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer4d setBackgroundColor:[UIColor whiteColor]];
-    [self.answer4e setBackgroundColor:[UIColor lightGrayColor]];
+    [self.answer4d setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
+    [self.answer4e setBackgroundColor:[UIColor orangeColor]];
+    [self.answer4e setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
 }
 
@@ -221,11 +305,20 @@
     
     [self.selectedButtons insertObject:self.answer5a atIndex:4];
     
-    [self.answer5a setBackgroundColor:[UIColor lightGrayColor]];
+    [self.answer5a setBackgroundColor:[UIColor orangeColor]];
+    [self.answer5a setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
     [self.answer5b setBackgroundColor:[UIColor whiteColor]];
+    [self.answer5b setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer5c setBackgroundColor:[UIColor whiteColor]];
+    [self.answer5c setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer5d setBackgroundColor:[UIColor whiteColor]];
+    [self.answer5d setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer5e setBackgroundColor:[UIColor whiteColor]];
+    [self.answer5e setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     
     
     
@@ -238,10 +331,19 @@
     [self.selectedButtons insertObject:self.answer5b atIndex:4];
     
     [self.answer5a setBackgroundColor:[UIColor whiteColor]];
-    [self.answer5b setBackgroundColor:[UIColor lightGrayColor]];
+    [self.answer5a setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
+    [self.answer5b setBackgroundColor:[UIColor orangeColor]];
+    [self.answer5b setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
     [self.answer5c setBackgroundColor:[UIColor whiteColor]];
+    [self.answer5c setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer5d setBackgroundColor:[UIColor whiteColor]];
+    [self.answer5d setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer5e setBackgroundColor:[UIColor whiteColor]];
+    [self.answer5e setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     
 }
 
@@ -252,10 +354,19 @@
     [self.selectedButtons insertObject:self.answer5c atIndex:4];
     
     [self.answer5a setBackgroundColor:[UIColor whiteColor]];
+    [self.answer5a setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer5b setBackgroundColor:[UIColor whiteColor]];
-    [self.answer5c setBackgroundColor:[UIColor lightGrayColor]];
+    [self.answer5b setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
+    [self.answer5c setBackgroundColor:[UIColor orangeColor]];
+    [self.answer5c setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
     [self.answer5d setBackgroundColor:[UIColor whiteColor]];
+    [self.answer5d setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer5e setBackgroundColor:[UIColor whiteColor]];
+    [self.answer5e setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     
     
 }
@@ -266,10 +377,19 @@
     [self.selectedButtons insertObject:self.answer5d atIndex:4];
     
     [self.answer5a setBackgroundColor:[UIColor whiteColor]];
+    [self.answer5a setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer5b setBackgroundColor:[UIColor whiteColor]];
+    [self.answer5b setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer5c setBackgroundColor:[UIColor whiteColor]];
-    [self.answer5d setBackgroundColor:[UIColor lightGrayColor]];
+    [self.answer5c setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
+    [self.answer5d setBackgroundColor:[UIColor orangeColor]];
+    [self.answer5d setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
     [self.answer5e setBackgroundColor:[UIColor whiteColor]];
+    [self.answer5e setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     
     
     
@@ -281,10 +401,19 @@
     [self.selectedButtons insertObject:self.answer5e atIndex:4];
     
     [self.answer5a setBackgroundColor:[UIColor whiteColor]];
+    [self.answer5a setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer5b setBackgroundColor:[UIColor whiteColor]];
+    [self.answer5b setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer5c setBackgroundColor:[UIColor whiteColor]];
+    [self.answer5c setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
     [self.answer5d setBackgroundColor:[UIColor whiteColor]];
-    [self.answer5e setBackgroundColor:[UIColor lightGrayColor]];
+    [self.answer5d setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
+    [self.answer5e setBackgroundColor:[UIColor orangeColor]];
+    [self.answer5e setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
 }
 
