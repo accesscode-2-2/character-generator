@@ -87,6 +87,7 @@
     if (!self.addedImage) {
         
         image = [UIImage imageNamed:[personName lowercaseString]];
+        NSLog(@"%@", [personName lowercaseString]);
     }
     
     [person initializeName:personName pushups:pushUpInt fighter:canFight andBeer:beerInt withImage:image];

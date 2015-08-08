@@ -19,6 +19,19 @@
 
 @implementation AllCharactersTableViewController
 
+//Delete Action
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        [self.model.allCharacters removeObjectAtIndex:indexPath.row];
+        // Delete the row from the data source
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    } 
+}
+
+// end Delete action
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
