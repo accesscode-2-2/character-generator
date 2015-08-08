@@ -1305,7 +1305,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4FD-Nw-0b4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arturlan3" translatesAutoresizingMaskIntoConstraints="NO" id="4FD-Nw-0b4">
                                 <rect key="frame" x="225" y="205" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="M42-y0-ytj"/>
@@ -1396,6 +1396,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arturlan3" width="220" height="220"/>
         <image name="c4q" width="400" height="400"/>
     </resources>
 </document>
