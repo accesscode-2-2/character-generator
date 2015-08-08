@@ -59,9 +59,8 @@
  - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UserDestinationCellIdentifier" forIndexPath:indexPath];
  
-     //[[DestinationsModel sharedModel].userDestinations objectForKey:@""];
      NSArray *userDestinations = self.tableData;
-     NSString *userDestinationsTitle = userDestinations[indexPath.section];
+     NSString *userDestinationsTitle = userDestinations[indexPath.row];
      cell.textLabel.text = userDestinationsTitle;
      
      NSString *imageName = [userDestinationsTitle stringByReplacingOccurrencesOfString:@" " withString:@"_"];
@@ -96,7 +95,7 @@
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
         NSArray *userDestinations = self.tableData;
-        NSString *userDestinationName =  userDestinations[indexPath.section];
+        NSString *userDestinationName =  userDestinations[indexPath.row];
         NSString *destinationDescriptions = [self.userDestinationDetails objectForKey:userDestinationName];
         
         NSString *imageName = [userDestinationName stringByReplacingOccurrencesOfString:@" " withString:@"_"];
@@ -117,7 +116,7 @@
 -(NSString *)objectForIndexPath: (NSIndexPath *)indexPath {
     
     NSArray *userDestinations = self.tableData;
-    NSString *userDestinationName =  userDestinations[indexPath.section];
+    NSString *userDestinationName =  userDestinations[indexPath.row];
     NSArray *destinationDescriptions = [self.userDestinationDetails objectForKey:userDestinationName];
     
     return destinationDescriptions[indexPath.row];

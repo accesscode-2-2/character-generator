@@ -52,6 +52,14 @@
     
     self.selectedButtons = [[NSMutableArray alloc] init];
     
+    [DestinationsModel sharedModel].destinationValues = @{
+                                                          @"Aspen"       : @(0),
+                                                          @"Bali"        : @(0),
+                                                          @"Fox Glacier" : @(0),
+                                                          @"Hokkaido"    : @(0),
+                                                          @"Monaco"      : @(0)
+                                                          }.mutableCopy;
+    
 }
 
 - (IBAction)selectedAnswer1a:(UIButton *)sender {
@@ -896,6 +904,8 @@
     
     // Call this when ever you want to refresh the tableView in Class2
     [[NSNotificationCenter defaultCenter] postNotificationName:@"RefreshTable" object:nil userInfo:nil];
+    
+    
     
     [self dismissViewControllerAnimated:YES completion:nil];
     
