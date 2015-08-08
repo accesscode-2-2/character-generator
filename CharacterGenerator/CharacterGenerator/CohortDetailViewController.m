@@ -35,6 +35,10 @@
             [self.view setNeedsDisplay];
         });
     }
+    self.studentImageView.layer.cornerRadius = 10.0;
+    self.studentImageView.layer.masksToBounds = YES;
+    self.studentImageView.layer.borderWidth = 1.5;
+    self.studentImageView.layer.borderColor =  [[UIColor colorWithRed:124/255.0 green:191/255.0 blue:60/255.0 alpha:1.0] CGColor];
     
 }
 

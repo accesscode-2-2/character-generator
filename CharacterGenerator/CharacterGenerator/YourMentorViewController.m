@@ -47,6 +47,12 @@
     NSString *imageName = [self.manager.detailMentorName lowercaseString];
     
     self.mentorImageView.image = [UIImage imageNamed:imageName];
+    self.mentorImageView.layer.cornerRadius = 10.0;
+    self.mentorImageView.layer.masksToBounds = YES;
+    self.mentorImageView.layer.borderWidth = 1.5;
+    self.mentorImageView.layer.borderColor =  [[UIColor colorWithRed:124/255.0 green:191/255.0 blue:60/255.0 alpha:1.0] CGColor];
+    
+    
     
     self.navigationItem.title = [self.manager detailMentorName];
 
