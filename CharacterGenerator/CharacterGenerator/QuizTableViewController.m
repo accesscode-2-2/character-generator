@@ -889,7 +889,9 @@
         }
     }
     
-    [[DestinationsModel sharedModel].userDestinations setObject:highestValue forKey:userCity];
+    NSLog(@"highestValue:%@, userCity:%@", highestValue, userCity);
+    
+    [[DestinationsModel sharedModel].userDestinations addObject: userCity];
     NSLog(@"%@", [DestinationsModel sharedModel].userDestinations);
     
     // Call this when ever you want to refresh the tableView in Class2

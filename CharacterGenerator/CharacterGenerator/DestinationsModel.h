@@ -12,7 +12,7 @@
 
 @property (nonatomic) NSDictionary *destinationDetails;
 @property (nonatomic) NSMutableDictionary *destinationValues;
-@property (nonatomic) NSMutableDictionary *userDestinations;
+@property (nonatomic) NSMutableArray *userDestinations;
 
 + (DestinationsModel *)sharedModel;
 

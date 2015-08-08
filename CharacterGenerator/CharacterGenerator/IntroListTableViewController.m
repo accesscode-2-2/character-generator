@@ -14,7 +14,7 @@
 
 @interface IntroListTableViewController ()
 
-@property (nonatomic) NSDictionary *tableData;
+@property (nonatomic) NSMutableArray *tableData;
 @property (nonatomic) NSDictionary *userDestinationDetails;
 
 @end
@@ -51,7 +51,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
  
-    return [self.tableData allKeys].count;
+    return self.tableData.count;
 }
 
 
@@ -60,7 +60,7 @@
  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UserDestinationCellIdentifier" forIndexPath:indexPath];
  
      //[[DestinationsModel sharedModel].userDestinations objectForKey:@""];
-     NSArray *userDestinations = [self.tableData allKeys];
+     NSArray *userDestinations = self.tableData;
      NSString *userDestinationsTitle = userDestinations[indexPath.section];
      cell.textLabel.text = userDestinationsTitle;
      
@@ -95,7 +95,7 @@
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
-        NSArray *userDestinations = [self.tableData allKeys];
+        NSArray *userDestinations = self.tableData;
         NSString *userDestinationName =  userDestinations[indexPath.section];
         NSString *destinationDescriptions = [self.userDestinationDetails objectForKey:userDestinationName];
         
@@ -116,7 +116,7 @@
 
 -(NSString *)objectForIndexPath: (NSIndexPath *)indexPath {
     
-    NSArray *userDestinations = [self.tableData allKeys];
+    NSArray *userDestinations = self.tableData;
     NSString *userDestinationName =  userDestinations[indexPath.section];
     NSArray *destinationDescriptions = [self.userDestinationDetails objectForKey:userDestinationName];
     

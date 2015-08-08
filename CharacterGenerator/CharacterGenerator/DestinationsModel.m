@@ -53,8 +53,8 @@
                                    @"Monaco"      : @(0)
                                    }.mutableCopy;
         
-        self.userDestinations = @{
-                                  }.mutableCopy;
+        self.userDestinations = @[
+                                  ].mutableCopy;
         
     }
     return self;
