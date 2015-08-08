@@ -8,6 +8,7 @@
 
 #import "CohortDetailViewController.h"
 #import "C4QStudentManager.h"
+#import "C4QStudent.h"
 
 @interface CohortDetailViewController ()
 @property (nonatomic) C4QStudentManager *manager;
@@ -21,8 +22,19 @@
     [super viewDidLoad];
     self.manager = [C4QStudentManager sharedC4QStudentManager];
     
-    NSLog(@"detail index: %lu", self.studentIndex);
     self.studentNameLabel.text = [self.manager.C4QStudentArray[self.studentIndex] name];
+    NSString *imageName = [self.manager.C4QStudentArray[self.studentIndex] imageName];
+    //NSLog(@"image url: %@", imageName);
+    
+    // Load image only if the user put in a url
+    if (![imageName isEqualToString:@"horse"]) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSURL *studentImageLink = [NSURL URLWithString:imageName];
+            NSData *imageData = [NSData dataWithContentsOfURL:studentImageLink];
+            self.studentImageView.image = [UIImage imageWithData:imageData];
+            [self.view setNeedsDisplay];
+        });
+    }
     
 }
 
