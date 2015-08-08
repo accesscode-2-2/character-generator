@@ -19,6 +19,39 @@
 
 @implementation newCharacterTableViewController
 
+
+// Take photo button action
+- (IBAction)TakePhoto {
+    
+    imagePicker1 = [[UIImagePickerController alloc] init];
+    imagePicker1.delegate = self;
+    [imagePicker1 setSourceType:UIImagePickerControllerSourceTypeCamera];
+    [self presentViewController:imagePicker1 animated:YES completion:NULL];
+   
+}
+
+
+- (IBAction)ChooseExisting {
+    
+    imagePicker2 = [[UIImagePickerController alloc] init];
+    imagePicker2.delegate = self;
+    [imagePicker2 setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+    [self presentViewController:imagePicker2 animated:YES completion:NULL];
+    
+}
+
+- (void) imagePickerController:(nonnull UIImagePickerController *)picker didFinishPickingMediaWithInfo:(nonnull NSDictionary<NSString *,id> *)info {
+    image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    [imageView setImage:image];
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (void) imagePickerControllerDidCancel:(nonnull UIImagePickerController *)picker {
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+// end photo properties
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -35,6 +68,7 @@
     int beerInt = [self.beerLabel.text intValue];
     NSString *fightString = [self.fight objectAtIndex:[_yesOrNoPicker selectedRowInComponent:0]];
     BOOL canFight = [fightString boolValue];
+    
     
     [person initializeName:self.nameLabel.text pushups:pushUpInt fighter:canFight andBeer:beerInt];
     
@@ -76,5 +110,7 @@
     
     [alert show];
 }
+
+
 
 @end

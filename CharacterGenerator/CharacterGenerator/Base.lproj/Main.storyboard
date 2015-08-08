@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YHd-Nw-R4E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YHd-Nw-R4E">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -88,6 +89,9 @@
                                                             <exclude reference="pMR-Oz-4au"/>
                                                         </mask>
                                                     </variation>
+                                                    <connections>
+                                                        <action selector="ChooseExisting" destination="XUV-AR-K0r" eventType="touchUpInside" id="pjM-EC-VWD"/>
+                                                    </connections>
                                                 </button>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GRL-H6-S1h">
                                                     <rect key="frame" x="200" y="281" width="200" height="30"/>
@@ -111,8 +115,11 @@
                                                         <constraint firstAttribute="width" constant="100" id="fvP-67-Edm"/>
                                                     </constraints>
                                                     <state key="normal" title="Take Photo"/>
+                                                    <connections>
+                                                        <action selector="TakePhoto" destination="XUV-AR-K0r" eventType="touchUpInside" id="jPQ-UT-pW6"/>
+                                                    </connections>
                                                 </button>
-                                                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDN-b9-xuA">
+                                                <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fDN-b9-xuA">
                                                     <rect key="frame" x="200" y="386" width="200" height="162"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="200" id="8Wd-qv-oCW"/>
@@ -209,13 +216,13 @@
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="sCV-Ip-yMQ"/>
-                                                    <exclude reference="1ie-VX-Rnp"/>
-                                                    <exclude reference="7Ur-T2-H35"/>
-                                                    <exclude reference="7ho-9q-bx7"/>
                                                     <exclude reference="GyQ-TV-YzG"/>
                                                     <exclude reference="W2e-bd-M82"/>
                                                     <exclude reference="W7U-41-Rv1"/>
                                                     <exclude reference="v2Q-eu-Jk9"/>
+                                                    <exclude reference="1ie-VX-Rnp"/>
+                                                    <exclude reference="7Ur-T2-H35"/>
+                                                    <exclude reference="7ho-9q-bx7"/>
                                                     <exclude reference="76J-Cx-Arx"/>
                                                     <exclude reference="BAg-f7-oRF"/>
                                                     <exclude reference="Ft8-tH-aRC"/>
@@ -247,6 +254,7 @@
                     <size key="freeformSize" width="600" height="800"/>
                     <connections>
                         <outlet property="beerLabel" destination="hjV-3w-Hx0" id="Czp-Jh-Psh"/>
+                        <outlet property="imageView" destination="nBx-wq-Y3f" id="w5V-I3-LRD"/>
                         <outlet property="nameLabel" destination="GRL-H6-S1h" id="SvX-Tp-LtP"/>
                         <outlet property="pushupLabel" destination="Gaf-kG-edB" id="DMr-o7-th4"/>
                         <outlet property="yesOrNoPicker" destination="fDN-b9-xuA" id="0ac-Q5-a1B"/>
@@ -284,19 +292,19 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rWV-hh-90M">
                                 <rect key="frame" x="16" y="227" width="568" height="272"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Pushups: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wu-wV-BQE">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Number of Pushups: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wu-wV-BQE">
                                         <rect key="frame" x="8" y="8" width="163" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can fight?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wra-pj-kvP">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Can fight?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wra-pj-kvP">
                                         <rect key="frame" x="8" y="37" width="80" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer Limit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5W-62-Tmo">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Beer Limit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5W-62-Tmo">
                                         <rect key="frame" x="8" y="66" width="78" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -308,19 +316,19 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ET1-pj-VWN">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ET1-pj-VWN">
                                         <rect key="frame" x="179" y="8" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDk-X3-jDZ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDk-X3-jDZ">
                                         <rect key="frame" x="179" y="37" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmU-eg-mef">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmU-eg-mef">
                                         <rect key="frame" x="179" y="66" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -376,6 +384,7 @@
                     </view>
                     <connections>
                         <outlet property="beerLabel" destination="xmU-eg-mef" id="KlN-GP-lXO"/>
+                        <outlet property="deetsImage" destination="iyI-Dn-ORD" id="HUi-K9-Kqg"/>
                         <outlet property="fightLabel" destination="gDk-X3-jDZ" id="3iQ-Z5-Zm9"/>
                         <outlet property="nameLabel" destination="rS3-Hb-8B0" id="D0B-98-nsl"/>
                         <outlet property="pushupsLabel" destination="ET1-pj-VWN" id="MWC-c7-txQ"/>

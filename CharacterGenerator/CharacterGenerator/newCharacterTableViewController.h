@@ -10,7 +10,19 @@
 #import "characterModel.h"
 #import "Character.h"
 
-@interface newCharacterTableViewController : UITableViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+@interface newCharacterTableViewController : UITableViewController <UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+{
+    UIImagePickerController *imagePicker1;
+    UIImagePickerController *imagePicker2;
+    UIImage *image;
+    IBOutlet UIImageView *imageView;
+}
+
+//- (IBAction)TakePhoto;
+//- (IBAction)ChooseExisting;
+
+- (IBAction)TakePhoto;
+- (IBAction)ChooseExisting;
 
 
 // Data Picker 

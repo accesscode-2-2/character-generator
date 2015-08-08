@@ -8,6 +8,7 @@
 
 #import "characterDeetsViewController.h"
 
+
 @interface characterDeetsViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *pushupsLabel;
@@ -34,6 +35,7 @@
     }
     self.beerLabel.text = [NSString stringWithFormat:@"%d",self.beerLimit];
     self.superHeroLabel.text = self.superHeroName;
+
     
 //    @property (nonatomic) int pushupLimit;
 //    @property (nonatomic) BOOL canFight;

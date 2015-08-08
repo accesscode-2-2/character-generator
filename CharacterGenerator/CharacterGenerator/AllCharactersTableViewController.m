@@ -28,12 +28,14 @@
     
 //    self.model = [[characterModel alloc]init];
     [self.model initializeCharacters];
-
+    
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.tableView reloadData]; // to reload selected cell
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -58,6 +60,7 @@
         destination.pushupLimit = pushUpLimit;
         destination.beerLimit = beerLimit;
         destination.superHeroName = person.superPower;
+        
     
     }
    
