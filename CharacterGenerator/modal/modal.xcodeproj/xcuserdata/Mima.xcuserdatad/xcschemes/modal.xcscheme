@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0640"
+   LastUpgradeVersion = "0630"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8D7B0FF41B6E6FC6003F4FB8"
-               BuildableName = "CharacterGenerator.app"
-               BlueprintName = "CharacterGenerator"
-               ReferencedContainer = "container:CharacterGenerator.xcodeproj">
+               BlueprintIdentifier = "3D695DB61B6EBC040004DF6C"
+               BuildableName = "modal.app"
+               BlueprintName = "modal"
+               ReferencedContainer = "container:modal.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8D7B100D1B6E6FC6003F4FB8"
-               BuildableName = "CharacterGeneratorTests.xctest"
-               BlueprintName = "CharacterGeneratorTests"
-               ReferencedContainer = "container:CharacterGenerator.xcodeproj">
+               BlueprintIdentifier = "3D695DCF1B6EBC050004DF6C"
+               BuildableName = "modalTests.xctest"
+               BlueprintName = "modalTests"
+               ReferencedContainer = "container:modal.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8D7B100D1B6E6FC6003F4FB8"
-               BuildableName = "CharacterGeneratorTests.xctest"
-               BlueprintName = "CharacterGeneratorTests"
-               ReferencedContainer = "container:CharacterGenerator.xcodeproj">
+               BlueprintIdentifier = "3D695DCF1B6EBC050004DF6C"
+               BuildableName = "modalTests.xctest"
+               BlueprintName = "modalTests"
+               ReferencedContainer = "container:modal.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D7B0FF41B6E6FC6003F4FB8"
-            BuildableName = "CharacterGenerator.app"
-            BlueprintName = "CharacterGenerator"
-            ReferencedContainer = "container:CharacterGenerator.xcodeproj">
+            BlueprintIdentifier = "3D695DB61B6EBC040004DF6C"
+            BuildableName = "modal.app"
+            BlueprintName = "modal"
+            ReferencedContainer = "container:modal.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D7B0FF41B6E6FC6003F4FB8"
-            BuildableName = "CharacterGenerator.app"
-            BlueprintName = "CharacterGenerator"
-            ReferencedContainer = "container:CharacterGenerator.xcodeproj">
+            BlueprintIdentifier = "3D695DB61B6EBC040004DF6C"
+            BuildableName = "modal.app"
+            BlueprintName = "modal"
+            ReferencedContainer = "container:modal.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D7B0FF41B6E6FC6003F4FB8"
-            BuildableName = "CharacterGenerator.app"
-            BlueprintName = "CharacterGenerator"
-            ReferencedContainer = "container:CharacterGenerator.xcodeproj">
+            BlueprintIdentifier = "3D695DB61B6EBC040004DF6C"
+            BuildableName = "modal.app"
+            BlueprintName = "modal"
+            ReferencedContainer = "container:modal.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

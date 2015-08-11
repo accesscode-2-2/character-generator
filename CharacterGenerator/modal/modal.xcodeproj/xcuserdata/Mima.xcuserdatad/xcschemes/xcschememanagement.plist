@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CharacterGenerator.xcscheme</key>
+		<key>modal.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8D7B0FF41B6E6FC6003F4FB8</key>
+		<key>3D695DB61B6EBC040004DF6C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8D7B100D1B6E6FC6003F4FB8</key>
+		<key>3D695DCF1B6EBC050004DF6C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

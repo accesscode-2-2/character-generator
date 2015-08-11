@@ -1,19 +1,19 @@
 //
-//  CharacterGeneratorTests.m
-//  CharacterGeneratorTests
+//  modalTests.m
+//  modalTests
 //
-//  Created by Michael Kavouras on 8/2/15.
-//  Copyright (c) 2015 Mike Kavouras. All rights reserved.
+//  Created by Fatima Zenine Villanueva on 8/2/15.
+//  Copyright (c) 2015 apps. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface CharacterGeneratorTests : XCTestCase
+@interface modalTests : XCTestCase
 
 @end
 
-@implementation CharacterGeneratorTests
+@implementation modalTests
 
 - (void)setUp {
     [super setUp];
