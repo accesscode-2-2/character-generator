@@ -108,6 +108,7 @@
     [self pickerView:self.perk2Picker didSelectRow:0 inComponent:0];
     [self pickerView:self.perk3Picker didSelectRow:0 inComponent:0];
     
+    self.specialGrenadeSegmentedControl.selectedSegmentIndex = 0;
     NSInteger specialGrenadeIndex = 0;
     NSString *specialGrenade = [self.model.specialGrenades objectAtIndex:specialGrenadeIndex];
     self.specialGrenadeImageView.image = [UIImage imageNamed: specialGrenade];
